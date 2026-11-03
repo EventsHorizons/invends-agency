@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { projects, categories, site, getProject } = useSiteContent();
 const active = ref("All");
 const collectionIndex = ref(0);
@@ -38,7 +38,7 @@ function nextCollection() {
   collectionIndex.value = (collectionIndex.value + 1) % collections.value.length;
 }
 
-useHead({ title: "Work | 3Drawers Agency" });
+useHead({ title: "Work | Invends" });
 </script>
 
 <template>
@@ -99,8 +99,8 @@ useHead({ title: "Work | 3Drawers Agency" });
 
 <style scoped>
 .work-page {
-  background: #f4f2ec;
-  color: #111;
+  background: var(--bg);
+  color: var(--fg);
   min-height: 100vh;
 }
 .work-hero {
@@ -121,10 +121,10 @@ useHead({ title: "Work | 3Drawers Agency" });
 h1 {
   margin: 0;
   max-width: 14ch;
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2.9rem, 7.2vw, 5.8rem);
+  letter-spacing: var(--tracking-display);
   line-height: 0.98;
-  font-weight: 700;
+  font-weight: 800;
 }
 .work-hero p {
   max-width: 34rem;
@@ -139,25 +139,25 @@ h1 {
   margin-inline: auto;
 }
 .empty {
-  color: #666;
+  color: var(--muted);
 }
 .collections {
   padding: 3rem var(--gutter) 5rem;
   max-width: 1440px;
   margin-inline: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid var(--line);
 }
 .sub {
   margin: 0;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: #666;
+  color: var(--muted);
 }
 .collections h2 {
   margin: 0.5rem 0 1.5rem;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(2.1rem, 4.8vw, 3.6rem);
+  letter-spacing: var(--tracking-title);
 }
 .collections ul {
   list-style: none;
@@ -175,12 +175,13 @@ h1 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  background: #ddd;
+  background: var(--color-surface-2);
 }
 .refresh {
   margin-top: 1.5rem;
-  border: 1px solid #111;
+  border: 1px solid var(--fg);
   background: transparent;
+  color: var(--fg);
   border-radius: 999px;
   padding: 0.65rem 1.1rem;
   letter-spacing: 0.04em;

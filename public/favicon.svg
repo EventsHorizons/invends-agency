@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Invends">
+  <rect width="32" height="32" rx="8" fill="#090711"/>
+  <!-- Solo el punto/petalo de la i del wordmark -->
+  <g fill="#f7f5ff" transform="translate(16 16) scale(0.52) translate(-648.927 -482.949)">
+    <path d="M632.978 469.673 L632.978 464.664 L644.128 464.664 L664.808 464.664 L664.876 464.664 L664.876 501.234 L664.203 501.234 C664.075 501.215 663.944 501.196 663.811 501.178 C661.839 500.906 659.293 500.709 657.527 500.231 C643.669 496.478 634.77 484.368 632.978 469.673 Z"/>
+  </g>
+</svg>

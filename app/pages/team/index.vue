@@ -1,8 +1,8 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { site } = useSiteContent();
 const team = site.team;
 const members = site.members;
-useHead({ title: "Team | 3Drawers Agency" });
+useHead({ title: "Team | Invends" });
 </script>
 
 <template>
@@ -148,7 +148,7 @@ useHead({ title: "Team | 3Drawers Agency" });
 
 <style scoped>
 .team {
-  background: #000;
+  background: var(--bg);
 }
 .hero,
 .members,
@@ -186,8 +186,8 @@ useHead({ title: "Team | 3Drawers Agency" });
 }
 h1 {
   margin: 0.5rem 0 1rem;
-  font-size: clamp(2.4rem, 7vw, 5.2rem);
-  letter-spacing: -0.045em;
+  font-size: clamp(2.9rem, 8.5vw, 6.2rem);
+  letter-spacing: var(--tracking-display);
   line-height: 0.95;
   display: grid;
 }
@@ -207,8 +207,8 @@ h1 span:nth-child(2) {
 .we-are h2,
 .founders h2 {
   margin: 0 0 1.5rem;
-  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.9rem, 4.2vw, 3.1rem);
+  letter-spacing: var(--tracking-title);
 }
 .we-are h2 {
   display: grid;
@@ -231,7 +231,7 @@ article img,
   width: 100%;
   display: block;
   object-fit: cover;
-  background: #1a1a1a;
+  background: var(--color-surface-2);
 }
 .grid article img,
 .ph {
@@ -253,9 +253,9 @@ article img,
   gap: 1.5rem;
 }
 .date {
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3.6rem, 9.5vw, 7.2rem);
   font-weight: 700;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--tracking-display);
   margin: 0;
   opacity: 0.35;
 }
@@ -271,8 +271,8 @@ article img,
 }
 .place-text {
   white-space: pre-line;
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  letter-spacing: var(--tracking-title);
   margin: 0 0 0.35rem;
 }
 .places a {

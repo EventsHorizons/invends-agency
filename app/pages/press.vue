@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { news, site } = useSiteContent();
 const cats = computed(() => {
   const ordered = (site.newsCategories || []).map((c) => c.name).filter(Boolean);
@@ -29,7 +29,7 @@ watch(active, () => {
   visible.value = 12;
 });
 
-useHead({ title: "Press & News | 3Drawers Agency" });
+useHead({ title: "Press & News | Invends" });
 </script>
 
 <template>
@@ -114,7 +114,7 @@ useHead({ title: "Press & News | 3Drawers Agency" });
 
 <style scoped>
 .press {
-  background: #000;
+  background: var(--bg);
   min-height: 100vh;
 }
 .hero {
@@ -122,8 +122,8 @@ useHead({ title: "Press & News | 3Drawers Agency" });
 }
 h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(3.6rem, 9.5vw, 7.2rem);
+  letter-spacing: var(--tracking-display);
 }
 .body {
   display: grid;
@@ -148,7 +148,7 @@ aside button {
   text-align: left;
 }
 aside button.active {
-  color: #fff;
+  color: var(--fg);
 }
 aside em {
   font-style: normal;
@@ -160,7 +160,7 @@ aside em {
 }
 .series h2 {
   margin: 0 0 0.35rem;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
 }
 .series-lead {
   color: var(--muted);
@@ -192,7 +192,7 @@ em {
   margin-top: 2rem;
   border: 1px solid var(--line);
   background: transparent;
-  color: #fff;
+  color: var(--fg);
   border-radius: 999px;
   padding: 0.7rem 1.2rem;
   letter-spacing: 0.1em;

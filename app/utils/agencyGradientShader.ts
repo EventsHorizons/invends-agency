@@ -123,10 +123,19 @@ void main() {
   position += transformPosition;
 
   vec2 noiseLocalPosition = position * .5 + .5;
-  // IQ noise drives organic banding; if derivatives explode, fall back to 0 displace
+  // Primary field (same look as before)
   vec4 n4 = gradientDerivativesNoise3D(vec3(noiseLocalPosition, seed));
   vec3 displacementNoise = n4.xyz;
   if (any(isnan(displacementNoise))) displacementNoise = vec3(0.0);
+
+  // Soft secondary sample at a slightly different phase — gentler contour drift
+  // without changing the overall visual language of the waves.
+  vec4 n4b = gradientDerivativesNoise3D(
+    vec3(noiseLocalPosition * 0.92 + vec2(0.31, -0.17), seed * 1.37 + 1.8)
+  );
+  if (!any(isnan(n4b.xyz))) {
+    displacementNoise = mix(displacementNoise, n4b.xyz, 0.22);
+  }
 
   float noise = computeNoise(vPosition * viewportSize / max(noiseSize, 0.0001));
   if (isnan(noise)) noise = 0.0;
@@ -172,11 +181,20 @@ export type GradientParams = {
   noiseIntensity: number;
 };
 
+/** Invends brand wave stops (deep → brand → lavender → magenta). */
+export const BRAND_WAVE_HEX = [
+  "#4b28b5",
+  "#6d45ea",
+  "#b8a6ff",
+  "#ff2daa",
+  "#ff5fbf",
+] as const;
+
 export const HOME_GRADIENT: GradientParams = {
-  color1: "#16254b",
-  color2: "#23418a",
-  color3: "#aadfd9",
-  color4: "#e64f0f",
+  color1: BRAND_WAVE_HEX[0],
+  color2: BRAND_WAVE_HEX[1],
+  color3: BRAND_WAVE_HEX[2],
+  color4: BRAND_WAVE_HEX[3],
   colorSize: 0.75,
   colorSpacing: 0.52,
   colorRotation: -0.381592653589793,
@@ -262,4 +280,28 @@ export function hexToRgb01(hex: string): [number, number, number] {
       : h;
   const n = parseInt(full.slice(0, 6), 16);
   return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
+}
+
+export function rgb01ToHex(rgb: [number, number, number]): string {
+  const to = (v: number) =>
+    Math.round(Math.min(1, Math.max(0, v)) * 255)
+      .toString(16)
+      .padStart(2, "0");
+  return `#${to(rgb[0])}${to(rgb[1])}${to(rgb[2])}`;
+}
+
+function lerp(a: number, b: number, t: number) {
+  return a + (b - a) * t;
+}
+
+/** Sample brand palette as a looping gradient; phase in [0, ∞). */
+export function brandWaveColorAt(phase: number): string {
+  const stops = BRAND_WAVE_HEX.map(hexToRgb01);
+  const n = stops.length;
+  const x = ((phase % n) + n) % n;
+  const i = Math.floor(x);
+  const t = x - i;
+  const a = stops[i];
+  const b = stops[(i + 1) % n];
+  return rgb01ToHex([lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)]);
 }

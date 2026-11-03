@@ -1,17 +1,35 @@
 {
-  "brand": "3Drawers | Agency",
+  "brand": "Invends | Agency",
   "cms": "Studio content",
-  "note": "3Drawers | Agency — design-driven creative studio.",
+  "note": "Invends | Agency — design-driven creative studio.",
   "homepage": {
     "title": "",
     "titleJapanese": "",
-    "manifesto": "",
-    "gradient": "<agency-gradient color1=\"#16254b\" color2=\"#23418a\" color3=\"#aadfd9\" color4=\"#e64f0f\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
+    "manifesto": [
+      {
+        "title": "Based in London",
+        "text": "Born in Tokyo"
+      },
+      {
+        "title": "Design-driven",
+        "text": "creative agency"
+      },
+      {
+        "title": "Branding, digital",
+        "text": "and communications"
+      }
+    ],
+    "gradient": "<agency-gradient color1=\"#4b28b5\" color2=\"#6d45ea\" color3=\"#b8a6ff\" color4=\"#ff2daa\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
     "featuredUids": [
       "onitsuka-tiger-finish-line-cafe",
       "nkora-coffee",
       "barbour-wallace-gromit-christmas",
       "outfry-korean-fried-chicken-branding"
+    ],
+    "titleLines": [
+      "We are a brand",
+      "of collective",
+      "creativity"
     ]
   },
   "worksPage": {
@@ -19,7 +37,7 @@
     "subtitle": "Our work",
     "baseline": "Every project is a chance to try something new. Look at something with a fresh perspective. Do something for the first time.",
     "japaneseTitle": "",
-    "gradient": "<agency-gradient color1=\"#CF0F02\" color2=\"#FFBB4D\" color3=\"#65D7E1\" color4=\"#017FF7\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
+    "gradient": "<agency-gradient color1=\"#4b28b5\" color2=\"#6d45ea\" color3=\"#b8a6ff\" color4=\"#ff2daa\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
     "collections": [
       {
         "subtitle": "What we could do together",
@@ -60,23 +78,41 @@
     ]
   },
   "services": {
-    "title": "",
+    "title": "We build expressive brands",
     "baseline": "[ Across branding, communications and digital. ]",
     "introduction": "We help brands be their most inspiring selves. Own their quirks - their edge - their culture. Help them be confidently attractive. At home, and abroad.",
-    "gradient": "<agency-gradient color1=\"#f5e1a4\" color2=\"#ee7f27\" color3=\"#bc162a\" color4=\"#231a1c\" colorsize=\"0.58\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
+    "gradient": "<agency-gradient color1=\"#4b28b5\" color2=\"#6d45ea\" color3=\"#b8a6ff\" color4=\"#ff2daa\" colorsize=\"0.58\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
     "linkWorks": "Discover all projects",
     "groups": [
       {
         "title": "Branding",
-        "items": []
+        "items": [
+          "Brand strategy",
+          "Visual identity",
+          "Copywriting",
+          "Creative Direction"
+        ]
       },
       {
         "title": "Communications",
-        "items": []
+        "items": [
+          "Advertising",
+          "Print",
+          "Social media",
+          "Photography & Film",
+          "Art Direction",
+          "Retail",
+          "Assets production"
+        ]
       },
       {
         "title": "Digital",
-        "items": []
+        "items": [
+          "Web design",
+          "Augmented reality",
+          "Digital experiences",
+          "Installations"
+        ]
       }
     ],
     "calls": [
@@ -96,7 +132,7 @@
         "title": "YOU WANT TO CAPTURE\n→ THE IMAGINATION",
         "baseline": "[ WE ARE DESIGN - DRIVEN ]",
         "text": "We approach problems visually. In a scroll-through world, we aim for instant visceral impact. Our work is designed to speak to the imagination of global audiences.\nDesign-driven work allows us to inject personality into every interaction. To bring character to an otherwise templated world. To challenge the codes of a category and establish the brand as a leader within it.",
-        "quote": "“We believe in visual ideas that travel globally and work instantly. 3Drawers is able to boil down our innovation stories into striking visuals that resonate in any culture.”",
+        "quote": "“We believe in visual ideas that travel globally and work instantly. Invends is able to boil down our innovation stories into striking visuals that resonate in any culture.”",
         "quoteAuthor": "Casey Yoneyama,\nbrand director at YONEX",
         "image": {
           "url": "https://images.prismic.io/monopolondon/e762d6fd-435f-43de-b368-92dbba60e7b6_yonex.jpg?auto=compress,format&rect=0,0,2958,1665&w=1480&h=833",
@@ -109,7 +145,7 @@
         "title": "You are looking for a partner rather than a supplier",
         "baseline": "[ WORKING COLLABORATIVELY towards a shared goal. ]",
         "text": "Working together means building a creative relationship that is collaborative rather than hostile. While we do a lot of making, we do even more listening. We don’t pretend to know everything about everything. So let’s work together, combine our strengths and welcome fresh perspectives.",
-        "quote": "“From the start, 3Drawers has been a true partner to CAS. Happily sharing perspectives beyond the core of the project and helping us think more broadly about the brand.”",
+        "quote": "“From the start, Invends has been a true partner to CAS. Happily sharing perspectives beyond the core of the project and helping us think more broadly about the brand.”",
         "quoteAuthor": "KRISTOPHER GASTERATOS\nCAS Founder & CD"
       }
     ],
@@ -119,99 +155,155 @@
     "awards": [
       {
         "date": "2022-03-14",
-        "title": "",
+        "title": "Design Week - Article — Arcsaber 11 visual identity",
         "link": "https://www.designweek.co.uk/issues/14-20-march-2022/yonex/"
       },
       {
         "date": "2022-03-07",
-        "title": "",
+        "title": "It's Nice That - Article — Arcsaber 11 visual identity",
         "link": "https://www.itsnicethat.com/news/3Drawers-london-yonex-arcsaber-11-identity-graphic-design-070322"
       },
       {
         "date": "2021-10-29",
-        "title": "",
+        "title": "Awwwards - Site of the Day — Invends portfolio",
         "link": "https://www.awwwards.com/sites/3Drawers-london"
       },
       {
         "date": "2021-09-30",
-        "title": "",
+        "title": "FWA - Site of the Day — Invends portfolio",
         "link": "https://thefwa.com/cases/3Drawers-london"
       },
       {
         "date": "2021-10-12",
-        "title": "",
+        "title": "CSS Design Awards - Site of the Day — Invends portfolio",
         "link": "https://www.cssdesignawards.com/sites/3Drawers-london/39854/"
       },
       {
         "date": "2021-07-04",
-        "title": "",
+        "title": "Awwwards - Site of the Day — Third by Kenjiro",
         "link": "https://www.awwwards.com/sites/third-by-kenjiro"
       },
       {
         "date": "2021-07-01",
-        "title": "",
+        "title": "Awwwards - Site of the Day — Third by Kenjiro",
         "link": "https://thefwa.com/cases/third"
       },
       {
         "date": "2021-04-08",
-        "title": "",
+        "title": "Awwwards - Honorable mention — Smollan Space",
         "link": "https://www.awwwards.com/sites/smollan-space"
       },
       {
         "date": "2021-04-05",
-        "title": "",
+        "title": "Top interactive agencies — Interview with Melanie hubert",
         "link": "https://www.topinteractiveagencies.com/digital/agency/founders-ceos/melanie-hubert-crozet-3Drawers-london-its-important-that-everybody-feels-creatively-fulfilled/"
       },
       {
         "date": "2021-04-28",
-        "title": "",
+        "title": "Abduzeedo — Super Dan Origin",
         "link": "https://abduzeedo.com/super-dan-origin-swipeable-graphic-novel-instagram-age"
       },
       {
         "date": "2021-01-05",
-        "title": "",
+        "title": "Awwwards - Annual Awards 2020 — Agency of the year - nominee",
         "link": "https://www.awwwards.com/"
       },
       {
         "date": "2021-08-20",
-        "title": "",
+        "title": "CSS Design Awards Annual 2020 — Designer of the Year - nominee",
         "link": "https://www.cssdesignawards.com/doty2020"
       },
       {
         "date": "2020-12-15",
-        "title": "",
+        "title": "Communications Arts - Webpicks — The Memories We Shared",
         "link": "https://www.commarts.com/webpicks/the-memories-we-shared"
       },
       {
         "date": "2020-11-06",
-        "title": "",
+        "title": "Communications Arts - Webpicks — The Memories We Shared",
         "link": "https://www.awwwards.com/sites/the-memories-we-shared"
       },
       {
         "date": "2020-04-15",
-        "title": "",
+        "title": "Commucations Arts - Webpicks — The Legend's Vision of Badminton",
         "link": "https://www.commarts.com/webpicks/the-legends-vision-of-badminton"
       },
       {
         "date": "2020-05-13",
-        "title": "",
+        "title": "CSS Design Awards - Site of the day — The Legend's Vision",
         "link": "https://www.cssdesignawards.com/sites/the-legends-vision/37099/"
       },
       {
         "date": "2020-03-30",
-        "title": "",
+        "title": "Awwwards - Site of the Day — Cellular Agriculture Society",
         "link": "https://www.awwwards.com/sites/cellular-agriculture-society"
       },
       {
         "date": "2020-04-03",
-        "title": "",
+        "title": "CSS Design Awards - Site of the Day — Cellular Agriculture Society",
         "link": "https://www.cssdesignawards.com/sites/cellular-agriculture-society/36836/"
       }
     ],
     "contactTitle": "Let’s work\n→ together",
     "contactText": "Feel free to reach out if you want to collaborate with us, or simply have a chat.",
-    "contactEmail": "contact@3drawers.agency",
-    "linkContact": "GO TO THE CONTACT PAGE"
+    "contactEmail": "hola@invends.com",
+    "linkContact": "GO TO THE CONTACT PAGE",
+    "clients": [
+      {
+        "url": "https://images.prismic.io/monopolondon/2e191ec4-a4ff-44e6-b00a-54aa24f273be_yonex_logo.png?auto=compress,format&rect=0,0,148,84&w=148&h=84",
+        "alt": "",
+        "width": 148,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/414c1fcb-c8ad-41ff-96b1-4efd9a8034f3_musiversal+logo.png?auto=compress,format&rect=0,0,521,168&w=261&h=84",
+        "alt": "",
+        "width": 261,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/b589dea9-c81c-4e1d-9130-6dee34169100_jfoodo_logo.png?auto=compress,format&rect=0,0,176,84&w=176&h=84",
+        "alt": "",
+        "width": 176,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/749aea05-ac43-4405-b3be-4deeb31a5d49_yamaha_logo.png?auto=compress,format&rect=0,0,167,84&w=167&h=84",
+        "alt": "",
+        "width": 167,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/29a7a0aa-9a53-498a-96b3-056f5f468f48_cas+logo.png?auto=compress,format&rect=0,0,362,168&w=181&h=84",
+        "alt": "",
+        "width": 181,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/f827e28b-c699-40ef-8f44-e61784b6d903_canadagoose_logo.png?auto=compress,format&rect=0,0,479,168&w=240&h=84",
+        "alt": "",
+        "width": 240,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/ddde0bc6-4b09-4dfa-966b-d4a3561b39cb_onefinestay_logo.png?auto=compress,format&rect=0,0,394,168&w=197&h=84",
+        "alt": "",
+        "width": 197,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/18dc3a24-e60b-478e-ac09-a85de4a5f976_third_logo.png?auto=compress,format&rect=0,0,274,168&w=137&h=84",
+        "alt": "",
+        "width": 137,
+        "height": 84
+      },
+      {
+        "url": "https://images.prismic.io/monopolondon/02a340e8-dd55-4250-9425-b8dda7cfd7dc_apeiron_logo.png?auto=compress,format&rect=0,0,394,168&w=197&h=84",
+        "alt": "",
+        "width": 197,
+        "height": 84
+      }
+    ]
   },
   "team": {
     "titleLines": [
@@ -222,7 +314,7 @@
     "baseline": "[ a city-based global network ]",
     "introduction": "We collaborate as a collective of individuals bringing their whole self to a project and, together, create work that none of us would be able to do on our own.",
     "membersTitle": "Meet our team",
-    "gradient": "<agency-gradient color1=\"#47AFFF\" color2=\"#5E68E8\" color3=\"#4D24AE\" color4=\"#3957C0\" colorsize=\"0.58\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
+    "gradient": "<agency-gradient color1=\"#4b28b5\" color2=\"#6d45ea\" color3=\"#b8a6ff\" color4=\"#ff2daa\" colorsize=\"0.58\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
     "weAre": {
       "titleLines": [
         "We are a collective",
@@ -246,7 +338,7 @@
         "Yoshiyuki Sasaki",
         "Shun okada"
       ],
-      "text": "3Drawers was founded in Tokyo in 2011 as a digital design agency. Yoshi and Shun, both bass players, felt that the digital space was losing its groove. It was creating characterless brands. Anonymous businesses. A sea of sameness. Together with a collective of artists and engineers, they set up 3Drawers to bring personality back to brands.",
+      "text": "Invends was founded in Tokyo in 2011 as a digital design agency. Yoshi and Shun, both bass players, felt that the digital space was losing its groove. It was creating characterless brands. Anonymous businesses. A sea of sameness. Together with a collective of artists and engineers, they set up Invends to bring personality back to brands.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/2c748be8-ad2c-4f02-b42d-63d2bcd93f90_02_Yoshi-Shun.jpg?auto=compress,format&rect=4,0,1450,973&w=730&h=490",
         "alt": "",
@@ -261,7 +353,7 @@
         "Mélanie hubert-crozet",
         "Mattijs Devroedt"
       ],
-      "text": "The London office was founded in 2019 by Mélanie and Mattijs. Their combined backgrounds in digital design and advertising strategy allowed 3Drawers Agency to attract a diverse range of projects from the start. Both Mélanie and Mattijs have spent several years living and working in Tokyo as well as London and are always looking to create a bridge between the two cities.",
+      "text": "The London office was founded in 2019 by Mélanie and Mattijs. Their combined backgrounds in digital design and advertising strategy allowed Invends to attract a diverse range of projects from the start. Both Mélanie and Mattijs have spent several years living and working in Tokyo as well as London and are always looking to create a bridge between the two cities.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/a227651f-d180-4147-9e6f-9eb2acc01e34_Mell%26Matt-photo.jpg?auto=compress,format&rect=0,0,1032,1588&w=516&h=794",
         "alt": "",
@@ -346,9 +438,9 @@
     ],
     "jobsTitle": "We would love to work with you.",
     "careersTitle": "Open applications",
-    "careersParagraph": "We don’t have open vacancies at the moment, but that can change quickly. If you are interested in submitting an open application, we very much look forward to receiving it. You can share your CV, portfolio and cover letter via jobs@3drawers.agency.",
+    "careersParagraph": "We don’t have open vacancies at the moment, but that can change quickly. If you are interested in submitting an open application, we very much look forward to receiving it. You can share your CV, portfolio and cover letter via jobs@invends.com.",
     "freelanceTitle": "Freelance collaborators",
-    "freelanceParagraph": "We are always looking for talented freelance collaborators. Please get in touch with us if you are a freelance designer, photographer, developer, director, copywriter, juggler, meme artist, or influencer. We want to hear about your skills and passions, no matter how niche they are.\n\nYou can reach us via freelance@3drawers.agency"
+    "freelanceParagraph": "We are always looking for talented freelance collaborators. Please get in touch with us if you are a freelance designer, photographer, developer, director, copywriter, juggler, meme artist, or influencer. We want to hear about your skills and passions, no matter how niche they are.\n\nYou can reach us via freelance@invends.com"
   },
   "members": [
     {
@@ -357,7 +449,7 @@
       "headline": "Kai's lens",
       "nameJapanese": "カイ",
       "role": "ACCOUNT MANAGER · PRODUCER",
-      "bio": "Kai joined 3Drawers Agency as Account Manager and Producer after relocating from Tokyo, bringing with him a fresh global perspective. Having grown up between Japan, Hong Kong and the US, Kai naturally bridges cultures. Kai studied Business and Design at Northeastern University, graduating in 2020, where he strengthened his approach to creativity and strategy.\n\nAt 3Drawers, Kai leads client relationships and oversees project delivery, staying on top of communications with both our creative team and external partners. Outside of work, Kai is a lifelong athlete and sports fan, a passion that fuels his energy and collaborative spirit.",
+      "bio": "Kai joined Invends as Account Manager and Producer after relocating from Tokyo, bringing with him a fresh global perspective. Having grown up between Japan, Hong Kong and the US, Kai naturally bridges cultures. Kai studied Business and Design at Northeastern University, graduating in 2020, where he strengthened his approach to creativity and strategy.\n\nAt Invends, Kai leads client relationships and oversees project delivery, staying on top of communications with both our creative team and external partners. Outside of work, Kai is a lifelong athlete and sports fan, a passion that fuels his energy and collaborative spirit.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/aTsNcnNYClf9oE_m_Kai_Sato_Laughlin_3drawers_agency_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -441,7 +533,7 @@
           "image": null
         },
         {
-          "question": "What is your favourite piece of 3Drawers you have been involved?",
+          "question": "What is your favourite piece of Invends you have been involved?",
           "answer": "It’s hard to pick a favourite, but The Graphite Throttle shoot in Paris and Niigata Origins in Japan both stand out, not just for the work itself but because we got to travel and experience new places with the team. The projects were very different in style and approach, but what made them really fun was collaborating closely with my teammates while exploring incredible locations.",
           "image": null
         },
@@ -452,8 +544,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Kai Sato Laughlin",
-      "metaDescription": "Account manager & Producer at 3Drawers."
+      "metaTitle": "Invends | Team | Kai Sato Laughlin",
+      "metaDescription": "Account manager & Producer at Invends."
     },
     {
       "uid": "josh-gan",
@@ -461,7 +553,7 @@
       "headline": "Josh's lens",
       "nameJapanese": "ョッシュ",
       "role": "CREATIVE PRODUCER",
-      "bio": "As a Singaporean-born, London-trained producer with experience in both agency, production companies and independent film, Josh notes that his proudest work has been collaborating with brands that bridge his Eastern heritage with Western audiences. \n\nAt 3Drawers, Josh works closely with the creative team, clients and partners to transform ambitious ideas into reality. ",
+      "bio": "As a Singaporean-born, London-trained producer with experience in both agency, production companies and independent film, Josh notes that his proudest work has been collaborating with brands that bridge his Eastern heritage with Western audiences. \n\nAt Invends, Josh works closely with the creative team, clients and partners to transform ambitious ideas into reality. ",
       "image": {
         "url": "https://images.prismic.io/monopolondon/aTshznNYClf9oFGi_Josh_Gan_3drawers_agency_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -532,8 +624,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Josh Gan",
-      "metaDescription": "Creative Producer at 3Drawers Agency"
+      "metaTitle": "Invends | Team | Josh Gan",
+      "metaDescription": "Creative Producer at Invends"
     },
     {
       "uid": "luna-gooriah",
@@ -607,13 +699,13 @@
         },
         {
           "question": "What do you find most rewarding and most challenging about the work you do? ",
-          "answer": "The best thing is being able to watch a project bloom from the most random tangent during a brainstorm session to a polished delivery I would pin on my Pinterest board. The ability to go on wild tangents during 3Drawers brainstorming sessions has been a significant plus because everyone seems to contribute to the out-of-the-box ideas instead of shooting them down.\nOn the other hand, a challenging aspect would be getting out of a creative slump. When you feel your creative brain is running on empty. Sometimes I feel guilty for not having ideas but I realise the need for me to step back and get a broader perspective. This might sound a bit cheesy but taking space and time to recharge my creative battery is often the best thing I can do. Exposing myself to something completely new and different often inspires me the most, even if that means falling down a rabbit hole somewhere on TikTok.",
+          "answer": "The best thing is being able to watch a project bloom from the most random tangent during a brainstorm session to a polished delivery I would pin on my Pinterest board. The ability to go on wild tangents during Invends brainstorming sessions has been a significant plus because everyone seems to contribute to the out-of-the-box ideas instead of shooting them down.\nOn the other hand, a challenging aspect would be getting out of a creative slump. When you feel your creative brain is running on empty. Sometimes I feel guilty for not having ideas but I realise the need for me to step back and get a broader perspective. This might sound a bit cheesy but taking space and time to recharge my creative battery is often the best thing I can do. Exposing myself to something completely new and different often inspires me the most, even if that means falling down a rabbit hole somewhere on TikTok.",
           "image": null
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Luna Gooriah",
-      "metaDescription": "Creative at 3Drawers Agency"
+      "metaTitle": "Invends | Team | Luna Gooriah",
+      "metaDescription": "Creative at Invends"
     },
     {
       "uid": "ibu-hyuga",
@@ -621,7 +713,7 @@
       "headline": "Ibu's lens",
       "nameJapanese": "イブ",
       "role": "ASSISTANT PRODUCER",
-      "bio": "Born in Tokyo, raised between Japan and New York and based in London since 2019 to study at the London College of Fashion, Ibu unites various perspectives. After graduating from UAL, Ibu spent time honing her production skills at a fashion communications production house before joining 3Drawers Agency as Assistant Producer. \n\nAt 3Drawers, Ibu assists the Account Management and Production teams throughout the project cycle to ensure a smooth and timely project delivery.",
+      "bio": "Born in Tokyo, raised between Japan and New York and based in London since 2019 to study at the London College of Fashion, Ibu unites various perspectives. After graduating from UAL, Ibu spent time honing her production skills at a fashion communications production house before joining Invends as Assistant Producer. \n\nAt Invends, Ibu assists the Account Management and Production teams throughout the project cycle to ensure a smooth and timely project delivery.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/aTsk-HNYClf9oFHW_Ibuki_Hyuga_3drawers_agency_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -680,8 +772,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Ibu Hyuga",
-      "metaDescription": "Assistant Producer at 3Drawers Agency"
+      "metaTitle": "Invends | Team | Ibu Hyuga",
+      "metaDescription": "Assistant Producer at Invends"
     },
     {
       "uid": "maud-dedecker",
@@ -689,7 +781,7 @@
       "headline": "Maud's lens",
       "nameJapanese": "マウド",
       "role": "Sr Creative Producer",
-      "bio": "Maud makes things happen. She is the production heart of 3Drawers Agency, liaising with internal and external teams as well as clients to deliver ambitious projects effectively. Curious by nature, Maud very quickly built up broad-ranging experience as a creative producer, having led production on everything from a television series to a short film, integrated campaigns, digital content, a podcast and a COVID-proof summer of drive-in cinemas. Maud joined 3Drawers in the second half of 2020 after moving to London from her native Antwerp.",
+      "bio": "Maud makes things happen. She is the production heart of Invends, liaising with internal and external teams as well as clients to deliver ambitious projects effectively. Curious by nature, Maud very quickly built up broad-ranging experience as a creative producer, having led production on everything from a television series to a short film, integrated campaigns, digital content, a podcast and a COVID-proof summer of drive-in cinemas. Maud joined Invends in the second half of 2020 after moving to London from her native Antwerp.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/915ef35c-1be1-41ca-ae4a-476e2e156a25_Maud_monopo_TeamPortrait_02.jpeg?auto=compress,format&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -750,14 +842,14 @@
           "image": null
         },
         {
-          "question": "Outside of 3Drawers, you sometimes work in hospitality. What do you like about it? Do you bring any learning?",
+          "question": "Outside of Invends, you sometimes work in hospitality. What do you like about it? Do you bring any learning?",
           "answer": "I enjoy working in hospitality for many reasons ...\nI like the change in energy during a shift. How it shifts from fun and relaxed to pure focus, and back. It’s all about teamwork and trust. You rely on each other. You help each other. To deliver an experience the customer enjoys.\nWorking together with people who are passionate about food is incredibly enriching. You get to learn more about different flavours, ingredients, and the culture of the food. And I love the free food of course.\nI hadn't thought about the fact that managing the floor or working at the \"pass\" is in fact teaching me something as a producer. Both require you to keep an overview of all the moving parts. But that’s just the way my brain works. Whenever there is a lot of information, I see structure. This is very helpful when you are serving people or when you're producing a project. ",
           "image": null
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Maud Dedecker",
-      "metaDescription": "Creative producer at 3Drawers Agency."
+      "metaTitle": "Invends | Team | Maud Dedecker",
+      "metaDescription": "Creative producer at Invends."
     },
     {
       "uid": "stella-grotti",
@@ -765,7 +857,7 @@
       "headline": "Stella's lens",
       "nameJapanese": "ステラ グロチ",
       "role": "Art Director · Designer",
-      "bio": "Stella is 3Drawers Agency's interactive mind. Her expertise in interactive design is built on a constant desire to challenge where the line between graphic and digital design lies and instead provide a provocative digital experience with every creation.\nStella was drawn into design after completing a degree in philosophy, with the curiosity of exploring a new language. She started her career at Monogrid in Florence in 2016 while finishing her studies at the European Design Institute of Florence. After that, Stella gradually made her way North. By way of Paris, where she spent almost two years as Interactive designer at Octave Octave, Stella arrived in London in 2020 to join 3Drawers. ",
+      "bio": "Stella is Invends's interactive mind. Her expertise in interactive design is built on a constant desire to challenge where the line between graphic and digital design lies and instead provide a provocative digital experience with every creation.\nStella was drawn into design after completing a degree in philosophy, with the curiosity of exploring a new language. She started her career at Monogrid in Florence in 2016 while finishing her studies at the European Design Institute of Florence. After that, Stella gradually made her way North. By way of Paris, where she spent almost two years as Interactive designer at Octave Octave, Stella arrived in London in 2020 to join Invends. ",
       "image": {
         "url": "https://images.prismic.io/monopolondon/1acbe149-2a46-4f3d-a316-5bd813c69b9d_Stella_monopo_TeamPortrait_01.jpg?auto=compress,format&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -836,8 +928,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Stella Grotti",
-      "metaDescription": "Interactive art director and designer at 3Drawers Agency."
+      "metaTitle": "Invends | Team | Stella Grotti",
+      "metaDescription": "Interactive art director and designer at Invends."
     },
     {
       "uid": "melanie-hubert-crozet",
@@ -845,7 +937,7 @@
       "headline": "Melanie's Lens",
       "nameJapanese": "メラニー",
       "role": "Creative director",
-      "bio": "Mélanie leads the creative vision of 3Drawers Agency. Her desire to mix influences, styles and people sets the tone for the type of work 3Drawers creates and the community 3Drawers builds. She strives to create an environment that breeds unconventional creative approaches and fresh perspectives. Art director by trade, Mélanie looks to help brands own their quirks through expressive visuals and visceral communications. \n\nMélanie started her career as a digital designer, working on experimental campaign websites. A Gobelins graduate, Mélanie cut her teeth in France before moving to London where she worked at leading digital agencies Unit9 and Huge. In 2016, Mélanie joined 3Drawers in Tokyo and became all-round art director. There she played a central role in the internationalization of the agency, resulting in a growth in global business and a string of awards. In 2019, she co-founded the London office together with Mattijs.",
+      "bio": "Mélanie leads the creative vision of Invends. Her desire to mix influences, styles and people sets the tone for the type of work Invends creates and the community Invends builds. She strives to create an environment that breeds unconventional creative approaches and fresh perspectives. Art director by trade, Mélanie looks to help brands own their quirks through expressive visuals and visceral communications. \n\nMélanie started her career as a digital designer, working on experimental campaign websites. A Gobelins graduate, Mélanie cut her teeth in France before moving to London where she worked at leading digital agencies Unit9 and Huge. In 2016, Mélanie joined Invends in Tokyo and became all-round art director. There she played a central role in the internationalization of the agency, resulting in a growth in global business and a string of awards. In 2019, she co-founded the London office together with Mattijs.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/b25311ca-aaf7-4045-9cf0-d7812b73bb4d_Melanie_monopo_TeamPortrait_01.jpg?auto=compress,format&rect=0,0,1310,1770&w=655&h=885",
         "alt": "Melanie Hubert-Crozet",
@@ -925,8 +1017,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Melanie Hubert-Crozet",
-      "metaDescription": "Creative Director at 3Drawers Agency."
+      "metaTitle": "Invends | Team | Melanie Hubert-Crozet",
+      "metaDescription": "Creative Director at Invends."
     },
     {
       "uid": "keeo-lu",
@@ -934,7 +1026,7 @@
       "headline": "Keeo's lens",
       "nameJapanese": "キーオ",
       "role": "GRAPHIC DESIGNER · 3D/MOTION DESIGNER",
-      "bio": "Keeo grew up in Guangzhou, China where she studied fashion design before moving to London in 2018. Having started in fashion and applied those skills to a wide range of creative challenges, Keeo injects 3D, motion and graphic design to build even richer brand universes together at 3Drawers.",
+      "bio": "Keeo grew up in Guangzhou, China where she studied fashion design before moving to London in 2018. Having started in fashion and applied those skills to a wide range of creative challenges, Keeo injects 3D, motion and graphic design to build even richer brand universes together at Invends.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/aTsI43NYClf9oE9p_Keeo_Lu_3drawers_agency_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -995,7 +1087,7 @@
         },
         {
           "question": "Is there anything you'd love to see change in the design world?",
-          "answer": "I have done some design work in China, so working at 3Drawers Agency already feels like a much better design world for me (I must ruthlessly critique the poor design environment in my home country in hopes of its improvement). I hope the atmosphere in the design world becomes more human-centered because that is what naturally fosters qualities like respect, freedom, diversity, and creativity. I hope the design world in the future will no longer force designers to waste time mimicking popular styles or trends but instead cherish and encourage every new possibility.",
+          "answer": "I have done some design work in China, so working at Invends already feels like a much better design world for me (I must ruthlessly critique the poor design environment in my home country in hopes of its improvement). I hope the atmosphere in the design world becomes more human-centered because that is what naturally fosters qualities like respect, freedom, diversity, and creativity. I hope the design world in the future will no longer force designers to waste time mimicking popular styles or trends but instead cherish and encourage every new possibility.",
           "image": null
         },
         {
@@ -1005,8 +1097,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Keeo Lu",
-      "metaDescription": "Graphic and 3D/motion designer at 3Drawers."
+      "metaTitle": "Invends | Team | Keeo Lu",
+      "metaDescription": "Graphic and 3D/motion designer at Invends."
     },
     {
       "uid": "mattijs-devroedt",
@@ -1014,7 +1106,7 @@
       "headline": "Mattijs's Lens",
       "nameJapanese": "",
       "role": "Managing director · Strategic planning director",
-      "bio": "Mattijs helps direct 3Drawers’s creative power in the direction that will make the biggest impact on a brand’s business. A strategist by trade, Mattijs has worked with brands across the world to help them be themselves in markets that are often not their own. Having started his career as an advertising strategist in Belgium, Mattijs moved to London in 2012 to join Ogilvy and later adam&eveDDB. In 2016, Mattijs joined Wieden+Kennedy in Tokyo where he has helped brands like Nike, IKEA, Audi and Airbnb find their feet in the Japanese and Korean markets as Strategic Planning Director. In 2019, Mattijs joined 3Drawers to set up the London branch together with Mélanie.",
+      "bio": "Mattijs helps direct Invends’s creative power in the direction that will make the biggest impact on a brand’s business. A strategist by trade, Mattijs has worked with brands across the world to help them be themselves in markets that are often not their own. Having started his career as an advertising strategist in Belgium, Mattijs moved to London in 2012 to join Ogilvy and later adam&eveDDB. In 2016, Mattijs joined Wieden+Kennedy in Tokyo where he has helped brands like Nike, IKEA, Audi and Airbnb find their feet in the Japanese and Korean markets as Strategic Planning Director. In 2019, Mattijs joined Invends to set up the London branch together with Mélanie.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/64d87980-d154-418e-bd43-694e86ea962e_Mattijs_monopo_TeamPortrait_01.jpg?auto=compress,format&rect=0,0,1310,1770&w=655&h=885",
         "alt": "Mattijs Devroedt",
@@ -1067,7 +1159,7 @@
         },
         {
           "question": "How has living in Japan influenced your work? What did you learn from your time in Japan?",
-          "answer": "I loved the sense of “collective creativity”. The apparent lack of internal competition and instead a genuine drive to work together and contribute your personal perspective and talent to a project, no matter what your title might be. It just felt so different from what I was used to in Europe, where team members look to out-do each other rather than work together. \n\nThis collective effort was really inspiring to me, and definitely something I wanted to bring into 3Drawers Agency. It can sometimes be confusing to new members that their job is not limited to their title, but I feel like people get the swing of it very quickly and are trying out things they would never have thought of before they know it.\n\nA common misconception about collectivity, by the way, is the impression that it means that everybody just works to the lowest common denominator. What I witnessed was quite the opposite. In “collective creativity”, every individual contributes their very own perspective, which leads to richer, more diverse ideas. Things you wouldn’t think of on your own.",
+          "answer": "I loved the sense of “collective creativity”. The apparent lack of internal competition and instead a genuine drive to work together and contribute your personal perspective and talent to a project, no matter what your title might be. It just felt so different from what I was used to in Europe, where team members look to out-do each other rather than work together. \n\nThis collective effort was really inspiring to me, and definitely something I wanted to bring into Invends. It can sometimes be confusing to new members that their job is not limited to their title, but I feel like people get the swing of it very quickly and are trying out things they would never have thought of before they know it.\n\nA common misconception about collectivity, by the way, is the impression that it means that everybody just works to the lowest common denominator. What I witnessed was quite the opposite. In “collective creativity”, every individual contributes their very own perspective, which leads to richer, more diverse ideas. Things you wouldn’t think of on your own.",
           "image": null
         },
         {
@@ -1082,8 +1174,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Mattijs Devroedt",
-      "metaDescription": "Managing director & Strategic director at 3Drawers Agency."
+      "metaTitle": "Invends | Team | Mattijs Devroedt",
+      "metaDescription": "Managing director & Strategic director at Invends."
     },
     {
       "uid": "sam-beaton",
@@ -1091,7 +1183,7 @@
       "headline": "Sam's lens",
       "nameJapanese": "サム",
       "role": "GRAPHIC DESIGNER",
-      "bio": "Sam grew up dotted around Lincolnshire towns and graduated from a degree in Graphic Design at Nottingham Trent University. His keen eye for art and design is bringing a lot to 3Drawers through his love for unconventional material and techniques, analog textures and fine art inspiration.",
+      "bio": "Sam grew up dotted around Lincolnshire towns and graduated from a degree in Graphic Design at Nottingham Trent University. His keen eye for art and design is bringing a lot to Invends through his love for unconventional material and techniques, analog textures and fine art inspiration.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/aTsLkXNYClf9oE_J_Sam_Beaton_3drawers_agency_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -1162,8 +1254,8 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Sam Beaton",
-      "metaDescription": "Graphic designer at 3Drawers."
+      "metaTitle": "Invends | Team | Sam Beaton",
+      "metaDescription": "Graphic designer at Invends."
     },
     {
       "uid": "karim-kadi",
@@ -1171,7 +1263,7 @@
       "headline": "Karim's lens",
       "nameJapanese": "",
       "role": "ART DIRECTOR · DESIGNER",
-      "bio": "Karim imagines brands in a different light. With a knack for the conceptual and a background at in-house creative teams of Lululemon and Selfridges, Karim works as Art Director across a vast range of projects at 3Drawers. Creating visual worlds for campaigns, spaces or identities, and ensuring that a strong brand perspective comes across in every execution. Hailing from Vancouver, Canada, Karim doesn’t just bridge disciplines but also continents.",
+      "bio": "Karim imagines brands in a different light. With a knack for the conceptual and a background at in-house creative teams of Lululemon and Selfridges, Karim works as Art Director across a vast range of projects at Invends. Creating visual worlds for campaigns, spaces or identities, and ensuring that a strong brand perspective comes across in every execution. Hailing from Vancouver, Canada, Karim doesn’t just bridge disciplines but also continents.",
       "image": {
         "url": "https://images.prismic.io/monopolondon/Zr5BakaF0TcGI-DT_Karim_Kadi_monopo_01.jpg?auto=format,compress&rect=0,0,1310,1770&w=655&h=885",
         "alt": "",
@@ -1200,7 +1292,7 @@
           "emoji": "☔️"
         },
         {
-          "fact": "Lululemon → Selfridges → 3Drawers",
+          "fact": "Lululemon → Selfridges → Invends",
           "emoji": "💛"
         },
         {
@@ -1238,29 +1330,29 @@
         }
       ],
       "relatedWorks": [],
-      "metaTitle": "3Drawers Agency | Team | Karim Kadi",
-      "metaDescription": "Art Director at 3Drawers Agency"
+      "metaTitle": "Invends | Team | Karim Kadi",
+      "metaDescription": "Art Director at Invends"
     }
   ],
   "contact": {
     "intro": "Feel free to reach out if you want to collaborate with us, or simply have a chat.",
-    "email": "contact@3drawers.agency",
-    "emailUrl": "mailto:contact@3drawers.agency",
+    "email": "hola@invends.com",
+    "emailUrl": "mailto:hola@invends.com",
     "address": "Unit 16C, Perseverance Works\n38 Kingsland Road\nE2 8DD, London\nUnited Kingdom",
     "mapsLabel": "view on google maps",
     "mapsUrl": "https://maps.app.goo.gl/vsSyAh9DhDPe9X6c9",
     "formTitle": "Let’s make your project a reality",
     "formParagraph": "Feel free to reach out if you want to collaborate with us, or simply have a chat.",
     "careersTitle": "Open applications",
-    "careersParagraph": "We don’t have open vacancies at the moment, but that can change quickly. If you are interested in submitting an open application, we very much look forward to receiving it. You can share your CV, portfolio and cover letter via jobs@3drawers.agency.",
+    "careersParagraph": "We don’t have open vacancies at the moment, but that can change quickly. If you are interested in submitting an open application, we very much look forward to receiving it. You can share your CV, portfolio and cover letter via jobs@invends.com.",
     "freelanceTitle": "Freelance collaborators",
-    "freelanceParagraph": "We are always looking for talented freelance collaborators. Please get in touch with us if you are a freelance designer, photographer, developer, director, copywriter, juggler, meme artist, or influencer. We want to hear about your skills and passions, no matter how niche they are. You can reach us via freelance@3drawers.agency."
+    "freelanceParagraph": "We are always looking for talented freelance collaborators. Please get in touch with us if you are a freelance designer, photographer, developer, director, copywriter, juggler, meme artist, or influencer. We want to hear about your skills and passions, no matter how niche they are. You can reach us via freelance@invends.com."
   },
   "press": {
     "title": "PRESS & NEWS",
     "contactDescription": "[ If you're looking for a fresh perspective, don't hesitate to reach out ]",
-    "contactLabel": "press@3drawers.agency",
-    "contactUrl": "mailto:press@3drawers.agency",
+    "contactLabel": "press@invends.com",
+    "contactUrl": "mailto:press@invends.com",
     "pressKitLabel": "DOWNLOAD OUR PRESS KIT",
     "pressKitUrl": "https://images.prismic.io/monopolondon/b2ce2428-0d9c-4b98-bbb8-78646420e418_monopolondon_pressmediapack_2024.zip?auto=compress,format",
     "series": [
@@ -1281,7 +1373,7 @@
   "news": [
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ SAM BEATON, GRAPHIC DESIGNER",
+      "title": "NEW INVENDS MEMBER ‣ SAM BEATON, GRAPHIC DESIGNER",
       "date": "2025-04-06",
       "category": "News",
       "image": {
@@ -1294,7 +1386,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ KAI SATO LAUGHLIN, ACCOUNT MANAGER & PRODUCER",
+      "title": "NEW INVENDS MEMBER ‣ KAI SATO LAUGHLIN, ACCOUNT MANAGER & PRODUCER",
       "date": "2025-08-07",
       "category": "News",
       "image": {
@@ -1307,7 +1399,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MERCH ‣ LE CABARET DE L'ENFER",
+      "title": "NEW INVENDS MERCH ‣ LE CABARET DE L'ENFER",
       "date": "2025-09-03",
       "category": "News",
       "image": {
@@ -1320,7 +1412,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ KEEO LU, GRAPHIC & 3D/MOTION DESIGNER",
+      "title": "NEW INVENDS MEMBER ‣ KEEO LU, GRAPHIC & 3D/MOTION DESIGNER",
       "date": "2024-11-20",
       "category": "News",
       "image": {
@@ -1346,7 +1438,7 @@
     },
     {
       "uid": null,
-      "title": "3Drawers Agency VISITS ‣ US BY NIGHT",
+      "title": "Invends VISITS ‣ US BY NIGHT",
       "date": "2025-07-10",
       "category": "Events",
       "image": {
@@ -1359,7 +1451,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ JOSH GAN, CREATIVE PRODUCER",
+      "title": "NEW INVENDS MEMBER ‣ JOSH GAN, CREATIVE PRODUCER",
       "date": "2025-04-28",
       "category": "News",
       "image": {
@@ -1502,7 +1594,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS FM ‣ The soundtrack of 3Drawers ",
+      "title": "INVENDS FM ‣ The soundtrack of Invends ",
       "date": "2023-07-03",
       "category": "News",
       "image": {
@@ -1541,7 +1633,7 @@
     },
     {
       "uid": null,
-      "title": "CSS Designer of the Year Nominee ‣ 3Drawers ",
+      "title": "CSS Designer of the Year Nominee ‣ Invends ",
       "date": "2020-12-01",
       "category": "Features",
       "image": {
@@ -1580,7 +1672,7 @@
     },
     {
       "uid": null,
-      "title": "FWA of the day Award ‣ 3drawers.agency PORTFOLIO",
+      "title": "FWA of the day Award ‣ invends.com PORTFOLIO",
       "date": "2021-09-30",
       "category": "Features",
       "image": {
@@ -1593,7 +1685,7 @@
     },
     {
       "uid": null,
-      "title": "TOKYO GUIDO ‣ THE 3DRAWERS CITY GUIDE",
+      "title": "TOKYO GUIDO ‣ THE INVENDS CITY GUIDE",
       "date": "2023-08-29",
       "category": "News",
       "image": {
@@ -1606,7 +1698,7 @@
     },
     {
       "uid": null,
-      "title": "Awwwards site of the day ‣ 3drawers.agency PORTFOLIO  ",
+      "title": "Awwwards site of the day ‣ invends.com PORTFOLIO  ",
       "date": "2021-10-29",
       "category": "Features",
       "image": {
@@ -1658,7 +1750,7 @@
     },
     {
       "uid": null,
-      "title": "FEATURED ON CREATIVE BOOM ‣ 3Drawers Agency team portraits",
+      "title": "FEATURED ON CREATIVE BOOM ‣ Invends team portraits",
       "date": "2022-05-24",
       "category": "Features",
       "image": {
@@ -1723,7 +1815,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ KARIM KADI, ART DIRECTOR",
+      "title": "NEW INVENDS MEMBER ‣ KARIM KADI, ART DIRECTOR",
       "date": "2024-09-09",
       "category": "News",
       "image": {
@@ -1736,7 +1828,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS NIGHT VOL.10 ‣ ‘FOLKLORE HALLOWEEN HARVEST’",
+      "title": "INVENDS NIGHT VOL.10 ‣ ‘FOLKLORE HALLOWEEN HARVEST’",
       "date": "2024-10-31",
       "category": "Events",
       "image": {
@@ -1775,7 +1867,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS GLOBAL TEAM PHOTO ‣ SHIBUYA, TOKYO",
+      "title": "INVENDS GLOBAL TEAM PHOTO ‣ SHIBUYA, TOKYO",
       "date": "2023-03-30",
       "category": "News",
       "image": {
@@ -1788,7 +1880,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS NIGHT VOL.08 ‣ ‘NEON SPACE RAVE’",
+      "title": "INVENDS NIGHT VOL.08 ‣ ‘NEON SPACE RAVE’",
       "date": "2023-11-03",
       "category": "Events",
       "image": {
@@ -1801,7 +1893,7 @@
     },
     {
       "uid": null,
-      "title": "NEW CITY UNLOCKED ‣ 3DRAWERS PARIS OPENING AUTUMN 2023",
+      "title": "NEW CITY UNLOCKED ‣ INVENDS PARIS OPENING AUTUMN 2023",
       "date": "2023-08-16",
       "category": "News",
       "image": {
@@ -1827,7 +1919,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS NIGHT VOL.05 ‣ ‘HAPPI NIGHT’",
+      "title": "INVENDS NIGHT VOL.05 ‣ ‘HAPPI NIGHT’",
       "date": "2022-05-20",
       "category": "Events",
       "image": {
@@ -1840,7 +1932,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ Luna Gooriah, Creative",
+      "title": "NEW INVENDS MEMBER ‣ Luna Gooriah, Creative",
       "date": "2023-02-01",
       "category": "News",
       "image": {
@@ -1853,7 +1945,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ Mary Wu, Project Manager ",
+      "title": "NEW INVENDS MEMBER ‣ Mary Wu, Project Manager ",
       "date": "2023-03-13",
       "category": "News",
       "image": {
@@ -1866,7 +1958,7 @@
     },
     {
       "uid": null,
-      "title": "NEW 3DRAWERS MEMBER ‣ Jack MacKinnon, Graphic Designer ",
+      "title": "NEW INVENDS MEMBER ‣ Jack MacKinnon, Graphic Designer ",
       "date": "2023-02-01",
       "category": "News",
       "image": {
@@ -1892,7 +1984,7 @@
     },
     {
       "uid": null,
-      "title": "3DRAWERS NIGHT VOL.11 ‣ ‘BEACH PLEASE’",
+      "title": "INVENDS NIGHT VOL.11 ‣ ‘BEACH PLEASE’",
       "date": "2025-05-30",
       "category": "Events",
       "image": {
@@ -1940,9 +2032,9 @@
     }
   ],
   "policy": {
-    "title": "COOKIE POLICY FOR 3Drawers Agency",
-    "subtitle": "This is the Cookie Policy for 3Drawers Agency, accessible from 3drawers.agency",
-    "gradient": "<agency-gradient color1=\"#CF0F02\" color2=\"#FFBB4D\" color3=\"#65D7E1\" color4=\"#017FF7\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
+    "title": "COOKIE POLICY FOR Invends",
+    "subtitle": "This is the Cookie Policy for Invends, accessible from invends.com",
+    "gradient": "<agency-gradient color1=\"#4b28b5\" color2=\"#6d45ea\" color3=\"#b8a6ff\" color4=\"#ff2daa\" colorsize=\"0.75\" colorspacing=\"0.52\" colorrotation=\"-0.381592653589793\" colorspread=\"4.52\" coloroffset=\"-0.7741174697875977,-0.20644775390624992\" displacement=\"4.66\" seed=\"-0.06\" position=\"-0.2816110610961914,-0.43914794921875\" zoom=\"0.72\" spacing=\"4.27\"></agency-gradient>",
     "body": [
       {
         "type": "heading4",
@@ -1986,15 +2078,15 @@
       },
       {
         "type": "paragraph",
-        "text": "Email: contact@3drawers.agency →"
+        "text": "Email: hola@invends.com →"
       },
       {
         "type": "heading3",
-        "text": "Privacy Policy for  3Drawers Agency"
+        "text": "Privacy Policy for  Invends"
       },
       {
         "type": "paragraph",
-        "text": "At 3Drawers Agency, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by 3Drawers Agency and how we use it.\nIf you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.\nThis Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collected in 3Drawers Agency. This policy is not applicable to any information collected offline or via channels other than this website."
+        "text": "At Invends, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Invends and how we use it.\nIf you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.\nThis Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collected in Invends. This policy is not applicable to any information collected offline or via channels other than this website."
       },
       {
         "type": "heading4",
@@ -2010,7 +2102,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Like any other website, 3Drawers Agency uses ‘cookies’. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimise the users’ experience by customising our web page content based on visitors’ browser type and/or other information."
+        "text": "Like any other website, Invends uses ‘cookies’. These cookies are used to store information including visitors’ preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimise the users’ experience by customising our web page content based on visitors’ browser type and/or other information."
       },
       {
         "type": "heading4",
@@ -2018,15 +2110,15 @@
       },
       {
         "type": "paragraph",
-        "text": "You may consult this list to find the Privacy Policy for each of the advertising partners of 3Drawers Agency."
+        "text": "You may consult this list to find the Privacy Policy for each of the advertising partners of Invends."
       },
       {
         "type": "paragraph",
-        "text": "Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on 3Drawers Agency, which is sent directly to users’ browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalise the advertising content that you see on websites that you visit."
+        "text": "Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Invends, which is sent directly to users’ browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalise the advertising content that you see on websites that you visit."
       },
       {
         "type": "paragraph",
-        "text": "Note that 3Drawers Agency has no access to or control over these cookies that are used by third-party advertisers."
+        "text": "Note that Invends has no access to or control over these cookies that are used by third-party advertisers."
       },
       {
         "type": "heading4",
@@ -2034,7 +2126,7 @@
       },
       {
         "type": "paragraph",
-        "text": "3Drawers Agency ’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.\nYou can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites. \nCCPA Privacy Rights (Do Not Sell My Personal Information). Under the CCPA, among other rights, California consumers have the right to: Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers. Request that a business delete any personal data about the consumer that a business has collected. Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data. If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
+        "text": "Invends ’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.\nYou can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites. \nCCPA Privacy Rights (Do Not Sell My Personal Information). Under the CCPA, among other rights, California consumers have the right to: Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers. Request that a business delete any personal data about the consumer that a business has collected. Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data. If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us."
       },
       {
         "type": "heading4",
@@ -2052,15 +2144,15 @@
   },
   "layout": {
     "raw": {
-      "meta_title": "3Drawers Agency | Tokyo-born design-driven creative agency.",
+      "meta_title": "Invends | Tokyo-born design-driven creative agency.",
       "meta_description": "We are a design-driven creative agency working across branding, digital design and communications. Based in London, born in Tokyo.",
-      "meta_keywords": "3Drawers, Creative agency, Studio, Design, London, Tokyo, Japan, Branding, Advertising, Graphic design, Digital design, Webdesign, Campaign, Photography, Art direction, video production, social content, Illustration, Print",
+      "meta_keywords": "Invends, Creative agency, Studio, Design, London, Tokyo, Japan, Branding, Advertising, Graphic design, Digital design, Webdesign, Campaign, Photography, Art direction, video production, social content, Illustration, Print",
       "share_image": {
         "dimensions": {
           "width": 1200,
           "height": 630
         },
-        "alt": "3Drawers Agency | Design-driven creative agency. Branding, digital design and communications. Based in London, born in Tokyo. ",
+        "alt": "Invends | Design-driven creative agency. Branding, digital design and communications. Based in London, born in Tokyo. ",
         "copyright": null,
         "url": "https://images.prismic.io/monopolondon/b0b45d4e-afc8-4a12-8e6c-212abb2381a3_3drawers_agency_OGP.jpg?auto=compress,format&rect=0,0,1200,630&w=1200&h=630",
         "id": "YUm4FxEAACIAE98q",
@@ -2088,9 +2180,9 @@
       "footer_contact": {
         "link_type": "Web",
         "key": "a56e716f-3669-4021-a0c0-af52b699ae5e",
-        "url": "mailto:contact@3drawers.agency"
+        "url": "mailto:hola@invends.com"
       },
-      "footer_contact_label": "contact@3drawers.agency",
+      "footer_contact_label": "hola@invends.com",
       "address": [
         {
           "type": "paragraph",
@@ -2121,7 +2213,7 @@
       ],
       "externals": [
         {
-          "label": "3Drawers TKY",
+          "label": "Invends TKY",
           "link": {
             "link_type": "Web",
             "key": "77a5fed5-3aa1-4837-942e-d42730d6b53f",
@@ -2130,7 +2222,7 @@
           }
         },
         {
-          "label": "3Drawers NYC",
+          "label": "Invends NYC",
           "link": {
             "link_type": "Web",
             "key": "f36b3b3c-0f76-48ba-8f45-fb015b92fa3d",
@@ -2148,7 +2240,7 @@
           }
         }
       ],
-      "credits": "© 3Drawers Agency LTD 2024 All rights reserved",
+      "credits": "© Invends LTD 2024 All rights reserved",
       "cookies_description": [
         {
           "type": "paragraph",
@@ -2163,7 +2255,7 @@
                 "kind": "file",
                 "id": "YRaY-xAAACEAJMAv",
                 "url": "https://images.prismic.io/monopolondon/15c780b4-65bd-44e6-affe-2c90529c046c_Cookie-Policy-3drawers.agency.pdf",
-                "name": "Cookie-Policy-3drawers.agency.pdf",
+                "name": "Cookie-Policy-invends.com.pdf",
                 "size": "82909"
               }
             }
@@ -2464,7 +2556,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "BARBOUR x WALLACE & GROMIT ‣ CHRISTMAS ACTIVATION | 3Drawers Agency",
+      "metaTitle": "BARBOUR x WALLACE & GROMIT ‣ CHRISTMAS ACTIVATION | Invends",
       "metaDescription": "Pop-up activation in Covent Garden to tease and celebrate Barbour's 2025 Christmas advert."
     },
     {
@@ -2488,8 +2580,8 @@
       "roles": "STRATEGY · CONCEPT · ART DIRECTION · DESIGN · PRODUCTION",
       "deliverables": "CAMPAIGN FILM · KEY VISUAL · SOCIAL CONTENT · WEBSITE",
       "date": "2025-08-25",
-      "intro": "Viktor Axelsen is more than a world champion - he represents consistency, humility, and ambition at the highest level of badminton. To mark the launch of the exclusive Yonex x Viktor Axelsen collection, 3Drawers was tasked with creating a campaign that goes beyond performance, revealing the personality behind one of the most dominant men’s singles players of all time.\n\nThis campaign is not just about a limited-edition product or a simple merchandise drop. It’s an invitation to look beyond the titles and achievements - to discover the person behind them- and to join him on his ongoing journey to strive for more.",
-      "introLeft": "Viktor Axelsen is more than a world champion - he represents consistency, humility, and ambition at the highest level of badminton. To mark the launch of the exclusive Yonex x Viktor Axelsen collection, 3Drawers was tasked with creating a campaign that goes beyond performance, revealing the personality behind one of the most dominant men’s singles players of all time.",
+      "intro": "Viktor Axelsen is more than a world champion - he represents consistency, humility, and ambition at the highest level of badminton. To mark the launch of the exclusive Yonex x Viktor Axelsen collection, Invends was tasked with creating a campaign that goes beyond performance, revealing the personality behind one of the most dominant men’s singles players of all time.\n\nThis campaign is not just about a limited-edition product or a simple merchandise drop. It’s an invitation to look beyond the titles and achievements - to discover the person behind them- and to join him on his ongoing journey to strive for more.",
+      "introLeft": "Viktor Axelsen is more than a world champion - he represents consistency, humility, and ambition at the highest level of badminton. To mark the launch of the exclusive Yonex x Viktor Axelsen collection, Invends was tasked with creating a campaign that goes beyond performance, revealing the personality behind one of the most dominant men’s singles players of all time.",
       "introRight": "This campaign is not just about a limited-edition product or a simple merchandise drop. It’s an invitation to look beyond the titles and achievements - to discover the person behind them- and to join him on his ongoing journey to strive for more.",
       "body": [
         {
@@ -2732,7 +2824,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX x VIKTOR AXELSEN COLLECTION ‣ LAUNCH CAMPAIGN | 3Drawers Agency",
+      "metaTitle": "YONEX x VIKTOR AXELSEN COLLECTION ‣ LAUNCH CAMPAIGN | Invends",
       "metaDescription": "Launch campaign for the new Yonex x Viktor Axelsen Collection. Film, key visuals, social content."
     },
     {
@@ -2755,9 +2847,9 @@
       "roles": "WORLD BUILDING · STORYTELLING · CONCEPTION · STRATEGY · CHARACTER BUILDING · AI PROMPTING",
       "deliverables": "UNIVERSE LORE · CHARACTER CREATION",
       "date": "2024-11-28",
-      "intro": "1337 ‘pronounced leet’ is a generative AI platform committed to connecting niche communities through hyper-personalised interests. They allow the community of content creators to adopt an online AI persona, otherwise known as an ‘Entity’, and generate content through 1337’s platform as a new way of engaging with diverse communities online.\n\n3Drawers Agency was brought onboard in the early stages of conception to help build an entire universe of lore in which the ecosystem of AI entities could live, thrive and connect. 3Drawers Agency also harnessed generative AI software to art direct the unique look of each entity based off their crafted backstory and identity. From their names and hobbies to appearance and personality, each facet of the entity has been carefully curated to ensure they can be inspirational and engaging.",
+      "intro": "1337 ‘pronounced leet’ is a generative AI platform committed to connecting niche communities through hyper-personalised interests. They allow the community of content creators to adopt an online AI persona, otherwise known as an ‘Entity’, and generate content through 1337’s platform as a new way of engaging with diverse communities online.\n\nInvends was brought onboard in the early stages of conception to help build an entire universe of lore in which the ecosystem of AI entities could live, thrive and connect. Invends also harnessed generative AI software to art direct the unique look of each entity based off their crafted backstory and identity. From their names and hobbies to appearance and personality, each facet of the entity has been carefully curated to ensure they can be inspirational and engaging.",
       "introLeft": "1337 ‘pronounced leet’ is a generative AI platform committed to connecting niche communities through hyper-personalised interests. They allow the community of content creators to adopt an online AI persona, otherwise known as an ‘Entity’, and generate content through 1337’s platform as a new way of engaging with diverse communities online.",
-      "introRight": "3Drawers Agency was brought onboard in the early stages of conception to help build an entire universe of lore in which the ecosystem of AI entities could live, thrive and connect. 3Drawers Agency also harnessed generative AI software to art direct the unique look of each entity based off their crafted backstory and identity. From their names and hobbies to appearance and personality, each facet of the entity has been carefully curated to ensure they can be inspirational and engaging.",
+      "introRight": "Invends was brought onboard in the early stages of conception to help build an entire universe of lore in which the ecosystem of AI entities could live, thrive and connect. Invends also harnessed generative AI software to art direct the unique look of each entity based off their crafted backstory and identity. From their names and hobbies to appearance and personality, each facet of the entity has been carefully curated to ensure they can be inspirational and engaging.",
       "body": [
         {
           "index": 0,
@@ -3215,8 +3307,8 @@
           "type": "text",
           "subtitle": "ENTITY CREATION",
           "title": "Building a compelling online being",
-          "paragraph": "While entities inhabit a parallel universe, they were also created to live online and connect with existing digital communities. We populated the 1337 universe by creating an additional 47 entities (alongside the three protagonists) that each tap into a different online subculture. Drawing in team members from across 3Drawers’s international network, we were able to bring a diversity of unique perspectives and voices to co-create our supporting cast of entities. Given the vast number of entities we wanted to create, we established a four-step-process.",
-          "paragraphHtml": "<p>While entities inhabit a parallel universe, they were also created to live online and connect with existing digital communities. We populated the 1337 universe by creating an additional 47 entities (alongside the three protagonists) that each tap into a different online subculture. Drawing in team members from across 3Drawers’s international network, we were able to bring a diversity of unique perspectives and voices to co-create our supporting cast of entities. Given the vast number of entities we wanted to create, we established a four-step-process.</p>",
+          "paragraph": "While entities inhabit a parallel universe, they were also created to live online and connect with existing digital communities. We populated the 1337 universe by creating an additional 47 entities (alongside the three protagonists) that each tap into a different online subculture. Drawing in team members from across Invends’s international network, we were able to bring a diversity of unique perspectives and voices to co-create our supporting cast of entities. Given the vast number of entities we wanted to create, we established a four-step-process.",
+          "paragraphHtml": "<p>While entities inhabit a parallel universe, they were also created to live online and connect with existing digital communities. We populated the 1337 universe by creating an additional 47 entities (alongside the three protagonists) that each tap into a different online subculture. Drawing in team members from across Invends’s international network, we were able to bring a diversity of unique perspectives and voices to co-create our supporting cast of entities. Given the vast number of entities we wanted to create, we established a four-step-process.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -3494,8 +3586,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "“At first, GEN AI can put you in a box and generate beautiful, but surface-level images. The most fulfilling aspect of using Midjourney, is when you access a second, deeper layer of understanding, when it becomes a tool that allows you to bring your own creative vision to life.”\n\n- Luna Gooriah, Creative at 3Drawers \non pushing the limits of AI.",
-          "paragraphHtml": "<p>“At first, GEN AI can put you in a box and generate beautiful, but surface-level images. The most fulfilling aspect of using Midjourney, is when you access a second, deeper layer of understanding, when it becomes a tool that allows you to bring your own creative vision to life.”<br/><br/>- Luna Gooriah, Creative at 3Drawers <br/>on pushing the limits of AI.</p>",
+          "paragraph": "“At first, GEN AI can put you in a box and generate beautiful, but surface-level images. The most fulfilling aspect of using Midjourney, is when you access a second, deeper layer of understanding, when it becomes a tool that allows you to bring your own creative vision to life.”\n\n- Luna Gooriah, Creative at Invends \non pushing the limits of AI.",
+          "paragraphHtml": "<p>“At first, GEN AI can put you in a box and generate beautiful, but surface-level images. The most fulfilling aspect of using Midjourney, is when you access a second, deeper layer of understanding, when it becomes a tool that allows you to bring your own creative vision to life.”<br/><br/>- Luna Gooriah, Creative at Invends <br/>on pushing the limits of AI.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -3532,7 +3624,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "1337 AI UNIVERSE ‣ WORLD-BUILDING | Work | 3Drawers Agency",
+      "metaTitle": "1337 AI UNIVERSE ‣ WORLD-BUILDING | Work | Invends",
       "metaDescription": "World building and character creation for the fictional AI universe 1337."
     },
     {
@@ -3556,9 +3648,9 @@
       "roles": "STRATEGY · CONCEPT · ART DIRECTION · DESIGN · PRODUCTION",
       "deliverables": "INTEGRATED CAMPAIGN · KEY VISUAL · ATHLETE CONTENT SERIES · HYPE FILM · SOCIAL TEASERS · TECH FILM",
       "date": "2024-03-15",
-      "intro": "A New Dawn has arrived. Welcome to the next generation of doubles badminton. \n\nTo celebrate the launch of Yonex’s most anticipated racquets, the 3rd generation of the ASTROX 88 S & D, 3Drawers was invited to craft a uniquely mysterious campaign that showcases the racquets as not just a new colourway, but tools that drive forward the future of the sport.",
+      "intro": "A New Dawn has arrived. Welcome to the next generation of doubles badminton. \n\nTo celebrate the launch of Yonex’s most anticipated racquets, the 3rd generation of the ASTROX 88 S & D, Invends was invited to craft a uniquely mysterious campaign that showcases the racquets as not just a new colourway, but tools that drive forward the future of the sport.",
       "introLeft": "A New Dawn has arrived. Welcome to the next generation of doubles badminton. ",
-      "introRight": "To celebrate the launch of Yonex’s most anticipated racquets, the 3rd generation of the ASTROX 88 S & D, 3Drawers was invited to craft a uniquely mysterious campaign that showcases the racquets as not just a new colourway, but tools that drive forward the future of the sport.",
+      "introRight": "To celebrate the launch of Yonex’s most anticipated racquets, the 3rd generation of the ASTROX 88 S & D, Invends was invited to craft a uniquely mysterious campaign that showcases the racquets as not just a new colourway, but tools that drive forward the future of the sport.",
       "body": [
         {
           "index": 0,
@@ -3971,8 +4063,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX ASTROX 88 S&D ‣ LAUNCH CAMPAIGN | Work | 3Drawers Agency",
-      "metaDescription": "For the launch of the new Yonex badminton racquets Astrox 88 S & D Gen3, 3Drawers developed an integrated campaign including hype film, social, athlete series, key visual, print ad and tech film."
+      "metaTitle": "YONEX ASTROX 88 S&D ‣ LAUNCH CAMPAIGN | Work | Invends",
+      "metaDescription": "For the launch of the new Yonex badminton racquets Astrox 88 S & D Gen3, Invends developed an integrated campaign including hype film, social, athlete series, key visual, print ad and tech film."
     },
     {
       "uid": "quest-portal-brand-universe",
@@ -4000,8 +4092,8 @@
       "roles": "BRANDING · STRATEGY · ART DIRECTION · DESIGN · CONCEPTION · AI PROMPTING",
       "deliverables": "BRAND IDENTITY · CAMPAIGNS",
       "date": "2024-05-28",
-      "intro": "3Drawers developed a brand universe and activation launch for the Icelandic virtual tabletop role playing game platform, Quest Portal, to deliver a rich and retro identity reminiscent of the 1970’s spirit; the year TTRPG’s began.\n\nWhimsical visuals of fantasy characters, sweeping gradients of mysterious light and retro compositions formed as visual pillars to help Quest Portal connect and empathise with the RPG community of today. ",
-      "introLeft": "3Drawers developed a brand universe and activation launch for the Icelandic virtual tabletop role playing game platform, Quest Portal, to deliver a rich and retro identity reminiscent of the 1970’s spirit; the year TTRPG’s began.",
+      "intro": "Invends developed a brand universe and activation launch for the Icelandic virtual tabletop role playing game platform, Quest Portal, to deliver a rich and retro identity reminiscent of the 1970’s spirit; the year TTRPG’s began.\n\nWhimsical visuals of fantasy characters, sweeping gradients of mysterious light and retro compositions formed as visual pillars to help Quest Portal connect and empathise with the RPG community of today. ",
+      "introLeft": "Invends developed a brand universe and activation launch for the Icelandic virtual tabletop role playing game platform, Quest Portal, to deliver a rich and retro identity reminiscent of the 1970’s spirit; the year TTRPG’s began.",
       "introRight": "Whimsical visuals of fantasy characters, sweeping gradients of mysterious light and retro compositions formed as visual pillars to help Quest Portal connect and empathise with the RPG community of today. ",
       "body": [
         {
@@ -4511,8 +4603,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "“We found that 70’s book covers had beautiful focus of light, unique type lock ups and subtle glows that all help to bring an atmosphere of mystery. When creating unique typographic lock ups for Quest Portal, we were inspired to bring in those same graphic elements to help pay homage to this unique decade.”   \n- Mélanie Hubert-Crozet, Creative Director at 3Drawers Agency\n\nThrough Quest Portal’s communications, we adopt longer-form ads that tap into the community's love of reading rich lore, but leaving the ending open to your own imaginations. By treating the typography like a page from a book, we add text as a core part of our graphic system.",
-          "paragraphHtml": "<p>“We found that 70’s book covers had beautiful focus of light, unique type lock ups and subtle glows that all help to bring an atmosphere of mystery. When creating unique typographic lock ups for Quest Portal, we were inspired to bring in those same graphic elements to help pay homage to this unique decade.”   <br/>- Mélanie Hubert-Crozet, Creative Director at 3Drawers Agency<br/><br/>Through Quest Portal’s communications, we adopt longer-form ads that tap into the community's love of reading rich lore, but leaving the ending open to your own imaginations. By treating the typography like a page from a book, we add text as a core part of our graphic system.</p>",
+          "paragraph": "“We found that 70’s book covers had beautiful focus of light, unique type lock ups and subtle glows that all help to bring an atmosphere of mystery. When creating unique typographic lock ups for Quest Portal, we were inspired to bring in those same graphic elements to help pay homage to this unique decade.”   \n- Mélanie Hubert-Crozet, Creative Director at Invends\n\nThrough Quest Portal’s communications, we adopt longer-form ads that tap into the community's love of reading rich lore, but leaving the ending open to your own imaginations. By treating the typography like a page from a book, we add text as a core part of our graphic system.",
+          "paragraphHtml": "<p>“We found that 70’s book covers had beautiful focus of light, unique type lock ups and subtle glows that all help to bring an atmosphere of mystery. When creating unique typographic lock ups for Quest Portal, we were inspired to bring in those same graphic elements to help pay homage to this unique decade.”   <br/>- Mélanie Hubert-Crozet, Creative Director at Invends<br/><br/>Through Quest Portal’s communications, we adopt longer-form ads that tap into the community's love of reading rich lore, but leaving the ending open to your own imaginations. By treating the typography like a page from a book, we add text as a core part of our graphic system.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -4779,8 +4871,8 @@
       "roles": "CONCEPTION · ART DIRECTION · SPATIAL DESIGN · COMMUNICATIONS · EVENT PRODUCTION · VIDEO PRODUCTION",
       "deliverables": "CONCEPT · KEY VISUAL · HOTEL COLLATERAL · VIDEO",
       "date": "2024-07-22",
-      "intro": "Onitsuka Tiger invited 3Drawers to craft a unique pop-up hotel experience on Paris’ Champs-Élysées during the 2024 Paris Olympics.\n\nWe combined forces across our London and newly founded Paris offices to create a piece of brand theatre that celebrated the guests that define Hôtel Onitsuka Tiger and represent the spirit of the brand.",
-      "introLeft": "Onitsuka Tiger invited 3Drawers to craft a unique pop-up hotel experience on Paris’ Champs-Élysées during the 2024 Paris Olympics.",
+      "intro": "Onitsuka Tiger invited Invends to craft a unique pop-up hotel experience on Paris’ Champs-Élysées during the 2024 Paris Olympics.\n\nWe combined forces across our London and newly founded Paris offices to create a piece of brand theatre that celebrated the guests that define Hôtel Onitsuka Tiger and represent the spirit of the brand.",
+      "introLeft": "Onitsuka Tiger invited Invends to craft a unique pop-up hotel experience on Paris’ Champs-Élysées during the 2024 Paris Olympics.",
       "introRight": "We combined forces across our London and newly founded Paris offices to create a piece of brand theatre that celebrated the guests that define Hôtel Onitsuka Tiger and represent the spirit of the brand.",
       "body": [
         {
@@ -4848,8 +4940,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "3Drawers was brought on board as both a creative and production partner to ensure a depth of immersion and storytelling around the activity. We were invited to build an imaginative world around the activation to inform all communications and interior design. A universe that would speak to the imagination of influencers, media, guests and fans.",
-          "paragraphHtml": "<p>3Drawers was brought on board as both a creative and production partner to ensure a depth of immersion and storytelling around the activity. We were invited to build an imaginative world around the activation to inform all communications and interior design. A universe that would speak to the imagination of influencers, media, guests and fans.</p>",
+          "paragraph": "Invends was brought on board as both a creative and production partner to ensure a depth of immersion and storytelling around the activity. We were invited to build an imaginative world around the activation to inform all communications and interior design. A universe that would speak to the imagination of influencers, media, guests and fans.",
+          "paragraphHtml": "<p>Invends was brought on board as both a creative and production partner to ensure a depth of immersion and storytelling around the activity. We were invited to build an imaginative world around the activation to inform all communications and interior design. A universe that would speak to the imagination of influencers, media, guests and fans.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -5133,8 +5225,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "“We love to think about physical experiences as pieces of brand theatre. I’m a massive fan of Punchdrunk and the visual prop work of Annie Atkins, and see massive opportunities for brands to create a similar level of immersion for fans. Transporting people into a parallel world - a bubble away from reality where every detail has been considered.” \n\n- Melanie Hubert-Crozet, Creative Director, 3Drawers Agency/paris",
-          "paragraphHtml": "<p>“We love to think about physical experiences as pieces of brand theatre. I’m a massive fan of Punchdrunk and the visual prop work of Annie Atkins, and see massive opportunities for brands to create a similar level of immersion for fans. Transporting people into a parallel world - a bubble away from reality where every detail has been considered.” <br/><br/>- Melanie Hubert-Crozet, Creative Director, 3Drawers Agency/paris</p>",
+          "paragraph": "“We love to think about physical experiences as pieces of brand theatre. I’m a massive fan of Punchdrunk and the visual prop work of Annie Atkins, and see massive opportunities for brands to create a similar level of immersion for fans. Transporting people into a parallel world - a bubble away from reality where every detail has been considered.” \n\n- Melanie Hubert-Crozet, Creative Director, Invends/paris",
+          "paragraphHtml": "<p>“We love to think about physical experiences as pieces of brand theatre. I’m a massive fan of Punchdrunk and the visual prop work of Annie Atkins, and see massive opportunities for brands to create a similar level of immersion for fans. Transporting people into a parallel world - a bubble away from reality where every detail has been considered.” <br/><br/>- Melanie Hubert-Crozet, Creative Director, Invends/paris</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -5349,7 +5441,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "HOTEL ONITSUKA TIGER ‣ BRAND ACTIVATION | Work | 3Drawers Agency",
+      "metaTitle": "HOTEL ONITSUKA TIGER ‣ BRAND ACTIVATION | Work | Invends",
       "metaDescription": "Pop-up hotel experience on Paris’ Champs-Élysées during the 2024 Paris Olympics."
     },
     {
@@ -5378,9 +5470,9 @@
       "roles": "Strategy · Branding · Art Direction · Photography · Web Design · Production",
       "deliverables": "Visual Identity · Landing page",
       "date": "2024-09-04",
-      "intro": "A family of families. Building an enduring, community-focused investment alternative to traditional finance.\n\nKodama Capital is a new venture by the Japanese-European Kenjiro Family Office. Building on a decade of investing experience, Kenjiro launched Kodama Capital to unite and steward various family offices across Asia and Europe. 3Drawers was invited to craft the story and visual identity, continuing a partnership that started several years ago when we crafted the identity of Third by Kenjiro.",
+      "intro": "A family of families. Building an enduring, community-focused investment alternative to traditional finance.\n\nKodama Capital is a new venture by the Japanese-European Kenjiro Family Office. Building on a decade of investing experience, Kenjiro launched Kodama Capital to unite and steward various family offices across Asia and Europe. Invends was invited to craft the story and visual identity, continuing a partnership that started several years ago when we crafted the identity of Third by Kenjiro.",
       "introLeft": "A family of families. Building an enduring, community-focused investment alternative to traditional finance.",
-      "introRight": "Kodama Capital is a new venture by the Japanese-European Kenjiro Family Office. Building on a decade of investing experience, Kenjiro launched Kodama Capital to unite and steward various family offices across Asia and Europe. 3Drawers was invited to craft the story and visual identity, continuing a partnership that started several years ago when we crafted the identity of Third by Kenjiro.",
+      "introRight": "Kodama Capital is a new venture by the Japanese-European Kenjiro Family Office. Building on a decade of investing experience, Kenjiro launched Kodama Capital to unite and steward various family offices across Asia and Europe. Invends was invited to craft the story and visual identity, continuing a partnership that started several years ago when we crafted the identity of Third by Kenjiro.",
       "body": [
         {
           "index": 0,
@@ -5767,7 +5859,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "KODAMA CAPITAL ‣ BRANDING | Work | 3Drawers Agency",
+      "metaTitle": "KODAMA CAPITAL ‣ BRANDING | Work | Invends",
       "metaDescription": "Visual Identity for the new venture by the Japanese-European Kenjiro Family Office."
     },
     {
@@ -5798,7 +5890,7 @@
       "date": "2024-01-15",
       "intro": "Two Japanese icons joined forces for a unique capsule collection. Onitsuka Tiger - the brand that introduced the world to the concept of sneakers 75 years ago - and Astro Boy - the character that taught the world how to manga.\n\nmonopo paris was invited to find the most relevant and powerful way of introducing the collection to a new French generation that hadn’t lived through the days of Kill Bill (Onitsuka Tiger’s most recent claim to fame) or Club Dorothée (Astro Boy’s largest French television platform). Onitsuka Tiger was planning to host a launch event for the collection and our challenge was to maximise the impact of the time we would have with influencers on that night.",
       "introLeft": "Two Japanese icons joined forces for a unique capsule collection. Onitsuka Tiger - the brand that introduced the world to the concept of sneakers 75 years ago - and Astro Boy - the character that taught the world how to manga.",
-      "introRight": "3Drawers paris was invited to find the most relevant and powerful way of introducing the collection to a new French generation that hadn’t lived through the days of Kill Bill (Onitsuka Tiger’s most recent claim to fame) or Club Dorothée (Astro Boy’s largest French television platform). Onitsuka Tiger was planning to host a launch event for the collection and our challenge was to maximise the impact of the time we would have with influencers on that night.",
+      "introRight": "Invends paris was invited to find the most relevant and powerful way of introducing the collection to a new French generation that hadn’t lived through the days of Kill Bill (Onitsuka Tiger’s most recent claim to fame) or Club Dorothée (Astro Boy’s largest French television platform). Onitsuka Tiger was planning to host a launch event for the collection and our challenge was to maximise the impact of the time we would have with influencers on that night.",
       "body": [
         {
           "index": 0,
@@ -6254,7 +6346,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "ONITSUKA TIGER ‣ ASTRO BOY LAUNCH EVENT | Work | 3Drawers Agency",
+      "metaTitle": "ONITSUKA TIGER ‣ ASTRO BOY LAUNCH EVENT | Work | Invends",
       "metaDescription": "Influencer activation to launch the Onitsuka Tiger x Astro Boy capsule collection in Paris."
     },
     {
@@ -6802,7 +6894,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "OUTFRY - KOREAN FRIED CHICKEN ‣ BRANDING | Work | 3Drawers Agency",
+      "metaTitle": "OUTFRY - KOREAN FRIED CHICKEN ‣ BRANDING | Work | Invends",
       "metaDescription": "Visual Identity and packaging for the Korean fried chicken brand Outfry by Taster, available across the UK and Europe."
     },
     {
@@ -6832,8 +6924,8 @@
       "roles": "STRATEGY · BRANDING · ART DIRECTION · DESIGN · MOTION DESIGN · PRODUCTION",
       "deliverables": "BRAND IDENTITY · CAMPAIGN TOOLKIT",
       "date": "2023-09-26",
-      "intro": "3Drawers Agency was invited to rebrand and reposition the prestigious YONEX All England Open Badminton Championships.\n\nWe crafted an electrifying identity to transform the tournament into a festival of badminton.",
-      "introLeft": "3Drawers Agency was invited to rebrand and reposition the prestigious YONEX All England Open Badminton Championships.",
+      "intro": "Invends was invited to rebrand and reposition the prestigious YONEX All England Open Badminton Championships.\n\nWe crafted an electrifying identity to transform the tournament into a festival of badminton.",
+      "introLeft": "Invends was invited to rebrand and reposition the prestigious YONEX All England Open Badminton Championships.",
       "introRight": "We crafted an electrifying identity to transform the tournament into a festival of badminton.",
       "body": [
         {
@@ -7537,8 +7629,8 @@
       "roles": "Strategy · Conception · Art direction · Design · Production",
       "deliverables": "Integrated campaign · Tech film · Key visual · Posters · Merchandising · Social Teasers",
       "date": "2022-03-04",
-      "intro": "Yonex invited 3Drawers to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet. \n\nA global print and digital programme which harnesses local badminton communities and pro-athletes alike.",
-      "introLeft": "Yonex invited 3Drawers to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet. ",
+      "intro": "Yonex invited Invends to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet. \n\nA global print and digital programme which harnesses local badminton communities and pro-athletes alike.",
+      "introLeft": "Yonex invited Invends to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet. ",
       "introRight": "A global print and digital programme which harnesses local badminton communities and pro-athletes alike.",
       "body": [
         {
@@ -7834,8 +7926,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "A selection of pro-athletes were invited to post mysterious teasers on their own social channels to kick-start 3Drawers Agency’s strategic digital activation. With an animated motion graphics trailer also at the ready, ARCSABER was locked and ready for launch. ",
-          "paragraphHtml": "<p>A selection of pro-athletes were invited to post mysterious teasers on their own social channels to kick-start 3Drawers Agency’s strategic digital activation. With an animated motion graphics trailer also at the ready, ARCSABER was locked and ready for launch. </p>",
+          "paragraph": "A selection of pro-athletes were invited to post mysterious teasers on their own social channels to kick-start Invends’s strategic digital activation. With an animated motion graphics trailer also at the ready, ARCSABER was locked and ready for launch. ",
+          "paragraphHtml": "<p>A selection of pro-athletes were invited to post mysterious teasers on their own social channels to kick-start Invends’s strategic digital activation. With an animated motion graphics trailer also at the ready, ARCSABER was locked and ready for launch. </p>",
           "images": [],
           "videos": [],
           "items": [
@@ -7868,8 +7960,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX Arcsaber 11 - Launch Campaign | Advertising, branding & video | Work | 3Drawers Agency",
-      "metaDescription": "Yonex invited 3Drawers to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet including poster design, sticker pack, tech video, key visual and social."
+      "metaTitle": "YONEX Arcsaber 11 - Launch Campaign | Advertising, branding & video | Work | Invends",
+      "metaDescription": "Yonex invited Invends to launch a subculture-driven visual identity and campaign for the release of its new ARCSABER 11 racquet including poster design, sticker pack, tech video, key visual and social."
     },
     {
       "uid": "yonex-astrox-88sd-launch-campaign",
@@ -7898,8 +7990,8 @@
       "roles": "Strategy · Concept · Art Direction · Design · Production",
       "deliverables": "Integrated Campaign · Hype Film · Tech Film · Key Visual · Social Teasers",
       "date": "2021-03-01",
-      "intro": "Can evolution be controlled? Yonex invited 3Drawers to conceive and produce an integrated campaign driving hype and sales for its latest badminton racquet release. \n\nThe new racquets, ASTROX 88 S & D are specifically designed for doubles badminton. A game that has evolved tremendously in the last decade, becoming faster, more powerful, more aggressive.",
-      "introLeft": "Can evolution be controlled? Yonex invited 3Drawers to conceive and produce an integrated campaign driving hype and sales for its latest badminton racquet release. ",
+      "intro": "Can evolution be controlled? Yonex invited Invends to conceive and produce an integrated campaign driving hype and sales for its latest badminton racquet release. \n\nThe new racquets, ASTROX 88 S & D are specifically designed for doubles badminton. A game that has evolved tremendously in the last decade, becoming faster, more powerful, more aggressive.",
+      "introLeft": "Can evolution be controlled? Yonex invited Invends to conceive and produce an integrated campaign driving hype and sales for its latest badminton racquet release. ",
       "introRight": "The new racquets, ASTROX 88 S & D are specifically designed for doubles badminton. A game that has evolved tremendously in the last decade, becoming faster, more powerful, more aggressive.",
       "body": [
         {
@@ -8398,8 +8490,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Evolve your Game - YONEX ASTROX 88 S & D | Advertising campaign, video & social | Work | 3Drawers Agency",
-      "metaDescription": "For the launch of the new Yonex badminton racquets Astrox 88 S & D, 3Drawers developed an integrated campaign including hype film, social, key visual, print ad and tech film."
+      "metaTitle": "Evolve your Game - YONEX ASTROX 88 S & D | Advertising campaign, video & social | Work | Invends",
+      "metaDescription": "For the launch of the new Yonex badminton racquets Astrox 88 S & D, Invends developed an integrated campaign including hype film, social, key visual, print ad and tech film."
     },
     {
       "uid": "meridian-book",
@@ -8426,8 +8518,8 @@
       "roles": "ART DIRECTION · DESIGN · PRODUCTION",
       "deliverables": "BOOK DESIGN · LAUNCH EVENT",
       "date": "2023-01-26",
-      "intro": "3Drawers collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions.\n\nMeridian is an extension and encapsulation of Matt DesLauriers’s generative art project of the same name released on Artblocks in 2021.",
-      "introLeft": "3Drawers collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions.",
+      "intro": "Invends collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions.\n\nMeridian is an extension and encapsulation of Matt DesLauriers’s generative art project of the same name released on Artblocks in 2021.",
+      "introLeft": "Invends collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions.",
       "introRight": "Meridian is an extension and encapsulation of Matt DesLauriers’s generative art project of the same name released on Artblocks in 2021.",
       "body": [
         {
@@ -8709,8 +8801,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "Essays are interspersed throughout the 240 pages, with chapters ranging from the generative process, to community curated pages filled with favourite Meridians voted by the Art Blocks community. The exquisite layouts in the Gallery chapter honour favourite artworks from the artist and the 3Drawers Agency team.",
-          "paragraphHtml": "<p>Essays are interspersed throughout the 240 pages, with chapters ranging from the generative process, to community curated pages filled with favourite Meridians voted by the Art Blocks community. The exquisite layouts in the Gallery chapter honour favourite artworks from the artist and the 3Drawers Agency team.</p>",
+          "paragraph": "Essays are interspersed throughout the 240 pages, with chapters ranging from the generative process, to community curated pages filled with favourite Meridians voted by the Art Blocks community. The exquisite layouts in the Gallery chapter honour favourite artworks from the artist and the Invends team.",
+          "paragraphHtml": "<p>Essays are interspersed throughout the 240 pages, with chapters ranging from the generative process, to community curated pages filled with favourite Meridians voted by the Art Blocks community. The exquisite layouts in the Gallery chapter honour favourite artworks from the artist and the Invends team.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -9115,7 +9207,7 @@
         }
       ],
       "metaTitle": "Meridian ‣ Book Design",
-      "metaDescription": "3Drawers collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions."
+      "metaDescription": "Invends collaborated with renowned generative artist, Matt DesLauriers, to design his debut book on his generative art collection, Meridian, published by Vetro Editions."
     },
     {
       "uid": "mission-barns-cultivated-meat",
@@ -9139,8 +9231,8 @@
       "roles": "ART DIRECTION · GRAPHIC DESIGN · WEB DESIGN · ILLUSTRATION",
       "deliverables": "WEBSITE · ILLUSTRATIONS · STAMP DESIGNS",
       "date": "2022-12-12",
-      "intro": "Mission Barns is a leading cultivated meat company based in San Francisco. As the company was gearing up for the commercial launch of its first product, Mission Barns invited 3Drawers to redesign its website and craft the visual identity together with the in-house brand team.\n\nA thought-provoking challenge that gave us a glimpse into the future of food.",
-      "introLeft": "Mission Barns is a leading cultivated meat company based in San Francisco. As the company was gearing up for the commercial launch of its first product, Mission Barns invited 3Drawers to redesign its website and craft the visual identity together with the in-house brand team.",
+      "intro": "Mission Barns is a leading cultivated meat company based in San Francisco. As the company was gearing up for the commercial launch of its first product, Mission Barns invited Invends to redesign its website and craft the visual identity together with the in-house brand team.\n\nA thought-provoking challenge that gave us a glimpse into the future of food.",
+      "introLeft": "Mission Barns is a leading cultivated meat company based in San Francisco. As the company was gearing up for the commercial launch of its first product, Mission Barns invited Invends to redesign its website and craft the visual identity together with the in-house brand team.",
       "introRight": "A thought-provoking challenge that gave us a glimpse into the future of food.",
       "body": [
         {
@@ -9628,8 +9720,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Mission Barns ‣ Cultivated Meat | Website and Branding | 3Drawers Agency",
-      "metaDescription": "Mission Barns is a leading cultivated meat company based in San Francisco. Mission Barns invited 3Drawers to redesign its website and craft the visual identity and art direction together with the in-house brand team."
+      "metaTitle": "Mission Barns ‣ Cultivated Meat | Website and Branding | Invends",
+      "metaDescription": "Mission Barns is a leading cultivated meat company based in San Francisco. Mission Barns invited Invends to redesign its website and craft the visual identity and art direction together with the in-house brand team."
     },
     {
       "uid": "babettesbranding",
@@ -9657,9 +9749,9 @@
       "roles": "STRATEGY · VISUAL IDENTITY",
       "deliverables": "BRANDING · START-UP PACKAGE",
       "date": "2022-12-01",
-      "intro": "In the summer of 2021, hospitality entrepreneur Charlie Mellor approached 3Drawers with an exciting new food venture, Babette’s. A name inspired by the cult classic Babette’s Feast, indicating the intentions of the new venture: to make the joys of chef-quality produce available for all through a modern-era grocery concept. \n\nmonopo embraced the challenge and established a visual world that brings about a food renaissance, filled with dramatic portraiture and indulgent detail.",
-      "introLeft": "In the summer of 2021, hospitality entrepreneur Charlie Mellor approached 3Drawers with an exciting new food venture, Babette’s. A name inspired by the cult classic Babette’s Feast, indicating the intentions of the new venture: to make the joys of chef-quality produce available for all through a modern-era grocery concept. ",
-      "introRight": "3Drawers embraced the challenge and established a visual world that brings about a food renaissance, filled with dramatic portraiture and indulgent detail.",
+      "intro": "In the summer of 2021, hospitality entrepreneur Charlie Mellor approached Invends with an exciting new food venture, Babette’s. A name inspired by the cult classic Babette’s Feast, indicating the intentions of the new venture: to make the joys of chef-quality produce available for all through a modern-era grocery concept. \n\nmonopo embraced the challenge and established a visual world that brings about a food renaissance, filled with dramatic portraiture and indulgent detail.",
+      "introLeft": "In the summer of 2021, hospitality entrepreneur Charlie Mellor approached Invends with an exciting new food venture, Babette’s. A name inspired by the cult classic Babette’s Feast, indicating the intentions of the new venture: to make the joys of chef-quality produce available for all through a modern-era grocery concept. ",
+      "introRight": "Invends embraced the challenge and established a visual world that brings about a food renaissance, filled with dramatic portraiture and indulgent detail.",
       "body": [
         {
           "index": 0,
@@ -9726,8 +9818,8 @@
           "type": "text",
           "subtitle": "CONTEXT",
           "title": "Hospitality meets retail",
-          "paragraph": "The concept for Babette’s was born from a frustration with traditional convenience stores and the bad decisions they nudge shoppers into. Unwelcoming environments that incentivise laziness and poor quality. Babette’s is a modern alternative; making it easy to access the produce that chefs use and sharing the know-how that chefs have, to help you build a quality meal without having to go through the traditional convenience channels. \n\nThe Babette’s roadmap includes both digital and physical outlets. 3Drawers was invited at the pre-investment stage and worked with the Babette’s founding team to define the brand and make it an investable asset.",
-          "paragraphHtml": "<p>The concept for Babette’s was born from a frustration with traditional convenience stores and the bad decisions they nudge shoppers into. Unwelcoming environments that incentivise laziness and poor quality. Babette’s is a modern alternative; making it easy to access the produce that chefs use and sharing the know-how that chefs have, to help you build a quality meal without having to go through the traditional convenience channels. <br/><br/>The Babette’s roadmap includes both digital and physical outlets. 3Drawers was invited at the pre-investment stage and worked with the Babette’s founding team to define the brand and make it an investable asset.</p>",
+          "paragraph": "The concept for Babette’s was born from a frustration with traditional convenience stores and the bad decisions they nudge shoppers into. Unwelcoming environments that incentivise laziness and poor quality. Babette’s is a modern alternative; making it easy to access the produce that chefs use and sharing the know-how that chefs have, to help you build a quality meal without having to go through the traditional convenience channels. \n\nThe Babette’s roadmap includes both digital and physical outlets. Invends was invited at the pre-investment stage and worked with the Babette’s founding team to define the brand and make it an investable asset.",
+          "paragraphHtml": "<p>The concept for Babette’s was born from a frustration with traditional convenience stores and the bad decisions they nudge shoppers into. Unwelcoming environments that incentivise laziness and poor quality. Babette’s is a modern alternative; making it easy to access the produce that chefs use and sharing the know-how that chefs have, to help you build a quality meal without having to go through the traditional convenience channels. <br/><br/>The Babette’s roadmap includes both digital and physical outlets. Invends was invited at the pre-investment stage and worked with the Babette’s founding team to define the brand and make it an investable asset.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -10114,8 +10206,8 @@
       "roles": "Conception · Creative Direction · Design · Digital production · Video Production · Print Production",
       "deliverables": "AR web app · Campaign Video · Key Visual · In-store Print Design",
       "date": "2021-08-23",
-      "intro": "Canada Goose trusted 3Drawers with the conception, creation and production of a virtual tour of Berlin that shines a light on underrepresented artisans in the film industry.\n\nWe launched a web app encouraging people to explore 5 iconic Berlin film locations and discover all about the artisans of film through AR and VR content.",
-      "introLeft": "Canada Goose trusted 3Drawers with the conception, creation and production of a virtual tour of Berlin that shines a light on underrepresented artisans in the film industry.",
+      "intro": "Canada Goose trusted Invends with the conception, creation and production of a virtual tour of Berlin that shines a light on underrepresented artisans in the film industry.\n\nWe launched a web app encouraging people to explore 5 iconic Berlin film locations and discover all about the artisans of film through AR and VR content.",
+      "introLeft": "Canada Goose trusted Invends with the conception, creation and production of a virtual tour of Berlin that shines a light on underrepresented artisans in the film industry.",
       "introRight": "We launched a web app encouraging people to explore 5 iconic Berlin film locations and discover all about the artisans of film through AR and VR content.",
       "body": [
         {
@@ -10543,7 +10635,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Canada Goose - The Art of Film Berlin | WebAR, VR, website, print & video | Work | 3Drawers Agency",
+      "metaTitle": "Canada Goose - The Art of Film Berlin | WebAR, VR, website, print & video | Work | Invends",
       "metaDescription": "The Art of Film is a web app encouraging people to explore 5 iconic Berlin film locations and discover the artisans of film through Augmented reality content on mobile."
     },
     {
@@ -10573,8 +10665,8 @@
       "roles": "ART DIRECTION · DESIGN · DEVELOPMENT · PHOTOGRAPHY",
       "deliverables": "Campaign website · Photography",
       "date": "2020-08-17",
-      "intro": "3Drawers Agency was invited to build a website supporting JETRO’s campaign to promote Japanese Green Tea in the US. The website had to speak to a young generation intrigued by Japanese Green Tea but unsure about how it fits into their life. \n\nWe built a website that finds the overlap between American millennial culture and the unique qualities of Japanese Green tea.",
-      "introLeft": "3Drawers Agency was invited to build a website supporting JETRO’s campaign to promote Japanese Green Tea in the US. The website had to speak to a young generation intrigued by Japanese Green Tea but unsure about how it fits into their life. ",
+      "intro": "Invends was invited to build a website supporting JETRO’s campaign to promote Japanese Green Tea in the US. The website had to speak to a young generation intrigued by Japanese Green Tea but unsure about how it fits into their life. \n\nWe built a website that finds the overlap between American millennial culture and the unique qualities of Japanese Green tea.",
+      "introLeft": "Invends was invited to build a website supporting JETRO’s campaign to promote Japanese Green Tea in the US. The website had to speak to a young generation intrigued by Japanese Green Tea but unsure about how it fits into their life. ",
       "introRight": "We built a website that finds the overlap between American millennial culture and the unique qualities of Japanese Green tea.",
       "body": [
         {
@@ -11212,8 +11304,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Ocha - Japanese Green Tea for JETRO/JFOODO | Website & Photography | Work | 3Drawers Agency",
-      "metaDescription": "To support JETRO’s advertising campaign to promote Japanese Green Tea in the US, 3Drawers built a website and directed photography to speak to a younger generation."
+      "metaTitle": "Ocha - Japanese Green Tea for JETRO/JFOODO | Website & Photography | Work | Invends",
+      "metaDescription": "To support JETRO’s advertising campaign to promote Japanese Green Tea in the US, Invends built a website and directed photography to speak to a younger generation."
     },
     {
       "uid": "cellular-agriculture-society-website",
@@ -11237,7 +11329,7 @@
       "date": "2020-03-15",
       "intro": "CAS (the Cellular Agriculture Society) is an international non-profit founded to advance cellular agriculture, the process of creating animal products from cells rather than animals. In their quest to grow widespread understanding of cellular agriculture, CAS wanted to redesign cellag.org to become a global hub on the subject. \n\nmonopo was tasked with building a truly engaging entry point for people that are new to cellular agriculture.",
       "introLeft": "CAS (the Cellular Agriculture Society) is an international non-profit founded to advance cellular agriculture, the process of creating animal products from cells rather than animals. In their quest to grow widespread understanding of cellular agriculture, CAS wanted to redesign cellag.org to become a global hub on the subject. ",
-      "introRight": "3Drawers was tasked with building a truly engaging entry point for people that are new to cellular agriculture.",
+      "introRight": "Invends was tasked with building a truly engaging entry point for people that are new to cellular agriculture.",
       "body": [
         {
           "index": 0,
@@ -11497,8 +11589,8 @@
           "type": "text",
           "subtitle": "Collaboration",
           "title": "Collective creativity across borders and client/agency relations",
-          "paragraph": "This project has been a cross-border labour of love between three different parties: CAS in San Francisco USA, 3Drawers Agency in the UK (creative/art direction + design) and 3Drawers Tokyo in Japan (digital development). Typically a tricky set of timezones to bring together, but a unique collaboration that enabled us to produce a website that could only be born out of these three very different perspectives coming together.",
-          "paragraphHtml": "<p>This project has been a cross-border labour of love between three different parties: CAS in San Francisco USA, 3Drawers Agency in the UK (creative/art direction + design) and 3Drawers Tokyo in Japan (digital development). Typically a tricky set of timezones to bring together, but a unique collaboration that enabled us to produce a website that could only be born out of these three very different perspectives coming together.</p>",
+          "paragraph": "This project has been a cross-border labour of love between three different parties: CAS in San Francisco USA, Invends in the UK (creative/art direction + design) and Invends Tokyo in Japan (digital development). Typically a tricky set of timezones to bring together, but a unique collaboration that enabled us to produce a website that could only be born out of these three very different perspectives coming together.",
+          "paragraphHtml": "<p>This project has been a cross-border labour of love between three different parties: CAS in San Francisco USA, Invends in the UK (creative/art direction + design) and Invends Tokyo in Japan (digital development). Typically a tricky set of timezones to bring together, but a unique collaboration that enabled us to produce a website that could only be born out of these three very different perspectives coming together.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -11541,7 +11633,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "CAS - Cellular Agriculture Society Website | Work | 3Drawers Agency",
+      "metaTitle": "CAS - Cellular Agriculture Society Website | Work | Invends",
       "metaDescription": "Website redesign for CAS (the Cellular Agriculture Society), an international non-profit founded to advance cellular agriculture, the process of creating animal products from cells."
     },
     {
@@ -11565,8 +11657,8 @@
       "roles": "Concept · Creative Direction · Art Direction · Design · Digital Production",
       "deliverables": "Social Media Campaign · Website",
       "date": "2020-10-20",
-      "intro": "In the summer of 2020, legendary badminton player Lin Dan announced his retirement from the Chinese national badminton team. Yonex and 3Drawers teamed up to create a tribute campaign and website.\n\nWe devised a social media campaign that invites Lin Dan fans and famous athletes to share the memories they have of Lin Dan’s career. The most remarkable memories were collected on thememoriesweshared.com.",
-      "introLeft": "In the summer of 2020, legendary badminton player Lin Dan announced his retirement from the Chinese national badminton team. Yonex and 3Drawers teamed up to create a tribute campaign and website.",
+      "intro": "In the summer of 2020, legendary badminton player Lin Dan announced his retirement from the Chinese national badminton team. Yonex and Invends teamed up to create a tribute campaign and website.\n\nWe devised a social media campaign that invites Lin Dan fans and famous athletes to share the memories they have of Lin Dan’s career. The most remarkable memories were collected on thememoriesweshared.com.",
+      "introLeft": "In the summer of 2020, legendary badminton player Lin Dan announced his retirement from the Chinese national badminton team. Yonex and Invends teamed up to create a tribute campaign and website.",
       "introRight": "We devised a social media campaign that invites Lin Dan fans and famous athletes to share the memories they have of Lin Dan’s career. The most remarkable memories were collected on thememoriesweshared.com.",
       "body": [
         {
@@ -11642,8 +11734,8 @@
           "type": "text",
           "subtitle": "Idea",
           "title": "The memories we shared shall continue until the end of the world",
-          "paragraph": "Inspired by the title of Lin Dan’s autobiography - The memories we shared shall continue until the end of the world -, 3Drawers Agency devised a social media campaign that invites Lin Dan fans to share the memories they have of Lin Dan’s career. The times they met him, saw him play or were inspired by his actions. We wanted to give fans a cathartic moment. A moment for the community to unite through nostalgia.",
-          "paragraphHtml": "<p>Inspired by the title of Lin Dan’s autobiography - The memories we shared shall continue until the end of the world -, 3Drawers Agency devised a social media campaign that invites Lin Dan fans to share the memories they have of Lin Dan’s career. The times they met him, saw him play or were inspired by his actions. We wanted to give fans a cathartic moment. A moment for the community to unite through nostalgia.</p>",
+          "paragraph": "Inspired by the title of Lin Dan’s autobiography - The memories we shared shall continue until the end of the world -, Invends devised a social media campaign that invites Lin Dan fans to share the memories they have of Lin Dan’s career. The times they met him, saw him play or were inspired by his actions. We wanted to give fans a cathartic moment. A moment for the community to unite through nostalgia.",
+          "paragraphHtml": "<p>Inspired by the title of Lin Dan’s autobiography - The memories we shared shall continue until the end of the world -, Invends devised a social media campaign that invites Lin Dan fans to share the memories they have of Lin Dan’s career. The times they met him, saw him play or were inspired by his actions. We wanted to give fans a cathartic moment. A moment for the community to unite through nostalgia.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -11962,8 +12054,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Lin Dan x Yonex - The Memories We Shared | Experience website and social campaign | Work | 3Drawers Agency",
-      "metaDescription": "Yonex and 3Drawers teamed up to create a tribute campaign and website for legendary badminton player Lin Dan. Memories of fans and athletes were collected into a golden digital constellation."
+      "metaTitle": "Lin Dan x Yonex - The Memories We Shared | Experience website and social campaign | Work | Invends",
+      "metaDescription": "Yonex and Invends teamed up to create a tribute campaign and website for legendary badminton player Lin Dan. Memories of fans and athletes were collected into a golden digital constellation."
     },
     {
       "uid": "canada-goose-city-sense-urban-excursion-guides",
@@ -12029,8 +12121,8 @@
           "type": "text",
           "subtitle": "Background",
           "title": "Developing a flexible tool for new store openings across the world",
-          "paragraph": "As Canada Goose is growing its retail footprint across the world, the brand was looking for a tool to drive excitement and anticipation in the new cities. 3Drawers was asked to develop the global concept for a city guide-style publication and produce the publication for the opening of new stores in Milan, Paris and Shanghai. We took charge of the process from concept to delivery, in close collaboration with Canada Goose’s in-house copywriting team. The result is the Canada Goose City Sense. An urban excursion guide designed to motivate city-dwellers to Live in the Open within the confines of the city.",
-          "paragraphHtml": "<p>As Canada Goose is growing its retail footprint across the world, the brand was looking for a tool to drive excitement and anticipation in the new cities. 3Drawers was asked to develop the global concept for a city guide-style publication and produce the publication for the opening of new stores in Milan, Paris and Shanghai. We took charge of the process from concept to delivery, in close collaboration with Canada Goose’s in-house copywriting team. The result is the Canada Goose City Sense. An urban excursion guide designed to motivate city-dwellers to Live in the Open within the confines of the city.</p>",
+          "paragraph": "As Canada Goose is growing its retail footprint across the world, the brand was looking for a tool to drive excitement and anticipation in the new cities. Invends was asked to develop the global concept for a city guide-style publication and produce the publication for the opening of new stores in Milan, Paris and Shanghai. We took charge of the process from concept to delivery, in close collaboration with Canada Goose’s in-house copywriting team. The result is the Canada Goose City Sense. An urban excursion guide designed to motivate city-dwellers to Live in the Open within the confines of the city.",
+          "paragraphHtml": "<p>As Canada Goose is growing its retail footprint across the world, the brand was looking for a tool to drive excitement and anticipation in the new cities. Invends was asked to develop the global concept for a city guide-style publication and produce the publication for the opening of new stores in Milan, Paris and Shanghai. We took charge of the process from concept to delivery, in close collaboration with Canada Goose’s in-house copywriting team. The result is the Canada Goose City Sense. An urban excursion guide designed to motivate city-dwellers to Live in the Open within the confines of the city.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -12631,8 +12723,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Canada Goose - City Sense | Urban excursion guides | Print & brand design | Work | 3Drawers Agency",
-      "metaDescription": "To drive excitement for the opening of Canada Goose’s new stores in Milan, Paris and Shanghai, 3Drawers concepted, designed and produced a series of urban excursion guides."
+      "metaTitle": "Canada Goose - City Sense | Urban excursion guides | Print & brand design | Work | Invends",
+      "metaDescription": "To drive excitement for the opening of Canada Goose’s new stores in Milan, Paris and Shanghai, Invends concepted, designed and produced a series of urban excursion guides."
     },
     {
       "uid": "musiversal-brand-identity-video",
@@ -12656,8 +12748,8 @@
       "roles": "Strategy · Creative Direction · Art Direction",
       "deliverables": "Brand Strategy · Visual Identity · Brand Video",
       "date": "2020-08-12",
-      "intro": "3Drawers Agency was invited to create the brand strategy, visual identity and promotional videos for the music production start-up Musiversal. \n\nThe result is a flexible branding system that embodies Musiversal’s role of unlocking the potential of millions of music artists. ",
-      "introLeft": "3Drawers Agency was invited to create the brand strategy, visual identity and promotional videos for the music production start-up Musiversal. ",
+      "intro": "Invends was invited to create the brand strategy, visual identity and promotional videos for the music production start-up Musiversal. \n\nThe result is a flexible branding system that embodies Musiversal’s role of unlocking the potential of millions of music artists. ",
+      "introLeft": "Invends was invited to create the brand strategy, visual identity and promotional videos for the music production start-up Musiversal. ",
       "introRight": "The result is a flexible branding system that embodies Musiversal’s role of unlocking the potential of millions of music artists. ",
       "body": [
         {
@@ -13159,7 +13251,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Musiversal: make more music | Branding and video | Work | 3Drawers Agency",
+      "metaTitle": "Musiversal: make more music | Branding and video | Work | Invends",
       "metaDescription": "Brand strategy, visual identity and promotional videos for the music production start-up Musiversal."
     },
     {
@@ -13188,8 +13280,8 @@
       "roles": "Conception · Creative Direction · Art Direction · Design",
       "deliverables": "Instagram launch concept · Graphic Novel",
       "date": "2020-11-15",
-      "intro": "When 3Drawers Agency was invited to launch the Instagram account for Chinese badminton legend Lin Dan, we decided to re-introduce the world to the genius that he is. \n\nIn collaboration with illustrators AmCo Studio we crafted a graphic novel for the digital age. Scrollable, swipeable, shareable. A nine-episode Origin Story retelling Lin Dan’s rise from birth to superhero status.",
-      "introLeft": "When 3Drawers Agency was invited to launch the Instagram account for Chinese badminton legend Lin Dan, we decided to re-introduce the world to the genius that he is. ",
+      "intro": "When Invends was invited to launch the Instagram account for Chinese badminton legend Lin Dan, we decided to re-introduce the world to the genius that he is. \n\nIn collaboration with illustrators AmCo Studio we crafted a graphic novel for the digital age. Scrollable, swipeable, shareable. A nine-episode Origin Story retelling Lin Dan’s rise from birth to superhero status.",
+      "introLeft": "When Invends was invited to launch the Instagram account for Chinese badminton legend Lin Dan, we decided to re-introduce the world to the genius that he is. ",
       "introRight": "In collaboration with illustrators AmCo Studio we crafted a graphic novel for the digital age. Scrollable, swipeable, shareable. A nine-episode Origin Story retelling Lin Dan’s rise from birth to superhero status.",
       "body": [
         {
@@ -13227,8 +13319,8 @@
           "type": "text",
           "subtitle": "Challenge",
           "title": "Re-introducing badminton’s greatest legend to the world",
-          "paragraph": "3Drawers Agency was invited to help launch the Instagram channel for Lin Dan, badminton’s greatest ever player and Chinese national hero.\n\nBut Lin Dan didn’t join Instagram to become famous. He already was. What he wanted was to connect with the fans he couldn’t reach before. Fans across the world that had seen him play and know his fame but didn’t feel intimately connected with the Chinese star.\n\nWe wanted to treat Lin Dan’s introduction to Instagram as a renewed introduction to the world.",
-          "paragraphHtml": "<p>3Drawers Agency was invited to help launch the Instagram channel for Lin Dan, badminton’s greatest ever player and Chinese national hero.<br/><br/>But Lin Dan didn’t join Instagram to become famous. He already was. What he wanted was to connect with the fans he couldn’t reach before. Fans across the world that had seen him play and know his fame but didn’t feel intimately connected with the Chinese star.<br/><br/>We wanted to treat Lin Dan’s introduction to Instagram as a renewed introduction to the world.</p>",
+          "paragraph": "Invends was invited to help launch the Instagram channel for Lin Dan, badminton’s greatest ever player and Chinese national hero.\n\nBut Lin Dan didn’t join Instagram to become famous. He already was. What he wanted was to connect with the fans he couldn’t reach before. Fans across the world that had seen him play and know his fame but didn’t feel intimately connected with the Chinese star.\n\nWe wanted to treat Lin Dan’s introduction to Instagram as a renewed introduction to the world.",
+          "paragraphHtml": "<p>Invends was invited to help launch the Instagram channel for Lin Dan, badminton’s greatest ever player and Chinese national hero.<br/><br/>But Lin Dan didn’t join Instagram to become famous. He already was. What he wanted was to connect with the fans he couldn’t reach before. Fans across the world that had seen him play and know his fame but didn’t feel intimately connected with the Chinese star.<br/><br/>We wanted to treat Lin Dan’s introduction to Instagram as a renewed introduction to the world.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -13539,8 +13631,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Super Dan Origin - Digital graphic novel | Lin Dan Instagram launch campaign | Graphic design & illustration | Work | 3Drawers Agency",
-      "metaDescription": "To launch the Instagram account of Chinese badminton athlete Lin Dan, 3Drawers crafted a graphic novel for the digital age. Scrollable, swipeable, shareable. A nine-episode Origin Story retelling Lin Dan’s rise from birth to superhero status."
+      "metaTitle": "Super Dan Origin - Digital graphic novel | Lin Dan Instagram launch campaign | Graphic design & illustration | Work | Invends",
+      "metaDescription": "To launch the Instagram account of Chinese badminton athlete Lin Dan, Invends crafted a graphic novel for the digital age. Scrollable, swipeable, shareable. A nine-episode Origin Story retelling Lin Dan’s rise from birth to superhero status."
     },
     {
       "uid": "tacos-padre-canned-cocktails",
@@ -13563,8 +13655,8 @@
       "roles": "Art direction · Graphic design · Illustration · Photography",
       "deliverables": "Series of can labels",
       "date": "2022-01-03",
-      "intro": "3Drawers worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can.\n\nThe set consisted of three types of margarita and three Mexican-inspired soft drinks.",
-      "introLeft": "3Drawers worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can.",
+      "intro": "Invends worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can.\n\nThe set consisted of three types of margarita and three Mexican-inspired soft drinks.",
+      "introLeft": "Invends worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can.",
       "introRight": "The set consisted of three types of margarita and three Mexican-inspired soft drinks.",
       "body": [
         {
@@ -13602,8 +13694,8 @@
           "type": "text",
           "subtitle": "BRIEF",
           "title": "Branding a new range of canned cocktails",
-          "paragraph": "Tacos Padre is led by culinary mastermind Nick Fitzgerald, who cut his teeth at the culinary institution that is Pujol, Mexico City. With Tacos Padre, Nick is on a mission to bring the authentic flavours of true Mexican street food to London.\n\nThose flavours are not only in the food, but also in the finely-balanced hand-crafted cocktails available at Tacos Padre’s Borough Market HQ. Applying the same care for quality ingredients and sophisticated flavours to the drinks, Tacos Padre’s cocktails became a quick success. To build on their popularity, the restaurant decided to make them available as a set of canned take-away cocktails too. Available in the taqueria, of course, but also online and through select retailers.\n\nTo help Tacos Padre scale the cocktail offering, 3Drawers was invited to create a design system for the labels that could span across a wide variety of flavours and formats, while staying true to Tacos Padre’s sophistication and authenticity.",
-          "paragraphHtml": "<p>Tacos Padre is led by culinary mastermind Nick Fitzgerald, who cut his teeth at the culinary institution that is Pujol, Mexico City. With Tacos Padre, Nick is on a mission to bring the authentic flavours of true Mexican street food to London.<br/><br/>Those flavours are not only in the food, but also in the finely-balanced hand-crafted cocktails available at Tacos Padre’s Borough Market HQ. Applying the same care for quality ingredients and sophisticated flavours to the drinks, Tacos Padre’s cocktails became a quick success. To build on their popularity, the restaurant decided to make them available as a set of canned take-away cocktails too. Available in the taqueria, of course, but also online and through select retailers.<br/><br/>To help Tacos Padre scale the cocktail offering, 3Drawers was invited to create a design system for the labels that could span across a wide variety of flavours and formats, while staying true to Tacos Padre’s sophistication and authenticity.</p>",
+          "paragraph": "Tacos Padre is led by culinary mastermind Nick Fitzgerald, who cut his teeth at the culinary institution that is Pujol, Mexico City. With Tacos Padre, Nick is on a mission to bring the authentic flavours of true Mexican street food to London.\n\nThose flavours are not only in the food, but also in the finely-balanced hand-crafted cocktails available at Tacos Padre’s Borough Market HQ. Applying the same care for quality ingredients and sophisticated flavours to the drinks, Tacos Padre’s cocktails became a quick success. To build on their popularity, the restaurant decided to make them available as a set of canned take-away cocktails too. Available in the taqueria, of course, but also online and through select retailers.\n\nTo help Tacos Padre scale the cocktail offering, Invends was invited to create a design system for the labels that could span across a wide variety of flavours and formats, while staying true to Tacos Padre’s sophistication and authenticity.",
+          "paragraphHtml": "<p>Tacos Padre is led by culinary mastermind Nick Fitzgerald, who cut his teeth at the culinary institution that is Pujol, Mexico City. With Tacos Padre, Nick is on a mission to bring the authentic flavours of true Mexican street food to London.<br/><br/>Those flavours are not only in the food, but also in the finely-balanced hand-crafted cocktails available at Tacos Padre’s Borough Market HQ. Applying the same care for quality ingredients and sophisticated flavours to the drinks, Tacos Padre’s cocktails became a quick success. To build on their popularity, the restaurant decided to make them available as a set of canned take-away cocktails too. Available in the taqueria, of course, but also online and through select retailers.<br/><br/>To help Tacos Padre scale the cocktail offering, Invends was invited to create a design system for the labels that could span across a wide variety of flavours and formats, while staying true to Tacos Padre’s sophistication and authenticity.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -14009,8 +14101,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "Tacos Padre cocktail label design | Packaging | Work | 3Drawers Agency",
-      "metaDescription": "3Drawers worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can. The set consisted of three types of margarita and three Mexican-inspired soft drinks."
+      "metaTitle": "Tacos Padre cocktail label design | Packaging | Work | Invends",
+      "metaDescription": "Invends worked with Borough Market-based taqueria Tacos Padre to design a series of labels for their new range of cocktails-in-a-can. The set consisted of three types of margarita and three Mexican-inspired soft drinks."
     },
     {
       "uid": "we-are-third-website",
@@ -14316,8 +14408,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "We Are Third | Website and branding | Work | 3Drawers Agency",
-      "metaDescription": "Branding and website for the the family office Third by Kenjiro. 3Drawers built a visual identity and web interactions around paintbrushes embracing THIRD's roots in art and construction."
+      "metaTitle": "We Are Third | Website and branding | Work | Invends",
+      "metaDescription": "Branding and website for the the family office Third by Kenjiro. Invends built a visual identity and web interactions around paintbrushes embracing THIRD's roots in art and construction."
     },
     {
       "uid": "presight-partners-website-branding",
@@ -14341,8 +14433,8 @@
       "roles": "Strategy · Branding · Concept · Art Direction · Web Design · Production",
       "deliverables": "WEBSITE · BRAND IDENTITY · ILLUSTRATIONS",
       "date": "2021-11-15",
-      "intro": "3Drawers helped the new fund of venture funds Presight Partners to build their launch website and visual identity.\n\nThe goal was to set Presight Partners apart as a fresh alternative within the risk-averse fund-of-funds category.",
-      "introLeft": "3Drawers helped the new fund of venture funds Presight Partners to build their launch website and visual identity.",
+      "intro": "Invends helped the new fund of venture funds Presight Partners to build their launch website and visual identity.\n\nThe goal was to set Presight Partners apart as a fresh alternative within the risk-averse fund-of-funds category.",
+      "introLeft": "Invends helped the new fund of venture funds Presight Partners to build their launch website and visual identity.",
       "introRight": "The goal was to set Presight Partners apart as a fresh alternative within the risk-averse fund-of-funds category.",
       "body": [
         {
@@ -14370,8 +14462,8 @@
           "type": "text",
           "subtitle": "Challenge",
           "title": "Establishing Presight Partners as a fresh alternative within the category of Fund-Of-Funds.",
-          "paragraph": "Presight Partners is a new fund of venture funds started in 2021 by Christian Angermayer’s Apeiron Investment Group and Nick Nigam. Within the category of Fund-Of-Funds, Presight Partners aims to be a fresh alternative, attracting younger, emerging fund managers. 3Drawers helped Presight Partners to build their launch website and visual identity to set the company apart within the risk-averse fund-of-funds category.  ",
-          "paragraphHtml": "<p>Presight Partners is a new fund of venture funds started in 2021 by Christian Angermayer’s Apeiron Investment Group and Nick Nigam. Within the category of Fund-Of-Funds, Presight Partners aims to be a fresh alternative, attracting younger, emerging fund managers. 3Drawers helped Presight Partners to build their launch website and visual identity to set the company apart within the risk-averse fund-of-funds category.  </p>",
+          "paragraph": "Presight Partners is a new fund of venture funds started in 2021 by Christian Angermayer’s Apeiron Investment Group and Nick Nigam. Within the category of Fund-Of-Funds, Presight Partners aims to be a fresh alternative, attracting younger, emerging fund managers. Invends helped Presight Partners to build their launch website and visual identity to set the company apart within the risk-averse fund-of-funds category.  ",
+          "paragraphHtml": "<p>Presight Partners is a new fund of venture funds started in 2021 by Christian Angermayer’s Apeiron Investment Group and Nick Nigam. Within the category of Fund-Of-Funds, Presight Partners aims to be a fresh alternative, attracting younger, emerging fund managers. Invends helped Presight Partners to build their launch website and visual identity to set the company apart within the risk-averse fund-of-funds category.  </p>",
           "images": [],
           "videos": [],
           "items": [
@@ -14695,7 +14787,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "PRESIGHT PARTNERS ‣ WEBSITE & BRAND IDENTITY | Work | 3Drawers Agency",
+      "metaTitle": "PRESIGHT PARTNERS ‣ WEBSITE & BRAND IDENTITY | Work | Invends",
       "metaDescription": "Brand identity and launch website for the new investment brand Presight Partners."
     },
     {
@@ -15194,8 +15286,8 @@
       "roles": "Strategy · Art direction · Brand Design · Web Design · Illustration · Motion Design · Development · Production · Sound Design",
       "deliverables": "Brand identity · Website · Sticker pack",
       "date": "2023-04-12",
-      "intro": "3Drawers Agency was invited to brand the new messaging platform Ghost – a supercharged messaging app for Gen-Z, founded by a former Giphy product and engineering team to make messaging more expressive. \n\nWe crafted a full visual identity to reflect the brand’s core belief that communicating between friends should be more honest and playful. ",
-      "introLeft": "3Drawers Agency was invited to brand the new messaging platform Ghost – a supercharged messaging app for Gen-Z, founded by a former Giphy product and engineering team to make messaging more expressive. ",
+      "intro": "Invends was invited to brand the new messaging platform Ghost – a supercharged messaging app for Gen-Z, founded by a former Giphy product and engineering team to make messaging more expressive. \n\nWe crafted a full visual identity to reflect the brand’s core belief that communicating between friends should be more honest and playful. ",
+      "introLeft": "Invends was invited to brand the new messaging platform Ghost – a supercharged messaging app for Gen-Z, founded by a former Giphy product and engineering team to make messaging more expressive. ",
       "introRight": "We crafted a full visual identity to reflect the brand’s core belief that communicating between friends should be more honest and playful. ",
       "body": [
         {
@@ -15758,8 +15850,8 @@
           "type": "text",
           "subtitle": "DIGITAL",
           "title": "Ghost your Website",
-          "paragraph": "Supporting the launch, 3Drawers Agency designed Ghost’s ‘Coming Soon’ page to introduce the playful ethos of the brand. Filled with interactions and animations, the website is a digital sample of what it feels like to enter the realm of Ghost. \n\n  A full interactable website will launch in early Summer of 2023.",
-          "paragraphHtml": "<p>Supporting the launch, 3Drawers Agency designed Ghost’s ‘Coming Soon’ page to introduce the playful ethos of the brand. Filled with interactions and animations, the website is a digital sample of what it feels like to enter the realm of Ghost. <br/><br/>  A full interactable website will launch in early Summer of 2023.</p>",
+          "paragraph": "Supporting the launch, Invends designed Ghost’s ‘Coming Soon’ page to introduce the playful ethos of the brand. Filled with interactions and animations, the website is a digital sample of what it feels like to enter the realm of Ghost. \n\n  A full interactable website will launch in early Summer of 2023.",
+          "paragraphHtml": "<p>Supporting the launch, Invends designed Ghost’s ‘Coming Soon’ page to introduce the playful ethos of the brand. Filled with interactions and animations, the website is a digital sample of what it feels like to enter the realm of Ghost. <br/><br/>  A full interactable website will launch in early Summer of 2023.</p>",
           "images": [],
           "videos": [],
           "items": [
@@ -15888,7 +15980,7 @@
       "date": "2025-09-23",
       "intro": "How can a coffee brand mature without losing the independent charm that makes it special?\n\nmonopo crafted a visual identity that leans into the contemplative powers of a walk. Complete with a lino-printed character called Miles, custom typography and bespoke illustrations to preserve the character and quirks that make NKORA special.",
       "introLeft": "How can a coffee brand mature without losing the independent charm that makes it special?",
-      "introRight": "3Drawers crafted a visual identity that leans into the contemplative powers of a walk. Complete with a lino-printed character called Miles, custom typography and bespoke illustrations to preserve the character and quirks that make NKORA special.",
+      "introRight": "Invends crafted a visual identity that leans into the contemplative powers of a walk. Complete with a lino-printed character called Miles, custom typography and bespoke illustrations to preserve the character and quirks that make NKORA special.",
       "body": [
         {
           "index": 0,
@@ -16259,8 +16351,8 @@
           "type": "text",
           "subtitle": "PHOTOGRAPHY",
           "title": "Warm film photography that invites you in",
-          "paragraph": "To complement the naturally warm accents of olive green, butter yellow and burnt orange in the colour palette, 3Drawers produced photography that felt soft and approachable. Each store was photographed on film in a quiet, observational style. Focusing on romanticising the lived-in and textured details of the cafes, locals are captured mid-walk and each space appears crystallized in a grounding energy.",
-          "paragraphHtml": "<p>To complement the naturally warm accents of olive green, butter yellow and burnt orange in the colour palette, 3Drawers produced photography that felt soft and approachable. Each store was photographed on film in a quiet, observational style. Focusing on romanticising the lived-in and textured details of the cafes, locals are captured mid-walk and each space appears crystallized in a grounding energy.</p>",
+          "paragraph": "To complement the naturally warm accents of olive green, butter yellow and burnt orange in the colour palette, Invends produced photography that felt soft and approachable. Each store was photographed on film in a quiet, observational style. Focusing on romanticising the lived-in and textured details of the cafes, locals are captured mid-walk and each space appears crystallized in a grounding energy.",
+          "paragraphHtml": "<p>To complement the naturally warm accents of olive green, butter yellow and burnt orange in the colour palette, Invends produced photography that felt soft and approachable. Each store was photographed on film in a quiet, observational style. Focusing on romanticising the lived-in and textured details of the cafes, locals are captured mid-walk and each space appears crystallized in a grounding energy.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -16295,7 +16387,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "NKORA COFFEE ‣ BRAND IDENTITY | 3Drawers Agency",
+      "metaTitle": "NKORA COFFEE ‣ BRAND IDENTITY | Invends",
       "metaDescription": "Visual identity for the independent coffee chain Nkora. Complete with a lino-printed character, custom typography, bespoke illustrations, photography, video and website."
     },
     {
@@ -16323,8 +16415,8 @@
       "roles": "Conception · Art Direction · Design · Production",
       "deliverables": "Pop-up space · Photography",
       "date": "2025-06-25",
-      "intro": "To promote their new ULTI RS™ Series and new Covent Garden store, Onitsuka Tiger invited 3Drawers to imagine a brand activation that incentivises people to get active in their city. We activated the idea of ‘Urban Athlete’ through a pop-up in the heart of Covent Garden.\n\nThe idea: the Finish Line Café. A pop-up café in the shape of a marathon finish arch that rewards visitors who show proof of 10k steps with a special drink by Origin Coffee and a chocolate medal.",
-      "introLeft": "To promote their new ULTI RS™ Series and new Covent Garden store, Onitsuka Tiger invited 3Drawers to imagine a brand activation that incentivises people to get active in their city. We activated the idea of ‘Urban Athlete’ through a pop-up in the heart of Covent Garden.",
+      "intro": "To promote their new ULTI RS™ Series and new Covent Garden store, Onitsuka Tiger invited Invends to imagine a brand activation that incentivises people to get active in their city. We activated the idea of ‘Urban Athlete’ through a pop-up in the heart of Covent Garden.\n\nThe idea: the Finish Line Café. A pop-up café in the shape of a marathon finish arch that rewards visitors who show proof of 10k steps with a special drink by Origin Coffee and a chocolate medal.",
+      "introLeft": "To promote their new ULTI RS™ Series and new Covent Garden store, Onitsuka Tiger invited Invends to imagine a brand activation that incentivises people to get active in their city. We activated the idea of ‘Urban Athlete’ through a pop-up in the heart of Covent Garden.",
       "introRight": "The idea: the Finish Line Café. A pop-up café in the shape of a marathon finish arch that rewards visitors who show proof of 10k steps with a special drink by Origin Coffee and a chocolate medal.",
       "body": [
         {
@@ -16362,8 +16454,8 @@
           "type": "text",
           "subtitle": "CHALLENGE",
           "title": "Promoting the new ULTI RS™ Shoe Series and the new Covent Garden store.",
-          "paragraph": "To promote their new trail running inspired ULTI RS™ Series, a new style of shoe mixing high fashion and sports, Onitsuka Tiger invited 3Drawers to activate the idea of 'Urban Athlete' on the square in front of their new Covent Garden store. \n\nThe challenge: how can we create a playful interactive activation that incentivises people to get active in their city?",
-          "paragraphHtml": "<p>To promote their new trail running inspired ULTI RS™ Series, a new style of shoe mixing high fashion and sports, Onitsuka Tiger invited 3Drawers to activate the idea of 'Urban Athlete' on the square in front of their new Covent Garden store. <br/><br/>The challenge: how can we create a playful interactive activation that incentivises people to get active in their city?</p>",
+          "paragraph": "To promote their new trail running inspired ULTI RS™ Series, a new style of shoe mixing high fashion and sports, Onitsuka Tiger invited Invends to activate the idea of 'Urban Athlete' on the square in front of their new Covent Garden store. \n\nThe challenge: how can we create a playful interactive activation that incentivises people to get active in their city?",
+          "paragraphHtml": "<p>To promote their new trail running inspired ULTI RS™ Series, a new style of shoe mixing high fashion and sports, Onitsuka Tiger invited Invends to activate the idea of 'Urban Athlete' on the square in front of their new Covent Garden store. <br/><br/>The challenge: how can we create a playful interactive activation that incentivises people to get active in their city?</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -16530,7 +16622,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "ONITSUKA TIGER  ‣ FINISH LINE CAFE | Pop-up Activation | 3Drawers Agency",
+      "metaTitle": "ONITSUKA TIGER  ‣ FINISH LINE CAFE | Pop-up Activation | Invends",
       "metaDescription": "Conception, spatial design and production of a pop-up activation in Covent Garden for Onitsuka Tiger."
     },
     {
@@ -16560,8 +16652,8 @@
       "roles": "STRATEGY · CONCEPTION · ART DIRECTION · DESIGN · PRODUCTION",
       "deliverables": "SPATIAL CONCEPT · SOCIAL MEDIA CONTENT",
       "date": "2025-08-30",
-      "intro": "How can we turn a simple kit pick-up into a brand experience for athletes? That was the challenge Yonex put to 3Drawers for our latest collaboration at the Badminton World Championships in Paris. \n\nWe designed the “Yonex Point de Vue” space; an athlete’s lounge above the clouds that takes players away from reality while they pick up their Yonex-sponsored tournament gear. A space that immerses them into the imaginative world of Yonex and helps them see reality through the brand’s whimsical eyes.",
-      "introLeft": "How can we turn a simple kit pick-up into a brand experience for athletes? That was the challenge Yonex put to 3Drawers for our latest collaboration at the Badminton World Championships in Paris. ",
+      "intro": "How can we turn a simple kit pick-up into a brand experience for athletes? That was the challenge Yonex put to Invends for our latest collaboration at the Badminton World Championships in Paris. \n\nWe designed the “Yonex Point de Vue” space; an athlete’s lounge above the clouds that takes players away from reality while they pick up their Yonex-sponsored tournament gear. A space that immerses them into the imaginative world of Yonex and helps them see reality through the brand’s whimsical eyes.",
+      "introLeft": "How can we turn a simple kit pick-up into a brand experience for athletes? That was the challenge Yonex put to Invends for our latest collaboration at the Badminton World Championships in Paris. ",
       "introRight": "We designed the “Yonex Point de Vue” space; an athlete’s lounge above the clouds that takes players away from reality while they pick up their Yonex-sponsored tournament gear. A space that immerses them into the imaginative world of Yonex and helps them see reality through the brand’s whimsical eyes.",
       "body": [
         {
@@ -17038,7 +17130,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "PARIS WORLD CHAMPIONSHIPS ‣ YONEX PLAYERS LOUNGE | Spatial Design | 3Drawers Agency",
+      "metaTitle": "PARIS WORLD CHAMPIONSHIPS ‣ YONEX PLAYERS LOUNGE | Spatial Design | Invends",
       "metaDescription": "Conception, spatial design and production of the pop-up Yonex Player’s Lounge at the 2025 Paris Badminton World Championships."
     },
     {
@@ -17062,8 +17154,8 @@
       "roles": "CONCEPTION · PRODUCTION · STRATEGY · ART DIRECTION · SPATIAL DESIGN · GRAPHIC DESIGN",
       "deliverables": "SPATIAL CONCEPT · ARTWORK · SOCIAL MEDIA CONTENT",
       "date": "2024-03-12",
-      "intro": "For two years in a row, 3Drawers Agency has been invited to concept and develop an athlete hospitality lounge for the YONEX All England Open Badminton Championships.\n\nIt has provided a relaxing and educational space for the athletes to experience the prestige of the tournament.",
-      "introLeft": "For two years in a row, 3Drawers Agency has been invited to concept and develop an athlete hospitality lounge for the YONEX All England Open Badminton Championships.",
+      "intro": "For two years in a row, Invends has been invited to concept and develop an athlete hospitality lounge for the YONEX All England Open Badminton Championships.\n\nIt has provided a relaxing and educational space for the athletes to experience the prestige of the tournament.",
+      "introLeft": "For two years in a row, Invends has been invited to concept and develop an athlete hospitality lounge for the YONEX All England Open Badminton Championships.",
       "introRight": "It has provided a relaxing and educational space for the athletes to experience the prestige of the tournament.",
       "body": [
         {
@@ -17137,8 +17229,8 @@
           "type": "text",
           "subtitle": "",
           "title": "",
-          "paragraph": "Yonex and 3Drawers identified an area of opportunity to be the Athlete’s Lounge – a private space away from the public eye and fans, and therefore often overlooked. The lounge has many functions for the tournament; it is where athletes arrive to pick up their racquets, equipment, Yonex Apparel Innovations kit and interact with other players. The time spent here by the athletes would be equal to, if not more, than their time on the courts. \n\nFor the 2024 edition, 3Drawers built on this core idea to evolve the lounge and athlete experience even further.",
-          "paragraphHtml": "<p>Yonex and 3Drawers identified an area of opportunity to be the Athlete’s Lounge – a private space away from the public eye and fans, and therefore often overlooked. The lounge has many functions for the tournament; it is where athletes arrive to pick up their racquets, equipment, Yonex Apparel Innovations kit and interact with other players. The time spent here by the athletes would be equal to, if not more, than their time on the courts. </p><p><br/>For the 2024 edition, 3Drawers built on this core idea to evolve the lounge and athlete experience even further.</p>",
+          "paragraph": "Yonex and Invends identified an area of opportunity to be the Athlete’s Lounge – a private space away from the public eye and fans, and therefore often overlooked. The lounge has many functions for the tournament; it is where athletes arrive to pick up their racquets, equipment, Yonex Apparel Innovations kit and interact with other players. The time spent here by the athletes would be equal to, if not more, than their time on the courts. \n\nFor the 2024 edition, Invends built on this core idea to evolve the lounge and athlete experience even further.",
+          "paragraphHtml": "<p>Yonex and Invends identified an area of opportunity to be the Athlete’s Lounge – a private space away from the public eye and fans, and therefore often overlooked. The lounge has many functions for the tournament; it is where athletes arrive to pick up their racquets, equipment, Yonex Apparel Innovations kit and interact with other players. The time spent here by the athletes would be equal to, if not more, than their time on the courts. </p><p><br/>For the 2024 edition, Invends built on this core idea to evolve the lounge and athlete experience even further.</p>",
           "images": [],
           "videos": [],
           "items": [],
@@ -17793,7 +17885,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX ALL ENGLAND ‣ PLAYERS LOUNGE | Spatial design | 3Drawers Agency",
+      "metaTitle": "YONEX ALL ENGLAND ‣ PLAYERS LOUNGE | Spatial design | Invends",
       "metaDescription": "Conception, spatial design and production of the pop-up Yonex Player’s Lounge at the Yonex All England Badminton Championships 2023 and 2024."
     },
     {
@@ -18189,8 +18281,8 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX ASTROX 99 ‣ LAUNCH CAMPAIGN | 3Drawers Agency",
-      "metaDescription": "For the launch of the new Yonex badminton racquet Astrox99 Gen3, 3Drawers developed an integrated campaign including hype film, social campaign, key visual and tech film."
+      "metaTitle": "YONEX ASTROX 99 ‣ LAUNCH CAMPAIGN | Invends",
+      "metaDescription": "For the launch of the new Yonex badminton racquet Astrox99 Gen3, Invends developed an integrated campaign including hype film, social campaign, key visual and tech film."
     },
     {
       "uid": "barbour-icons-in-quilting",
@@ -18219,8 +18311,8 @@
       "roles": "CONCEPTION · ART DIRECTION · PRODUCTION · CGI",
       "deliverables": "CGI Videos",
       "date": "2024-12-17",
-      "intro": "Barbour, the iconic British luxury fashion brand, invited 3Drawers to craft a digital amplification campaign to generate intrigue for the 30th anniversary of its Liddesdale quilted jackets.\n\nPutting a spin on fake out-of-home advertising, we created a series of four videos, shot in London, New York, Shanghai, and Seoul, in which iconic landmarks in each city were enveloped in Barbour’s signature quilt and ‘taken over’ by flora from the British countryside.",
-      "introLeft": "Barbour, the iconic British luxury fashion brand, invited 3Drawers to craft a digital amplification campaign to generate intrigue for the 30th anniversary of its Liddesdale quilted jackets.",
+      "intro": "Barbour, the iconic British luxury fashion brand, invited Invends to craft a digital amplification campaign to generate intrigue for the 30th anniversary of its Liddesdale quilted jackets.\n\nPutting a spin on fake out-of-home advertising, we created a series of four videos, shot in London, New York, Shanghai, and Seoul, in which iconic landmarks in each city were enveloped in Barbour’s signature quilt and ‘taken over’ by flora from the British countryside.",
+      "introLeft": "Barbour, the iconic British luxury fashion brand, invited Invends to craft a digital amplification campaign to generate intrigue for the 30th anniversary of its Liddesdale quilted jackets.",
       "introRight": "Putting a spin on fake out-of-home advertising, we created a series of four videos, shot in London, New York, Shanghai, and Seoul, in which iconic landmarks in each city were enveloped in Barbour’s signature quilt and ‘taken over’ by flora from the British countryside.",
       "body": [
         {
@@ -18565,7 +18657,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "BARBOUR ‣ ICONS IN QUILTING  | Digital activation, CGI | 3Drawers Agency",
+      "metaTitle": "BARBOUR ‣ ICONS IN QUILTING  | Digital activation, CGI | Invends",
       "metaDescription": "A Fake-out-of-home digital activation to generate intrigue for the 30th anniversary of Barbour's Liddesdale quilted jackets."
     },
     {
@@ -19120,7 +19212,7 @@
           "primaryImage": null
         }
       ],
-      "metaTitle": "YONEX ALL ENGLAND ‣ ATHLETE CLUBHOUSE | Spatial design | 3Drawers Agency",
+      "metaTitle": "YONEX ALL ENGLAND ‣ ATHLETE CLUBHOUSE | Spatial design | Invends",
       "metaDescription": "Conception, spatial design and production of the pop-up Yonex Player’s Lounge at the 2025 Yonex All England in Birmingham."
     }
   ]

@@ -1,0 +1,298 @@
+{
+  "results": [
+    {
+      "file": "services/svc-diseno-web.webp",
+      "key": "svc-diseno-web",
+      "alt": "Layout web y arquitectura de interfaz en prototipo sobre dispositivo",
+      "note": "Servicio: Diseño web",
+      "pick": {
+        "id": 17106506,
+        "name": "Website development layout sketch drawing",
+        "author": "rawpixel.com",
+        "authorSlug": "rawpixel-com",
+        "url": "https://www.magnific.com/free-photo/website-development-layout-sketch-drawing_17106506.htm",
+        "cdn": "https://img.magnific.com/free-photo/website-development-layout-sketch-drawing_53876-124188.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Wireframe/UI layout on device — UX/UI without generic office portrait",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-branding.webp",
+      "key": "svc-branding",
+      "alt": "Sistema de papelería e identidad corporativa en composición editorial",
+      "note": "Servicio: Branding",
+      "pick": {
+        "id": 21018877,
+        "name": "Blank stationery set. Corporate identity template",
+        "author": "fabrikasimf",
+        "authorSlug": "fabrikasimf",
+        "url": "https://www.magnific.com/free-photo/blank-stationery-set-corporate-identity-template_21018877.htm",
+        "cdn": "https://img.magnific.com/free-photo/blank-stationery-set-corporate-identity-template_93675-130793.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Corporate identity stationery system — cool neutrals, no citrus props",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-desarrollo-web.webp",
+      "key": "svc-desarrollo-web",
+      "alt": "Concepto de sitio responsive: layouts web en dispositivo",
+      "note": "Servicio: Desarrollo web",
+      "pick": {
+        "id": 17112868,
+        "name": "Responsive Design Layout Software Concept",
+        "author": "rawpixel.com",
+        "authorSlug": "rawpixel-com",
+        "url": "https://www.magnific.com/free-photo/responsive-design-layout-software-concept_17112868.htm",
+        "cdn": "https://img.magnific.com/free-photo/responsive-design-layout-software-concept_53876-124325.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Responsive website layout concept — product web, not coding portrait",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-aplicaciones.webp",
+      "key": "svc-aplicaciones",
+      "alt": "Pantalla de producto móvil con interfaz de aplicación",
+      "note": "Servicio: Aplicaciones",
+      "pick": {
+        "id": 13462466,
+        "name": "Mobile phone screen product showcase",
+        "author": "rawpixel.com",
+        "authorSlug": "rawpixel-com",
+        "url": "https://www.magnific.com/free-photo/mobile-phone-screen-product-showcase_13462466.htm",
+        "cdn": "https://img.magnific.com/free-photo/mobile-phone-screen-product-showcase_53876-98293.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Mobile screen product showcase — app UI focus",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-ecommerce.webp",
+      "key": "svc-ecommerce",
+      "alt": "Compra en tienda online desde la app móvil",
+      "note": "Servicio: E-commerce",
+      "pick": {
+        "id": 61516445,
+        "name": "Shopper using online store mobile app on phone, examining modern fashion items collection and buying merchandise. Boutique client looking at clothing line on retail shop website.",
+        "author": "DC Studio",
+        "authorSlug": "dcstudio",
+        "url": "https://www.magnific.com/free-photo/shopper-using-online-store-mobile-app-phone-examining-modern-fashion-items-collection-buying-merchandise-boutique-client-looking-clothing-line-retail-shop-website_61516445.htm",
+        "cdn": "https://img.magnific.com/free-photo/shopper-using-online-store-mobile-app-phone-examining-modern-fashion-items-collection-buying-merchandise-boutique-client-looking-clothing-line-retail-shop-website_482257-67405.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Online store mobile app shopping flow",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-seo.webp",
+      "key": "svc-seo",
+      "alt": "Panel de analítica orientado a visibilidad y búsqueda",
+      "note": "Servicio: SEO",
+      "pick": {
+        "id": 412501375,
+        "name": "Business data analytics dashboard",
+        "author": "magnific",
+        "authorSlug": "magnific",
+        "url": "https://www.magnific.com/free-ai-image/business-data-analytics-dashboard_412501375.htm",
+        "cdn": "https://img.magnific.com/free-photo/business-data-analytics-dashboard_23-2151937262.jpg",
+        "isAIGenerated": true
+      },
+      "reason": "Analytics dashboard for search/visibility work",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-marketing.webp",
+      "key": "svc-marketing",
+      "alt": "Estudio creativo: edición fotográfica y dirección de campaña",
+      "note": "Servicio: Marketing",
+      "pick": {
+        "id": 19100944,
+        "name": "Digital Tablet Photography Design Studio Editing Concept",
+        "author": "rawpixel.com",
+        "authorSlug": "rawpixel-com",
+        "url": "https://www.magnific.com/free-photo/digital-tablet-photography-design-studio-editing-concept_19100944.htm",
+        "cdn": "https://img.magnific.com/free-photo/digital-tablet-photography-design-studio-editing-concept_53876-146880.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Creative studio photography + editing — campaign craft",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-ia.webp",
+      "key": "svc-ia",
+      "alt": "Concepto de sistemas de inteligencia artificial aplicados al trabajo",
+      "note": "Servicio: Inteligencia artificial",
+      "pick": {
+        "id": 57197101,
+        "name": "Artificial Intelligence enabling computers to replicate human brain functioning. Machine learning algorithms used to do computational operations based on data pattern recognition, 3D render animation",
+        "author": "DC Studio",
+        "authorSlug": "dcstudio",
+        "url": "https://www.magnific.com/free-photo/artificial-intelligence-enabling-computers-replicate-human-brain-functioning-machine-learning-algorithms-used-computational-operations-based-data-pattern-recognition-3d-render-animation_57197101.htm",
+        "cdn": "https://img.magnific.com/free-photo/artificial-intelligence-enabling-computers-replicate-human-brain-functioning-machine-learning-algorithms-used-computational-operations-based-data-pattern-recognition-3d-render-animation_482257-66074.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "AI enabling systems — conceptual, not neon wash",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-automatizacion.webp",
+      "key": "svc-automatizacion",
+      "alt": "Optimización digital de procesos y flujos automatizados",
+      "note": "Servicio: Automatización",
+      "pick": {
+        "id": 426496207,
+        "name": "Digital Transformation and Process Optimization",
+        "author": "muhammad.abdullah",
+        "authorSlug": "muhammad-abdullah",
+        "url": "https://www.magnific.com/free-ai-image/digital-transformation-process-optimization_426496207.htm",
+        "cdn": "https://img.magnific.com/free-photo/digital-transformation-process-optimization_84443-74868.jpg",
+        "isAIGenerated": true
+      },
+      "reason": "Digital process optimization — workflow systems",
+      "skipped": true
+    },
+    {
+      "file": "services/svc-migracion.webp",
+      "key": "svc-migracion",
+      "alt": "Diagnóstico técnico de sistemas en proceso de migración",
+      "note": "Servicio: Migración y refactorización",
+      "pick": {
+        "id": 158794903,
+        "name": "Developer identifying server issues",
+        "author": "DC Studio",
+        "authorSlug": "dcstudio",
+        "url": "https://www.magnific.com/free-photo/developer-identifying-server-issues_158794903.htm",
+        "cdn": "https://img.magnific.com/free-photo/developer-identifying-server-issues_482257-81365.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Developer diagnosing systems — migration/refactor context",
+      "download": {
+        "filename": "81365.jpg",
+        "cleanUrlHost": "downloadscdn6.magnific.com",
+        "bytes": 11028252
+      }
+    },
+    {
+      "file": "services/svc-mvp.webp",
+      "key": "svc-mvp",
+      "alt": "Planificación de prototipo con notas adhesivas en mesa de trabajo",
+      "note": "Servicio: MVP ultra-rápido",
+      "pick": {
+        "id": 1005978,
+        "name": "Business executives reading sticky notes",
+        "author": "peoplecreations",
+        "authorSlug": "peoplecreations",
+        "url": "https://www.magnific.com/free-photo/business-executives-reading-sticky-notes_1005978.htm",
+        "cdn": "https://img.magnific.com/free-photo/business-executives-reading-sticky-notes_1170-1886.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Sticky-note prototype planning — MVP scope work",
+      "skipped": true
+    },
+    {
+      "file": "principle-diseno.webp",
+      "key": "principle-diseno",
+      "alt": "Estudio de diseño gráfico con materiales de dirección de arte",
+      "note": "Oficio / principio: Diseño",
+      "pick": {
+        "id": 150835260,
+        "name": "Still life of  graphic design studio",
+        "author": "magnific",
+        "authorSlug": "magnific",
+        "url": "https://www.magnific.com/free-photo/still-life-graphic-design-studio_150835260.htm",
+        "cdn": "https://img.magnific.com/free-photo/still-life-graphic-design-studio_23-2151320739.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Graphic design studio still life — craft materials",
+      "skipped": true
+    },
+    {
+      "file": "blog-tres-oficios.webp",
+      "key": "blog-tres-oficios",
+      "alt": "Equipo creativo colaborando en un proyecto de diseño",
+      "note": "Blog: Tres oficios",
+      "pick": {
+        "id": 10586228,
+        "name": "Creative team working on design project together",
+        "author": "pch.vector",
+        "authorSlug": "pch-vector",
+        "url": "https://www.magnific.com/free-photo/creative-team-working-design-project-together_10586228.htm",
+        "cdn": "https://img.magnific.com/free-photo/creative-team-working-design-project-together_74855-9773.jpg",
+        "isAIGenerated": false
+      },
+      "reason": "Creative team on design project — three crafts together",
+      "download": {
+        "filename": "9773.jpg",
+        "cleanUrlHost": "downloadscdn6.magnific.com",
+        "bytes": 5908606
+      }
+    }
+  ],
+  "errors": [
+    {
+      "key": "principle-desarrollo",
+      "error": "download API 11677979: HTTP 429 after retries"
+    },
+    {
+      "key": "principle-marketing",
+      "error": "download API 13659287: HTTP 429 after retries"
+    },
+    {
+      "key": "project-editorial",
+      "error": "download API 17113739: HTTP 429 after retries"
+    },
+    {
+      "key": "project-landing-producto",
+      "error": "download API 16448025: HTTP 429 after retries"
+    },
+    {
+      "key": "project-lanzamiento-marca",
+      "error": "download API 417980946: HTTP 429 after retries"
+    },
+    {
+      "key": "project-landing-servicio",
+      "error": "download API 1211573: HTTP 429 after retries"
+    },
+    {
+      "key": "project-institucional",
+      "error": "download API 8857805: HTTP 429 after retries"
+    },
+    {
+      "key": "project-contenido",
+      "error": "download API 105370477: HTTP 429 after retries"
+    },
+    {
+      "key": "blog-conversion",
+      "error": "download API 58629430: HTTP 429 after retries"
+    },
+    {
+      "key": "blog-brief",
+      "error": "download API 13415999: HTTP 429 after retries"
+    },
+    {
+      "key": "blog-contenido-vende",
+      "error": "download API 11307088: HTTP 429 after retries"
+    },
+    {
+      "key": "blog-desarrollo-ux",
+      "error": "download API 5839470: HTTP 429 after retries"
+    }
+  ],
+  "done": [
+    "svc-diseno-web",
+    "svc-branding",
+    "svc-desarrollo-web",
+    "svc-aplicaciones",
+    "svc-ecommerce",
+    "svc-seo",
+    "svc-marketing",
+    "svc-ia",
+    "svc-automatizacion",
+    "svc-mvp",
+    "principle-diseno",
+    "svc-migracion",
+    "blog-tres-oficios"
+  ]
+}

@@ -46,24 +46,100 @@
   font-style: italic;
   font-display: swap;
 }
-@font-face {
-  font-family: "Noto Sans CJK JP";
-  src: url("/fonts/NotoSansCJKjp-Regular.woff2") format("woff2"),
-    url("/fonts/NotoSansCJKjp-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+/* Shared brand + layout tokens */
+:root {
+  --gutter: max(
+    clamp(1rem, 3.2vw, 2.5rem),
+    env(safe-area-inset-left, 0px),
+    env(safe-area-inset-right, 0px)
+  );
+  --header-h: 4.25rem;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --font: Roobert, system-ui, sans-serif;
+  --font-display: "Geist-Variable", Geist, Roobert, system-ui, sans-serif;
+  --font-display-italic: "Geist-VariableItalic", "Geist-Variable", Geist,
+    Roobert, sans-serif;
+  --tracking-display: -0.04em;
+  --tracking-title: -0.03em;
+
+  --color-brand: #8a68ff;
+  --color-brand-deep: #25134f;
+  --color-lavender: #b8a6ff;
+  --color-magenta: #ff2daa;
+  --color-magenta-soft: #ff5fbf;
+  --color-accent-gradient: linear-gradient(
+    125deg,
+    #25134f 0%,
+    #8a68ff 48%,
+    #b8a6ff 100%
+  );
+
+  --purple: var(--color-brand);
+  --purple-deep: var(--color-brand-deep);
+  --magenta: var(--color-magenta);
+  --lavender: var(--color-lavender);
+  --accent: var(--color-brand);
+  --accent-gradient: var(--color-accent-gradient);
 }
 
-:root {
-  --bg: #000;
-  --fg: #fff;
-  --muted: #9a9a9a;
-  --line: rgba(255, 255, 255, 0.18);
-  --gutter: clamp(1rem, 3vw, 2.5rem);
-  --header-h: 4.5rem;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --font: Roobert, "Noto Sans CJK JP", Roboto, Arial, sans-serif;
+/* Dark (default) — Invends brand art direction */
+:root,
+[data-theme="dark"] {
+  --color-bg: #090711;
+  --color-fg: #f7f5ff;
+  --color-muted: #aaa3bf;
+  --color-surface: #130d25;
+  --color-surface-2: #1b1429;
+  --color-surface-glass: rgba(247, 245, 255, 0.06);
+  --color-input-bg: #100a1c;
+  --color-input-fg: #f7f5ff;
+  --color-btn-bg: #1b1429;
+  --color-btn-fg: #ffffff;
+  --color-footer-bg: #07050e;
+  --color-overlay: rgba(9, 7, 17, 0.96);
+  --color-banner-bg: #100a1c;
+  --color-error: #ff6b9a;
+  --color-ok: #b8a6ff;
+  --color-wash: color-mix(in srgb, var(--color-brand) 16%, transparent);
+  --line: #332a49;
+  --logo-fg: #ffffff;
+  --wave-opacity: 1;
+  --wave-veil: transparent;
+  --shadow-soft: 0 12px 40px rgba(0, 0, 0, 0.4);
+
+  --bg: var(--color-bg);
+  --fg: var(--color-fg);
+  --muted: var(--color-muted);
+}
+
+/* Light */
+[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #201b2c;
+  --color-muted: #625b70;
+  --color-surface: #f7f6fb;
+  --color-surface-2: #efeef6;
+  --color-surface-glass: rgba(32, 27, 44, 0.05);
+  --color-input-bg: #ffffff;
+  --color-input-fg: #201b2c;
+  --color-btn-bg: #201b2c;
+  --color-btn-fg: #ffffff;
+  --color-footer-bg: #f7f6fb;
+  --color-overlay: rgba(255, 255, 255, 0.97);
+  --color-banner-bg: #efeef6;
+  --color-error: #c9184a;
+  --color-ok: #25134f;
+  --color-wash: color-mix(in srgb, var(--color-brand) 10%, transparent);
+  --color-lavender: #8a68ff;
+  --line: color-mix(in srgb, #332a49 28%, transparent);
+  --logo-fg: #201b2c;
+  --wave-opacity: 0.62;
+  --wave-veil: color-mix(in srgb, #ffffff 42%, transparent);
+  --shadow-soft: 0 12px 36px rgba(37, 19, 79, 0.1);
+
+  --bg: var(--color-bg);
+  --fg: var(--color-fg);
+  --muted: var(--color-muted);
 }
 
 *,
@@ -72,10 +148,17 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,
 body {
   margin: 0;
   min-height: 100%;
+  max-width: 100%;
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
@@ -84,8 +167,58 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body {
+  overflow-x: clip;
+}
+
 body.lenis-stopped {
   overflow: hidden;
+}
+
+/* Anchor targets clear the fixed header */
+[id] {
+  scroll-margin-top: calc(var(--header-h) + 0.75rem);
+}
+
+@media (min-width: 480px) {
+  :root {
+    --header-h: 4.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+.intro-title,
+.font-display {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+h1 em,
+h1 i,
+h2 em,
+h2 i,
+h3 em,
+h3 i,
+.intro-title em,
+.intro-title i,
+.intro-line.line-2,
+.font-display-italic {
+  font-family: var(--font-display-italic);
+  font-style: italic;
+}
+h1,
+.intro-title {
+  letter-spacing: var(--tracking-display);
+  font-weight: 800;
+}
+h2 {
+  letter-spacing: var(--tracking-title);
+  font-weight: 700;
+}
+h3 {
+  letter-spacing: var(--tracking-title);
+  font-weight: 700;
 }
 
 a {
@@ -109,23 +242,66 @@ button {
   pointer-events: none;
   position: fixed;
   inset: 0;
-  z-index: 80;
+  /* Keep below interactive chrome (header 110 / menu 120) */
+  z-index: 50;
   opacity: 0.08;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   mix-blend-mode: overlay;
 }
+html[data-theme="light"] .noise::before {
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+}
 
-.recon-banner {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: #1a1208;
-  color: #f3e7d3;
-  text-align: center;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  padding: 0.4rem var(--gutter);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+/* Accent text: violet → magenta (clip), never as section wash */
+.text-accent,
+.highlight,
+.morado,
+.color-purple,
+.magenta,
+.hero-split-title-accent,
+.cats,
+.brand-accent {
+  background-image: var(--color-accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Brand CTAs: solid idle; calm brand wash on hover (no flashy gradient) */
+.brand-fill,
+.ghost.brand,
+button.brand,
+.btn-brand {
+  border: 1px solid transparent;
+  background-color: var(--color-btn-bg);
+  background-image: none;
+  color: var(--color-btn-fg);
+  -webkit-text-fill-color: var(--color-btn-fg);
+  transition:
+    background-color 0.45s var(--ease),
+    border-color 0.45s var(--ease),
+    opacity 0.45s var(--ease);
+}
+.brand-fill:hover,
+.brand-fill:focus-visible,
+.ghost.brand:hover,
+.ghost.brand:focus-visible,
+button.brand:hover,
+button.brand:focus-visible,
+.btn-brand:hover,
+.btn-brand:focus-visible {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 88%, var(--color-brand));
+  border-color: color-mix(in srgb, var(--color-brand) 28%, transparent);
+  outline: none;
+}
+.brand-fill:active,
+.ghost.brand:active,
+button.brand:active,
+.btn-brand:active {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 78%, var(--color-brand));
+  opacity: 0.92;
 }
 
 .skip {
@@ -136,9 +312,26 @@ button {
   left: 1rem;
   top: 1rem;
   z-index: 200;
-  background: #fff;
-  color: #000;
+  background: var(--fg);
+  color: var(--bg);
   padding: 0.5rem 0.75rem;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Smooth theme surface transitions (not motion-critical) */
+html[data-theme] body,
+html[data-theme] .site-footer,
+html[data-theme] .cookies,
+html[data-theme] .nav-overlay {
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
 }
 
 @media (prefers-reduced-motion: reduce) {

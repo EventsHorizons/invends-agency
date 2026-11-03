@@ -1,7 +1,7 @@
 # 01 — REA readiness
 
 **Fecha:** 2026-10-29  
-**Workspace:** `c:\Users\germa\OneDrive\Documents\webs\3Drawers`  
+**Workspace:** `c:\Users\germa\OneDrive\Documents\webs\Invends`  
 **Clasificación:** Confirmado (operaciones MCP ejecutadas en sesión)
 
 ## Integración verificada

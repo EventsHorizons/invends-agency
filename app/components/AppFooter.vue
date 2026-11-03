@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import { BRAND_NAME } from "~/utils/brand";
+import { CONTACT_INFO } from "~/utils/trespiData";
+import { NAV, UI } from "~/utils/messages";
+
+const { locale, localePath } = useLocale();
+const copy = computed(() => UI[locale.value]);
+const links = computed(() => NAV[locale.value]);
+const brandName = BRAND_NAME;
+
 function toTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -8,41 +17,66 @@ function toTop() {
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <h2>We would love to hear from you.</h2>
-        <p>
-          Feel free to reach out if you want to collaborate with us, or simply
-          have a chat.
-        </p>
-        <a class="ghost-btn" href="mailto:contact@3drawers.agency">
-          contact@3drawers.agency →
+        <NuxtLink class="cta-title" :to="localePath('/contacto')">
+          {{ copy.footerCta }}
+        </NuxtLink>
+        <a class="ghost-btn" :href="`mailto:${CONTACT_INFO.email}`">
+          {{ CONTACT_INFO.email }}
         </a>
       </div>
       <div>
-        <h3>Our Address</h3>
-        <p>Unit 16C, Perseverance Works</p>
-        <p>38 Kingsland Road</p>
-        <p>E2 8DD, London</p>
-        <p>United Kingdom</p>
+        <h3>{{ copy.footerLocation }}</h3>
+        <template v-for="loc in CONTACT_INFO.locations" :key="loc.city">
+          <p>{{ loc.city }}</p>
+          <p v-for="(line, i) in loc.address.split('\n')" :key="i">{{ line }}</p>
+        </template>
+        <p style="margin-top: 0.75rem">{{ copy.footerPhone }}</p>
+        <p>
+          <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
+        </p>
       </div>
       <div>
-        <h3>Follow us</h3>
+        <h3>{{ copy.footerFollow }}</h3>
         <ul>
-          <li><a href="#" aria-disabled="true">Instagram</a></li>
-          <li><a href="#" aria-disabled="true">Linkedin</a></li>
+          <li v-for="s in CONTACT_INFO.social" :key="s.name">
+            <a :href="s.url" target="_blank" rel="noopener noreferrer">{{
+              s.name
+            }}</a>
+          </li>
         </ul>
       </div>
-      <nav aria-label="Footer">
+      <nav :aria-label="locale === 'en' ? 'Footer' : 'Pie de página'">
         <ul>
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/work">Work</NuxtLink></li>
-          <li><NuxtLink to="/services">Services</NuxtLink></li>
-          <li><NuxtLink to="/team">Team</NuxtLink></li>
-          <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-          <li><NuxtLink to="/press">PRESS & NEWS</NuxtLink></li>
-          <li><NuxtLink to="/policy">Privacy policy</NuxtLink></li>
+          <li v-for="l in links" :key="l.to">
+            <NuxtLink :to="l.to">{{ l.label }}</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink :to="localePath('/politicas-de-privacidad')">
+              {{ copy.footerPolicy }}
+            </NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
-    <button class="top-btn" type="button" @click="toTop">top ↑</button>
+    <p class="copy">© {{ new Date().getFullYear() }} {{ brandName }}.</p>
+    <button class="top-btn" type="button" @click="toTop">
+      {{ copy.footerTop }}
+    </button>
   </footer>
 </template>
+
+<style scoped>
+.cta-title {
+  display: block;
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.45rem, 4.2vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: var(--tracking-title);
+  overflow-wrap: anywhere;
+}
+.copy {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+</style>

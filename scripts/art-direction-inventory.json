@@ -1,0 +1,203 @@
+{
+  "brand": {
+    "name": "Invends",
+    "tokens": {
+      "darkBg": "#090711",
+      "surface": "#130D25",
+      "brand": "#8A68FF",
+      "deep": "#25134F",
+      "lavender": "#B8A6FF",
+      "fg": "#F7F5FF"
+    },
+    "direction": "Cool editorial commercial photography / still life; digital craft; no neon wash; service-specific subjects"
+  },
+  "slots": [
+    {
+      "key": "svc-diseno-web",
+      "file": "services/svc-diseno-web.webp",
+      "service": "Diseño web",
+      "source": "cursor-generate",
+      "concept": "Wireframe/UI layout on laptop — UX craft",
+      "prompt": "Tablet + paper wireframes abstract rectangles, violet accent #8A68FF, dark desk, no text/logos"
+    },
+    {
+      "key": "svc-branding",
+      "file": "services/svc-branding.webp",
+      "service": "Branding",
+      "source": "cursor-generate",
+      "concept": "Monochrome corporate stationery identity kit",
+      "prompt": "Blank stationery identity kit charcoal/white on dark surface, cool lavender reflection"
+    },
+    {
+      "key": "svc-desarrollo-web",
+      "file": "services/svc-desarrollo-web.webp",
+      "service": "Desarrollo web",
+      "source": "cursor-generate",
+      "concept": "Responsive website layout across devices",
+      "prompt": "Laptop dark desk abstract website blocks + lavender accent bar, no code/brands"
+    },
+    {
+      "key": "svc-aplicaciones",
+      "file": "services/svc-aplicaciones.webp",
+      "service": "Aplicaciones",
+      "source": "cursor-generate",
+      "concept": "Mobile product screen showcase",
+      "prompt": "Smartphone upright dark surface, abstract app UI cards purple accents"
+    },
+    {
+      "key": "svc-ecommerce",
+      "file": "services/svc-ecommerce.webp",
+      "service": "E-commerce",
+      "source": "cursor-generate",
+      "concept": "Online store shopping on mobile",
+      "prompt": "Phone + bag silhouette, abstract product grid, cool light"
+    },
+    {
+      "key": "svc-seo",
+      "file": "services/svc-seo.webp",
+      "service": "SEO",
+      "source": "cursor-generate",
+      "concept": "Analytics dashboard for search visibility",
+      "prompt": "Laptop abstract analytics lavender/charcoal, no readable numbers"
+    },
+    {
+      "key": "svc-marketing",
+      "file": "services/svc-marketing.webp",
+      "service": "Marketing",
+      "source": "cursor-generate",
+      "concept": "Creative studio photography + editing desk",
+      "prompt": "Creative desk flat lay: prints, tablet, stylus, glasses"
+    },
+    {
+      "key": "svc-ia",
+      "file": "services/svc-ia.webp",
+      "service": "Inteligencia artificial",
+      "source": "cursor-generate",
+      "concept": "Applied AI systems concept",
+      "prompt": "Laptop soft lavender neural mesh glow subtle, dark desk, not neon"
+    },
+    {
+      "key": "svc-automatizacion",
+      "file": "services/svc-automatizacion.webp",
+      "service": "Automatización",
+      "source": "cursor-generate",
+      "concept": "Digital process optimization",
+      "prompt": "Tablet abstract node diagram lavender/gray, dark desk"
+    },
+    {
+      "key": "svc-migracion",
+      "file": "services/svc-migracion-art.webp",
+      "service": "Migración y refactorización",
+      "source": "cursor-generate",
+      "concept": "Technical diagnosis / systems migration",
+      "prompt": "Dual screens abstract before/after UI blocks, lavender accent"
+    },
+    {
+      "key": "svc-mvp",
+      "file": "services/svc-mvp-art.webp",
+      "service": "MVP ultra-rápido (MaaS)",
+      "source": "cursor-generate",
+      "concept": "Prototype planning with sticky notes",
+      "prompt": "Sticky notes blank color blocks, markers, closed laptop, dark desk"
+    },
+    {
+      "key": "principle-diseno",
+      "file": "principle-diseno.webp",
+      "service": "Oficio Diseño (home)",
+      "source": "magnific-clean",
+      "resourceId": 150835260,
+      "concept": "Graphic design studio still life"
+    },
+    {
+      "key": "principle-desarrollo",
+      "file": "principle-desarrollo.webp",
+      "service": "Oficio Desarrollo (home)",
+      "source": "cursor-generate",
+      "prompt": "Editorial product photography for a digital agency desk: dark charcoal desk, slim laptop with clean dark UI frame (no fake code/logos), smartphone, notebook, cool soft key light, subtle lavender rim, no people, no watermark, photorealistic Invends atmosphere"
+    },
+    {
+      "key": "principle-marketing",
+      "file": "principle-marketing.webp",
+      "service": "Oficio Marketing (home)",
+      "source": "cursor-generate",
+      "prompt": "Editorial flat lay: dark desk, sticky notes, closed laptop, markers lavender/charcoal, abstract moodboard prints, soft directional light, no watermark"
+    },
+    {
+      "key": "project-editorial",
+      "file": "project-editorial.webp",
+      "service": "Proyecto: sistema editorial",
+      "source": "cursor-generate",
+      "prompt": "Editorial still life: open hardcover book, linen notebook, charcoal pencil, cool daylight, dark edges #090711, no logos/watermark"
+    },
+    {
+      "key": "project-landing-producto",
+      "file": "project-landing-producto.webp",
+      "service": "Proyecto: landing producto",
+      "source": "cursor-generate",
+      "prompt": "Laptop on dark studio desk with minimal abstract product landing UI blocks, lavender accent #8A68FF, no logos/readable copy, no watermark"
+    },
+    {
+      "key": "project-lanzamiento-marca",
+      "file": "project-lanzamiento-marca.webp",
+      "service": "Proyecto: lanzamiento de marca",
+      "source": "cursor-generate",
+      "prompt": "Brand launch stationery kit on dark matte surface: blank cards, envelope, folder, cool studio light, empty of logos/text, no watermark"
+    },
+    {
+      "key": "project-landing-servicio",
+      "file": "project-landing-servicio.webp",
+      "service": "Proyecto: landing servicio",
+      "source": "cursor-generate",
+      "prompt": "Service design desk: cool violet/gray/black swatches, ruler, pens, abstract layout rectangles, dark desk, no logos/watermark"
+    },
+    {
+      "key": "project-institucional",
+      "file": "project-institucional.webp",
+      "service": "Proyecto: sitio institucional",
+      "source": "cursor-generate",
+      "prompt": "Low-angle black glass/steel facade at dusk, cool violet sky, no signage/logos/watermark"
+    },
+    {
+      "key": "project-contenido",
+      "file": "project-contenido.webp",
+      "service": "Proyecto: base de contenido",
+      "source": "cursor-generate",
+      "prompt": "Content studio: softbox, camera, lens, LED panel, dark studio #090711, subtle lavender rim, no people/watermark"
+    },
+    {
+      "key": "blog-conversion",
+      "file": "blog-conversion.webp",
+      "service": "Blog: conversión",
+      "source": "cursor-generate",
+      "prompt": "Laptop with abstract analytics shapes lavender/charcoal, no readable metrics/brands, cool light, no watermark"
+    },
+    {
+      "key": "blog-brief",
+      "file": "blog-brief.webp",
+      "service": "Blog: brief",
+      "source": "cursor-generate",
+      "prompt": "Brief flat lay: blank notebook, pencil, tea, phone face-down, plant, cool daylight, no readable writing/watermark"
+    },
+    {
+      "key": "blog-contenido-vende",
+      "file": "blog-contenido-vende.webp",
+      "service": "Blog: contenido que vende",
+      "source": "cursor-generate",
+      "prompt": "Hands writing in notebook beside laptop on dark desk, no readable text/faces, cool light, no watermark"
+    },
+    {
+      "key": "blog-desarrollo-ux",
+      "file": "blog-desarrollo-ux.webp",
+      "service": "Blog: desarrollo y UX",
+      "source": "cursor-generate",
+      "prompt": "Wireframe sheets with abstract rectangles, tablet grid, hands only, dark desk, no logos/watermark"
+    },
+    {
+      "key": "blog-tres-oficios",
+      "file": "blog-tres-oficios.webp",
+      "service": "Blog: tres oficios",
+      "source": "cursor-generate",
+      "prompt": "Team collaboration desk with laptop and layout grids, hands/backs only, cool lavender accent, no logos/watermark"
+    }
+  ]
+}

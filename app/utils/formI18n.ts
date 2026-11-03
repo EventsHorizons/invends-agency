@@ -1,0 +1,129 @@
+import type { Locale } from "~/composables/useLocale";
+
+export const FORM_SERVICES = {
+  es: [
+    "Diseño web",
+    "Branding",
+    "Desarrollo web",
+    "Aplicaciones",
+    "E-commerce",
+    "SEO",
+    "Marketing",
+    "Inteligencia artificial",
+    "Automatización",
+    "Migración y refactorización",
+    "MVP ultra-rápido (MaaS)",
+    "Proyecto completo",
+  ],
+  en: [
+    "Web design",
+    "Branding",
+    "Web development",
+    "Applications",
+    "E-commerce",
+    "SEO",
+    "Marketing",
+    "Artificial intelligence",
+    "Automation",
+    "Migration & refactoring",
+    "Ultra-fast MVP (MaaS)",
+    "Full project",
+  ],
+} as const;
+
+export const FORM_BUDGET = {
+  es: [
+    "Por definir",
+    "Proyecto puntual",
+    "Retainer mensual",
+    "Lanzamiento / campaña",
+  ],
+  en: [
+    "To be defined",
+    "One-off project",
+    "Monthly retainer",
+    "Launch / campaign",
+  ],
+} as const;
+
+export function formCopy(locale: Locale) {
+  if (locale === "en") {
+    return {
+      defaultTitle: "Tell us the goal. We’ll reply with clear scope.",
+      defaultBody:
+        "Share what you need—design, development, or marketing—and we’ll come back with a concrete next step. No generic proposals.",
+      servicesLabel: "Which service are you interested in?*",
+      servicesAria: "Services",
+      budgetLabel: "Scope / engagement*",
+      budgetAria: "Engagement type",
+      firstName: "First name*",
+      lastName: "Last name*",
+      company: "Company*",
+      email: "Email*",
+      phone: "Phone*",
+      phonePlaceholder: "+1 555 000 0000",
+      source: "How did you hear about us?",
+      message: "Tell us about your project",
+      messageHint: "Optional — a few lines are enough.",
+      consentBefore: "I have read and accept the",
+      consentLink: "Personal Data Policy",
+      consentAfter: ".",
+      privacyTo: "/politicas-de-privacidad",
+      submit: "Send",
+      submitting: "Sending…",
+      ok: "Thanks. Your message validated correctly. Email delivery is not connected in this environment yet.",
+      errorSummary: "Please review the highlighted fields and try again.",
+      errors: {
+        firstName: "Enter your first name.",
+        lastName: "Enter your last name.",
+        company: "Enter your company.",
+        email: "Enter your email.",
+        emailInvalid: "Invalid email address.",
+        phone: "Enter your phone number.",
+        phoneInvalid: "Invalid phone number.",
+        services: "Select at least one service.",
+        budget: "Select an engagement type.",
+        consent: "You must accept the data policy.",
+      },
+    };
+  }
+
+  return {
+    defaultTitle: "Cuéntanos el objetivo. Te respondemos con alcance.",
+    defaultBody:
+      "Cuéntanos qué necesitas—diseño, desarrollo o marketing—y te respondemos con un siguiente paso concreto. Sin propuestas genéricas.",
+    servicesLabel: "¿Qué servicio te interesa?*",
+    servicesAria: "Servicios",
+    budgetLabel: "Alcance / modalidad*",
+    budgetAria: "Modalidad",
+    firstName: "Nombre*",
+    lastName: "Apellidos*",
+    company: "Compañía*",
+    email: "Correo*",
+    phone: "Teléfono*",
+    phonePlaceholder: "321 1234567",
+    source: "¿Cómo nos conociste?",
+    message: "Cuéntanos sobre tu proyecto",
+    messageHint: "Opcional — con unas líneas basta.",
+    consentBefore: "He leído y acepto la",
+    consentLink: "Política de Tratamiento de Datos Personales",
+    consentAfter: ".",
+    privacyTo: "/politicas-de-privacidad",
+    submit: "Enviar",
+    submitting: "Enviando…",
+    ok: "Gracias. Tu mensaje se validó correctamente. El envío a correo aún no está conectado en este entorno.",
+    errorSummary: "Revisa los campos marcados e inténtalo de nuevo.",
+    errors: {
+      firstName: "Ingresa tu nombre.",
+      lastName: "Ingresa tus apellidos.",
+      company: "Ingresa tu compañía.",
+      email: "Ingresa tu correo.",
+      emailInvalid: "Correo electrónico inválido.",
+      phone: "Ingresa tu teléfono.",
+      phoneInvalid: "Teléfono inválido.",
+      services: "Selecciona al menos un servicio.",
+      budget: "Selecciona una modalidad.",
+      consent: "Debes aceptar la política de datos.",
+    },
+  };
+}

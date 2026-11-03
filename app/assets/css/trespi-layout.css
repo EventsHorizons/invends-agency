@@ -1,0 +1,210 @@
+/* Layout helpers for 3Draw copy structure — uses existing brand tokens only */
+.td-container {
+  width: min(1120px, calc(100% - 2 * var(--gutter)));
+  margin-inline: auto;
+  min-width: 0;
+}
+.td-container-narrow {
+  width: min(720px, calc(100% - 2 * var(--gutter)));
+  margin-inline: auto;
+  min-width: 0;
+}
+.td-section {
+  padding: clamp(2.5rem, 7vw, 6rem) 0;
+}
+/* Page heroes with AgencyGradient waves (brand identity) */
+.td-page-hero {
+  position: relative;
+  min-height: clamp(18rem, 42vh, 28rem);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: calc(var(--header-h) + env(safe-area-inset-top, 0px) + 1.5rem) 0
+    clamp(2.5rem, 7vw, 6rem);
+}
+.td-page-hero .hero-fx {
+  position: absolute !important;
+  inset: 0;
+}
+.td-page-hero .td-container,
+.td-page-hero .td-container-narrow {
+  position: relative;
+  z-index: 1;
+}
+.td-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.td-muted {
+  color: var(--muted);
+}
+.td-accent {
+  background-image: var(--color-accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+  Wave heroes: purple/magenta clipped accents and muted gray
+  disappear into AgencyGradient. Keep brand color off the wave;
+  force solid light copy + a soft dark veil under the text column.
+*/
+.td-page-hero .hero-fx,
+.hero-split .hero-fx,
+.about-hero .hero-fx {
+  z-index: 0;
+}
+.td-page-hero::before,
+.hero-split::before,
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.68) 42%,
+      rgba(0, 0, 0, 0.28) 70%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.28) 42%,
+      transparent 78%
+    );
+}
+.td-page-hero .td-container,
+.td-page-hero .td-container-narrow,
+.hero-split-inner,
+.hero-split-copy,
+.about-hero .copy {
+  position: relative;
+  z-index: 2;
+  text-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.7),
+    0 2px 18px rgba(0, 0, 0, 0.55),
+    0 12px 40px rgba(0, 0, 0, 0.4);
+}
+.td-page-hero h1,
+.td-page-hero .td-eyebrow,
+.td-page-hero .lead,
+.td-page-hero .sub,
+.td-page-hero .td-muted,
+.hero-split h1,
+.hero-split .hero-kicker,
+.hero-split .hero-body,
+.about-hero h1,
+.about-hero .td-eyebrow,
+.about-hero .lead {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.td-page-hero .td-eyebrow,
+.td-page-hero .lead,
+.td-page-hero .sub,
+.td-page-hero .td-muted,
+.hero-split .hero-kicker,
+.hero-split .hero-body,
+.hero-split .hero-meta,
+.about-hero .td-eyebrow,
+.about-hero .lead {
+  color: rgba(255, 255, 255, 0.92);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.92);
+}
+.td-page-hero .td-accent,
+.hero-split .td-accent,
+.hero-split .word.accent,
+.about-hero .td-accent {
+  background-image: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.td-page-hero .td-link,
+.hero-split .td-link,
+.about-hero .td-link {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.td-page-hero .td-btn,
+.hero-split .td-btn,
+.about-hero .td-btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+.td-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  opacity: 0.86;
+  transition: opacity 0.45s var(--ease);
+}
+.td-link::after {
+  content: "→";
+  transition: transform 0.45s var(--ease);
+}
+.td-link:hover,
+.td-link:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+.td-link:hover::after,
+.td-link:focus-visible::after {
+  transform: translateX(2px);
+}
+.td-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-color: var(--color-btn-bg);
+  background-image: none;
+  color: var(--color-btn-fg);
+  -webkit-text-fill-color: var(--color-btn-fg);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  transition:
+    background-color 0.45s var(--ease),
+    border-color 0.45s var(--ease),
+    color 0.45s var(--ease),
+    opacity 0.45s var(--ease);
+}
+.td-btn:hover,
+.td-btn:focus-visible {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 88%, var(--color-brand));
+  border-color: color-mix(in srgb, var(--color-brand) 28%, transparent);
+  outline: none;
+}
+.td-btn:active {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 78%, var(--color-brand));
+  opacity: 0.92;
+}
+.td-card-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 800px) {
+  .td-card-grid.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .td-card-grid.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

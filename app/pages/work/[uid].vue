@@ -21,7 +21,7 @@ const related = computed(() =>
 useHead({
   title: () => {
     const raw = project.value?.metaTitle || project.value?.title || "Work";
-    return /3Drawers/i.test(raw) ? raw : `${raw} | 3Drawers Agency`;
+    return /Invends/i.test(raw) ? raw : `${raw} | Invends`;
   },
   meta: [
     {
@@ -74,7 +74,7 @@ useHead({
       </div>
       <p v-else-if="project.intro" class="intro">{{ project.intro }}</p>
       <p v-if="project.live">
-        <a :href="project.live" target="_blank" rel="noreferrer">See live ↗</a>
+        <a :href="project.live" target="_blank" rel="noreferrer">See live ?</a>
       </p>
     </section>
 
@@ -93,8 +93,8 @@ useHead({
 
 <style scoped>
 .case {
-  background: #000;
-  color: #fff;
+  background: var(--bg);
+  color: var(--fg);
 }
 .back {
   padding: 1rem var(--gutter) 0;
@@ -126,20 +126,26 @@ useHead({
   max-width: 1440px;
   width: 100%;
   margin-inline: auto;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
 }
 .cats {
   margin: 0;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-size: 0.72rem;
-  color: #d4a574;
+  background-image: var(--color-accent-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 h1 {
   margin: 0.4rem 0 0;
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  letter-spacing: var(--tracking-title);
   line-height: 1.05;
-  font-weight: 700;
+  font-weight: 800;
 }
 .meta {
   padding: 2rem var(--gutter);
@@ -175,7 +181,7 @@ dd {
   margin: 0;
   font-size: 1.05rem;
   line-height: 1.55;
-  color: #ddd;
+  color: var(--muted);
 }
 @media (min-width: 900px) {
   .intro-split {

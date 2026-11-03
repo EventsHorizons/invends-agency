@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { site } = useSiteContent();
 const c = site.contact;
 const status = ref<"idle" | "invalid" | "demo">("idle");
@@ -27,11 +27,11 @@ function onSubmit(e: Event) {
     status.value = "invalid";
     return;
   }
-  // No live endpoint in reconstruction — do not fake delivery.
+  // No live endpoint in reconstruction ? do not fake delivery.
   status.value = "demo";
 }
 
-useHead({ title: "Contact | 3Drawers Agency" });
+useHead({ title: "Contact | Invends" });
 </script>
 
 <template>
@@ -49,7 +49,7 @@ useHead({ title: "Contact | 3Drawers Agency" });
         <p class="addr">{{ c.address }}</p>
         <p v-if="c.mapsUrl">
           <a :href="c.mapsUrl" target="_blank" rel="noreferrer">
-            {{ c.mapsLabel }} ↗
+            {{ c.mapsLabel }} ?
           </a>
         </p>
 
@@ -90,7 +90,7 @@ useHead({ title: "Contact | 3Drawers Agency" });
         </label>
         <button type="submit">SUBMIT →</button>
         <p v-if="status === 'demo'" class="notice" role="status">
-          Demo mode: form validated locally. No backend endpoint is wired —
+          Demo mode: form validated locally. No backend endpoint is wired ?
           nothing was sent.
         </p>
         <p v-if="status === 'invalid'" class="err" role="alert">
@@ -103,8 +103,8 @@ useHead({ title: "Contact | 3Drawers Agency" });
 
 <style scoped>
 .contact {
-  background: #f4f2ec;
-  color: #111;
+  background: var(--bg);
+  color: var(--fg);
   min-height: 100vh;
 }
 .hero {
@@ -113,13 +113,13 @@ useHead({ title: "Contact | 3Drawers Agency" });
 h1 {
   margin: 0;
   max-width: 16ch;
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2.9rem, 7.2vw, 5.5rem);
+  letter-spacing: var(--tracking-display);
 }
 .hero p {
   max-width: 36rem;
   margin-top: 1rem;
-  color: #555;
+  color: var(--muted);
 }
 .body {
   display: grid;
@@ -127,7 +127,7 @@ h1 {
   padding: 2rem var(--gutter) 4rem;
 }
 .addr {
-  color: #666;
+  color: var(--muted);
   white-space: pre-line;
 }
 aside a {
@@ -141,7 +141,7 @@ aside a {
   font-size: 1.1rem;
 }
 .side-block p {
-  color: #666;
+  color: var(--muted);
   white-space: pre-line;
   line-height: 1.5;
   font-size: 0.92rem;
@@ -157,13 +157,13 @@ label {
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #666;
+  color: var(--muted);
 }
 input,
 textarea {
-  border: 1px solid #bbb;
-  background: transparent;
-  color: #111;
+  border: 1px solid var(--line);
+  background: var(--color-input-bg);
+  color: var(--color-input-fg);
   padding: 0.75rem;
   font: inherit;
   text-transform: none;
@@ -171,22 +171,38 @@ textarea {
 }
 button {
   justify-self: start;
-  border: 1px solid #111;
-  background: #111;
-  color: #fff;
+  border: 1px solid transparent;
+  background-color: var(--color-btn-bg);
+  background-image: none;
+  color: var(--color-btn-fg);
+  -webkit-text-fill-color: var(--color-btn-fg);
   border-radius: 999px;
   padding: 0.7rem 1.2rem;
   letter-spacing: 0.08em;
+  transition:
+    background-color 0.45s var(--ease),
+    border-color 0.45s var(--ease),
+    opacity 0.45s var(--ease);
+}
+button:hover,
+button:focus-visible {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 88%, var(--color-brand));
+  border-color: color-mix(in srgb, var(--color-brand) 28%, transparent);
+  outline: none;
+}
+button:active {
+  opacity: 0.92;
 }
 small,
 .err {
-  color: #b33;
+  color: var(--color-error);
   text-transform: none;
   letter-spacing: 0;
 }
 .notice {
-  border: 1px solid #b8894a;
-  background: #f7ecda;
+  border: 1px solid var(--color-lavender);
+  background: color-mix(in srgb, var(--color-brand) 10%, var(--color-bg));
+  color: var(--color-brand-deep);
   padding: 0.75rem 1rem;
   text-transform: none;
   letter-spacing: 0;

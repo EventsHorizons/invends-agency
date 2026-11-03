@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import {
-  createAgencyGradient,
-  type AgencyGradientHandle,
-} from "~/utils/createAgencyGradient";
+import type { AgencyGradientHandle } from "~/utils/createAgencyGradient";
+import type { GradientParams } from "~/utils/agencyGradientShader";
 import {
   HOME_GRADIENT,
   parseAgencyGradientMarkup,
-  type GradientParams,
 } from "~/utils/agencyGradientShader";
 
 const props = withDefaults(
@@ -42,9 +39,19 @@ const resolved = computed<GradientParams>(() => ({
 function syncParams() {
   if (!handle) return;
   const next = { ...resolved.value };
-  // Keep RAF-driven wave motion; don't reset seed/position each sync
+  // Keep RAF-driven wave motion + brand color cycle; don't reset those each sync
   if (handle.isRunning()) {
-    const { seed: _s, position: _p, colorRotation: _r, ...rest } = next;
+    const {
+      seed: _s,
+      position: _p,
+      colorRotation: _r,
+      displacement: _d,
+      color1: _c1,
+      color2: _c2,
+      color3: _c3,
+      color4: _c4,
+      ...rest
+    } = next;
     handle.setParams(rest);
     return;
   }
@@ -63,26 +70,10 @@ function onPointer(e: PointerEvent) {
   if (!props.animate) handle.draw();
 }
 
-onMounted(() => {
+onMounted(async () => {
   const el = canvas.value;
   if (!el) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  try {
-    handle = createAgencyGradient(el, resolved.value, {
-      animateSeed: props.animate && !reduce,
-      noRetina: props.noRetina,
-      seedSpeed: 0.07,
-    });
-    if (props.animate && !reduce) handle.start();
-    else handle.draw();
-    if (import.meta.dev) {
-      (window as Window & { __agencyGradient?: AgencyGradientHandle }).__agencyGradient =
-        handle;
-    }
-  } catch (err) {
-    console.warn("[AgencyGradient] WebGL2 failed, CSS fallback", err);
-    failed.value = true;
-  }
 
   const onVis = () => {
     if (!handle || failed.value) return;
@@ -91,7 +82,6 @@ onMounted(() => {
       handle.start();
     else handle.draw();
   };
-  document.addEventListener("visibilitychange", onVis);
 
   // Avoid fighting the RAF loop; only resize/redraw when size actually changes
   let lastW = 0;
@@ -105,6 +95,27 @@ onMounted(() => {
     lastH = h;
     handle.draw();
   });
+
+  try {
+    // Code-split WebGL runtime out of the critical path
+    const { createAgencyGradient } = await import("~/utils/createAgencyGradient");
+    handle = createAgencyGradient(el, resolved.value, {
+      animateSeed: props.animate && !reduce,
+      noRetina: props.noRetina,
+      seedSpeed: 0.055,
+    });
+    if (props.animate && !reduce) handle.start();
+    else handle.draw();
+    if (import.meta.dev) {
+      (window as Window & { __agencyGradient?: AgencyGradientHandle }).__agencyGradient =
+        handle;
+    }
+  } catch (err) {
+    console.warn("[AgencyGradient] WebGL2 failed, CSS fallback", err);
+    failed.value = true;
+  }
+
+  document.addEventListener("visibilitychange", onVis);
   if (root.value) ro.observe(root.value);
 
   onBeforeUnmount(() => {
@@ -176,17 +187,27 @@ function togglePause() {
   inset: 0;
   z-index: 0;
   overflow: hidden;
-  background: #000;
+  background: var(--color-bg);
+}
+.agency-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: var(--wave-veil);
 }
 canvas {
   width: 100%;
   height: 100%;
   display: block;
+  opacity: var(--wave-opacity, 1);
 }
 .pause {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  /* Sit below the fixed header and clear theme toggle (+ menu on mobile) */
+  top: calc(var(--header-h, 3.5rem) + 0.75rem);
+  right: var(--gutter, 1.25rem);
   z-index: 2;
   width: 2.5rem;
   height: 2.5rem;
@@ -194,5 +215,10 @@ canvas {
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(0, 0, 0, 0.25);
   color: #fff;
+}
+:global([data-theme="light"]) .pause {
+  border-color: rgba(18, 18, 20, 0.2);
+  background: rgba(255, 255, 255, 0.55);
+  color: #121214;
 }
 </style>

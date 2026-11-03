@@ -1,7 +1,7 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { site } = useSiteContent();
 const s = site.services;
-useHead({ title: "Services | 3Drawers Agency" });
+useHead({ title: "Services | Invends" });
 </script>
 
 <template>
@@ -35,7 +35,7 @@ useHead({ title: "Services | 3Drawers Agency" });
         <NuxtLink v-if="i === 0" class="ghost" to="/team">
           {{ call.linkLabel || "Meet the team →" }}
         </NuxtLink>
-        <NuxtLink v-else-if="i === 0" class="ghost" to="/work">Discover all projects →</NuxtLink>
+        <NuxtLink v-else-if="i === 1" class="ghost" to="/work">Discover all projects →</NuxtLink>
       </div>
       <img
         v-if="call.image?.url"
@@ -43,6 +43,21 @@ useHead({ title: "Services | 3Drawers Agency" });
         :alt="call.title"
         loading="lazy"
       />
+    </section>
+
+    <section v-if="s.clients?.length" class="clients">
+      <h2>{{ s.clientsTitle || "Partnerships we value" }}</h2>
+      <ul>
+        <li v-for="(c, i) in s.clients" :key="i">
+          <img
+            :src="c.url"
+            :alt="c.alt || ''"
+            :width="c.width || undefined"
+            :height="c.height || undefined"
+            loading="lazy"
+          />
+        </li>
+      </ul>
     </section>
 
     <section class="awards">
@@ -88,8 +103,8 @@ useHead({ title: "Services | 3Drawers Agency" });
 h1 {
   margin: 0;
   max-width: 16ch;
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2.9rem, 7.2vw, 5.8rem);
+  letter-spacing: var(--tracking-display);
   line-height: 0.98;
 }
 .hero p {
@@ -106,8 +121,8 @@ h1 {
 }
 .groups h2 {
   margin: 0 0 1rem;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  letter-spacing: var(--tracking-title);
 }
 .groups ul {
   list-style: none;
@@ -125,8 +140,8 @@ h1 {
   margin-inline: auto;
 }
 .call.invert {
-  background: #f4f2ec;
-  color: #111;
+  background: var(--bg);
+  color: var(--fg);
   max-width: none;
 }
 .call.invert > * {
@@ -136,7 +151,7 @@ h1 {
 }
 .call h2 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(2.1rem, 4.8vw, 3.6rem);
 }
 .baseline {
   letter-spacing: 0.08em;
@@ -153,14 +168,54 @@ blockquote {
   display: inline-flex;
   margin-top: 1rem;
   padding: 0.65rem 1.1rem;
-  border: 1px solid currentColor;
+  border: 1px solid transparent;
   border-radius: 999px;
+  background-color: var(--color-btn-bg);
+  background-image: none;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  transition:
+    background-color 0.45s var(--ease),
+    border-color 0.45s var(--ease),
+    opacity 0.45s var(--ease);
 }
+.ghost:hover,
+.ghost:focus-visible {
+  background-color: color-mix(in srgb, var(--color-btn-bg) 88%, var(--color-brand));
+  border-color: color-mix(in srgb, var(--color-brand) 28%, transparent);
+  outline: none;
+}
+.ghost:active {
+  opacity: 0.92;
+}
+.clients,
 .awards,
 .cta {
   padding: 3rem var(--gutter);
   max-width: 1440px;
   margin-inline: auto;
+}
+.clients h2 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+}
+.clients ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: center;
+}
+.clients img {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+  max-width: 9rem;
+  object-fit: contain;
+  filter: grayscale(1) brightness(2);
+  opacity: 0.85;
 }
 .awards ul {
   list-style: none;

@@ -1,8 +1,8 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const { site } = useSiteContent();
 const policy = site.policy;
 
-useHead({ title: "Cookie policy | 3Drawers Agency" });
+useHead({ title: "Cookie policy | Invends" });
 </script>
 
 <template>
@@ -14,7 +14,7 @@ useHead({ title: "Cookie policy | 3Drawers Agency" });
         :show-pause="false"
       />
       <div class="hero-copy">
-        <h1>{{ policy.title || "COOKIE POLICY FOR 3Drawers Agency" }}</h1>
+        <h1>{{ policy.title || "COOKIE POLICY FOR Invends" }}</h1>
         <p class="sub">{{ policy.subtitle }}</p>
       </div>
     </header>
@@ -30,7 +30,7 @@ useHead({ title: "Cookie policy | 3Drawers Agency" });
 
 <style scoped>
 .policy {
-  background: #000;
+  background: var(--bg);
   min-height: 70vh;
 }
 .hero {
@@ -50,8 +50,8 @@ useHead({ title: "Cookie policy | 3Drawers Agency" });
 h1 {
   margin: 0;
   max-width: 18ch;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  letter-spacing: var(--tracking-title);
 }
 .sub {
   margin: 1rem 0 0;
@@ -65,7 +65,7 @@ h1 {
 h2 {
   margin: 2rem 0 0.75rem;
   font-size: 1.15rem;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--tracking-title);
 }
 p {
   color: var(--muted);

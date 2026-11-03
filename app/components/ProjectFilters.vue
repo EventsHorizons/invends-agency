@@ -77,27 +77,28 @@ function onSelect(e: Event) {
 }
 .mobile-select select {
   width: 100%;
-  border: 1px solid #bbb;
-  background: transparent;
-  color: #111;
+  min-height: 2.75rem;
+  border: 1px solid var(--line);
+  background: var(--color-input-bg);
+  color: var(--color-input-fg);
   padding: 0.65rem 0.75rem;
   font: inherit;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 0.72rem;
+  font-size: 1rem;
 }
 .desktop-list {
   list-style: none;
   margin: 0;
   padding: 0 0 0 0.85rem;
-  border-left: 1px dashed rgba(0, 0, 0, 0.25);
+  border-left: 1px dashed var(--line);
   display: none;
   gap: 0.4rem;
 }
 button {
   border: 0;
   background: transparent;
-  color: #888;
+  color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.72rem;
@@ -108,7 +109,7 @@ button {
   padding: 0.15rem 0;
 }
 button.active {
-  color: #111;
+  color: var(--fg);
   font-weight: 700;
 }
 em {
@@ -117,10 +118,10 @@ em {
 }
 .reset {
   margin-top: 1rem;
-  border: 1px solid #ccc !important;
+  border: 1px solid var(--line) !important;
   border-radius: 999px;
   padding: 0.4rem 0.8rem !important;
-  color: #111 !important;
+  color: var(--fg) !important;
   text-transform: none;
   display: none;
 }

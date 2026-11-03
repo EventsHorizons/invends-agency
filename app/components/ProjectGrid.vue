@@ -41,24 +41,24 @@ defineProps<{ projects: Project[] }>();
 .media {
   position: relative;
   overflow: hidden;
-  background: #111;
+  background: var(--color-surface);
 }
 .media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s var(--ease);
+  transition: transform 0.7s var(--ease);
 }
 .card:hover img {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 .overlay {
   position: absolute;
   inset: auto 0 0;
   padding: 1rem;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  font-size: clamp(1.45rem, 2.6vw, 2.4rem);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--tracking-title);
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.55));
   opacity: 0;
   transition: opacity 0.35s var(--ease);
@@ -69,20 +69,20 @@ defineProps<{ projects: Project[] }>();
 .meta {
   margin-top: 0.8rem;
   padding-top: 0.7rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid var(--line);
 }
 .meta p {
   margin: 0;
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #777;
+  color: var(--muted);
 }
 .meta h3 {
   margin: 0.35rem 0 0;
   font-size: 1.05rem;
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--tracking-title);
 }
 @media (min-width: 900px) {
   .grid {

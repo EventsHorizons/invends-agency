@@ -17,7 +17,7 @@ const related = computed(() =>
 useHead({
   title: () => {
     const raw = member.value?.metaTitle || member.value?.name || "Team";
-    return /3Drawers/i.test(raw) ? raw : `${raw} | 3Drawers Agency`;
+    return /Invends/i.test(raw) ? raw : `${raw} | Invends`;
   },
   meta: [
     {
@@ -43,7 +43,7 @@ useHead({
         <p class="bio">{{ member.bio }}</p>
         <ul v-if="member.links?.length" class="links">
           <li v-for="l in member.links" :key="l.url">
-            <a :href="l.url" target="_blank" rel="noreferrer">{{ l.label }} ↗</a>
+            <a :href="l.url" target="_blank" rel="noreferrer">{{ l.label }} ?</a>
           </li>
         </ul>
       </div>
@@ -84,7 +84,7 @@ useHead({
 
 <style scoped>
 .member {
-  background: #000;
+  background: var(--bg);
   min-height: 100vh;
 }
 .back {
@@ -107,12 +107,13 @@ useHead({
 }
 h1 {
   margin: 0.4rem 0;
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  letter-spacing: var(--tracking-display);
 }
 .headline {
   font-size: 1.25rem;
-  color: #ddd;
+  color: var(--fg);
+  opacity: 0.88;
 }
 .jp {
   color: var(--muted);
@@ -121,7 +122,7 @@ h1 {
   max-width: 40rem;
   white-space: pre-line;
   line-height: 1.55;
-  color: #ccc;
+  color: var(--muted);
 }
 .links {
   list-style: none;
@@ -138,7 +139,7 @@ h1 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  background: #1a1a1a;
+  background: var(--color-surface-2);
 }
 .facts,
 .qa,
@@ -166,8 +167,8 @@ h1 {
 }
 .qa h2 {
   margin: 0 0 0.75rem;
-  font-size: clamp(1.3rem, 3vw, 2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.55rem, 3.6vw, 2.4rem);
+  letter-spacing: var(--tracking-title);
   max-width: 28ch;
 }
 .qa p {

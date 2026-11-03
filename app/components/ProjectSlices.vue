@@ -80,8 +80,8 @@ const prepared = computed(() => {
 }
 h2 {
   margin: 0.4rem 0 1rem;
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  letter-spacing: var(--tracking-title);
   font-weight: 600;
 }
 .slice-media {

@@ -1,0 +1,402 @@
+[
+  {
+    "file": "services/svc-diseno-web.webp",
+    "key": "svc-diseno-web",
+    "alt": "Layout web y arquitectura de interfaz en prototipo sobre dispositivo",
+    "note": "Servicio: Diseño web",
+    "pick": {
+      "id": 17106506,
+      "name": "Website development layout sketch drawing",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/website-development-layout-sketch-drawing_17106506.htm",
+      "cdn": "https://img.magnific.com/free-photo/website-development-layout-sketch-drawing_53876-124188.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Wireframe/UI layout on device — UX/UI without generic office portrait"
+  },
+  {
+    "file": "services/svc-branding.webp",
+    "key": "svc-branding",
+    "alt": "Sistema de papelería e identidad corporativa en composición editorial",
+    "note": "Servicio: Branding",
+    "pick": {
+      "id": 21018877,
+      "name": "Blank stationery set. Corporate identity template",
+      "author": "fabrikasimf",
+      "authorSlug": "fabrikasimf",
+      "url": "https://www.magnific.com/free-photo/blank-stationery-set-corporate-identity-template_21018877.htm",
+      "cdn": "https://img.magnific.com/free-photo/blank-stationery-set-corporate-identity-template_93675-130793.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Corporate identity stationery system — cool neutrals, no citrus props"
+  },
+  {
+    "file": "services/svc-desarrollo-web.webp",
+    "key": "svc-desarrollo-web",
+    "alt": "Concepto de sitio responsive: layouts web en dispositivo",
+    "note": "Servicio: Desarrollo web",
+    "pick": {
+      "id": 17112868,
+      "name": "Responsive Design Layout Software Concept",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/responsive-design-layout-software-concept_17112868.htm",
+      "cdn": "https://img.magnific.com/free-photo/responsive-design-layout-software-concept_53876-124325.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Responsive website layout concept — product web, not coding portrait"
+  },
+  {
+    "file": "services/svc-aplicaciones.webp",
+    "key": "svc-aplicaciones",
+    "alt": "Pantalla de producto móvil con interfaz de aplicación",
+    "note": "Servicio: Aplicaciones",
+    "pick": {
+      "id": 13462466,
+      "name": "Mobile phone screen product showcase",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/mobile-phone-screen-product-showcase_13462466.htm",
+      "cdn": "https://img.magnific.com/free-photo/mobile-phone-screen-product-showcase_53876-98293.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Mobile screen product showcase — app UI focus"
+  },
+  {
+    "file": "services/svc-ecommerce.webp",
+    "key": "svc-ecommerce",
+    "alt": "Compra en tienda online desde la app móvil",
+    "note": "Servicio: E-commerce",
+    "pick": {
+      "id": 61516445,
+      "name": "Shopper using online store mobile app on phone, examining modern fashion items collection and buying merchandise. Boutique client looking at clothing line on retail shop website.",
+      "author": "DC Studio",
+      "authorSlug": "dcstudio",
+      "url": "https://www.magnific.com/free-photo/shopper-using-online-store-mobile-app-phone-examining-modern-fashion-items-collection-buying-merchandise-boutique-client-looking-clothing-line-retail-shop-website_61516445.htm",
+      "cdn": "https://img.magnific.com/free-photo/shopper-using-online-store-mobile-app-phone-examining-modern-fashion-items-collection-buying-merchandise-boutique-client-looking-clothing-line-retail-shop-website_482257-67405.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Online store mobile app shopping flow"
+  },
+  {
+    "file": "services/svc-seo.webp",
+    "key": "svc-seo",
+    "alt": "Panel de analítica orientado a visibilidad y búsqueda",
+    "note": "Servicio: SEO",
+    "pick": {
+      "id": 412501375,
+      "name": "Business data analytics dashboard",
+      "author": "magnific",
+      "authorSlug": "magnific",
+      "url": "https://www.magnific.com/free-ai-image/business-data-analytics-dashboard_412501375.htm",
+      "cdn": "https://img.magnific.com/free-photo/business-data-analytics-dashboard_23-2151937262.jpg",
+      "isAIGenerated": true
+    },
+    "reason": "Analytics dashboard for search/visibility work"
+  },
+  {
+    "file": "services/svc-marketing.webp",
+    "key": "svc-marketing",
+    "alt": "Estudio creativo: edición fotográfica y dirección de campaña",
+    "note": "Servicio: Marketing",
+    "pick": {
+      "id": 19100944,
+      "name": "Digital Tablet Photography Design Studio Editing Concept",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/digital-tablet-photography-design-studio-editing-concept_19100944.htm",
+      "cdn": "https://img.magnific.com/free-photo/digital-tablet-photography-design-studio-editing-concept_53876-146880.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Creative studio photography + editing — campaign craft"
+  },
+  {
+    "file": "services/svc-ia.webp",
+    "key": "svc-ia",
+    "alt": "Concepto de sistemas de inteligencia artificial aplicados al trabajo",
+    "note": "Servicio: Inteligencia artificial",
+    "pick": {
+      "id": 57197101,
+      "name": "Artificial Intelligence enabling computers to replicate human brain functioning. Machine learning algorithms used to do computational operations based on data pattern recognition, 3D render animation",
+      "author": "DC Studio",
+      "authorSlug": "dcstudio",
+      "url": "https://www.magnific.com/free-photo/artificial-intelligence-enabling-computers-replicate-human-brain-functioning-machine-learning-algorithms-used-computational-operations-based-data-pattern-recognition-3d-render-animation_57197101.htm",
+      "cdn": "https://img.magnific.com/free-photo/artificial-intelligence-enabling-computers-replicate-human-brain-functioning-machine-learning-algorithms-used-computational-operations-based-data-pattern-recognition-3d-render-animation_482257-66074.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "AI enabling systems — conceptual, not neon wash"
+  },
+  {
+    "file": "services/svc-automatizacion.webp",
+    "key": "svc-automatizacion",
+    "alt": "Optimización digital de procesos y flujos automatizados",
+    "note": "Servicio: Automatización",
+    "pick": {
+      "id": 426496207,
+      "name": "Digital Transformation and Process Optimization",
+      "author": "muhammad.abdullah",
+      "authorSlug": "muhammad-abdullah",
+      "url": "https://www.magnific.com/free-ai-image/digital-transformation-process-optimization_426496207.htm",
+      "cdn": "https://img.magnific.com/free-photo/digital-transformation-process-optimization_84443-74868.jpg",
+      "isAIGenerated": true
+    },
+    "reason": "Digital process optimization — workflow systems"
+  },
+  {
+    "file": "services/svc-migracion.webp",
+    "key": "svc-migracion",
+    "alt": "Diagnóstico técnico de sistemas en proceso de migración",
+    "note": "Servicio: Migración y refactorización",
+    "pick": {
+      "id": 158794903,
+      "name": "Developer identifying server issues",
+      "author": "DC Studio",
+      "authorSlug": "dcstudio",
+      "url": "https://www.magnific.com/free-photo/developer-identifying-server-issues_158794903.htm",
+      "cdn": "https://img.magnific.com/free-photo/developer-identifying-server-issues_482257-81365.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Developer diagnosing systems — migration/refactor context"
+  },
+  {
+    "file": "services/svc-mvp.webp",
+    "key": "svc-mvp",
+    "alt": "Planificación de prototipo con notas adhesivas en mesa de trabajo",
+    "note": "Servicio: MVP ultra-rápido",
+    "pick": {
+      "id": 1005978,
+      "name": "Business executives reading sticky notes",
+      "author": "peoplecreations",
+      "authorSlug": "peoplecreations",
+      "url": "https://www.magnific.com/free-photo/business-executives-reading-sticky-notes_1005978.htm",
+      "cdn": "https://img.magnific.com/free-photo/business-executives-reading-sticky-notes_1170-1886.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Sticky-note prototype planning — MVP scope work"
+  },
+  {
+    "file": "principle-diseno.webp",
+    "key": "principle-diseno",
+    "alt": "Estudio de diseño gráfico con materiales de dirección de arte",
+    "note": "Oficio / principio: Diseño",
+    "pick": {
+      "id": 150835260,
+      "name": "Still life of  graphic design studio",
+      "author": "magnific",
+      "authorSlug": "magnific",
+      "url": "https://www.magnific.com/free-photo/still-life-graphic-design-studio_150835260.htm",
+      "cdn": "https://img.magnific.com/free-photo/still-life-graphic-design-studio_23-2151320739.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Graphic design studio still life — craft materials"
+  },
+  {
+    "file": "principle-desarrollo.webp",
+    "key": "principle-desarrollo",
+    "alt": "Escritorio de producto digital con portátil, teléfono y cuaderno",
+    "note": "Oficio / principio: Desarrollo",
+    "pick": {
+      "id": 11677979,
+      "name": "Laptop, phone, and notebook on the office desk",
+      "author": "wirestock",
+      "authorSlug": "wirestock",
+      "url": "https://www.magnific.com/free-photo/laptop-phone-notebook-office-desk_11677979.htm",
+      "cdn": "https://img.magnific.com/free-photo/laptop-phone-notebook-office-desk_181624-25209.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Laptop + phone + notebook desk — product build, cool editorial"
+  },
+  {
+    "file": "principle-marketing.webp",
+    "key": "principle-marketing",
+    "alt": "Mesa y notas en pared para planificar mensaje y canal",
+    "note": "Oficio / principio: Marketing",
+    "pick": {
+      "id": 13659287,
+      "name": "Arrangement with desk and notes on wall",
+      "author": "magnific",
+      "authorSlug": "magnific",
+      "url": "https://www.magnific.com/free-photo/arrangement-with-desk-notes-wall_13659287.htm",
+      "cdn": "https://img.magnific.com/free-photo/arrangement-with-desk-notes-wall_23-2148128327.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Desk + wall notes — message/channel planning"
+  },
+  {
+    "file": "project-editorial.webp",
+    "key": "project-editorial",
+    "alt": "Estudio editorial: tipografía, lectura y sistema de contenido",
+    "note": "Proyecto: Sitio con sistema editorial",
+    "pick": {
+      "id": 17113739,
+      "name": "Hobby Education Academic Knowledge Book Study Concept",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/hobby-education-academic-knowledge-book-study-concept_17113739.htm",
+      "cdn": "https://img.magnific.com/free-photo/hobby-education-academic-knowledge-book-study-concept_53876-124406.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Editorial knowledge/book study — content systems"
+  },
+  {
+    "file": "project-landing-producto.webp",
+    "key": "project-landing-producto",
+    "alt": "Concepto de interfaz web para landing de producto",
+    "note": "Proyecto: Landing de producto digital",
+    "pick": {
+      "id": 16448025,
+      "name": "Web Design User Interface Concept",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/web-design-user-interface-concept_16448025.htm",
+      "cdn": "https://img.magnific.com/free-photo/web-design-user-interface-concept_53876-120767.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Web design UI concept — product landing craft"
+  },
+  {
+    "file": "project-lanzamiento-marca.webp",
+    "key": "project-lanzamiento-marca",
+    "alt": "Mockup de papelería para lanzamiento de identidad",
+    "note": "Proyecto: Lanzamiento de marca",
+    "pick": {
+      "id": 417980946,
+      "name": "Clean and professional corporate identity stationery mockup",
+      "author": "qalebstudio",
+      "authorSlug": "qalebstudio",
+      "url": "https://www.magnific.com/free-photo/clean-professional-corporate-identity-stationery-mockup_417980946.htm",
+      "cdn": "https://img.magnific.com/free-photo/clean-professional-corporate-identity-stationery-mockup_187299-47807.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Corporate identity stationery mockup — brand launch kit"
+  },
+  {
+    "file": "project-landing-servicio.webp",
+    "key": "project-landing-servicio",
+    "alt": "Mesa de diseño con muestras de color y materiales de servicio",
+    "note": "Proyecto: Landing de servicio",
+    "pick": {
+      "id": 1211573,
+      "name": "Graphic design and color swatches and pens on a desk. Architectural drawing with work tools and accessories.",
+      "author": "ijeab",
+      "authorSlug": "ijeab",
+      "url": "https://www.magnific.com/free-photo/graphic-design-color-swatches-pens-desk-architectural-drawing-with-work-tools-accessories_1211573.htm",
+      "cdn": "https://img.magnific.com/free-photo/graphic-design-color-swatches-pens-desk-architectural-drawing-with-work-tools-accessories_1421-76.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Design desk with swatches — professional service craft"
+  },
+  {
+    "file": "project-institucional.webp",
+    "key": "project-institucional",
+    "alt": "Fachada de vidrio y acero: presencia institucional contemporánea",
+    "note": "Proyecto: Sitio institucional",
+    "pick": {
+      "id": 8857805,
+      "name": "Low angle shot of a black and glass facade of a modern building",
+      "author": "wirestock",
+      "authorSlug": "wirestock",
+      "url": "https://www.magnific.com/free-photo/low-angle-shot-black-glass-facade-modern-building_8857805.htm",
+      "cdn": "https://img.magnific.com/free-photo/low-angle-shot-black-glass-facade-modern-building_181624-6282.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Black glass facade — institutional presence, cool tone"
+  },
+  {
+    "file": "project-contenido.webp",
+    "key": "project-contenido",
+    "alt": "Equipo de estudio para creación de contenido digital",
+    "note": "Proyecto: Sistema de contenidos",
+    "pick": {
+      "id": 105370477,
+      "name": "Content creation equipment used by photo editor to film tutorial on selecting editorial pictures for fashion magazine Focus on camera recording photographer in blurry background presenting his work",
+      "author": "DC Studio",
+      "authorSlug": "dcstudio",
+      "url": "https://www.magnific.com/free-photo/content-creation-equipment-used-by-photo-editor-film-tutorial-selecting-editorial-pictures-fashion-magazine-focus-camera-recording-photographer-blurry-background-presenting-his-work_105370477.htm",
+      "cdn": "https://img.magnific.com/free-photo/content-creation-equipment-used-by-photo-editor-film-tutorial-selecting-editorial-pictures-fashion-magazine-focus-camera-recording-photographer-blurry-background-presenting-his-work_482257-73698.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Content creation studio equipment"
+  },
+  {
+    "file": "blog-conversion.webp",
+    "key": "blog-conversion",
+    "alt": "Gráficos de marketing en portátil para leer conversión",
+    "note": "Blog: Conversión",
+    "pick": {
+      "id": 58629430,
+      "name": "Laptop computer with marketing statistics graphs on screen, standing on table in startup office, coworkers discussing company strategy in background. Employees working overtime in startup office",
+      "author": "DC Studio",
+      "authorSlug": "dcstudio",
+      "url": "https://www.magnific.com/free-photo/laptop-computer-with-marketing-statistics-graphs-screen-standing-table-startup-office-coworkers-discussing-company-strategy-background-employees-working-overtime-startup-office_58629430.htm",
+      "cdn": "https://img.magnific.com/free-photo/laptop-computer-with-marketing-statistics-graphs-screen-standing-table-startup-office-coworkers-discussing-company-strategy-background-employees-working-overtime-startup-office_482257-66472.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Marketing statistics on laptop — conversion reading"
+  },
+  {
+    "file": "blog-brief.webp",
+    "key": "blog-brief",
+    "alt": "Cuaderno en flat lay para redactar el brief creativo",
+    "note": "Blog: Brief",
+    "pick": {
+      "id": 13415999,
+      "name": "Flat lay of working table with young womans hand writing a notebook with a smartphone cup of tea and green plant",
+      "author": "ansiia",
+      "authorSlug": "ansiia",
+      "url": "https://www.magnific.com/free-photo/flat-lay-working-table-with-young-womans-hand-writing-notebook-with-smartphone-cup-tea-green-plant_13415999.htm",
+      "cdn": "https://img.magnific.com/free-photo/flat-lay-working-table-with-young-womans-hand-writing-notebook-with-smartphone-cup-tea-green-plant_291650-1574.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Notebook writing flat lay — brief before pixels"
+  },
+  {
+    "file": "blog-contenido-vende.webp",
+    "key": "blog-contenido-vende",
+    "alt": "Escritura de contenido comercial en escritorio de trabajo",
+    "note": "Blog: Contenido que vende",
+    "pick": {
+      "id": 11307088,
+      "name": "Person writing at the office",
+      "author": "rawpixel.com",
+      "authorSlug": "rawpixel-com",
+      "url": "https://www.magnific.com/free-photo/person-writing-office_11307088.htm",
+      "cdn": "https://img.magnific.com/free-photo/person-writing-office_53876-94944.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Writing at desk — commercial content craft"
+  },
+  {
+    "file": "blog-desarrollo-ux.webp",
+    "key": "blog-desarrollo-ux",
+    "alt": "Revisión de proyectos de diseño sobre mesa compartida",
+    "note": "Blog: Desarrollo y UX",
+    "pick": {
+      "id": 5839470,
+      "name": "Unrecognizable colleagues standing at table and looking at design projects",
+      "author": "pressfoto",
+      "authorSlug": "pressfoto",
+      "url": "https://www.magnific.com/free-photo/unrecognizable-colleagues-standing-table-looking-design-projects_5839470.htm",
+      "cdn": "https://img.magnific.com/free-photo/unrecognizable-colleagues-standing-table-looking-design-projects_1098-20475.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Design projects review — UX/dev craft table"
+  },
+  {
+    "file": "blog-tres-oficios.webp",
+    "key": "blog-tres-oficios",
+    "alt": "Equipo creativo colaborando en un proyecto de diseño",
+    "note": "Blog: Tres oficios",
+    "pick": {
+      "id": 10586228,
+      "name": "Creative team working on design project together",
+      "author": "pch.vector",
+      "authorSlug": "pch-vector",
+      "url": "https://www.magnific.com/free-photo/creative-team-working-design-project-together_10586228.htm",
+      "cdn": "https://img.magnific.com/free-photo/creative-team-working-design-project-together_74855-9773.jpg",
+      "isAIGenerated": false
+    },
+    "reason": "Creative team on design project — three crafts together"
+  }
+]

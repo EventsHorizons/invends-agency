@@ -1,6 +1,7 @@
 import {
   FRAGMENT_SRC,
   VERTEX_SRC,
+  brandWaveColorAt,
   hexToRgb01,
   type GradientParams,
   HOME_GRADIENT,
@@ -17,6 +18,11 @@ function compile(gl: WebGL2RenderingContext, type: number, src: string) {
     throw new Error(log || "shader compile failed");
   }
   return sh;
+}
+
+/** Layered soft oscillators — less mechanical than a single sin. */
+function soft(t: number, a: number, b: number, c: number, amp = 1) {
+  return (Math.sin(t * a) * 0.5 + Math.sin(t * b + 1.3) * 0.32 + Math.sin(t * c + 2.7) * 0.18) * amp;
 }
 
 export type AgencyGradientHandle = {
@@ -96,12 +102,16 @@ export function createAgencyGradient(
   let raf = 0;
   let running = false;
   let animateSeed = opts.animateSeed ?? false;
-  const seedSpeed = opts.seedSpeed ?? 0.07;
+  // Slightly slower base drift than before — reads more natural
+  const seedSpeed = opts.seedSpeed ?? 0.055;
   const noRetina = opts.noRetina ?? true;
   let baseSeed = params.seed;
   let basePosition: [number, number] = [...params.position];
   let baseColorRotation = params.colorRotation;
+  let baseDisplacement = params.displacement;
   let t0 = performance.now();
+  let elapsed = 0;
+  let lastNow = t0;
 
   let cssW = 1;
   let cssH = 1;
@@ -154,17 +164,36 @@ export function createAgencyGradient(
 
   const tick = (now: number) => {
     if (!running) return;
+    const frameDt = Math.min(0.05, (now - lastNow) / 1000);
+    lastNow = now;
+
     if (animateSeed) {
-      const dt = (now - t0) / 1000;
-      // Seed drift morphs IQ displacement noise → visible wave motion
-      params.seed = baseSeed + dt * seedSpeed;
-      // Slow orbital nudge so bands keep flowing (not a frozen still)
-      const wobble = dt * 0.085;
+      elapsed += frameDt;
+      const t = elapsed;
+
+      // Seed: steady drift + tiny irregularity so morphing isn't metronomic
+      params.seed =
+        baseSeed + t * seedSpeed + soft(t, 0.09, 0.14, 0.05, 0.012);
+
+      // Soft asymmetric drift (same spirit as before, less rigid orbit)
       params.position = [
-        basePosition[0] + Math.sin(wobble) * 0.045,
-        basePosition[1] + Math.cos(wobble * 0.82) * 0.035,
+        basePosition[0] + soft(t, 0.078, 0.121, 0.051, 0.042),
+        basePosition[1] + soft(t + 2.4, 0.069, 0.103, 0.044, 0.034),
       ];
-      params.colorRotation = baseColorRotation + Math.sin(wobble * 0.35) * 0.04;
+
+      params.colorRotation =
+        baseColorRotation + soft(t + 1.1, 0.038, 0.062, 0.024, 0.036);
+
+      // Very subtle breath on displacement — contours ease in/out
+      params.displacement =
+        baseDisplacement * (1 + soft(t + 3.2, 0.045, 0.071, 0.029, 0.04));
+
+      // Brand wave hues — same cycle as before, slightly slower
+      const huePhase = t * 0.38;
+      params.color1 = brandWaveColorAt(huePhase);
+      params.color2 = brandWaveColorAt(huePhase + 1.05);
+      params.color3 = brandWaveColorAt(huePhase + 2.1);
+      params.color4 = brandWaveColorAt(huePhase + 3.15);
     }
     draw();
     raf = requestAnimationFrame(tick);
@@ -173,10 +202,14 @@ export function createAgencyGradient(
   const start = () => {
     // Starting the loop always enables wave motion (seed + soft orbit)
     animateSeed = true;
-    t0 = performance.now();
-    baseSeed = params.seed;
-    basePosition = [...params.position];
-    baseColorRotation = params.colorRotation;
+    lastNow = performance.now();
+    if (elapsed === 0) {
+      t0 = lastNow;
+      baseSeed = params.seed;
+      basePosition = [...params.position];
+      baseColorRotation = params.colorRotation;
+      baseDisplacement = params.displacement;
+    }
     if (running) return;
     running = true;
     raf = requestAnimationFrame(tick);
@@ -192,6 +225,7 @@ export function createAgencyGradient(
     if (p.seed != null) baseSeed = p.seed;
     if (p.position) basePosition = [...p.position];
     if (p.colorRotation != null) baseColorRotation = p.colorRotation;
+    if (p.displacement != null) baseDisplacement = p.displacement;
     if (!running) draw();
   };
 

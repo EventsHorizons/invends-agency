@@ -1,0 +1,102 @@
+{
+  "svc-diseno-web": {
+    "id": 17106506,
+    "reason": "Wireframe/UI layout on device — UX/UI without generic office portrait"
+  },
+  "svc-branding": {
+    "id": 21018877,
+    "reason": "Corporate identity stationery system — cool neutrals, no citrus props"
+  },
+  "svc-desarrollo-web": {
+    "id": 17112868,
+    "reason": "Responsive website layout concept — product web, not coding portrait"
+  },
+  "svc-aplicaciones": {
+    "id": 13462466,
+    "reason": "Mobile screen product showcase — app UI focus"
+  },
+  "svc-ecommerce": {
+    "id": 61516445,
+    "reason": "Online store mobile app shopping flow"
+  },
+  "svc-seo": {
+    "id": 412501375,
+    "reason": "Analytics dashboard for search/visibility work"
+  },
+  "svc-marketing": {
+    "id": 19100944,
+    "reason": "Creative studio photography + editing — campaign craft"
+  },
+  "svc-ia": {
+    "id": 57197101,
+    "reason": "AI enabling systems — conceptual, not neon wash"
+  },
+  "svc-automatizacion": {
+    "id": 426496207,
+    "reason": "Digital process optimization — workflow systems"
+  },
+  "svc-migracion": {
+    "id": 158794903,
+    "reason": "Developer diagnosing systems — migration/refactor context"
+  },
+  "svc-mvp": {
+    "id": 1005978,
+    "reason": "Sticky-note prototype planning — MVP scope work"
+  },
+  "principle-diseno": {
+    "id": 150835260,
+    "reason": "Graphic design studio still life — craft materials"
+  },
+  "principle-desarrollo": {
+    "id": 11677979,
+    "reason": "Laptop + phone + notebook desk — product build, cool editorial"
+  },
+  "principle-marketing": {
+    "id": 13659287,
+    "reason": "Desk + wall notes — message/channel planning"
+  },
+  "project-editorial": {
+    "id": 17113739,
+    "reason": "Editorial knowledge/book study — content systems"
+  },
+  "project-landing-producto": {
+    "id": 16448025,
+    "reason": "Web design UI concept — product landing craft"
+  },
+  "project-lanzamiento-marca": {
+    "id": 417980946,
+    "reason": "Corporate identity stationery mockup — brand launch kit"
+  },
+  "project-landing-servicio": {
+    "id": 1211573,
+    "reason": "Design desk with swatches — professional service craft"
+  },
+  "project-institucional": {
+    "id": 8857805,
+    "reason": "Black glass facade — institutional presence, cool tone"
+  },
+  "project-contenido": {
+    "id": 105370477,
+    "reason": "Content creation studio equipment"
+  },
+  "blog-conversion": {
+    "id": 58629430,
+    "reason": "Marketing statistics on laptop — conversion reading"
+  },
+  "blog-brief": {
+    "id": 13415999,
+    "reason": "Notebook writing flat lay — brief before pixels"
+  },
+  "blog-contenido-vende": {
+    "id": 11307088,
+    "reason": "Writing at desk — commercial content craft"
+  },
+  "blog-desarrollo-ux": {
+    "id": 5839470,
+    "reason": "Design projects review — UX/dev craft table"
+  },
+  "blog-tres-oficios": {
+    "id": 10586228,
+    "reason": "Creative team on design project — three crafts together"
+  }
+}
