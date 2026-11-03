@@ -1,4 +1,4 @@
-# Image attributions — 3Drawers
+# Image attributions — Invends
 
 All images below are **clean free downloads from [Magnific](https://www.magnific.com/)** (formerly Freepik),
 obtained via the official download endpoint (`/api/regular/download` → `downloadscdn*.magnific.com`).
