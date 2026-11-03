@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { serviceCategoriesFor } from "~/utils/serviceCategoriesI18n";
-import type { ServiceCategory } from "~/utils/trespiData";
+import type { ServiceCategory } from "~/utils/siteData";
 
 const props = withDefaults(
   defineProps<{

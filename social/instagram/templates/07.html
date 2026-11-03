@@ -5,66 +5,80 @@
   <link rel="stylesheet" href="_shared.css" />
   <style>
     .canvas {
-      display: grid;
-      grid-template-rows: auto 1fr auto;
+      display: flex;
+      flex-direction: column;
       background: var(--bg);
-      padding-bottom: 120px;
     }
-    h1 { font-size: 56px; margin: 16px 0 40px; max-width: 14ch; }
-    .cols {
+    h1 {
+      font-size: 68px;
+      max-width: 12ch;
+      margin: 20px 0 48px;
+    }
+    .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      min-height: 720px;
+      flex: 1;
+      margin-bottom: 130px;
+      min-height: 0;
     }
     .col {
-      border: 1px solid var(--line);
-      padding: 36px 32px;
       display: flex;
       flex-direction: column;
-      gap: 28px;
+      padding: 40px 36px;
+      border: 1px solid var(--line);
+      min-height: 720px;
     }
-    .col.bad { background: var(--surface); opacity: 0.75; }
-    .col.good {
+    .col.inv {
       background: color-mix(in srgb, var(--brand-deep) 55%, var(--surface));
-      border-color: color-mix(in srgb, var(--brand) 40%, var(--line));
+      border-color: color-mix(in srgb, var(--brand) 45%, var(--line));
     }
-    .label { font-size: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-    .col.good .label { color: var(--brand); }
-    .col li {
-      list-style: none;
-      font-size: 28px;
-      line-height: 1.35;
+    .col h2 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       color: var(--muted);
-      padding-left: 0;
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
+      margin-bottom: 40px;
     }
-    .col.good li { color: var(--fg); }
+    .col.inv h2 { color: var(--lavender); }
+    .item {
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      line-height: 1.25;
+    }
+    .col.inv .item {
+      color: var(--fg);
+      border-top-color: color-mix(in srgb, var(--brand) 30%, var(--line));
+    }
+    .item:last-child { border-bottom: 1px solid var(--line); }
+    .col.inv .item:last-child {
+      border-bottom-color: color-mix(in srgb, var(--brand) 30%, var(--line));
+    }
   </style>
 </head>
 <body>
   <div class="canvas">
     <p class="eyebrow">Comparación</p>
     <h1 class="display">Genérico vs. <em>criterio</em>.</h1>
-    <div class="cols">
-      <div class="col bad">
-        <p class="label">Ruido</p>
-        <ul>
-          <li>Promesas abiertas</li>
-          <li>Propuestas plantilla</li>
-          <li>Diseño sin brief</li>
-          <li>Métricas sin decisión</li>
-        </ul>
+    <div class="grid">
+      <div class="col">
+        <h2>Ruido</h2>
+        <div class="item">Promesas abiertas</div>
+        <div class="item">Propuestas plantilla</div>
+        <div class="item">Diseño sin brief</div>
+        <div class="item">Métricas sin decisión</div>
       </div>
-      <div class="col good">
-        <p class="label">Invends</p>
-        <ul>
-          <li>Alcance concreto</li>
-          <li>Conversación útil</li>
-          <li>Oficio con objetivo</li>
-          <li>Siguiente paso claro</li>
-        </ul>
+      <div class="col inv">
+        <h2>Invends</h2>
+        <div class="item">Alcance concreto</div>
+        <div class="item">Conversación útil</div>
+        <div class="item">Oficio con objetivo</div>
+        <div class="item">Siguiente paso claro</div>
       </div>
     </div>
     <span class="mark bl">Invends</span>

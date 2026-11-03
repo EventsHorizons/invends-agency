@@ -1,6 +1,7 @@
 # Captions — Invends Instagram Week 01
 
-Hashtags base sugeridos: `#Invends #DiseñoWeb #DesarrolloWeb #MarketingDigital #Bogotá #LATAM`
+Campaña: **Presencia que decide**  
+Hashtags base: `#Invends #DiseñoWeb #DesarrolloWeb #MarketingDigital #Bogotá #LATAM`
 
 ---
 
@@ -11,21 +12,21 @@ Hashtags base sugeridos: `#Invends #DiseñoWeb #DesarrolloWeb #MarketingDigital 
 
 ## 02 — Claridad antes que ruido
 **Caption:** Claridad antes que ruido. Menos promesas abiertas. Más alcance concreto.
-**CTA:** ¿Qué problema quieres resolver este trimestre? Escríbenos.
+**CTA:** ¿Qué problema quieres resolver este trimestre? Escríbenos a hola@invends.com
 **Hashtags:** #EstrategiaDigital #Invends
 
 ## 03 — Diseño web
-**Caption:** Diseño web que se lee. Jerarquía, ritmo y sistema. Si no acerca al objetivo, sobra.
+**Caption:** Diseño que se lee. Jerarquía, ritmo y sistema. Si no acerca al objetivo, sobra.
 **CTA:** Cuéntanos qué debe decidir tu sitio.
 **Hashtags:** #DiseñoWeb #UX #Invends
 
 ## 04 — Desarrollo
-**Caption:** Que se sostenga el día que llega gente. Base, rendimiento y evolución — sin reescribirlo todo.
+**Caption:** Base → rendimiento → evolución. Que se sostenga el día que llega gente — sin reescribirlo todo.
 **CTA:** ¿Migración, producto o sitio nuevo? Hablemos.
 **Hashtags:** #DesarrolloWeb #Invends
 
 ## 05 — Marketing
-**Caption:** Canal, mensaje y página alineados. Preferimos contenidos útiles y una acción evidente antes que ruido.
+**Caption:** Canal y mensaje alineados. Preferimos contenidos útiles y una acción evidente antes que ruido.
 **CTA:** Revisa si tu campaña y tu landing dicen lo mismo.
 **Hashtags:** #MarketingDigital #Invends
 
@@ -39,8 +40,8 @@ Hashtags base sugeridos: `#Invends #DiseñoWeb #DesarrolloWeb #MarketingDigital 
 **CTA:** ¿En qué lado está tu proyecto hoy?
 **Hashtags:** #Branding #Invends
 
-## 08 — Branding
-**Caption:** Un sistema que se reconoce. Territorio, voz y reglas aplicables — no solo un logo bonito.
+## 08 — Sistema de marca
+**Caption:** Un lenguaje que se reconoce. Territorio, voz y reglas aplicables — no solo un logo bonito.
 **CTA:** ¿Tu identidad se sostiene en digital?
 **Hashtags:** #Branding #IdentidadVisual #Invends
 
@@ -61,12 +62,12 @@ Hashtags base sugeridos: `#Invends #DiseñoWeb #DesarrolloWeb #MarketingDigital 
 
 ## 12 — Contacto
 **Caption:** Cuéntanos el objetivo. Respondemos con alcance claro. Sin propuestas genéricas.
-**CTA:** hola@invends.com
+**CTA:** hola@invends.com · Bogotá / LATAM
 **Hashtags:** #Invends #Bogotá
 
 ## 13 — Muestras
-**Caption:** Ideas que se vuelven experiencias. Diseño, desarrollo y marketing alineados — método, no relleno.
-**CTA:** Mira más en invends (web).
+**Caption:** Ideas → experiencias. Diseño, desarrollo y marketing alineados — método, no relleno.
+**CTA:** Mira más en invends.vercel.app
 **Hashtags:** #Portfolio #Invends
 
 ## 14 — Cierre

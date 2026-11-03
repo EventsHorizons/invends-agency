@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { getProject } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { getProject } from "~/utils/siteData";
 import {
   HOME,
   HOME_METHODS,

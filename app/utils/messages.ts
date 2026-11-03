@@ -1,5 +1,5 @@
-import type { Locale } from "~/composables/useLocale";
-import type { ServiceCategory } from "~/utils/trespiData";
+﻿import type { Locale } from "~/composables/useLocale";
+import type { ServiceCategory } from "~/utils/siteData";
 import {
   BRAND_HERO_SUPPORT,
   BRAND_HERO_SUPPORT_EN,

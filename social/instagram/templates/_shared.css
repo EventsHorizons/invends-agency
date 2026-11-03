@@ -6,9 +6,21 @@
 }
 @font-face {
   font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roobert";
   src: url("../../../public/fonts/Roobert-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
 }
 @font-face {
   font-family: "Roobert";
@@ -18,8 +30,8 @@
 }
 @font-face {
   font-family: "Roobert";
-  src: url("../../../public/fonts/Roobert-RegularItalic.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../../../public/fonts/Roobert-BoldItalic.woff2") format("woff2");
+  font-weight: 800;
   font-style: italic;
 }
 
@@ -32,11 +44,16 @@
   --line: #332a49;
   --brand: #8a68ff;
   --brand-deep: #25134f;
+  --lavender: #b8a6ff;
   --magenta: #ff2daa;
   --bg-light: #ffffff;
   --fg-light: #201b2c;
   --muted-light: #625b70;
-  --safe: 72px;
+  --surface-light: #f7f6fb;
+  --line-light: #e4e0ee;
+  --safe: 80px;
+  --gutter: 24px;
+  --col: 72px;
   --font: "Roobert", system-ui, sans-serif;
 }
 
@@ -53,6 +70,7 @@ body {
   overflow: hidden;
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
   background: var(--bg);
   color: var(--fg);
 }
@@ -70,6 +88,7 @@ body {
   color: var(--fg-light);
 }
 
+/* Type */
 .eyebrow {
   font-size: 22px;
   font-weight: 600;
@@ -84,7 +103,7 @@ body {
 
 .display {
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
   line-height: 0.92;
 }
 
@@ -95,52 +114,103 @@ body {
   color: var(--brand);
 }
 
+.canvas.light .display em,
+.canvas.light .italic {
+  color: var(--brand);
+}
+
 .body {
   font-size: 30px;
   font-weight: 400;
   line-height: 1.35;
   color: var(--muted);
-  max-width: 18ch;
+  max-width: 22ch;
 }
 
 .canvas.light .body {
   color: var(--muted-light);
 }
 
-.mark {
-  position: absolute;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
-.mark.bl {
-  left: var(--safe);
-  bottom: var(--safe);
-}
-.mark.br {
-  right: var(--safe);
-  bottom: var(--safe);
-}
-.mark.tl {
-  left: var(--safe);
-  top: var(--safe);
-}
-.mark.tr {
-  right: var(--safe);
-  top: var(--safe);
-}
-
-.accent-bar {
-  width: 64px;
-  height: 6px;
-  background: var(--brand);
+.lead {
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--lavender);
+  max-width: 16ch;
 }
 
 .num {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--brand);
   text-transform: uppercase;
 }
+
+.meta {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rule {
+  width: 64px;
+  height: 4px;
+  background: var(--brand);
+  border: 0;
+}
+
+.rule.wide {
+  width: 120px;
+}
+
+.rule.magenta {
+  background: var(--magenta);
+}
+
+.hairline {
+  height: 1px;
+  background: var(--line);
+  border: 0;
+  width: 100%;
+}
+
+.canvas.light .hairline {
+  background: var(--line-light);
+}
+
+/* Wordmark */
+.mark {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  z-index: 5;
+}
+
+.mark.bl { left: var(--safe); bottom: var(--safe); }
+.mark.br { right: var(--safe); bottom: var(--safe); }
+.mark.tl { left: var(--safe); top: var(--safe); }
+.mark.tr { right: var(--safe); top: var(--safe); }
+
+.canvas.light .mark {
+  color: var(--fg-light);
+}
+
+/* Grid helpers */
+.cols-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+}
+
+.span-6 { grid-column: span 6; }
+.span-7 { grid-column: span 7; }
+.span-5 { grid-column: span 5; }
+.span-8 { grid-column: span 8; }
+.span-4 { grid-column: span 4; }
+.span-12 { grid-column: span 12; }

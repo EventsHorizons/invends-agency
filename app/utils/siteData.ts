@@ -1,3 +1,8 @@
+import { BLOG_POSTS_FROM_SOCIAL } from "./blogPostsFromSocial";
+
+export type { BlogBlock, BlogPost } from "./blogTypes";
+import type { BlogPost } from "./blogTypes";
+
 export const NAV_LINKS = [
   { label: "Inicio", href: "/" },
   { label: "Nosotros", href: "/sobre-nosotros" },
@@ -434,7 +439,7 @@ export const PROJECT_FILTERS: { id: ProjectCategory; label: string }[] = [
   { id: "contenido", label: "Contenido" },
 ];
 
-export interface TrespiProject {
+export interface ProjectItem {
   slug: string;
   name: string;
   description: string;
@@ -453,7 +458,7 @@ export interface TrespiProject {
 /**
  * Conceptual portfolio samples — method illustrations, not published client cases.
  */
-export const PROJECTS: TrespiProject[] = [
+export const PROJECTS: ProjectItem[] = [
   {
     slug: "sistema-editorial-web",
     name: "Sitio con sistema editorial",
@@ -564,18 +569,8 @@ export const PROJECTS: TrespiProject[] = [
   },
 ];
 
-export interface BlogPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  category: string;
-  date: string;
-  image: string;
-  readTime: string;
-  content: string[];
-}
-
 export const BLOG_POSTS: BlogPost[] = [
+  ...BLOG_POSTS_FROM_SOCIAL,
   {
     slug: "por-que-tu-sitio-no-convierte",
     title: "Por qué tu sitio no convierte (aunque se vea bien)",
@@ -583,7 +578,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "La estética no basta. Revisamos fricciones de mensaje, jerarquía y llamado a la acción.",
     category: "Diseño web",
     date: "12 Mar 2026",
-    image: "/images/blog-conversion.webp",
+    image: "/images/blog/por-que-tu-sitio-no-convierte.webp",
     readTime: "6 min",
     content: [
       "Un sitio puede verse correcto y aun así no generar contactos. Suele fallar en tres puntos: no dice con claridad qué ofreces, no prioriza una acción y pide demasiado esfuerzo al visitante.",
@@ -598,7 +593,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Abrir el diseño sin decisiones de negocio es la forma más cara de avanzar.",
     category: "Método",
     date: "28 Feb 2026",
-    image: "/images/blog-brief.webp",
+    image: "/images/blog/brief-antes-que-pixeles.webp",
     readTime: "5 min",
     content: [
       "Empezar por el moodboard es tentador. También retrasa las preguntas difíciles: ¿qué problema resolvemos?, ¿qué debe pasar después de la visita?, ¿qué no vamos a hacer?",
@@ -613,7 +608,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Cómo escribir para marcas de servicios cuando el tono corporativo no convence.",
     category: "Marketing digital",
     date: "10 Feb 2026",
-    image: "/images/blog-contenido-vende.webp",
+    image: "/images/blog/contenido-que-vende-sin-gritar.webp",
     readTime: "7 min",
     content: [
       "El copy de agencia suele caer en dos extremos: frases intercambiables o metáforas forzadas. Ninguno explica el trabajo real.",
@@ -628,7 +623,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Rendimiento, estados y semántica no son detalles técnicos: el usuario los percibe.",
     category: "Desarrollo web",
     date: "22 Ene 2026",
-    image: "/images/blog-desarrollo-ux.webp",
+    image: "/images/blog/desarrollo-como-parte-del-diseno.webp",
     readTime: "6 min",
     content: [
       "Cuando diseño y desarrollo se tratan como etapas aisladas, el resultado se siente cosido: inconsistencias, carga lenta y componentes que no escalan.",
@@ -643,7 +638,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Tres servicios distintos. Un mismo brief. Así evitamos piezas sueltas que no se hablan entre sí.",
     category: "Agencia",
     date: "5 Ene 2026",
-    image: "/images/blog-tres-oficios.webp",
+    image: "/images/blog/tres-oficios-una-direccion.webp",
     readTime: "4 min",
     content: [
       "Muchas marcas reciben un logo por un lado, una web por otro y una campaña sin relación con ninguna de las dos.",

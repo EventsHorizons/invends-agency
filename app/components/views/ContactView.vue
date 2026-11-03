@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { CONTACT_INFO } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { CONTACT_INFO } from "~/utils/siteData";
 
 const { locale, isEn } = useLocale();
 

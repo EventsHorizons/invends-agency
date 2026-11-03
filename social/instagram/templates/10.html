@@ -5,44 +5,51 @@
   <link rel="stylesheet" href="_shared.css" />
   <style>
     .canvas {
-      background: var(--bg);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-bottom: 140px;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 100%, rgba(37, 19, 79, 0.65), transparent 60%),
+        var(--bg);
     }
-    .quote {
-      font-size: 56px;
+    .quote-mark {
+      font-size: 120px;
       font-weight: 800;
-      letter-spacing: -0.035em;
+      color: var(--brand);
+      line-height: 0.6;
+      margin-bottom: 40px;
+      letter-spacing: -0.06em;
+    }
+    blockquote {
+      font-size: 64px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
       line-height: 1.05;
-      max-width: 14ch;
+      max-width: 11ch;
       margin-bottom: 48px;
     }
-    .meta {
-      font-size: 24px;
+    blockquote em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--lavender);
+    }
+    .attr {
+      font-size: 26px;
       font-weight: 600;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--muted);
     }
-    .mark-lg {
-      font-size: 120px;
-      line-height: 1;
-      color: color-mix(in srgb, var(--brand) 35%, transparent);
-      font-weight: 800;
-      position: absolute;
-      top: 80px;
-      left: var(--safe);
-      pointer-events: none;
+    .attr span {
+      color: var(--brand);
     }
   </style>
 </head>
 <body>
   <div class="canvas">
-    <div class="mark-lg" aria-hidden="true">“</div>
-    <p class="quote">Menos promesas abiertas. Más entregables con fecha.</p>
-    <p class="meta">Método · Invends</p>
+    <div class="quote-mark" aria-hidden="true">“</div>
+    <blockquote>Menos promesas abiertas. Más entregables con <em>fecha</em>.</blockquote>
+    <p class="attr"><span>Método</span> · Alcance concreto</p>
     <span class="mark br">Invends</span>
   </div>
 </body>

@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { TEAM, TEAM_FILTERS } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { TEAM, TEAM_FILTERS } from "~/utils/siteData";
 
 definePageMeta({
   alias: ["/en/about-us/equipo"],

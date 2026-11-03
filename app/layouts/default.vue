@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import "~/assets/css/layout.css";
-import "~/assets/css/trespi-layout.css";
+import "~/assets/css/invends-layout.css";
 
 let lenis: { destroy: () => void } | null = null;
 

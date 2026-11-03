@@ -1,6 +1,6 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import { BRAND_NAME } from "~/utils/brand";
-import { CONTACT_INFO } from "~/utils/trespiData";
+import { CONTACT_INFO } from "~/utils/siteData";
 import { NAV, UI } from "~/utils/messages";
 
 const { locale, localePath } = useLocale();

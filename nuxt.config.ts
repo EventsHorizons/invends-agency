@@ -68,13 +68,23 @@ export default defineNuxtConfig({
   routeRules: {
     "/services": { redirect: "/servicios" },
     "/work": { redirect: "/portafolio" },
+    "/work/**": { redirect: "/portafolio" },
     "/contact": { redirect: "/contacto" },
     "/team": { redirect: "/about-us/equipo" },
+    "/team/**": { redirect: "/about-us/equipo" },
     "/policy": { redirect: "/politicas-de-privacidad" },
     "/press": { redirect: "/blog" },
+    "/press/**": { redirect: "/blog" },
     "/en/services": { redirect: "/en/servicios" },
     "/en/work": { redirect: "/en/portafolio" },
+    "/en/work/**": { redirect: "/en/portafolio" },
     "/en/contact": { redirect: "/en/contacto" },
     "/en/about": { redirect: "/en/sobre-nosotros" },
+    "/en/team": { redirect: "/en/sobre-nosotros" },
+    "/en/team/**": { redirect: "/en/sobre-nosotros" },
+    "/en/press": { redirect: "/blog" },
+    /** Legacy path — never expose competitor naming in the URL bar. */
+    "/blogs-trespi": { redirect: "/blog" },
+    "/blogs-trespi/**": { redirect: "/blog/**" },
   },
 });

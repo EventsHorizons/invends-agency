@@ -9,7 +9,7 @@ Documento de referencia de la identidad visual y verbal de **Invends**, alineado
 | Nombre, tagline, hero | `app/utils/brand.ts` |
 | Tokens de color, tipografía, temas | `app/assets/css/main.css` |
 | Header, footer, chrome | `app/assets/css/layout.css` |
-| Layout editorial / CTAs | `app/assets/css/trespi-layout.css` |
+| Layout editorial / CTAs | `app/assets/css/invends-layout.css` |
 | Onda WebGL (hero) | `app/utils/agencyGradientShader.ts` → `BRAND_WAVE_HEX` |
 
 ---

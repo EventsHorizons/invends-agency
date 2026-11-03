@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { BLOG_POSTS, getBlogPost } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { BLOG_POSTS, getBlogPost } from "~/utils/siteData";
 
 const route = useRoute();
 const slug = String(route.params.slug);
@@ -16,6 +16,25 @@ const relatedFallback =
     : BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
 
 useHead({ title: `${post.title} | Invends` });
+useSeoMeta({
+  description: post.excerpt,
+  ogTitle: post.title,
+  ogDescription: post.excerpt,
+  ogImage: post.image,
+});
+
+function formatInline(text: string) {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*(.+?)\*(?!\*)/g, "$1<em>$2</em>")
+    .replace(
+      /\[(.+?)\]\((\/[^)]+|https?:\/\/[^)]+)\)/g,
+      '<a href="$2">$1</a>',
+    );
+}
 </script>
 
 <template>
@@ -50,7 +69,54 @@ useHead({ title: `${post.title} | Invends` });
           fetchpriority="high"
         />
 
-        <div class="prose">
+        <div v-if="post.blocks?.length" class="prose prose-rich">
+          <template v-for="(block, i) in post.blocks" :key="i">
+            <h2 v-if="block.type === 'h2'">{{ block.text }}</h2>
+            <h3 v-else-if="block.type === 'h3'">{{ block.text }}</h3>
+            <blockquote
+              v-else-if="block.type === 'quote'"
+              v-html="formatInline(block.text)"
+            />
+            <ul v-else-if="block.type === 'ul'">
+              <li
+                v-for="(item, j) in block.items"
+                :key="j"
+                v-html="formatInline(item)"
+              />
+            </ul>
+            <ol v-else-if="block.type === 'ol'">
+              <li
+                v-for="(item, j) in block.items"
+                :key="j"
+                v-html="formatInline(item)"
+              />
+            </ol>
+            <div v-else-if="block.type === 'table'" class="table-wrap">
+              <table>
+                <thead v-if="block.rows[0]">
+                  <tr>
+                    <th
+                      v-for="(cell, c) in block.rows[0]"
+                      :key="c"
+                      v-html="formatInline(cell)"
+                    />
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(row, r) in block.rows.slice(1)" :key="r">
+                    <td
+                      v-for="(cell, c) in row"
+                      :key="c"
+                      v-html="formatInline(cell)"
+                    />
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p v-else-if="block.type === 'p'" v-html="formatInline(block.text)" />
+          </template>
+        </div>
+        <div v-else class="prose">
           <p v-for="(para, i) in post.content" :key="i">{{ para }}</p>
         </div>
 
@@ -77,7 +143,7 @@ useHead({ title: `${post.title} | Invends` });
           <NuxtLink
             v-for="r in relatedFallback"
             :key="r.slug"
-            :to="`/blogs-trespi/${r.slug}`"
+            :to="`/blog/${r.slug}`"
             class="rel"
           >
             <img
@@ -148,6 +214,66 @@ useHead({ title: `${post.title} | Invends` });
 .prose {
   font-size: 1.05rem;
   line-height: 1.7;
+}
+.prose-rich :deep(h2) {
+  margin: 2.25rem 0 0.85rem;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.prose-rich :deep(h3) {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.prose-rich :deep(ul),
+.prose-rich :deep(ol) {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+.prose-rich :deep(li) {
+  margin: 0.35rem 0;
+}
+.prose-rich :deep(blockquote) {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--color-brand);
+  background: color-mix(in srgb, var(--color-brand) 8%, transparent);
+  color: var(--fg);
+}
+.prose-rich :deep(a) {
+  color: var(--color-lavender);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.prose-rich :deep(strong) {
+  font-weight: 700;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.prose-rich :deep(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.prose-rich :deep(th),
+.prose-rich :deep(td) {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.prose-rich :deep(th) {
+  font-weight: 700;
+  background: color-mix(in srgb, var(--color-brand) 10%, transparent);
+}
+.prose-rich :deep(tr:last-child td) {
+  border-bottom: none;
 }
 .prose p {
   margin: 0 0 1.25rem;

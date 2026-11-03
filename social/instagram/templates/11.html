@@ -4,68 +4,88 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="_shared.css" />
   <style>
-    .canvas { background: var(--bg); display: flex; flex-direction: column; }
-    h1 { font-size: 64px; max-width: 12ch; margin: 18px 0 40px; }
-    .flow {
-      flex: 1;
+    .canvas {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+    }
+    h1 {
+      font-size: 64px;
+      max-width: 12ch;
+      margin: 20px 0 40px;
+    }
+    .diagram {
       position: relative;
+      flex: 1;
+      margin: 24px 0 140px;
       border: 1px solid var(--line);
       background: var(--surface);
-      margin-bottom: 100px;
       min-height: 640px;
+    }
+    svg.wires {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .wire {
+      fill: none;
+      stroke: color-mix(in srgb, var(--brand) 50%, transparent);
+      stroke-width: 2;
     }
     .node {
       position: absolute;
       width: 160px;
       height: 160px;
       border: 1px solid var(--line);
-      background: var(--surface-2);
-      display: grid;
-      place-items: center;
+      background: color-mix(in srgb, var(--bg) 70%, var(--surface));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px;
+    }
+    .node strong {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .node span {
       font-size: 22px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
       color: var(--muted);
-      text-align: center;
-      padding: 12px;
+      line-height: 1.25;
     }
-    .node.on {
-      border-color: color-mix(in srgb, var(--brand) 55%, var(--line));
-      color: var(--fg);
-      background: color-mix(in srgb, var(--brand) 16%, var(--surface-2));
+    .n1 { left: 48px; top: 64px; }
+    .n2 {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-color: color-mix(in srgb, var(--brand) 50%, var(--line));
+      background: color-mix(in srgb, var(--brand) 14%, var(--surface));
     }
-    .n1 { left: 48px; top: 80px; }
-    .n2 { left: 340px; top: 240px; }
-    .n3 { right: 48px; top: 160px; }
-    svg {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-    path {
-      fill: none;
-      stroke: color-mix(in srgb, var(--brand) 50%, transparent);
-      stroke-width: 2;
+    .n3 { right: 48px; bottom: 64px; }
+    .n2 .dot {
+      width: 10px;
+      height: 10px;
+      background: var(--magenta);
+      margin-bottom: 12px;
     }
   </style>
 </head>
 <body>
   <div class="canvas">
     <p class="num">Automatización · IA</p>
-    <h1 class="display">Ampliar el trabajo sin perder el <em>criterio</em>.</h1>
-    <div class="flow" aria-hidden="true">
-      <svg viewBox="0 0 900 640" preserveAspectRatio="none">
-        <path d="M210 160 H340 V320 H420" />
-        <path d="M500 320 H680 V240" />
+    <h1 class="display">Ampliar sin perder el <em>criterio</em>.</h1>
+    <div class="diagram" aria-hidden="true">
+      <svg class="wires" viewBox="0 0 920 640" preserveAspectRatio="none">
+        <path class="wire" d="M180 140 H420 V300" />
+        <path class="wire" d="M500 340 H740 V500" />
       </svg>
-      <div class="node n1">Caso</div>
-      <div class="node n2 on">Flujo</div>
-      <div class="node n3">Decisión</div>
+      <div class="node n1"><strong>Caso</strong><span>Problema concreto</span></div>
+      <div class="node n2"><div class="dot"></div><strong>Flujo</strong><span>Datos · reglas</span></div>
+      <div class="node n3"><strong>Decisión</strong><span>Revisión humana</span></div>
     </div>
-    <span class="mark br">Invends</span>
+    <span class="mark bl">Invends</span>
   </div>
 </body>
 </html>

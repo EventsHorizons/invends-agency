@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { getAdjacentProjects, getProject } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { getAdjacentProjects, getProject } from "~/utils/siteData";
 
 const route = useRoute();
 const slug = String(route.params.slug);

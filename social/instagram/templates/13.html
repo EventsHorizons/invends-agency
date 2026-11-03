@@ -8,43 +8,53 @@
       padding: 0;
       display: grid;
       grid-template-rows: 1fr auto;
-      background: var(--bg);
+      background: #090711;
     }
-    .shot {
-      background: #100a1c center 40% / cover no-repeat
-        url("../../../public/images/principle-diseno.webp");
+    .media {
       position: relative;
-      min-height: 900px;
+      background:
+        #100a1c
+        url("../../../public/images/principle-diseno.webp")
+        center 40% / cover no-repeat;
+      min-height: 920px;
     }
-    .shot::after {
+    .media::after {
       content: "";
       position: absolute;
       inset: 0;
       background: linear-gradient(
-        to top,
-        rgba(9, 7, 17, 0.95) 0%,
-        rgba(9, 7, 17, 0.35) 45%,
-        transparent 70%
+        180deg,
+        rgba(9, 7, 17, 0.2) 0%,
+        rgba(9, 7, 17, 0.05) 40%,
+        rgba(9, 7, 17, 0.85) 100%
       );
     }
-    .panel {
+    .bar {
       position: relative;
       z-index: 1;
-      margin-top: -220px;
-      padding: 0 var(--safe) 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 48px var(--safe) 140px;
+      background: var(--bg);
+      border-top: 1px solid var(--line);
     }
-    h1 { font-size: 64px; max-width: 12ch; margin: 12px 0 16px; }
+    .bar .eyebrow { color: var(--brand); }
+    h1 {
+      font-size: 56px;
+      max-width: 14ch;
+      letter-spacing: -0.04em;
+    }
   </style>
 </head>
 <body>
   <div class="canvas">
-    <div class="shot"></div>
-    <div class="panel">
-      <p class="num">Muestras</p>
-      <h1 class="display">Ideas que se vuelven experiencias.</h1>
-      <p class="body">Diseño, desarrollo y marketing alineados. Método, no caso de relleno.</p>
+    <div class="media" role="img" aria-label="Muestra de método Invends"></div>
+    <div class="bar">
+      <p class="eyebrow">Muestras</p>
+      <h1 class="display">Ideas → <em>experiencias</em>.</h1>
     </div>
-    <span class="mark br" style="color: var(--fg)">Invends</span>
+    <span class="mark br">Invends</span>
   </div>
 </body>
 </html>

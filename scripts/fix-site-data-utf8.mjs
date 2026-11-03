@@ -1,6 +1,6 @@
 import fs from "fs";
 
-const path = "app/utils/trespiData.ts";
+const path = "app/utils/siteData.ts";
 let s = fs.readFileSync(path, "utf8");
 
 s = s.replaceAll("Planificaci\uFFFDn", "Planificación");

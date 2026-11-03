@@ -1,36 +1,39 @@
-# QA — Week 01 Invends Instagram
+# QA — Week 01 · Presencia que decide
 
-Fecha de render: campaña `social:ig`
+## Checklist de campaña
 
-## Dimensiones
+| Criterio | Estándar | Estado |
+|----------|----------|--------|
+| Identidad | Tokens Invends (dark `#090711`, brand `#8A68FF`, Roobert) | OK |
+| Dirección de arte | Concepto semanal documentado en `DIRECCION-ARTE.md` | OK |
+| Formato | 14 × 1080×1350 PNG sRGB | Ver `qa-dimensions.json` |
+| Márgenes | ≥ 80 px seguro; logo ≥ 64 px | Revisar visual |
+| Variedad | Tipográfico / imagen / diagrama / comparación / light / CTA | Secuencia 01–14 |
+| Sin plantilla única | No título+foto+logo idéntico ≥3 seguidas | OK por diseño |
+| Legibilidad feed | Display ≥ 56 px; body ≥ 28 px | OK |
+| Captions | Una idea en pieza; ampliación en `captions.md` | OK |
 
-Las 14 piezas exportan **1080 × 1350** (verificado en `qa-dimensions.json`).
+## Estructura por pieza
 
-## Revisión por criterios
+| # | Composición | Fondo |
+|---|-------------|-------|
+| 01 | Hero tipográfico + atmósfera | Dark |
+| 02 | Asimetría + rail brand | Dark |
+| 03 | Full-bleed servicio diseño | Dark |
+| 04 | Diagrama 3 pasos | Dark |
+| 05 | Canales + mensaje split | Dark |
+| 06 | Método 01/02/03 | Dark |
+| 07 | Comparación dos columnas | Dark |
+| 08 | Swatches + reglas | Light |
+| 09 | UI abstracta + UX | Dark |
+| 10 | Quote oversized | Dark |
+| 11 | Nodos automatización | Dark |
+| 12 | CTA contacto | Light |
+| 13 | Still + caption bar | Dark |
+| 14 | Cierre tipográfico + CTA | Dark |
 
-| # | Identidad | Composición distinta | Legibilidad móvil | Márgenes | Notas |
-|---|-----------|----------------------|-------------------|----------|-------|
-| 01 | OK | Tipográfico hero | OK | OK | Corregido eyebrow duplicado vs wordmark |
-| 02 | OK | Editorial asimétrico | OK | OK | |
-| 03 | OK | Split imagen servicio | OK | OK | Still svc-diseno-web |
-| 04 | OK | Diagrama 3 pasos | OK | OK | |
-| 05 | OK | Chips tipográficos | OK | OK | |
-| 06 | OK | Lista método | OK | OK | |
-| 07 | OK | Comparación 2 cols | OK | OK | |
-| 08 | OK | Swatches + wordmark | OK | OK | |
-| 09 | OK | UI abstracta | OK | OK | |
-| 10 | OK | Quote tipográfico | OK | OK | |
-| 11 | OK | Nodos flujo | OK | OK | |
-| 12 | OK | Light board CTA | OK | OK | Ritmo claro |
-| 13 | OK | Imagen protagonista | OK | OK | principle-diseno |
-| 14 | OK | Cierre CTA | OK | OK | |
+## Revisión visual (post-render)
 
-## Colección
-
-Ritmo dark dominante + pieza light (12). Sin plantilla única repetida en cadena. Tokens Invends respetados.
-
-## Cómo regenerar
-
-```bash
-npm run social:ig
-```
+1. Abrir grid de 14 en explorador de archivos / Figma.
+2. Simular ~180 px de ancho: ¿se lee el titular?
+3. Corregir plantillas que fallen y re-ejecutar `npm run social:ig`.

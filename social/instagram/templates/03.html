@@ -5,35 +5,42 @@
   <link rel="stylesheet" href="_shared.css" />
   <style>
     .canvas {
-      display: grid;
-      grid-template-rows: 1fr auto;
-      gap: 40px;
-      padding-bottom: 120px;
-      background: var(--bg);
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: #0c0814
+        url("../../../public/images/services/svc-diseno-web.webp")
+        center 30% / cover no-repeat;
     }
-    .media {
-      margin: 0 calc(-1 * var(--safe)) 0;
-      height: 720px;
-      background: #100a1c center / cover no-repeat
-        url("../../../public/images/services/svc-diseno-web.webp");
-      position: relative;
-    }
-    .media::after {
+    .canvas::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(9, 7, 17, 0.92) 0%, transparent 45%);
+      background:
+        linear-gradient(180deg, rgba(9, 7, 17, 0.15) 0%, rgba(9, 7, 17, 0.55) 45%, rgba(9, 7, 17, 0.96) 78%),
+        linear-gradient(90deg, rgba(9, 7, 17, 0.55) 0%, transparent 55%);
     }
-    .copy { position: relative; z-index: 1; }
-    h1 { font-size: 72px; max-width: 10ch; margin: 16px 0 20px; }
+    .copy {
+      position: relative;
+      z-index: 1;
+      padding: var(--safe);
+      padding-bottom: 140px;
+    }
+    .num { margin-bottom: 20px; }
+    h1 {
+      font-size: 78px;
+      max-width: 10ch;
+      margin-bottom: 24px;
+    }
+    .body { max-width: 20ch; color: #cfc8e0; }
   </style>
 </head>
 <body>
   <div class="canvas">
-    <div class="media"></div>
     <div class="copy">
-      <p class="num">Servicio 01</p>
-      <h1 class="display">Diseño web que se <em>lee</em>.</h1>
+      <p class="num">01 · Diseño web</p>
+      <h1 class="display">Diseño que se <em>lee</em>.</h1>
       <p class="body">Jerarquía, ritmo y sistema. Si no acerca al objetivo, sobra.</p>
     </div>
     <span class="mark br">Invends</span>

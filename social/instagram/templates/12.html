@@ -8,44 +8,60 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: var(--bg-light);
+      background:
+        linear-gradient(165deg, #ffffff 0%, #f7f6fb 55%, #efedf8 100%);
     }
-    .bar {
-      width: 72px;
-      height: 8px;
-      background: var(--brand);
-      margin-bottom: 36px;
-    }
-    h1 {
-      font-size: 72px;
+    .brand-lock {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
       color: var(--fg-light);
-      max-width: 12ch;
-      margin-bottom: 28px;
+    }
+    .mid { margin-top: 120px; }
+    h1 {
+      font-size: 84px;
+      max-width: 10ch;
+      margin: 28px 0 40px;
+      color: var(--fg-light);
     }
     .mail {
       font-size: 40px;
-      font-weight: 700;
-      letter-spacing: -0.03em;
+      font-weight: 600;
+      letter-spacing: -0.02em;
       color: var(--brand);
-      margin-top: 48px;
+      margin-bottom: 24px;
     }
-    .foot {
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--fg-light);
+    .body {
+      max-width: 20ch;
+      color: var(--muted-light);
+    }
+    .footer-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 8px;
+    }
+    .footer-meta .loc {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted-light);
     }
   </style>
 </head>
 <body>
   <div class="canvas light">
-    <div>
-      <p class="eyebrow" style="margin-top: 24px">Contacto</p>
-      <div class="bar"></div>
-      <h1 class="display">Cuéntanos el objetivo.</h1>
-      <p class="body">Respondemos con alcance claro. Sin propuestas genéricas.</p>
+    <p class="brand-lock">Invends</p>
+    <div class="mid">
+      <p class="eyebrow">Contacto</p>
+      <h1 class="display">Cuéntanos el <em>objetivo</em>.</h1>
       <p class="mail">hola@invends.com</p>
+      <p class="body">Respondemos con alcance claro. Sin propuestas genéricas.</p>
     </div>
-    <p class="foot">Invends</p>
+    <div class="footer-meta">
+      <p class="loc">Bogotá / LATAM</p>
+    </div>
   </div>
 </body>
 </html>

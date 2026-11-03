@@ -1,9 +1,9 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import {
   PROJECT_FILTERS,
   PROJECTS,
   type ProjectCategory,
-} from "~/utils/trespiData";
+} from "~/utils/siteData";
 
 definePageMeta({
   alias: ["/en/portafolio"],

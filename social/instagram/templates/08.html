@@ -4,47 +4,93 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="_shared.css" />
   <style>
-    .canvas { background: var(--bg); display: flex; flex-direction: column; }
-    h1 { font-size: 68px; max-width: 10ch; margin: 18px 0 40px; }
-    .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 48px; }
-    .swatch { aspect-ratio: 1; border: 1px solid var(--line); }
-    .s1 { background: #8a68ff; }
-    .s2 { background: #25134f; }
-    .s3 { background: #b8a6ff; }
-    .s4 { background: #ff2daa; }
-    .rules { display: grid; gap: 18px; }
-    .rule {
-      font-size: 28px;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
-      line-height: 1.35;
+    .canvas.light {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-light);
+    }
+    h1 {
+      font-size: 72px;
+      max-width: 11ch;
+      margin: 20px 0 56px;
+      color: var(--fg-light);
+    }
+    .board {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      flex: 1;
+      margin-bottom: 140px;
+    }
+    .swatches {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-content: start;
+    }
+    .swatch {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+    .s1 { background: #090711; color: #f7f5ff; }
+    .s2 { background: #8a68ff; color: #fff; }
+    .s3 { background: #25134f; color: #b8a6ff; }
+    .s4 { background: #ff2daa; color: #fff; }
+    .rules {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      justify-content: center;
     }
     .word {
-      font-size: 96px;
+      font-size: 64px;
       font-weight: 800;
       letter-spacing: -0.04em;
-      margin-top: auto;
-      margin-bottom: 100px;
+      margin-bottom: 40px;
+      color: var(--fg-light);
+    }
+    .rule-item {
+      font-size: 28px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line-light);
+      color: var(--muted-light);
+      line-height: 1.3;
+    }
+    .rule-item:last-child { border-bottom: 1px solid var(--line-light); }
+    .rule-item strong {
+      display: block;
+      color: var(--fg-light);
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
     }
   </style>
 </head>
 <body>
-  <div class="canvas">
-    <p class="num">Branding</p>
-    <h1 class="display">Un sistema que se <em>reconoce</em>.</h1>
-    <div class="swatches">
-      <div class="swatch s1"></div>
-      <div class="swatch s2"></div>
-      <div class="swatch s3"></div>
-      <div class="swatch s4"></div>
+  <div class="canvas light">
+    <p class="eyebrow">Sistema de marca</p>
+    <h1 class="display">Un lenguaje que se <em>reconoce</em>.</h1>
+    <div class="board">
+      <div class="swatches">
+        <div class="swatch s1">#090711</div>
+        <div class="swatch s2">#8A68FF</div>
+        <div class="swatch s3">#25134F</div>
+        <div class="swatch s4">#FF2DAA</div>
+      </div>
+      <div class="rules">
+        <p class="word">Invends</p>
+        <div class="rule-item"><strong>Territorio</strong> Claridad · oficio · alcance</div>
+        <div class="rule-item"><strong>Voz</strong> Directa, concreta, sin ruido</div>
+        <div class="rule-item"><strong>Aplicación</strong> Reglas que se sostienen en digital</div>
+      </div>
     </div>
-    <div class="rules">
-      <p class="rule">Territorio claro. Voz con criterio.</p>
-      <p class="rule">Reglas aplicables en digital y papel.</p>
-    </div>
-    <p class="word">Invends</p>
-    <span class="mark br">Invends</span>
+    <span class="mark bl">Invends</span>
   </div>
 </body>
 </html>

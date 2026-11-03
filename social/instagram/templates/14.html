@@ -5,46 +5,60 @@
   <link rel="stylesheet" href="_shared.css" />
   <style>
     .canvas {
-      background:
-        radial-gradient(ellipse 80% 55% at 50% 0%, rgba(138, 104, 255, 0.22), transparent 60%),
-        var(--bg);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding-bottom: 120px;
+      background:
+        radial-gradient(ellipse 90% 55% at 20% 0%, rgba(138, 104, 255, 0.22), transparent 55%),
+        radial-gradient(ellipse 70% 50% at 100% 80%, rgba(255, 45, 170, 0.1), transparent 50%),
+        var(--bg);
     }
+    .eyebrow { margin-bottom: 28px; }
     h1 {
-      font-size: 92px;
-      max-width: 10ch;
-      margin-bottom: 36px;
+      font-size: 100px;
+      max-width: 9ch;
+      margin-bottom: 48px;
+    }
+    .cta-block {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 160px;
+      max-width: 520px;
     }
     .cta {
-      display: inline-flex;
-      align-items: center;
-      min-height: 72px;
-      padding: 0 36px;
-      background: var(--surface-2);
-      border: 1px solid var(--line);
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 48px;
-      width: fit-content;
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      padding: 28px 36px;
+      background: var(--fg);
+      color: var(--bg);
+      text-align: center;
     }
-    .meta {
-      font-size: 26px;
+    .mail {
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--lavender);
+      letter-spacing: -0.01em;
+    }
+    .loc {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
       color: var(--muted);
-      line-height: 1.4;
     }
   </style>
 </head>
 <body>
   <div class="canvas">
-    <p class="eyebrow" style="margin-bottom: 24px">Cierre de semana</p>
+    <p class="eyebrow">Cierre · Semana 01</p>
     <h1 class="display">Hablemos de tu <em>proyecto</em>.</h1>
-    <div class="cta">Hablar con Invends</div>
-    <p class="meta">Bogotá / LATAM<br />hola@invends.com</p>
+    <div class="cta-block">
+      <div class="cta">Hablar con Invends</div>
+      <p class="mail">hola@invends.com</p>
+      <p class="loc">Bogotá / LATAM</p>
+    </div>
     <span class="mark br">Invends</span>
   </div>
 </body>

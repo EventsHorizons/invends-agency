@@ -5,45 +5,85 @@
   <link rel="stylesheet" href="_shared.css" />
   <style>
     .canvas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-content: start;
       background:
-        linear-gradient(160deg, rgba(37, 19, 79, 0.55), transparent 50%),
+        radial-gradient(ellipse 50% 40% at 100% 0%, rgba(138, 104, 255, 0.18), transparent 60%),
         var(--bg);
+    }
+    .left { grid-column: 1 / -1; margin-bottom: 24px; }
+    h1 {
+      font-size: 72px;
+      max-width: 12ch;
+      margin-top: 20px;
+    }
+    .channels {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 16px;
+      margin-top: 48px;
     }
-    .top { margin-top: 40px; }
-    h1 { font-size: 80px; max-width: 10ch; margin: 24px 0 32px; }
-    .chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 48px; }
-    .chip {
+    .ch {
+      padding: 28px 32px;
       border: 1px solid var(--line);
-      padding: 16px 22px;
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      letter-spacing: -0.02em;
       color: var(--muted);
     }
-    .chip.on {
+    .ch.on {
       border-color: color-mix(in srgb, var(--brand) 55%, var(--line));
+      background: color-mix(in srgb, var(--brand) 12%, transparent);
       color: var(--fg);
-      background: color-mix(in srgb, var(--brand) 18%, transparent);
+    }
+    .right {
+      margin-top: 48px;
+      padding-top: 8px;
+    }
+    .right .label {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 24px;
+    }
+    .right p {
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      max-width: 10ch;
+    }
+    .right .rule { margin: 32px 0; }
+    .right .note {
+      font-size: 28px;
+      color: var(--muted);
+      line-height: 1.35;
+      max-width: 14ch;
     }
   </style>
 </head>
 <body>
   <div class="canvas">
-    <div class="top">
-      <p class="num">Marketing</p>
-      <h1 class="display">Canal, mensaje y página <em>alineados</em>.</h1>
-      <p class="body">Preferimos contenidos útiles y una acción evidente antes que ruido.</p>
-      <div class="chips">
-        <span class="chip on">Mensaje</span>
-        <span class="chip">Canal</span>
-        <span class="chip">Continuidad</span>
-      </div>
+    <div class="left">
+      <p class="num">03 · Marketing</p>
+      <h1 class="display">Canal y mensaje <em>alineados</em>.</h1>
     </div>
-    <span class="mark bl">Invends</span>
+    <div class="channels">
+      <div class="ch on">Orgánico</div>
+      <div class="ch">Pago</div>
+      <div class="ch">Correo</div>
+    </div>
+    <div class="right">
+      <p class="label">Acción</p>
+      <p>Una página. Un siguiente paso claro.</p>
+      <hr class="rule" />
+      <p class="note">Antes que ruido: utilidad y evidencia.</p>
+    </div>
+    <span class="mark br">Invends</span>
   </div>
 </body>
 </html>

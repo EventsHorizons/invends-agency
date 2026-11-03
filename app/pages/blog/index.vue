@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import { BLOG_POSTS } from "~/utils/trespiData";
+﻿<script setup lang="ts">
+import { BLOG_POSTS } from "~/utils/siteData";
 
 definePageMeta({
   alias: ["/en/blog"],
@@ -49,7 +49,7 @@ function setCategory(cat: string | null) {
     <section v-if="featured" class="td-section featured-section">
       <div class="td-container">
         <p class="section-label td-muted">{{ isEn ? "Featured" : "Destacado" }}</p>
-        <NuxtLink :to="`/blogs-trespi/${featured.slug}`" class="featured">
+        <NuxtLink :to="`/blog/${featured.slug}`" class="featured">
           <div class="featured-media">
             <img
               :src="featured.image"
@@ -108,7 +108,7 @@ function setCategory(cat: string | null) {
 
         <div class="post-grid">
           <article v-for="post in filtered" :key="post.slug" class="card">
-            <NuxtLink :to="`/blogs-trespi/${post.slug}`" class="card-link">
+            <NuxtLink :to="`/blog/${post.slug}`" class="card-link">
               <div class="card-media">
                 <img
                   :src="post.image"

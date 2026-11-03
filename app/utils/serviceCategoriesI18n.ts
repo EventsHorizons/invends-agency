@@ -1,8 +1,8 @@
-import type { Locale } from "~/composables/useLocale";
+﻿import type { Locale } from "~/composables/useLocale";
 import {
   SERVICE_CATEGORIES,
   type ServiceCategory,
-} from "~/utils/trespiData";
+} from "~/utils/siteData";
 
 /** English copy for the services scroll / reel (same anchors & images as ES). */
 export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
