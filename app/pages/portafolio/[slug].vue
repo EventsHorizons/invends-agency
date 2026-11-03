@@ -84,6 +84,7 @@ h1 {
   margin-top: 2rem;
   aspect-ratio: 3/2;
   object-fit: cover;
+  border-radius: 20px;
 }
 h2 {
   margin: 2rem 0 0.75rem;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ui {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      height: 520px;
+      margin: 40px 0;
+      padding: 28px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 20px;
+    }
+    .bar { height: 14px; width: 40%; background: color-mix(in srgb, var(--fg) 18%, transparent); }
+    .rows { display: grid; gap: 14px; align-content: start; }
+    .row { height: 48px; background: color-mix(in srgb, var(--fg) 7%, transparent); border: 1px solid var(--line); }
+    .row.on { border-color: color-mix(in srgb, var(--brand) 50%, var(--line)); background: color-mix(in srgb, var(--brand) 14%, transparent); }
+    .cta-line { height: 44px; width: 36%; background: color-mix(in srgb, var(--brand) 35%, transparent); border: 1px solid color-mix(in srgb, var(--brand) 40%, transparent); }
+    h1 { font-size: 72px; max-width: 11ch; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div>
+      <p class="eyebrow" style="margin-bottom: 20px">Experiencia</p>
+      <h1 class="display">UX que se <em>sostiene</em>.</h1>
+    </div>
+    <div class="ui" aria-hidden="true">
+      <div class="bar"></div>
+      <div class="rows">
+        <div class="row"></div>
+        <div class="row on"></div>
+        <div class="row"></div>
+      </div>
+      <div class="cta-line"></div>
+    </div>
+    <p class="body" style="margin-bottom: 80px">Estados claros. Foco visible. Una acción evidente.</p>
+    <span class="mark br">Invends</span>
+  </div>
+</body>
+</html>

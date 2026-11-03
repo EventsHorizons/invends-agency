@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { SERVICE_CATEGORIES } from "~/utils/trespiData";
+import { serviceCategoriesFor } from "~/utils/serviceCategoriesI18n";
 
 const { locale, isEn, localePath } = useLocale();
+const categories = computed(() => serviceCategoriesFor(locale.value));
 
 const copy = computed(() =>
   isEn.value
@@ -14,6 +15,7 @@ const copy = computed(() =>
         h1Accent: "clear direction",
         lead: "Eleven service lines. Hire one or combine them: each one answers a concrete business problem.",
         tabsLabel: "Service categories",
+        reelCta: "Request information",
         bandTitle: "Tell us what you need.",
         bandBody:
           "Company, artist or event. We reply with clear scope, without fluff.",
@@ -28,6 +30,7 @@ const copy = computed(() =>
         h1Accent: "dirección clara",
         lead: "Once líneas de servicio. Contrata una o combínalas: cada una responde a un problema concreto del negocio.",
         tabsLabel: "Categorías de servicios",
+        reelCta: "Solicitar información",
         bandTitle: "Cuéntanos qué necesitas.",
         bandBody:
           "Empresa, artista o evento. Respondemos con alcance claro, sin rodeos.",
@@ -58,7 +61,7 @@ useHead({
 
     <nav class="td-container tabs" :aria-label="copy.tabsLabel">
       <a
-        v-for="cat in SERVICE_CATEGORIES"
+        v-for="cat in categories"
         :key="cat.id"
         :href="`#${cat.anchor}`"
         class="tab"
@@ -68,7 +71,11 @@ useHead({
       </a>
     </nav>
 
-    <ServiceReel />
+    <ServiceReel
+      :categories="categories"
+      :cta-label="copy.reelCta"
+      :cta-to="localePath('/contacto')"
+    />
 
     <section class="td-section band">
       <div class="td-container">

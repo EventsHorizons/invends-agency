@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 140px;
+    }
+    .quote {
+      font-size: 56px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      max-width: 14ch;
+      margin-bottom: 48px;
+    }
+    .meta {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .mark-lg {
+      font-size: 120px;
+      line-height: 1;
+      color: color-mix(in srgb, var(--brand) 35%, transparent);
+      font-weight: 800;
+      position: absolute;
+      top: 80px;
+      left: var(--safe);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="mark-lg" aria-hidden="true">“</div>
+    <p class="quote">Menos promesas abiertas. Más entregables con fecha.</p>
+    <p class="meta">Método · Invends</p>
+    <span class="mark br">Invends</span>
+  </div>
+</body>
+</html>

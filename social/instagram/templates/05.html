@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      background:
+        linear-gradient(160deg, rgba(37, 19, 79, 0.55), transparent 50%),
+        var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .top { margin-top: 40px; }
+    h1 { font-size: 80px; max-width: 10ch; margin: 24px 0 32px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 48px; }
+    .chip {
+      border: 1px solid var(--line);
+      padding: 16px 22px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .chip.on {
+      border-color: color-mix(in srgb, var(--brand) 55%, var(--line));
+      color: var(--fg);
+      background: color-mix(in srgb, var(--brand) 18%, transparent);
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="top">
+      <p class="num">Marketing</p>
+      <h1 class="display">Canal, mensaje y página <em>alineados</em>.</h1>
+      <p class="body">Preferimos contenidos útiles y una acción evidente antes que ruido.</p>
+      <div class="chips">
+        <span class="chip on">Mensaje</span>
+        <span class="chip">Canal</span>
+        <span class="chip">Continuidad</span>
+      </div>
+    </div>
+    <span class="mark bl">Invends</span>
+  </div>
+</body>
+</html>

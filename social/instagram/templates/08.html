@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas { background: var(--bg); display: flex; flex-direction: column; }
+    h1 { font-size: 68px; max-width: 10ch; margin: 18px 0 40px; }
+    .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 48px; }
+    .swatch { aspect-ratio: 1; border: 1px solid var(--line); }
+    .s1 { background: #8a68ff; }
+    .s2 { background: #25134f; }
+    .s3 { background: #b8a6ff; }
+    .s4 { background: #ff2daa; }
+    .rules { display: grid; gap: 18px; }
+    .rule {
+      font-size: 28px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      line-height: 1.35;
+    }
+    .word {
+      font-size: 96px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-top: auto;
+      margin-bottom: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <p class="num">Branding</p>
+    <h1 class="display">Un sistema que se <em>reconoce</em>.</h1>
+    <div class="swatches">
+      <div class="swatch s1"></div>
+      <div class="swatch s2"></div>
+      <div class="swatch s3"></div>
+      <div class="swatch s4"></div>
+    </div>
+    <div class="rules">
+      <p class="rule">Territorio claro. Voz con criterio.</p>
+      <p class="rule">Reglas aplicables en digital y papel.</p>
+    </div>
+    <p class="word">Invends</p>
+    <span class="mark br">Invends</span>
+  </div>
+</body>
+</html>

@@ -42,6 +42,7 @@ defineProps<{ projects: Project[] }>();
   position: relative;
   overflow: hidden;
   background: var(--color-surface);
+  border-radius: 20px;
 }
 .media img {
   width: 100%;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      background: var(--bg);
+      padding-bottom: 120px;
+    }
+    h1 { font-size: 56px; margin: 16px 0 40px; max-width: 14ch; }
+    .cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      min-height: 720px;
+    }
+    .col {
+      border: 1px solid var(--line);
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .col.bad { background: var(--surface); opacity: 0.75; }
+    .col.good {
+      background: color-mix(in srgb, var(--brand-deep) 55%, var(--surface));
+      border-color: color-mix(in srgb, var(--brand) 40%, var(--line));
+    }
+    .label { font-size: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .col.good .label { color: var(--brand); }
+    .col li {
+      list-style: none;
+      font-size: 28px;
+      line-height: 1.35;
+      color: var(--muted);
+      padding-left: 0;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    .col.good li { color: var(--fg); }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <p class="eyebrow">Comparación</p>
+    <h1 class="display">Genérico vs. <em>criterio</em>.</h1>
+    <div class="cols">
+      <div class="col bad">
+        <p class="label">Ruido</p>
+        <ul>
+          <li>Promesas abiertas</li>
+          <li>Propuestas plantilla</li>
+          <li>Diseño sin brief</li>
+          <li>Métricas sin decisión</li>
+        </ul>
+      </div>
+      <div class="col good">
+        <p class="label">Invends</p>
+        <ul>
+          <li>Alcance concreto</li>
+          <li>Conversación útil</li>
+          <li>Oficio con objetivo</li>
+          <li>Siguiente paso claro</li>
+        </ul>
+      </div>
+    </div>
+    <span class="mark bl">Invends</span>
+  </div>
+</body>
+</html>

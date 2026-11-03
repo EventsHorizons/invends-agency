@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import {
-  SERVICE_CATEGORIES,
-  type ServiceCategory,
-} from "~/utils/trespiData";
+import { serviceCategoriesFor } from "~/utils/serviceCategoriesI18n";
+import type { ServiceCategory } from "~/utils/trespiData";
 
 const props = withDefaults(
   defineProps<{
@@ -27,28 +25,55 @@ const props = withDefaults(
     introTitle: "",
     introAccent: "",
     introBody: "",
-    introCtaLabel: "Cuéntanos el objetivo",
+    introCtaLabel: undefined,
     introCtaTo: "#contacto-form",
-    ctaLabel: "Solicitar información",
-    ctaTo: "/contacto",
+    ctaLabel: undefined,
+    ctaTo: undefined,
   },
 );
 
-const slides = computed(() => props.categories ?? SERVICE_CATEGORIES);
+const { locale, isEn, localePath } = useLocale();
+const slides = computed(
+  () => props.categories ?? serviceCategoriesFor(locale.value),
+);
 const reelRoot = ref<HTMLElement | null>(null);
 const hasIntro = computed(() => Boolean(props.introTitle));
 const slideCount = computed(
   () => slides.value.length + (hasIntro.value ? 1 : 0),
 );
+const resolvedIntroCta = computed(
+  () =>
+    props.introCtaLabel ??
+    (isEn.value ? "Tell us the goal" : "Cuéntanos el objetivo"),
+);
+const resolvedCta = computed(
+  () =>
+    props.ctaLabel ??
+    (isEn.value ? "Request information" : "Solicitar información"),
+);
+const resolvedCtaTo = computed(
+  () => props.ctaTo ?? localePath("/contacto"),
+);
+const reelAria = computed(() => (isEn.value ? "Services" : "Servicios"));
 
 function slideId(anchor: string) {
   return props.idPrefix ? `${props.idPrefix}${anchor}` : anchor;
 }
 
 function categoryCta(anchor: string) {
-  const known = SERVICE_CATEGORIES.some((c) => c.anchor === anchor);
-  if (props.ctaTo === "/servicios" && known) return `/servicios#${anchor}`;
-  return props.ctaTo;
+  const catalog = serviceCategoriesFor(locale.value);
+  const known = catalog.some((c) => c.anchor === anchor);
+  const target = resolvedCtaTo.value;
+  const serviciosPath = localePath("/servicios");
+  if (
+    known &&
+    (target === "/servicios" ||
+      target === "/en/servicios" ||
+      target === serviciosPath)
+  ) {
+    return `${serviciosPath}#${anchor}`;
+  }
+  return target;
 }
 
 useServiceReel(reelRoot, slideCount);
@@ -59,7 +84,7 @@ useServiceReel(reelRoot, slideCount);
     ref="reelRoot"
     class="services-reel"
     :style="{ '--slides': slideCount }"
-    aria-label="Servicios"
+    :aria-label="reelAria"
   >
     <div class="reel-viewport">
       <div data-reel="track" class="reel-track">
@@ -79,7 +104,7 @@ useServiceReel(reelRoot, slideCount);
               </template>
             </h2>
             <p v-if="introBody" class="intro-body td-muted">{{ introBody }}</p>
-            <NuxtLink class="td-btn" :to="introCtaTo">{{ introCtaLabel }}</NuxtLink>
+            <NuxtLink class="td-btn" :to="introCtaTo">{{ resolvedIntroCta }}</NuxtLink>
           </div>
         </article>
 
@@ -93,15 +118,12 @@ useServiceReel(reelRoot, slideCount);
           :aria-labelledby="`${slideId(category.anchor)}-title`"
         >
           <figure class="reel-visual">
-            <img
-              class="reel-img"
-              :src="category.image"
+            <ServiceVisual
+              class="reel-media"
+              :poster="category.image"
               :alt="category.imageAlt"
-              width="1600"
-              height="1200"
-              decoding="async"
-              :loading="index === 0 ? 'eager' : 'lazy'"
-              :fetchpriority="index === 0 ? 'high' : 'auto'"
+              :variant-id="category.id"
+              :eager="index === 0"
             />
             <div class="reel-shade" aria-hidden="true" />
           </figure>
@@ -120,7 +142,7 @@ useServiceReel(reelRoot, slideCount);
               </li>
             </ul>
             <NuxtLink class="td-btn enter" :to="categoryCta(category.anchor)">
-              {{ ctaLabel }}
+              {{ resolvedCta }}
             </NuxtLink>
           </div>
         </article>
@@ -146,9 +168,10 @@ useServiceReel(reelRoot, slideCount);
 }
 .reel-slide {
   display: grid;
-  grid-template-rows: minmax(14rem, 42vh) auto;
+  grid-template-rows: minmax(16rem, 48vh) auto;
   min-height: auto;
   background: var(--bg);
+  scroll-margin-top: var(--header-h, 4.5rem);
 }
 .reel-intro {
   grid-template-rows: none;
@@ -219,16 +242,22 @@ useServiceReel(reelRoot, slideCount);
   overflow: hidden;
   background: var(--color-surface);
   margin: 0;
+  border-radius: 0;
 }
-.reel-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 40%;
-  opacity: calc(0.55 + var(--reveal, 0) * 0.45);
-  transform: scale(calc(1.04 - var(--reveal, 0) * 0.04));
+/*
+  Header overlays the slide top; absolute .svc-visual ignores figure padding,
+  so push the UI stage content below the header instead.
+*/
+.services-reel[data-mode="pan"] .reel-visual :deep(.ui-stage),
+.services-reel[data-mode="stack"] .reel-visual :deep(.ui-stage) {
+  padding-top: max(clamp(0.85rem, 3vw, 1.75rem), var(--header-h, 4.5rem));
+}
+.services-reel[data-mode="stack"] .reel-slide {
+  grid-template-rows: minmax(18rem, 52vh) auto;
+}
+.reel-media {
+  opacity: calc(0.62 + var(--reveal, 0) * 0.38);
+  transform: none;
   transition: opacity 0.2s linear;
 }
 .reel-shade {

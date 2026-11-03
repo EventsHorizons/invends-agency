@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roobert";
+  src: url("../../../public/fonts/Roobert-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --bg: #090711;
+  --fg: #f7f5ff;
+  --muted: #aaa3bf;
+  --surface: #130d25;
+  --surface-2: #1b1429;
+  --line: #332a49;
+  --brand: #8a68ff;
+  --brand-deep: #25134f;
+  --magenta: #ff2daa;
+  --bg-light: #ffffff;
+  --fg-light: #201b2c;
+  --muted-light: #625b70;
+  --safe: 72px;
+  --font: "Roobert", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.canvas {
+  position: relative;
+  width: 1080px;
+  height: 1350px;
+  padding: var(--safe);
+  overflow: hidden;
+}
+
+.canvas.light {
+  background: var(--bg-light);
+  color: var(--fg-light);
+}
+
+.eyebrow {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.canvas.light .eyebrow {
+  color: var(--muted-light);
+}
+
+.display {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.display em,
+.italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brand);
+}
+
+.body {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--muted);
+  max-width: 18ch;
+}
+
+.canvas.light .body {
+  color: var(--muted-light);
+}
+
+.mark {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.mark.bl {
+  left: var(--safe);
+  bottom: var(--safe);
+}
+.mark.br {
+  right: var(--safe);
+  bottom: var(--safe);
+}
+.mark.tl {
+  left: var(--safe);
+  top: var(--safe);
+}
+.mark.tr {
+  right: var(--safe);
+  top: var(--safe);
+}
+
+.accent-bar {
+  width: 64px;
+  height: 6px;
+  background: var(--brand);
+}
+
+.num {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--brand);
+  text-transform: uppercase;
+}

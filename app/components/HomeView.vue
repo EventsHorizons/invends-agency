@@ -242,6 +242,7 @@ const expanded = ref<number | null>(null);
   aspect-ratio: 4/3;
   object-fit: cover;
   background: var(--color-surface);
+  border-radius: 20px;
 }
 .project-info {
   padding-top: 1rem;

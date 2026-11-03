@@ -48,6 +48,7 @@ export function useServiceReel(
         slides()[index]?.scrollIntoView({
           behavior: reduced ? "auto" : "smooth",
           block: "start",
+          inline: "nearest",
         });
         return;
       }

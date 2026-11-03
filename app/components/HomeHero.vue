@@ -168,7 +168,7 @@ onBeforeUnmount(() => {
     :aria-label="locale === 'en' ? 'Home' : 'Inicio'"
     data-ready="false"
   >
-    <AgencyGradient class="hero-fx" interactive :animate="true" :show-pause="false" />
+    <AgencyGradient class="hero-fx" :animate="true" :show-pause="false" />
 
     <div class="hero-split-inner td-container">
       <div ref="stage" class="hero-stage">
@@ -224,7 +224,6 @@ onBeforeUnmount(() => {
             </NuxtLink>
           </div>
         </div>
-
       </div>
     </div>
   </section>

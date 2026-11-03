@@ -68,7 +68,7 @@ export function formCopy(locale: Locale) {
       consentBefore: "I have read and accept the",
       consentLink: "Personal Data Policy",
       consentAfter: ".",
-      privacyTo: "/politicas-de-privacidad",
+      privacyTo: "/en/politicas-de-privacidad",
       submit: "Send",
       submitting: "Sending…",
       ok: "Thanks. We received your message and will reply soon.",

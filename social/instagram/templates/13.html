@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      padding: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      background: var(--bg);
+    }
+    .shot {
+      background: #100a1c center 40% / cover no-repeat
+        url("../../../public/images/principle-diseno.webp");
+      position: relative;
+      min-height: 900px;
+    }
+    .shot::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(9, 7, 17, 0.95) 0%,
+        rgba(9, 7, 17, 0.35) 45%,
+        transparent 70%
+      );
+    }
+    .panel {
+      position: relative;
+      z-index: 1;
+      margin-top: -220px;
+      padding: 0 var(--safe) 120px;
+    }
+    h1 { font-size: 64px; max-width: 12ch; margin: 12px 0 16px; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="shot"></div>
+    <div class="panel">
+      <p class="num">Muestras</p>
+      <h1 class="display">Ideas que se vuelven experiencias.</h1>
+      <p class="body">Diseño, desarrollo y marketing alineados. Método, no caso de relleno.</p>
+    </div>
+    <span class="mark br" style="color: var(--fg)">Invends</span>
+  </div>
+</body>
+</html>

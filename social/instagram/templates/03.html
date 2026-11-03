@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="_shared.css" />
+  <style>
+    .canvas {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 40px;
+      padding-bottom: 120px;
+      background: var(--bg);
+    }
+    .media {
+      margin: 0 calc(-1 * var(--safe)) 0;
+      height: 720px;
+      background: #100a1c center / cover no-repeat
+        url("../../../public/images/services/svc-diseno-web.webp");
+      position: relative;
+    }
+    .media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(9, 7, 17, 0.92) 0%, transparent 45%);
+    }
+    .copy { position: relative; z-index: 1; }
+    h1 { font-size: 72px; max-width: 10ch; margin: 16px 0 20px; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="media"></div>
+    <div class="copy">
+      <p class="num">Servicio 01</p>
+      <h1 class="display">Diseño web que se <em>lee</em>.</h1>
+      <p class="body">Jerarquía, ritmo y sistema. Si no acerca al objetivo, sobra.</p>
+    </div>
+    <span class="mark br">Invends</span>
+  </div>
+</body>
+</html>

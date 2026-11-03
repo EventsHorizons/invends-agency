@@ -143,7 +143,7 @@ useHead({ title: `${post.title} | Invends` });
   margin: 1.75rem 0 2rem;
   aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius: 0.45rem;
+  border-radius: 20px;
 }
 .prose {
   font-size: 1.05rem;
@@ -190,7 +190,7 @@ useHead({ title: `${post.title} | Invends` });
   width: 100%;
   aspect-ratio: 16/10;
   object-fit: cover;
-  border-radius: 0.4rem;
+  border-radius: 20px;
   background: var(--color-surface);
 }
 .rel .title {

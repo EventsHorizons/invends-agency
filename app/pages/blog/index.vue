@@ -181,7 +181,7 @@ h1 {
 }
 .featured-media {
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 20px;
   background: var(--color-surface);
 }
 .featured-media img {
@@ -270,7 +270,7 @@ h1 {
 }
 .card-media {
   overflow: hidden;
-  border-radius: 0.45rem;
+  border-radius: 20px;
   background: var(--color-surface);
 }
 .card-media img {

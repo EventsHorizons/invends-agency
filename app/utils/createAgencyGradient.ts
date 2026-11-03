@@ -102,8 +102,8 @@ export function createAgencyGradient(
   let raf = 0;
   let running = false;
   let animateSeed = opts.animateSeed ?? false;
-  // Slightly slower base drift than before — reads more natural
-  const seedSpeed = opts.seedSpeed ?? 0.055;
+  // Calm ambient drift — presence without visual noise
+  const seedSpeed = opts.seedSpeed ?? 0.028;
   const noRetina = opts.noRetina ?? true;
   let baseSeed = params.seed;
   let basePosition: [number, number] = [...params.position];
@@ -175,21 +175,21 @@ export function createAgencyGradient(
       params.seed =
         baseSeed + t * seedSpeed + soft(t, 0.09, 0.14, 0.05, 0.012);
 
-      // Soft asymmetric drift (same spirit as before, less rigid orbit)
+      // Minimal orbit — calm depth only
       params.position = [
-        basePosition[0] + soft(t, 0.078, 0.121, 0.051, 0.042),
-        basePosition[1] + soft(t + 2.4, 0.069, 0.103, 0.044, 0.034),
+        basePosition[0] + soft(t, 0.055, 0.088, 0.038, 0.022),
+        basePosition[1] + soft(t + 2.4, 0.048, 0.076, 0.032, 0.018),
       ];
 
       params.colorRotation =
-        baseColorRotation + soft(t + 1.1, 0.038, 0.062, 0.024, 0.036);
+        baseColorRotation + soft(t + 1.1, 0.028, 0.044, 0.018, 0.018);
 
-      // Very subtle breath on displacement — contours ease in/out
+      // Barely perceptible contour breath
       params.displacement =
-        baseDisplacement * (1 + soft(t + 3.2, 0.045, 0.071, 0.029, 0.04));
+        baseDisplacement * (1 + soft(t + 3.2, 0.032, 0.05, 0.022, 0.022));
 
-      // Brand wave hues — same cycle as before, slightly slower
-      const huePhase = t * 0.38;
+      // Slow brand hue cycle
+      const huePhase = t * 0.18;
       params.color1 = brandWaveColorAt(huePhase);
       params.color2 = brandWaveColorAt(huePhase + 1.05);
       params.color3 = brandWaveColorAt(huePhase + 2.1);

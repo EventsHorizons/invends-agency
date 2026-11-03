@@ -164,6 +164,7 @@ h1 {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
+  border-radius: 20px;
 }
 .name {
   display: inline-block;
