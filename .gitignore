@@ -17,6 +17,10 @@ logs
 .DS_Store
 .fleet
 .idea
+*.pem
+
+# Vercel
+.vercel
 
 # Local env files
 .env

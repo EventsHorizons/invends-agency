@@ -56,6 +56,11 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    // Prefer plain names on Vercel; NUXT_* also works via Nitro overrides.
+    resendApiKey: process.env.RESEND_API_KEY || "",
+    contactTo: process.env.CONTACT_TO || "hola@invends.com",
+    contactFrom:
+      process.env.CONTACT_FROM || "Invends <onboarding@resend.dev>",
     public: {
       brandName: "Invends",
     },

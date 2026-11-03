@@ -71,7 +71,8 @@ export function formCopy(locale: Locale) {
       privacyTo: "/politicas-de-privacidad",
       submit: "Send",
       submitting: "Sending…",
-      ok: "Thanks. Your message validated correctly. Email delivery is not connected in this environment yet.",
+      ok: "Thanks. We received your message and will reply soon.",
+      sendFailed: "We could not send your message. Please try again in a moment.",
       errorSummary: "Please review the highlighted fields and try again.",
       errors: {
         firstName: "Enter your first name.",
@@ -111,7 +112,8 @@ export function formCopy(locale: Locale) {
     privacyTo: "/politicas-de-privacidad",
     submit: "Enviar",
     submitting: "Enviando…",
-    ok: "Gracias. Tu mensaje se validó correctamente. El envío a correo aún no está conectado en este entorno.",
+    ok: "Gracias. Recibimos tu mensaje y te responderemos pronto.",
+    sendFailed: "No pudimos enviar tu mensaje. Inténtalo de nuevo en un momento.",
     errorSummary: "Revisa los campos marcados e inténtalo de nuevo.",
     errors: {
       firstName: "Ingresa tu nombre.",

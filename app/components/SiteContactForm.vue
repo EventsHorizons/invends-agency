@@ -86,7 +86,7 @@ function validate(form: HTMLFormElement): Errors {
   return next;
 }
 
-function onSubmit(e: Event) {
+async function onSubmit(e: Event) {
   e.preventDefault();
   const form = e.currentTarget as HTMLFormElement;
   const next = validate(form);
@@ -97,15 +97,38 @@ function onSubmit(e: Event) {
     first?.scrollIntoView({ block: "nearest", behavior: "smooth" });
     return;
   }
+
+  const data = new FormData(form);
   submitting.value = true;
-  window.setTimeout(() => {
-    submitting.value = false;
+  status.value = "idle";
+  try {
+    await $fetch("/api/contact", {
+      method: "POST",
+      body: {
+        firstName: String(data.get("firstName") || "").trim(),
+        lastName: String(data.get("lastName") || "").trim(),
+        company: String(data.get("company") || "").trim(),
+        email: String(data.get("email") || "").trim(),
+        phone: String(data.get("phone") || "").trim(),
+        source: String(data.get("source") || "").trim(),
+        message: String(data.get("message") || "").trim(),
+        website: String(data.get("website") || "").trim(),
+        budget: budget.value,
+        services: services.value,
+        consent: consent.value,
+        locale: activeLocale.value,
+      },
+    });
     status.value = "ok";
     form.reset();
     services.value = [];
     budget.value = "";
     consent.value = false;
-  }, 420);
+  } catch {
+    status.value = "error";
+  } finally {
+    submitting.value = false;
+  }
 }
 </script>
 
@@ -118,6 +141,19 @@ function onSubmit(e: Event) {
       </aside>
 
       <form class="contact-form" novalidate @submit="onSubmit">
+        <!-- Honeypot: leave empty -->
+        <div class="hp" aria-hidden="true">
+          <label>
+            Website
+            <input
+              name="website"
+              type="text"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+
         <fieldset class="fieldset">
           <legend class="form-section-title">{{ t.servicesLabel }}</legend>
           <div class="tag-group" role="group" :aria-label="t.servicesAria">
@@ -237,7 +273,9 @@ function onSubmit(e: Event) {
 
         <p v-if="status === 'ok'" role="status" class="ok">{{ t.ok }}</p>
         <p v-if="status === 'error'" role="alert" class="err summary">
-          {{ t.errorSummary }}
+          {{
+            Object.keys(errors).length > 0 ? t.errorSummary : t.sendFailed
+          }}
         </p>
       </form>
     </div>
@@ -279,6 +317,14 @@ function onSubmit(e: Event) {
   border: 1px solid var(--line);
   border-radius: 0.75rem;
   background: var(--color-surface);
+}
+.hp {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 .fieldset {
   border: 0;
