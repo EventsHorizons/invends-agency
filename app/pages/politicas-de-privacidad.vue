@@ -35,10 +35,12 @@ const copy = computed(() =>
       },
 );
 
-useHead({
+usePageSeo({
   title: () => copy.value.title,
-  htmlAttrs: { lang: () => locale.value },
-  meta: [{ name: "description", content: () => copy.value.description }],
+  description: () => copy.value.description,
+  path: () =>
+    isEn.value ? "/en/politicas-de-privacidad" : "/politicas-de-privacidad",
+  locale: () => locale.value,
 });
 </script>
 

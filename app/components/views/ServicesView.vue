@@ -7,30 +7,30 @@ const categories = computed(() => serviceCategoriesFor(locale.value));
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Services | Invends",
+        title: "Services | Web design, development & marketing — Invends",
         description:
-          "Presence that decides. Web design, development, branding, marketing and more — Invends.",
+          "Eleven Invends service lines: web design, development, branding, marketing, SEO, automation and more. Hire one or combine them.",
         eyebrow: "Services",
         h1Before: "Design, technology and marketing with",
         h1Accent: "clear direction",
         lead: "Eleven service lines. Hire one or combine them: each one answers a concrete business problem.",
         tabsLabel: "Service categories",
-        reelCta: "Request information",
+        reelCta: "View service",
         bandTitle: "Tell us what you need.",
         bandBody:
           "Company, artist or event. We reply with clear scope, without fluff.",
         bandCta: "Let's talk about your project",
       }
     : {
-        title: "Servicios | Invends",
+        title: "Servicios | Diseño web, desarrollo y marketing — Invends",
         description:
-          "Presencia que decide. Servicios de diseño web, desarrollo, branding, marketing y más — Invends.",
+          "Once líneas de servicio Invends: diseño web, desarrollo, branding, marketing, SEO, automatización y más. Contrata una o combínalas.",
         eyebrow: "Servicios",
         h1Before: "Diseño, tecnología y marketing con",
         h1Accent: "dirección clara",
         lead: "Once líneas de servicio. Contrata una o combínalas: cada una responde a un problema concreto del negocio.",
         tabsLabel: "Categorías de servicios",
-        reelCta: "Solicitar información",
+        reelCta: "Ver servicio",
         bandTitle: "Cuéntanos qué necesitas.",
         bandBody:
           "Empresa, artista o evento. Respondemos con alcance claro, sin rodeos.",
@@ -38,10 +38,11 @@ const copy = computed(() =>
       },
 );
 
-useHead({
+usePageSeo({
   title: () => copy.value.title,
-  htmlAttrs: { lang: () => locale.value },
-  meta: [{ name: "description", content: () => copy.value.description }],
+  description: () => copy.value.description,
+  path: () => (isEn.value ? "/en/servicios" : "/servicios"),
+  locale: () => locale.value,
 });
 </script>
 
@@ -60,21 +61,21 @@ useHead({
     </header>
 
     <nav class="td-container tabs" :aria-label="copy.tabsLabel">
-      <a
+      <NuxtLink
         v-for="cat in categories"
         :key="cat.id"
-        :href="`#${cat.anchor}`"
+        :to="localePath(`/servicios/${cat.anchor}`)"
         class="tab"
         :data-reel-target="cat.anchor"
       >
         {{ cat.title }}
-      </a>
+      </NuxtLink>
     </nav>
 
     <ServiceReel
       :categories="categories"
       :cta-label="copy.reelCta"
-      :cta-to="localePath('/contacto')"
+      :cta-to="localePath('/servicios')"
     />
 
     <section class="td-section band">

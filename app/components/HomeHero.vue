@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import gsap from "gsap";
 import { BRAND_NAME } from "~/utils/brand";
 import { HOME } from "~/utils/messages";
 
@@ -28,7 +27,9 @@ const titleLines = computed(() => {
 
 const services = computed(() => copy.value.heroServices);
 
-let ctx: gsap.Context | null = null;
+type Gsap = typeof import("gsap").default;
+let gsap: Gsap | null = null;
+let ctx: { revert: () => void } | null = null;
 let killScroll: (() => void) | null = null;
 let killPointer: (() => void) | null = null;
 
@@ -37,7 +38,7 @@ function prefersReduced() {
 }
 
 function showFinal() {
-  if (!root.value) return;
+  if (!root.value || !gsap) return;
   gsap.set(root.value.querySelectorAll("[data-hero-anim]"), {
     clearProps: "all",
     opacity: 1,
@@ -48,7 +49,7 @@ function showFinal() {
 }
 
 function playIntro() {
-  if (!root.value || !titleEl.value) return;
+  if (!root.value || !titleEl.value || !gsap) return;
 
   const words = titleEl.value.querySelectorAll<HTMLElement>(".word");
   const tl = gsap.timeline({
@@ -58,39 +59,41 @@ function playIntro() {
     },
   });
 
+  // Keep hero-body painted from SSR — zeroing it delayed LCP on mobile.
   gsap.set(words, { yPercent: 115 });
-  gsap.set(
-    [kickerEl.value, bodyEl.value, metaEl.value, actionsEl.value],
-    { opacity: 0, y: 28 },
-  );
+  gsap.set([kickerEl.value, metaEl.value, actionsEl.value], {
+    opacity: 0,
+    y: 22,
+  });
+  gsap.set(bodyEl.value, { opacity: 1, y: 0 });
 
-  tl.to(kickerEl.value, { opacity: 1, y: 0, duration: 0.7 }, 0.15)
+  tl.to(kickerEl.value, { opacity: 1, y: 0, duration: 0.65 }, 0.12)
     .to(
       words,
       {
         yPercent: 0,
-        duration: 1.05,
-        stagger: 0.08,
+        duration: 1.0,
+        stagger: 0.07,
         ease: "power4.out",
       },
-      0.28,
+      0.22,
     )
-    .to(bodyEl.value, { opacity: 1, y: 0, duration: 0.75 }, "-=0.45")
-    .to(metaEl.value, { opacity: 1, y: 0, duration: 0.65 }, "-=0.45")
-    .to(actionsEl.value, { opacity: 1, y: 0, duration: 0.65 }, "-=0.4");
+    .to(metaEl.value, { opacity: 1, y: 0, duration: 0.6 }, "-=0.5")
+    .to(actionsEl.value, { opacity: 1, y: 0, duration: 0.6 }, "-=0.4");
 }
 
 function bindPointer() {
-  if (!stage.value || !titleEl.value || prefersReduced()) return;
+  if (!stage.value || !titleEl.value || !gsap || prefersReduced()) return;
   if (!window.matchMedia("(pointer: fine)").matches) return;
 
   const title = titleEl.value;
+  const api = gsap;
   const onMove = (e: PointerEvent) => {
     if (root.value?.dataset.ready !== "true") return;
     const rect = stage.value!.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
-    gsap.to(title, {
+    api.to(title, {
       x: x * 18,
       y: y * 12,
       rotateX: -y * 4,
@@ -101,7 +104,7 @@ function bindPointer() {
     });
   };
   const onLeave = () => {
-    gsap.to(title, {
+    api.to(title, {
       x: 0,
       y: 0,
       rotateX: 0,
@@ -120,19 +123,20 @@ function bindPointer() {
 }
 
 function bindScrollExit() {
-  if (!root.value || prefersReduced()) return;
+  if (!root.value || !gsap || prefersReduced()) return;
   const el = root.value;
-  const copy = el.querySelector<HTMLElement>(".hero-copy");
-  if (!copy) return;
+  const copyEl = el.querySelector<HTMLElement>(".hero-copy");
+  if (!copyEl) return;
+  const api = gsap;
 
+  // transform + opacity only — avoid scroll-tied filter:blur paint cost
   const onScroll = () => {
     const rect = el.getBoundingClientRect();
     const h = Math.max(rect.height, 1);
     const progress = Math.min(1, Math.max(0, -rect.top / (h * 0.55)));
-    gsap.set(copy, {
+    api.set(copyEl, {
       opacity: 1 - progress * 0.85,
       y: progress * 48,
-      filter: progress > 0.02 ? `blur(${progress * 6}px)` : "none",
     });
   };
 
@@ -141,7 +145,10 @@ function bindScrollExit() {
   killScroll = () => window.removeEventListener("scroll", onScroll);
 }
 
-onMounted(() => {
+onMounted(async () => {
+  const mod = await import("gsap");
+  gsap = mod.default;
+  if (!root.value) return;
   ctx = gsap.context(() => {
     if (prefersReduced()) {
       showFinal();
@@ -150,7 +157,7 @@ onMounted(() => {
     playIntro();
     bindPointer();
     bindScrollExit();
-  }, root.value!);
+  }, root.value);
 });
 
 onBeforeUnmount(() => {

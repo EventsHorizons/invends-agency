@@ -69,9 +69,10 @@ onUnmounted(() => {
       :fetchpriority="eager ? 'high' : 'auto'"
     />
     <div class="svc-veil" aria-hidden="true" />
-    <ServiceUiStage
+    <LazyServiceUiStage
+      v-if="inView && !reduceMotion"
       :variant="variant"
-      :active="inView && !reduceMotion"
+      :active="true"
     />
   </div>
 </template>

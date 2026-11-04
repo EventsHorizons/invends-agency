@@ -57,8 +57,9 @@ export const UI = {
 
 export const HOME = {
   es: {
-    metaTitle: "Invends",
-    metaDescription: `${BRAND_HERO_TITLE} ${BRAND_TAGLINE}. ${BRAND_HERO_SUPPORT}`,
+    metaTitle:
+      "Invends — Agencia de diseño web, desarrollo y marketing en Bogotá",
+    metaDescription: `${BRAND_HERO_TITLE} ${BRAND_TAGLINE}. ${BRAND_HERO_SUPPORT} Bogotá / LATAM.`,
     brandTagline: BRAND_TAGLINE,
     heroTitle: BRAND_HERO_TITLE,
     heroSupport: BRAND_HERO_SUPPORT,
@@ -86,8 +87,9 @@ export const HOME = {
       "Si ya tienes claro el problema —o solo la intuición— este es el lugar para empezar. Respondemos con alcance, no con una plantilla.",
   },
   en: {
-    metaTitle: "Invends",
-    metaDescription: `${BRAND_HERO_TITLE_EN} ${BRAND_TAGLINE_EN}. ${BRAND_HERO_SUPPORT_EN}`,
+    metaTitle:
+      "Invends — Web design, development & marketing agency in Bogotá",
+    metaDescription: `${BRAND_HERO_TITLE_EN} ${BRAND_TAGLINE_EN}. ${BRAND_HERO_SUPPORT_EN} Bogotá / LATAM.`,
     brandTagline: BRAND_TAGLINE_EN,
     heroTitle: BRAND_HERO_TITLE_EN,
     heroSupport: BRAND_HERO_SUPPORT_EN,

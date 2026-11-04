@@ -100,6 +100,7 @@ export function useServiceReel(
       let target = 0;
       let eased = 0;
       let still = 0;
+      let active = true;
       paint(0);
 
       const read = () => {
@@ -112,6 +113,7 @@ export function useServiceReel(
       };
 
       const tick = () => {
+        if (!active) return;
         const before = target;
         read();
         if (Math.abs(target - before) < 0.0004) still += 1;
@@ -127,11 +129,20 @@ export function useServiceReel(
 
       gsap.ticker.add(tick);
 
+      const viewIo = new IntersectionObserver(
+        ([entry]) => {
+          active = Boolean(entry?.isIntersecting);
+        },
+        { threshold: 0.01, rootMargin: "64px 0px" },
+      );
+      viewIo.observe(root);
+
       const hash = window.location.hash.replace("#", "");
       const hashed = slides().findIndex((slide) => slide.id === hash);
       if (hashed > 0) requestAnimationFrame(() => scrollToIndex(hashed));
 
       return () => {
+        viewIo.disconnect();
         gsap.ticker.remove(tick);
         gsap.set(track, { clearProps: "transform" });
       };

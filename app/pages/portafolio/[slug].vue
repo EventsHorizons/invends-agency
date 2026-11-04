@@ -2,6 +2,7 @@
 import { getAdjacentProjects, getProject } from "~/utils/siteData";
 
 const route = useRoute();
+const { localePath } = useLocale();
 const slug = String(route.params.slug);
 const project = getProject(slug);
 if (!project) {
@@ -9,7 +10,16 @@ if (!project) {
 }
 const { prev, next } = getAdjacentProjects(slug);
 
-useHead({ title: `${project.name} | Invends` });
+usePageSeo({
+  title: `${project.name} | Muestra de método — Invends`,
+  description:
+    project.challenge?.slice(0, 155) ||
+    `Muestra conceptual de método: ${project.name}. Diseño, desarrollo y marketing alineados — Invends.`,
+  path: `/portafolio/${project.slug}`,
+  image: project.thumbnail,
+  locale: "es",
+  noAlternates: true,
+});
 </script>
 
 <template>
@@ -53,15 +63,19 @@ useHead({ title: `${project.name} | Invends` });
     </section>
 
     <nav class="td-container adj" aria-label="Proyectos adyacentes">
-      <NuxtLink v-if="prev" :to="`/portafolio/${prev.slug}`">Anterior: {{ prev.name }}</NuxtLink>
-      <NuxtLink to="/portafolio">Volver al portafolio</NuxtLink>
-      <NuxtLink v-if="next" :to="`/portafolio/${next.slug}`">Siguiente: {{ next.name }}</NuxtLink>
+      <NuxtLink v-if="prev" :to="localePath(`/portafolio/${prev.slug}`)">
+        Anterior: {{ prev.name }}
+      </NuxtLink>
+      <NuxtLink :to="localePath('/portafolio')">Volver al portafolio</NuxtLink>
+      <NuxtLink v-if="next" :to="localePath(`/portafolio/${next.slug}`)">
+        Siguiente: {{ next.name }}
+      </NuxtLink>
     </nav>
 
     <section class="td-section band">
       <div class="td-container">
         <h2>¿Quieres aplicar este enfoque a tu marca?</h2>
-        <NuxtLink class="td-btn" to="/contacto#contacto-form">
+        <NuxtLink class="td-btn" :to="`${localePath('/contacto')}#contacto-form`">
           Solicitar conversación
         </NuxtLink>
       </div>

@@ -12,6 +12,11 @@ export const BRAND_HERO_SUPPORT_EN =
   "Web design, development and marketing with one criterion: a brand that is understood, holds up, and gets chosen.";
 
 export const BRAND_EMAIL = "hola@invends.com";
-export const BRAND_META_TITLE = "Invends";
+export const BRAND_META_TITLE =
+  "Invends — Agencia de diseño web, desarrollo y marketing";
 export const BRAND_META_DESCRIPTION =
-  "Invends — design-driven creative studio for branding, digital and communications.";
+  "Invends — agencia de diseño web, desarrollo y marketing digital. Presencia que decide. Bogotá / LATAM.";
+export const BRAND_META_TITLE_EN =
+  "Invends — Web design, development & digital marketing agency";
+export const BRAND_META_DESCRIPTION_EN =
+  "Invends — web design, development and digital marketing agency. Presence that decides. Bogotá / LATAM.";

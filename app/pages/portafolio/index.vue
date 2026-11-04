@@ -14,7 +14,9 @@ const { locale, isEn, localePath } = useLocale();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Work | Invends",
+        title: "Work samples | Invends",
+        description:
+          "Conceptual method samples from Invends: design, development and marketing aligned. Not published client case studies.",
         eyebrow: "Work · Method samples",
         h1Before: "Ideas that become",
         h1Accent: "real experiences",
@@ -33,7 +35,9 @@ const copy = computed(() =>
         ] as const,
       }
     : {
-        title: "Proyectos | Invends",
+        title: "Proyectos y muestras de método | Invends",
+        description:
+          "Muestras conceptuales de método de Invends: diseño, desarrollo y marketing alineados. No son casos de cliente publicados.",
         eyebrow: "Proyectos · Muestras de enfoque",
         h1Before: "Ideas que se convierten en",
         h1Accent: "experiencias reales",
@@ -47,9 +51,11 @@ const copy = computed(() =>
       },
 );
 
-useHead({
+usePageSeo({
   title: () => copy.value.title,
-  htmlAttrs: { lang: () => locale.value },
+  description: () => copy.value.description,
+  path: () => (isEn.value ? "/en/portafolio" : "/portafolio"),
+  locale: () => locale.value,
 });
 
 const active = ref<ProjectCategory>("todos");

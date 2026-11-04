@@ -1,5 +1,13 @@
 <script setup lang="ts">
-useHead({ title: "Glosario | Invends" });
+usePageSeo({
+  title: "Glosario | Invends",
+  description:
+    "Términos de diseño, desarrollo y marketing usados en el trabajo de Invends.",
+  path: "/glosario",
+  locale: "es",
+  robots: "noindex,follow",
+  noAlternates: true,
+});
 
 const terms = [
   {

@@ -69,9 +69,10 @@ function categoryCta(anchor: string) {
     known &&
     (target === "/servicios" ||
       target === "/en/servicios" ||
-      target === serviciosPath)
+      target === serviciosPath ||
+      target.startsWith(`${serviciosPath}`))
   ) {
-    return `${serviciosPath}#${anchor}`;
+    return localePath(`/servicios/${anchor}`);
   }
   return target;
 }
@@ -123,7 +124,7 @@ useServiceReel(reelRoot, slideCount);
               :poster="category.image"
               :alt="category.imageAlt"
               :variant-id="category.id"
-              :eager="index === 0"
+              :eager="index === 0 && !idPrefix"
             />
             <div class="reel-shade" aria-hidden="true" />
           </figure>

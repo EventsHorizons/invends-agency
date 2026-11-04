@@ -1,17 +1,93 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const invendsDevLoadingHtml = readFileSync(
+  fileURLToPath(new URL("./app/dev-loading-template.html", import.meta.url)),
+  "utf8",
+);
+
+function escapeHtml(text: string) {
+  return text.replace(/[&<>"']/g, (ch) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
+      ch
+    ]!,
+  );
+}
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-10-29",
   // Floating Nuxt DevTools button off — keeps the chrome clean for brand review
   devtools: { enabled: false },
+  // Replace Nuxt mint particle splash during `nuxt dev` cold compile
+  devServer: {
+    loadingTemplate: ({ loading } = {}) =>
+      invendsDevLoadingHtml.replaceAll(
+        "{{LOADING}}",
+        escapeHtml(loading || "Cargando"),
+      ),
+  },
   css: [
     "non.geist",
     "non.geist/italic",
     "~/assets/css/main.css",
   ],
+  nitro: {
+    compressPublicAssets: true,
+  },
+  routeRules: {
+    "/": { prerender: true },
+    "/en": { prerender: true },
+    "/servicios": { prerender: true },
+    "/en/servicios": { prerender: true },
+    "/sobre-nosotros": { prerender: true },
+    "/en/sobre-nosotros": { prerender: true },
+    "/contacto": { prerender: true },
+    "/en/contacto": { prerender: true },
+    "/portafolio": { prerender: true },
+    "/en/portafolio": { prerender: true },
+    "/blog": { prerender: true },
+    "/en/blog": { prerender: true },
+    "/fonts/**": {
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    },
+    "/images/**": {
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    },
+    "/_nuxt/**": {
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    },
+    "/services": { redirect: "/servicios" },
+    "/work": { redirect: "/portafolio" },
+    "/work/**": { redirect: "/portafolio" },
+    "/contact": { redirect: "/contacto" },
+    "/team": { redirect: "/about-us/equipo" },
+    "/team/**": { redirect: "/about-us/equipo" },
+    "/policy": { redirect: "/politicas-de-privacidad" },
+    "/press": { redirect: "/blog" },
+    "/press/**": { redirect: "/blog" },
+    "/en/services": { redirect: "/en/servicios" },
+    "/en/work": { redirect: "/en/portafolio" },
+    "/en/work/**": { redirect: "/en/portafolio" },
+    "/en/contact": { redirect: "/en/contacto" },
+    "/en/about": { redirect: "/en/sobre-nosotros" },
+    "/en/team": { redirect: "/en/sobre-nosotros" },
+    "/en/team/**": { redirect: "/en/sobre-nosotros" },
+    "/en/press": { redirect: "/blog" },
+    "/blogs-trespi": { redirect: "/blog" },
+    "/blogs-trespi/**": { redirect: "/blog/**" },
+    "/glosario": { robots: "noindex,follow" },
+  },
   app: {
     head: {
       titleTemplate: "%s",
-      title: "Invends",
+      title: "Invends — Agencia de diseño web, desarrollo y marketing",
       meta: [
         {
           name: "viewport",
@@ -21,13 +97,32 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Invends — design-driven creative studio for branding, digital and communications.",
+            "Invends — agencia de diseño web, desarrollo y marketing digital. Presencia que decide. Bogotá / LATAM.",
         },
         { property: "og:site_name", content: "Invends" },
         { property: "og:type", content: "website" },
+        {
+          property: "og:image",
+          content: "https://invends.com/images/og-invends.png",
+        },
+        {
+          property: "og:image:width",
+          content: "1200",
+        },
+        {
+          property: "og:image:height",
+          content: "630",
+        },
+        {
+          name: "twitter:image",
+          content: "https://invends.com/images/og-invends.png",
+        },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "robots", content: "noindex,nofollow" },
+        { name: "robots", content: "index,follow" },
         { name: "theme-color", content: "#090711" },
+        { name: "author", content: "Invends" },
+        { name: "geo.region", content: "CO-DC" },
+        { name: "geo.placename", content: "Bogotá" },
       ],
       htmlAttrs: { lang: "es" },
       link: [
@@ -43,6 +138,13 @@ export default defineNuxtConfig({
           rel: "apple-touch-icon",
           sizes: "180x180",
           href: "/apple-touch-icon.png",
+        },
+        {
+          rel: "preload",
+          as: "font",
+          type: "font/woff2",
+          href: "/fonts/Roobert-Regular.woff2",
+          crossorigin: "",
         },
       ],
       // Apply theme before first paint to avoid FOUC
@@ -63,28 +165,9 @@ export default defineNuxtConfig({
       process.env.CONTACT_FROM || "Invends <onboarding@resend.dev>",
     public: {
       brandName: "Invends",
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://invends.com",
+      gaId: process.env.NUXT_PUBLIC_GA_ID || "",
+      gscVerification: process.env.NUXT_PUBLIC_GSC_VERIFICATION || "",
     },
-  },
-  routeRules: {
-    "/services": { redirect: "/servicios" },
-    "/work": { redirect: "/portafolio" },
-    "/work/**": { redirect: "/portafolio" },
-    "/contact": { redirect: "/contacto" },
-    "/team": { redirect: "/about-us/equipo" },
-    "/team/**": { redirect: "/about-us/equipo" },
-    "/policy": { redirect: "/politicas-de-privacidad" },
-    "/press": { redirect: "/blog" },
-    "/press/**": { redirect: "/blog" },
-    "/en/services": { redirect: "/en/servicios" },
-    "/en/work": { redirect: "/en/portafolio" },
-    "/en/work/**": { redirect: "/en/portafolio" },
-    "/en/contact": { redirect: "/en/contacto" },
-    "/en/about": { redirect: "/en/sobre-nosotros" },
-    "/en/team": { redirect: "/en/sobre-nosotros" },
-    "/en/team/**": { redirect: "/en/sobre-nosotros" },
-    "/en/press": { redirect: "/blog" },
-    /** Legacy path — never expose competitor naming in the URL bar. */
-    "/blogs-trespi": { redirect: "/blog" },
-    "/blogs-trespi/**": { redirect: "/blog/**" },
   },
 });

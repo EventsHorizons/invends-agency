@@ -1,14 +1,16 @@
 ﻿<script setup lang="ts">
-import { CONTACT_INFO } from "~/utils/siteData";
+import { CONTACT_INFO } from "~/utils/contactInfo";
+import { hasRealPhone } from "~/utils/seo";
 
 const { locale, isEn } = useLocale();
+const showPhone = hasRealPhone();
 
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Contact | Invends",
+        title: "Contact Invends | Bogotá / LATAM",
         description:
-          "Tell us about your web design, development or digital marketing project. Invends replies with clarity.",
+          "Tell us about your web design, development or digital marketing project. Email hola@invends.com — Invends replies with clear scope.",
         eyebrow: "Contact · Bogotá / LATAM",
         h1Before: "Let's talk about what your brand",
         h1Accent: "needs",
@@ -19,9 +21,9 @@ const copy = computed(() =>
         phone: "Phone",
       }
     : {
-        title: "Contacto | Invends",
+        title: "Contacto Invends | Bogotá / LATAM",
         description:
-          "Cuéntanos tu proyecto de diseño web, desarrollo o marketing digital. Invends responde con claridad.",
+          "Cuéntanos tu proyecto de diseño web, desarrollo o marketing digital. Email hola@invends.com — Invends responde con alcance claro.",
         eyebrow: "Contacto · Bogotá / LATAM",
         h1Before: "Hablemos de lo que tu marca",
         h1Accent: "necesita",
@@ -33,10 +35,11 @@ const copy = computed(() =>
       },
 );
 
-useHead({
+usePageSeo({
   title: () => copy.value.title,
-  htmlAttrs: { lang: () => locale.value },
-  meta: [{ name: "description", content: () => copy.value.description }],
+  description: () => copy.value.description,
+  path: () => (isEn.value ? "/en/contacto" : "/contacto"),
+  locale: () => locale.value,
 });
 </script>
 
@@ -76,8 +79,10 @@ useHead({
           <a class="under" :href="`mailto:${CONTACT_INFO.email}`">{{
             CONTACT_INFO.email
           }}</a>
-          <p class="medium" style="margin-top: 1rem">{{ copy.phone }}</p>
-          <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
+          <template v-if="showPhone">
+            <p class="medium" style="margin-top: 1rem">{{ copy.phone }}</p>
+            <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
+          </template>
         </div>
       </div>
     </section>

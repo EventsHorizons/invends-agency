@@ -1,0 +1,71 @@
+{
+  "capturedAt": "2026-11-04T01:34:34.100Z",
+  "environment": "local preview node .output/server/index.mjs on Windows, localhost",
+  "lighthouse": {
+    "mobile": {
+      "score": 0.85,
+      "FCP": 841,
+      "LCP": 841,
+      "TBT": 553,
+      "CLS": 0,
+      "SI": 3225,
+      "TTI": 3407
+    },
+    "desktop": {
+      "score": 0.81,
+      "FCP": 858,
+      "LCP": 858,
+      "TBT": 318,
+      "CLS": 0,
+      "SI": 2141,
+      "TTI": 3420
+    }
+  },
+  "playwrightUnthrottled": {
+    "homeDesktop": {
+      "fcp": 404,
+      "lcp": 404,
+      "cls": 0,
+      "ttfb": 16.6,
+      "transferKB": 494,
+      "jsKB": 130,
+      "cssKB": 48,
+      "imgKB": 153,
+      "resources": 38
+    },
+    "homeMobile": {
+      "fcp": 236,
+      "lcp": 236,
+      "cls": 0,
+      "ttfb": 7.9,
+      "transferKB": 494,
+      "jsKB": 130,
+      "cssKB": 48,
+      "imgKB": 153,
+      "resources": 38
+    },
+    "serviciosDesktop": {
+      "fcp": 328,
+      "lcp": 328,
+      "cls": 0.0544,
+      "ttfb": 7.2,
+      "transferKB": 423,
+      "jsKB": 135,
+      "imgKB": 145
+    },
+    "blogDesktop": {
+      "fcp": 392,
+      "lcp": 392,
+      "cls": 0,
+      "ttfb": 8.3,
+      "transferKB": 679,
+      "jsKB": 125,
+      "imgKB": 384
+    }
+  },
+  "notes": [
+    "Playwright lab is unthrottled localhost — not comparable to field CWV.",
+    "Lighthouse applies simulated throttling (lab).",
+    "No CrUX / RUM field data collected in this pass."
+  ]
+}

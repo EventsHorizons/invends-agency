@@ -7,17 +7,15 @@ definePageMeta({
 
 const { locale, isEn } = useLocale();
 
-useHead({
+usePageSeo({
   title: () => (isEn.value ? "Team | Invends" : "Equipo | Invends"),
-  htmlAttrs: { lang: () => locale.value },
-
-  meta: [
-    {
-      name: "description",
-      content:
-        "Roles y áreas con las que Invends organiza diseño, desarrollo y marketing en cada proyecto.",
-    },
-  ],
+  description: () =>
+    isEn.value
+      ? "Roles and areas Invends uses to organize design, development and marketing on every project."
+      : "Roles y áreas con las que Invends organiza diseño, desarrollo y marketing en cada proyecto.",
+  path: () =>
+    isEn.value ? "/en/about-us/equipo" : "/about-us/equipo",
+  locale: () => locale.value,
 });
 
 const active = ref("Todos");

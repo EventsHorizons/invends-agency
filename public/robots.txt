@@ -1,2 +1,14 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+# Legacy / thin utility routes
+Disallow: /glosario
+Disallow: /blogs-trespi
+Disallow: /work
+Disallow: /services
+Disallow: /press
+Disallow: /team
+Disallow: /policy
+Disallow: /contact
+
+Sitemap: https://invends.com/sitemap.xml

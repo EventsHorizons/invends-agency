@@ -1,5 +1,5 @@
 ﻿<script setup lang="ts">
-import { BLOG_POSTS } from "~/utils/siteData";
+import { BLOG_POSTS } from "~/utils/blogData";
 
 definePageMeta({
   alias: ["/en/blog"],
@@ -7,9 +7,17 @@ definePageMeta({
 
 const { locale, isEn, localePath } = useLocale();
 
-useHead({
-  title: () => (isEn.value ? "Blog | Invends" : "Blog | Invends"),
-  htmlAttrs: { lang: () => locale.value },
+usePageSeo({
+  title: () =>
+    isEn.value
+      ? "Blog | Web design, UX & digital strategy — Invends"
+      : "Blog | Diseño web, UX y estrategia digital — Invends",
+  description: () =>
+    isEn.value
+      ? "Articles on web design, development, UX and digital marketing: decisions that avoid redoing the work."
+      : "Artículos sobre diseño web, desarrollo, UX y marketing digital: decisiones que evitan rehacer el trabajo.",
+  path: () => (isEn.value ? "/en/blog" : "/blog"),
+  locale: () => locale.value,
 });
 
 const [featured, ...rest] = BLOG_POSTS;

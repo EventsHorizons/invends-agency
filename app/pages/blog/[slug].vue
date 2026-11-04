@@ -1,7 +1,9 @@
 ﻿<script setup lang="ts">
-import { BLOG_POSTS, getBlogPost } from "~/utils/siteData";
+import { BLOG_POSTS, getBlogPost } from "~/utils/blogData";
+import { absoluteUrl, useSiteUrl } from "~/utils/seo";
 
 const route = useRoute();
+const { localePath } = useLocale();
 const slug = String(route.params.slug);
 const post = getBlogPost(slug);
 if (!post) {
@@ -15,12 +17,77 @@ const relatedFallback =
     ? related
     : BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
 
-useHead({ title: `${post.title} | Invends` });
-useSeoMeta({
+const siteUrl = useSiteUrl();
+const path = `/blog/${post.slug}`;
+
+usePageSeo({
+  title: `${post.title} | Invends`,
   description: post.excerpt,
-  ogTitle: post.title,
-  ogDescription: post.excerpt,
-  ogImage: post.image,
+  path,
+  image: post.image,
+  locale: "es",
+  type: "article",
+  noAlternates: true,
+});
+
+useHead({
+  htmlAttrs: { lang: "es" },
+  meta: [
+    { property: "article:published_time", content: post.date },
+    { property: "article:section", content: post.category },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.excerpt,
+        image: absoluteUrl(post.image, siteUrl),
+        datePublished: post.date,
+        dateModified: post.date,
+        author: { "@type": "Organization", name: "Invends" },
+        publisher: {
+          "@type": "Organization",
+          name: "Invends",
+          logo: {
+            "@type": "ImageObject",
+            url: absoluteUrl("/favicon.svg", siteUrl),
+          },
+        },
+        mainEntityOfPage: absoluteUrl(path, siteUrl),
+        inLanguage: "es",
+      }),
+    },
+    {
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Inicio",
+            item: absoluteUrl("/", siteUrl),
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: absoluteUrl("/blog", siteUrl),
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: absoluteUrl(path, siteUrl),
+          },
+        ],
+      }),
+    },
+  ],
 });
 
 function formatInline(text: string) {
@@ -42,7 +109,9 @@ function formatInline(text: string) {
     <article class="td-section article">
       <div class="td-container article-shell">
         <nav class="crumb" aria-label="Miga de pan">
-          <NuxtLink to="/blog">Blog</NuxtLink>
+          <NuxtLink :to="localePath('/')">Inicio</NuxtLink>
+          <span aria-hidden="true">/</span>
+          <NuxtLink :to="localePath('/blog')">Blog</NuxtLink>
           <span aria-hidden="true">/</span>
           <span>{{ post.category }}</span>
         </nav>
@@ -127,10 +196,13 @@ function formatInline(text: string) {
             objetivo y te respondemos con alcance.
           </p>
           <div class="cta-row">
-            <NuxtLink class="td-btn" to="/contacto#contacto-form">
+            <NuxtLink class="td-btn" :to="`${localePath('/contacto')}#contacto-form`">
               Hablar con Invends
             </NuxtLink>
-            <NuxtLink class="td-link" to="/blog">Volver al blog</NuxtLink>
+            <NuxtLink class="td-link" :to="localePath('/servicios')">
+              Ver servicios
+            </NuxtLink>
+            <NuxtLink class="td-link" :to="localePath('/blog')">Volver al blog</NuxtLink>
           </div>
         </aside>
       </div>
@@ -143,7 +215,7 @@ function formatInline(text: string) {
           <NuxtLink
             v-for="r in relatedFallback"
             :key="r.slug"
-            :to="`/blog/${r.slug}`"
+            :to="localePath(`/blog/${r.slug}`)"
             class="rel"
           >
             <img

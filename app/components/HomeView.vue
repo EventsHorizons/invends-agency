@@ -7,21 +7,18 @@ import {
   HOME_STRIP,
 } from "~/utils/messages";
 
-const { locale, localePath } = useLocale();
+const { locale, localePath, isEn } = useLocale();
 const copy = computed(() => HOME[locale.value]);
 const strip = computed(() => HOME_STRIP[locale.value]);
 const methods = computed(() => HOME_METHODS[locale.value]);
 const pillars = computed(() => HOME_PILLARS_I18N[locale.value]);
 
-useHead({
+usePageSeo({
   title: () => copy.value.metaTitle,
-  htmlAttrs: { lang: () => locale.value },
-  meta: [
-    {
-      name: "description",
-      content: () => copy.value.metaDescription,
-    },
-  ],
+  description: () => copy.value.metaDescription,
+  path: () => (isEn.value ? "/en" : "/"),
+  locale: () => locale.value,
+  image: "/images/og-invends.png",
 });
 
 const featured = ["sistema-editorial-web", "lanzamiento-de-marca"]
@@ -52,7 +49,7 @@ const expanded = ref<number | null>(null);
       </div>
     </div>
 
-    <ServiceReel
+    <LazyServiceReel
       id-prefix="home-"
       :categories="pillars"
       :intro-title="copy.reelIntroTitle"
@@ -62,6 +59,7 @@ const expanded = ref<number | null>(null);
       :intro-cta-to="`${localePath('/')}#contacto-form`"
       :cta-label="copy.reelCta"
       :cta-to="localePath('/servicios')"
+      hydrate-on-visible
     />
 
     <section class="td-section testimonials">
@@ -128,6 +126,7 @@ const expanded = ref<number | null>(null);
                 :alt="project.name"
                 width="800"
                 height="600"
+                sizes="(max-width: 900px) 100vw, 50vw"
                 loading="lazy"
                 decoding="async"
               />
@@ -148,10 +147,11 @@ const expanded = ref<number | null>(null);
       </div>
     </section>
 
-    <SiteContactForm
+    <LazySiteContactForm
       :locale="locale"
       :title="copy.formTitle"
       :description="copy.formDescription"
+      hydrate-on-visible
     />
   </main>
 </template>

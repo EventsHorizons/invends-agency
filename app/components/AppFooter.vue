@@ -1,12 +1,14 @@
 ﻿<script setup lang="ts">
 import { BRAND_NAME } from "~/utils/brand";
-import { CONTACT_INFO } from "~/utils/siteData";
+import { CONTACT_INFO } from "~/utils/contactInfo";
 import { NAV, UI } from "~/utils/messages";
+import { hasRealPhone } from "~/utils/seo";
 
 const { locale, localePath } = useLocale();
 const copy = computed(() => UI[locale.value]);
 const links = computed(() => NAV[locale.value]);
 const brandName = BRAND_NAME;
+const showPhone = hasRealPhone();
 
 function toTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -30,18 +32,25 @@ function toTop() {
           <p>{{ loc.city }}</p>
           <p v-for="(line, i) in loc.address.split('\n')" :key="i">{{ line }}</p>
         </template>
-        <p style="margin-top: 0.75rem">{{ copy.footerPhone }}</p>
-        <p>
-          <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
-        </p>
+        <template v-if="showPhone">
+          <p style="margin-top: 0.75rem">{{ copy.footerPhone }}</p>
+          <p>
+            <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
+          </p>
+        </template>
       </div>
       <div>
         <h3>{{ copy.footerFollow }}</h3>
         <ul>
           <li v-for="s in CONTACT_INFO.social" :key="s.name">
-            <a :href="s.url" target="_blank" rel="noopener noreferrer">{{
-              s.name
-            }}</a>
+            <a
+              v-if="s.url && !s.url.match(/\/\/(www\.)?(linkedin|instagram|behance)\.\w+\/?$/)"
+              :href="s.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              >{{ s.name }}</a
+            >
+            <span v-else class="td-muted">{{ s.name }}</span>
           </li>
         </ul>
       </div>

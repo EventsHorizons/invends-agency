@@ -4,9 +4,9 @@ const { locale, isEn, localePath } = useLocale();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "About | Invends",
+        title: "About Invends | Design, development & marketing agency",
         description:
-          "Invends is a web design, development and digital marketing agency. See how we work.",
+          "Invends is a web design, development and digital marketing agency based in Bogotá / LATAM. See how we work.",
         eyebrow: "About Invends",
         h1: "Design that attracts. Technology that drives.",
         lead: "We are a web design, development and digital marketing agency. We work with clarity: fewer loose pieces, more projects aligned to the business goal.",
@@ -14,17 +14,17 @@ const copy = computed(() =>
           {
             title: "Digital experiences that make you easy to choose.",
             cta: "See web design",
-            to: "/servicios#diseno-web",
+            to: "/servicios/diseno-web",
           },
           {
             title: "Sites and landings that work for the business.",
             cta: "See development",
-            to: "/servicios#desarrollo-web",
+            to: "/servicios/desarrollo-web",
           },
           {
             title: "Message and content to reach the right people.",
             cta: "See marketing",
-            to: "/servicios#marketing-digital",
+            to: "/servicios/marketing-digital",
           },
           {
             title: "Identity, web and communication in one brief.",
@@ -81,9 +81,9 @@ const copy = computed(() =>
         bandCta: "Go to contact",
       }
     : {
-        title: "Nosotros | Invends",
+        title: "Nosotros | Agencia de diseño web y marketing — Invends",
         description:
-          "Invends es una agencia de diseño web, desarrollo web y marketing digital. Conoce cómo trabajamos.",
+          "Invends es una agencia de diseño web, desarrollo y marketing digital con atención desde Bogotá / LATAM. Conoce cómo trabajamos.",
         eyebrow: "Sobre Invends",
         h1: "Diseño que atrae. Tecnología que impulsa.",
         lead: "Somos una agencia de diseño web, desarrollo y marketing digital. Trabajamos con claridad: menos piezas sueltas, más proyectos alineados al objetivo del negocio.",
@@ -91,17 +91,17 @@ const copy = computed(() =>
           {
             title: "Experiencias digitales que hacen fácil elegirte.",
             cta: "Ver diseño web",
-            to: "/servicios#diseno-web",
+            to: "/servicios/diseno-web",
           },
           {
             title: "Sitios y landings que funcionan para el negocio.",
             cta: "Ver desarrollo",
-            to: "/servicios#desarrollo-web",
+            to: "/servicios/desarrollo-web",
           },
           {
             title: "Mensaje y contenido para llegar a las personas correctas.",
             cta: "Ver marketing",
-            to: "/servicios#marketing-digital",
+            to: "/servicios/marketing-digital",
           },
           {
             title: "Identidad, web y comunicación en un mismo brief.",
@@ -159,10 +159,11 @@ const copy = computed(() =>
       },
 );
 
-useHead({
+usePageSeo({
   title: () => copy.value.title,
-  htmlAttrs: { lang: () => locale.value },
-  meta: [{ name: "description", content: () => copy.value.description }],
+  description: () => copy.value.description,
+  path: () => (isEn.value ? "/en/sobre-nosotros" : "/sobre-nosotros"),
+  locale: () => locale.value,
 });
 </script>
 

@@ -47,22 +47,34 @@ export function useLocale() {
     return `/en${clean}${hash}`;
   }
 
+  function pairedPath(path: string, toEn: boolean) {
+    const clean = stripTrailingSlash(path);
+    if (toEn) {
+      const svc = clean.match(/^\/servicios\/([^/]+)$/);
+      if (svc) return `/en/servicios/${svc[1]}`;
+      return ES_TO_EN[clean] ?? "/en";
+    }
+    const svcEn = clean.match(/^\/en\/servicios\/([^/]+)$/);
+    if (svcEn) return `/servicios/${svcEn[1]}`;
+    return EN_TO_ES[clean] ?? "/";
+  }
+
   const switchTo = computed(() => {
     if (isEn.value) {
-      const to = EN_TO_ES[normalizedPath.value] ?? "/";
+      const to = pairedPath(normalizedPath.value, false);
       return { to, label: "ES", aria: "Cambiar a español" };
     }
-    const to = ES_TO_EN[normalizedPath.value] ?? "/en";
+    const to = pairedPath(normalizedPath.value, true);
     return { to, label: "EN", aria: "Switch to English" };
   });
 
   async function setLocale(next: Locale) {
     if (next === locale.value) return;
     if (next === "en") {
-      await navigateTo(ES_TO_EN[normalizedPath.value] ?? "/en");
+      await navigateTo(pairedPath(normalizedPath.value, true));
       return;
     }
-    await navigateTo(EN_TO_ES[normalizedPath.value] ?? "/");
+    await navigateTo(pairedPath(normalizedPath.value, false));
   }
 
   return { locale, isEn, switchTo, setLocale, localePath };

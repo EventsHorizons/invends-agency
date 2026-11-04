@@ -70,17 +70,30 @@ function onPointer(e: PointerEvent) {
   if (!props.animate) handle.draw();
 }
 
-onMounted(async () => {
+onMounted(() => {
   const el = canvas.value;
   if (!el) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let inView = true;
+  let disposed = false;
+  let idleId: number | null = null;
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
-  const onVis = () => {
+  const shouldRun = () =>
+    props.animate &&
+    !reduce &&
+    !paused.value &&
+    !document.hidden &&
+    inView &&
+    !failed.value;
+
+  const syncPlayback = () => {
     if (!handle || failed.value) return;
-    if (document.hidden || paused.value) handle.stop();
-    else if (props.animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches)
-      handle.start();
-    else handle.draw();
+    if (shouldRun()) handle.start();
+    else {
+      handle.stop();
+      if (!document.hidden && inView) handle.draw();
+    }
   };
 
   // Avoid fighting the RAF loop; only resize/redraw when size actually changes
@@ -96,31 +109,72 @@ onMounted(async () => {
     handle.draw();
   });
 
-  try {
-    // Code-split WebGL runtime out of the critical path
-    const { createAgencyGradient } = await import("~/utils/createAgencyGradient");
-    handle = createAgencyGradient(el, resolved.value, {
-      animateSeed: props.animate && !reduce,
-      noRetina: props.noRetina,
-      seedSpeed: 0.055,
-    });
-    if (props.animate && !reduce) handle.start();
-    else handle.draw();
-    if (import.meta.dev) {
-      (window as Window & { __agencyGradient?: AgencyGradientHandle }).__agencyGradient =
-        handle;
+  const io =
+    typeof IntersectionObserver !== "undefined"
+      ? new IntersectionObserver(
+          ([entry]) => {
+            inView = Boolean(entry?.isIntersecting);
+            syncPlayback();
+          },
+          { root: null, threshold: 0.05, rootMargin: "48px 0px" },
+        )
+      : null;
+
+  const boot = async () => {
+    if (disposed) return;
+    try {
+      // Code-split WebGL runtime out of the critical path
+      const { createAgencyGradient } = await import(
+        "~/utils/createAgencyGradient"
+      );
+      if (disposed || !canvas.value) return;
+      handle = createAgencyGradient(canvas.value, resolved.value, {
+        animateSeed: props.animate && !reduce,
+        noRetina: props.noRetina,
+        seedSpeed: 0.055,
+      });
+      syncPlayback();
+      if (!shouldRun()) handle.draw();
+      if (import.meta.dev) {
+        (
+          window as Window & { __agencyGradient?: AgencyGradientHandle }
+        ).__agencyGradient = handle;
+      }
+    } catch (err) {
+      console.warn("[AgencyGradient] WebGL2 failed, CSS fallback", err);
+      failed.value = true;
     }
-  } catch (err) {
-    console.warn("[AgencyGradient] WebGL2 failed, CSS fallback", err);
-    failed.value = true;
+  };
+
+  // Yield to first paint / hydration before shader compile + RAF
+  const w = window as Window & {
+    requestIdleCallback?: (
+      cb: () => void,
+      opts?: { timeout: number },
+    ) => number;
+    cancelIdleCallback?: (id: number) => void;
+  };
+  if (typeof w.requestIdleCallback === "function") {
+    idleId = w.requestIdleCallback(() => void boot(), { timeout: 900 });
+  } else {
+    timeoutId = window.setTimeout(() => void boot(), 120);
   }
 
-  document.addEventListener("visibilitychange", onVis);
-  if (root.value) ro.observe(root.value);
+  document.addEventListener("visibilitychange", syncPlayback);
+  if (root.value) {
+    ro.observe(root.value);
+    io?.observe(root.value);
+  }
 
   onBeforeUnmount(() => {
-    document.removeEventListener("visibilitychange", onVis);
+    disposed = true;
+    if (idleId != null && typeof w.cancelIdleCallback === "function") {
+      w.cancelIdleCallback(idleId);
+    }
+    if (timeoutId != null) clearTimeout(timeoutId);
+    document.removeEventListener("visibilitychange", syncPlayback);
     ro.disconnect();
+    io?.disconnect();
     handle?.dispose();
     handle = null;
   });
@@ -132,10 +186,10 @@ watch(
   { deep: true },
 );
 
-watch(paused, (v) => {
+watch(paused, () => {
   if (!handle) return;
-  if (v) handle.stop();
-  else if (props.animate) handle.start();
+  if (paused.value) handle.stop();
+  else if (props.animate && !document.hidden) handle.start();
   else handle.draw();
 });
 
