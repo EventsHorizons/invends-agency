@@ -67,10 +67,10 @@ export const HOME = {
     ctaPrimary: "Empezar proyecto",
     ctaSecondary: "Ver servicios",
     stripLabel: "Oficios",
-    reelIntroTitle: "Sin brief completo.",
-    reelIntroAccent: "También se puede empezar",
+    reelIntroTitle: "Alcance primero.",
+    reelIntroAccent: "Después, el trabajo",
     reelIntroBody:
-      "Idea a medias, sitio desactualizado o duda de por dónde seguir. Revisamos el camino y el alcance.",
+      "Nos cuentas el objetivo. Respondemos con fases, oficios y límites claros —para construir con criterio.",
     reelIntroCta: "Hablar del proyecto",
     reelCta: "Ver servicios",
     methodTitle: "Método",
@@ -84,7 +84,7 @@ export const HOME = {
     projectsLink: "Ver muestras",
     formTitle: "Cuéntanos tu idea.",
     formDescription:
-      "Brief completo o intuición. Respondemos con alcance: qué entra, en qué orden y qué espera.",
+      "Respondemos con alcance: qué entra, en qué orden y qué espera cada fase.",
   },
   en: {
     metaTitle:
@@ -97,10 +97,10 @@ export const HOME = {
     ctaPrimary: "Start a project",
     ctaSecondary: "See services",
     stripLabel: "Crafts",
-    reelIntroTitle: "No full brief yet.",
-    reelIntroAccent: "You can still start",
+    reelIntroTitle: "Scope first.",
+    reelIntroAccent: "Then the work",
     reelIntroBody:
-      "Half-formed idea, outdated site, or unsure where to go. We review path and scope.",
+      "You share the goal. We reply with phases, crafts and clear limits—so we build with judgment.",
     reelIntroCta: "Talk project",
     reelCta: "See services",
     methodTitle: "Method",
@@ -114,7 +114,7 @@ export const HOME = {
     projectsLink: "See samples",
     formTitle: "Tell us your idea.",
     formDescription:
-      "Full brief or a hunch. We reply with scope: what’s in, in what order, and what waits.",
+      "We reply with scope: what’s in, in what order, and what waits in each phase.",
   },
 } as const;
 
