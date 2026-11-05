@@ -1,0 +1,46 @@
+name: SEO Engine — Weekly
+
+on:
+  schedule:
+    # Mondays 13:00 UTC
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: seo-weekly
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run weekly SEO engine
+        env:
+          SEO_SITE_URL: ${{ vars.SEO_SITE_URL }}
+          SEO_FALLBACK_SITE_URL: ${{ vars.SEO_FALLBACK_SITE_URL }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+          BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+        run: node scripts/seo-engine/run.mjs weekly
+        continue-on-error: true
+      - name: Upload reports & drafts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-weekly-${{ github.run_id }}
+          path: |
+            docs/seo/reports/weekly-*.json
+            docs/seo/reports/weekly-*.md
+            data/seo/latest-weekly.json
+            content/seo/drafts/**
+            content/seo/opportunities/**
+            content/seo/link-opportunities/**
+          if-no-files-found: warn

@@ -4,158 +4,150 @@ const { locale, isEn, localePath } = useLocale();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "About Invends | Design, development & marketing agency",
+        title: "About Invends | Design, development & marketing",
         description:
-          "Invends is a web design, development and digital marketing agency based in Bogotá / LATAM. See how we work.",
-        eyebrow: "About Invends",
-        h1: "Design that attracts. Technology that drives.",
-        lead: "We are a web design, development and digital marketing agency. We work with clarity: fewer loose pieces, more projects aligned to the business goal.",
+          "Invends: web design, development and digital marketing. Clear form, scoped phases. Bogotá / LATAM.",
+        eyebrow: "About",
+        h1: "Craft and scope.",
+        lead: "We shape sites, products and messages people understand. Precise questions. Scope you can review.",
         capabilities: [
           {
-            title: "Digital experiences that make you easy to choose.",
-            cta: "See web design",
+            title: "Web design",
+            cta: "See design",
             to: "/servicios/diseno-web",
           },
           {
-            title: "Sites and landings that work for the business.",
+            title: "Development",
             cta: "See development",
             to: "/servicios/desarrollo-web",
           },
           {
-            title: "Message and content to reach the right people.",
+            title: "Marketing",
             cta: "See marketing",
             to: "/servicios/marketing-digital",
           },
           {
-            title: "Identity, web and communication in one brief.",
-            cta: "See projects",
+            title: "Method samples",
+            cta: "See work",
             to: "/portafolio",
           },
           {
-            title: "Performance, usability and maintenance with judgment.",
+            title: "All services",
             cta: "See services",
             to: "/servicios",
           },
           {
-            title: "We work from Bogotá with clients across LATAM.",
+            title: "Bogotá / LATAM",
             cta: "Contact",
             to: "/contacto",
           },
         ],
-        principlesTitle: "What we don’t negotiate",
+        principlesTitle: "Principles",
         values: [
           {
             number: "01",
             title: "Clarity",
-            description:
-              "We explain what we do and why. We prefer precision over empty phrases.",
+            description: "We say what fits this phase—and what doesn’t.",
           },
           {
             number: "02",
             title: "Craft",
-            description:
-              "Design, development and marketing get the same level of care.",
+            description: "Design, code and message get the same care.",
           },
           {
             number: "03",
             title: "Judgment",
-            description:
-              "Every decision answers the project goal, not the trend of the week.",
+            description: "Decisions follow the project, not the trend.",
           },
           {
             number: "04",
-            title: "Useful delivery",
-            description:
-              "What we publish must be usable, measurable and improvable over time.",
+            title: "Use",
+            description: "What we ship should be usable and improvable.",
           },
         ],
         teamEyebrow: "Team",
-        teamTitle: "How the studio is organized",
+        teamTitle: "Studio structure",
         teamBody:
-          "We work by real crafts—design, development and marketing—not invented titles. Here you can see the areas and roles that structure each project.",
+          "Real crafts—design, development, marketing—not invented titles.",
         areas: ["Design", "Development", "Marketing", "Creative", "Operations"],
         areasLabel: "Studio areas",
-        teamCta: "See team roles",
-        bandTitle: "Got a project in mind?",
-        bandBody: "Write to us and we’ll reply with clear scope.",
-        bandCta: "Go to contact",
+        teamCta: "See roles",
+        bandTitle: "Have an idea?",
+        bandBody: "Even a rough one works. We reply with scope.",
+        bandCta: "Let’s talk",
       }
     : {
-        title: "Nosotros | Agencia de diseño web y marketing — Invends",
+        title: "Nosotros | Diseño web y marketing — Invends",
         description:
-          "Invends es una agencia de diseño web, desarrollo y marketing digital con atención desde Bogotá / LATAM. Conoce cómo trabajamos.",
-        eyebrow: "Sobre Invends",
-        h1: "Diseño que atrae. Tecnología que impulsa.",
-        lead: "Somos una agencia de diseño web, desarrollo y marketing digital. Trabajamos con claridad: menos piezas sueltas, más proyectos alineados al objetivo del negocio.",
+          "Invends: diseño web, desarrollo y marketing digital. Forma clara y alcance por fase. Bogotá / LATAM.",
+        eyebrow: "Nosotros",
+        h1: "Oficio y alcance.",
+        lead: "Damos forma a sitios, productos y mensajes que se entienden. Preguntas precisas. Alcance revisable.",
         capabilities: [
           {
-            title: "Experiencias digitales que hacen fácil elegirte.",
-            cta: "Ver diseño web",
+            title: "Diseño web",
+            cta: "Ver diseño",
             to: "/servicios/diseno-web",
           },
           {
-            title: "Sitios y landings que funcionan para el negocio.",
+            title: "Desarrollo",
             cta: "Ver desarrollo",
             to: "/servicios/desarrollo-web",
           },
           {
-            title: "Mensaje y contenido para llegar a las personas correctas.",
+            title: "Marketing",
             cta: "Ver marketing",
             to: "/servicios/marketing-digital",
           },
           {
-            title: "Identidad, web y comunicación en un mismo brief.",
+            title: "Muestras",
             cta: "Ver proyectos",
             to: "/portafolio",
           },
           {
-            title: "Rendimiento, usabilidad y mantenimiento con criterio.",
+            title: "Servicios",
             cta: "Ver servicios",
             to: "/servicios",
           },
           {
-            title: "Trabajamos desde Bogotá con clientes en LATAM.",
-            cta: "Contactar",
+            title: "Bogotá / LATAM",
+            cta: "Contacto",
             to: "/contacto",
           },
         ],
-        principlesTitle: "Lo que no negociamos",
+        principlesTitle: "Principios",
         values: [
           {
             number: "01",
             title: "Claridad",
-            description:
-              "Explicamos qué hacemos y por qué. Preferimos precisión a frases vacías.",
+            description: "Decimos qué entra en esta fase —y qué no.",
           },
           {
             number: "02",
             title: "Oficio",
-            description:
-              "Diseño, desarrollo y marketing se tratan con el mismo nivel de cuidado.",
+            description: "Diseño, código y mensaje con el mismo cuidado.",
           },
           {
             number: "03",
             title: "Criterio",
-            description:
-              "Cada decisión responde al objetivo del proyecto, no a la moda de la semana.",
+            description: "La decisión sigue al proyecto, no a la moda.",
           },
           {
             number: "04",
-            title: "Entrega útil",
-            description:
-              "Lo que publicamos debe poder usarse, medirse y mejorarse con el tiempo.",
+            title: "Uso",
+            description: "Lo publicado debe poder usarse y mejorarse.",
           },
         ],
         teamEyebrow: "Equipo",
-        teamTitle: "Cómo está organizado el estudio",
+        teamTitle: "Estructura",
         teamBody:
-          "Trabajamos por oficios reales —diseño, desarrollo y marketing— no por cargos inventados. Aquí puedes ver las áreas y roles con los que estructuramos cada proyecto.",
+          "Oficios reales —diseño, desarrollo, marketing— no cargos inventados.",
         areas: ["Diseño", "Desarrollo", "Marketing", "Creativo", "Administración"],
-        areasLabel: "Áreas del estudio",
-        teamCta: "Ver roles del equipo",
-        bandTitle: "¿Tienes un proyecto en mente?",
-        bandBody: "Escríbenos y te respondemos con alcance claro.",
-        bandCta: "Ir a contacto",
+        areasLabel: "Áreas",
+        teamCta: "Ver roles",
+        bandTitle: "¿Tienes una idea?",
+        bandBody: "Aunque esté a medias. Respondemos con alcance.",
+        bandCta: "Hablemos",
       },
 );
 

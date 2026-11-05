@@ -27,6 +27,11 @@ logs
 .env.*
 !.env.example
 
+# SEO engine runtime (reports under docs/seo/reports may be committed selectively)
+data/seo/run-log.jsonl
+*.pem
+service-account*.json
+
 # Agent / oversized REA dumps
 research/rea-captures/*.json
 research/payloads/*.js

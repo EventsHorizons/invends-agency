@@ -1,0 +1,333 @@
+{
+  "id": "monthly-2026-11-04T16-32-15-089Z",
+  "type": "monthly",
+  "startedAt": "2026-11-04T16:32:15.088Z",
+  "finishedAt": "2026-11-04T16:32:16.244Z",
+  "base": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+  "integrations": {
+    "pagespeed": false,
+    "gsc": false,
+    "ga4": false,
+    "bing": false,
+    "siteUrl": "https://invends.com"
+  },
+  "architecture": {
+    "brand": "/",
+    "servicesHub": "/servicios",
+    "services": [
+      "/servicios/diseno-web",
+      "/servicios/branding",
+      "/servicios/desarrollo-web",
+      "/servicios/desarrollo-apps",
+      "/servicios/ecommerce",
+      "/servicios/seo",
+      "/servicios/marketing-digital",
+      "/servicios/inteligencia-artificial",
+      "/servicios/automatizacion",
+      "/servicios/migracion-legacy",
+      "/servicios/mvp-rapido"
+    ],
+    "about": "/sobre-nosotros",
+    "portfolio": "/portafolio",
+    "blog": "/blog",
+    "contact": "/contacto",
+    "en": [
+      "/en",
+      "/en/servicios",
+      "/en/contacto"
+    ],
+    "noindex": [
+      "/glosario"
+    ],
+    "rules": [
+      "Una landing de servicio = un cluster transaccional",
+      "Blog = intención informativa; enlaza a servicio, no canibaliza title",
+      "Sin páginas de ciudad inventadas",
+      "NAP: no publicar teléfono placeholder"
+    ]
+  },
+  "contentInventory": {
+    "publishedCount": 27,
+    "published": [
+      {
+        "slug": "como-elegir-agencia-diseno-web",
+        "title": "Cómo elegir una agencia de diseño web sin pagar dos veces",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "por-que-tu-sitio-no-convierte",
+        "title": "Por qué tu sitio no convierte (aunque se vea bien)",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "brief-antes-que-pixeles",
+        "title": "Brief antes que píxeles: el orden que evita rehacer todo",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "contenido-que-vende-sin-gritar",
+        "title": "Contenido que vende sin gritar",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "desarrollo-como-parte-del-diseno",
+        "title": "El desarrollo también es parte de la experiencia",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "tres-oficios-una-direccion",
+        "title": "Diseño, desarrollo y marketing en un solo proyecto",
+        "source": "app/utils/blogData.ts"
+      },
+      {
+        "slug": "auditoria-digital-siete-puntos-lanzamiento",
+        "title": "Auditoría digital en siete puntos (y cómo empezar con Invends)",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "publicar-diario-no-es-estrategia",
+        "title": "Por qué publicar todos los días no es una estrategia de contenidos",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "arquitectura-informacion-conversion-mitos",
+        "title": "Arquitectura de información y conversión: más allá de los mitos del diseño web",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "trafico-frente-a-conversion-web",
+        "title": "Más visitas no son más clientes: tráfico frente a conversión",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "cinco-preguntas-antes-de-disenar-web",
+        "title": "Cinco preguntas de negocio antes de diseñar (o rediseñar) tu web",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "cinco-senales-ux-perder-clientes",
+        "title": "Cinco señales de UX que hacen perder clientes en una página web",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "presencia-vs-estrategia-web-invends",
+        "title": "Presencia digital vs estrategia: cuándo tu web deja de ser un adorno",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "auditoria-digital-empresas",
+        "title": "Auditoría digital para empresas: cómo identificar oportunidades de mejora en tu presencia online",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "de-publicar-a-estrategia-contenidos",
+        "title": "Cómo pasar de publicar en redes sociales a construir una estrategia de contenidos",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "arquitectura-informacion-web",
+        "title": "Arquitectura de información: cómo organizar una página web para mejorar la experiencia de usuario",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "trafico-a-conversion-recorrido",
+        "title": "Del tráfico a la conversión: cómo construir un recorrido digital coherente",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "planificar-web-antes-del-desarrollo",
+        "title": "Cómo planificar una página web empresarial antes de comenzar su desarrollo",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "errores-ux-rendimiento-web",
+        "title": "Los errores de experiencia de usuario que pueden afectar el rendimiento de una página web",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "que-debe-hacer-una-pagina-web",
+        "title": "¿Qué debe hacer realmente una página web para aportar valor a un negocio?",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "plazo-sale-del-alcance",
+        "title": "El plazo sale del alcance: cómo definir una fase (y un MVP)",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "modernizar-sin-apagar",
+        "title": "Modernizar sin apagar el negocio: migración por fases",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "antes-de-automatizar-mapa",
+        "title": "Antes de automatizar: mapa, conexión y control",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "desarrollo-como-experiencia",
+        "title": "Que se sostenga el día que llega gente: desarrollo como experiencia",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "continuidad-anuncio-pagina",
+        "title": "Cuando el anuncio y la página no dicen lo mismo",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "auditar-pantalla-objetivo",
+        "title": "Si no acerca al objetivo, sobra: cómo auditar una pantalla",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      },
+      {
+        "slug": "brief-antes-que-pixeles-guia",
+        "title": "Brief antes que píxeles: qué decidir antes de diseñar",
+        "source": "app/utils/blogPostsFromSocial.ts"
+      }
+    ],
+    "draftFiles": [
+      "continuidad-anuncio-landing.md",
+      "diseno-web-empresas-bogota.md",
+      "elegir-agencia-diseno-web.md",
+      "errores-ux-movil-empresas.md",
+      "identidad-visual-aplicable.md",
+      "modernizar-legacy.md",
+      "plantilla-vs-desarrollo.md",
+      "rendimiento-web-negocio.md"
+    ]
+  },
+  "spotChecks": [
+    {
+      "path": "/",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+      "status": 200,
+      "ok": true,
+      "ms": 288,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/sitemap.xml",
+      "status": 200,
+      "ok": true,
+      "ms": 88,
+      "location": null,
+      "bodySnippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://invends.com/</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/sobre-nosotros</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/servicios</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/portafolio</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/blog</loc>\n  </url"
+    },
+    {
+      "path": "/robots.txt",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/robots.txt",
+      "status": 200,
+      "ok": true,
+      "ms": 107,
+      "location": null,
+      "bodySnippet": "User-agent: *\nAllow: /\n\n# Legacy / thin utility routes\nDisallow: /glosario\nDisallow: /blogs-trespi\nDisallow: /work\nDisallow: /services\nDisallow: /press\nDisallow: /team\nDisallow: /policy\nDisallow: /contact\n\nSitemap: https://invends.com/sitemap.xml\n"
+    },
+    {
+      "path": "/servicios",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios",
+      "status": 200,
+      "ok": true,
+      "ms": 86,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/blog",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/blog",
+      "status": 200,
+      "ok": true,
+      "ms": 94,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/contacto",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/contacto",
+      "status": 200,
+      "ok": true,
+      "ms": 87,
+      "location": null,
+      "bodySnippet": ""
+    }
+  ],
+  "gsc": {
+    "available": false,
+    "reason": "missing_credentials",
+    "setup": "docs/seo/INTEGRATIONS_SETUP.md#google-search-console"
+  },
+  "ga4": {
+    "available": false,
+    "reason": "missing_credentials",
+    "setup": "docs/seo/INTEGRATIONS_SETUP.md#google-analytics-4"
+  },
+  "previous": {
+    "daily": {
+      "id": "daily-2026-11-04T16-31-53-688Z",
+      "health": {
+        "score": 100,
+        "label": "healthy",
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "total": 0
+      }
+    },
+    "weekly": {
+      "id": "weekly-2026-11-04T16-32-07-629Z",
+      "health": {
+        "score": 95,
+        "label": "watch",
+        "critical": 0,
+        "high": 0,
+        "medium": 1,
+        "total": 1
+      }
+    }
+  },
+  "strategicPlan": {
+    "northStar": "Ser hallazgo orgánico relevante para quien busca diseño/desarrollo/marketing digital con criterio en Bogotá/LATAM.",
+    "next30Days": [
+      "Conectar DNS canónico invends.com → Vercel y verificar GSC",
+      "Activar GA4 + eventos de contacto/WhatsApp",
+      "Publicar 1–2 borradores del backlog tras revisión humana",
+      "Completar perfiles sociales reales (sameAs)"
+    ],
+    "next90Days": [
+      "Iterar titles con CTR real de GSC",
+      "Ampliar cluster ecommerce + branding con contenido diferenciado",
+      "Medir CWV de campo (CrUX) cuando haya tráfico suficiente",
+      "Autoridad: 2–3 menciones/directorios legítimos, cero spam"
+    ],
+    "antiPatterns": [
+      "No generar decenas de artículos cortos",
+      "No páginas de ciudad sin oferta real",
+      "No reseñas ni métricas inventadas",
+      "No cambiar URLs indexadas sin redirecciones"
+    ]
+  },
+  "findings": [
+    {
+      "code": "ctr.opportunity",
+      "message": "Sin Search Console: el plan mensual no puede medir impresiones reales",
+      "path": "/docs/seo/INTEGRATIONS_SETUP.md",
+      "severity": "medium",
+      "priority": 3,
+      "actions": [
+        {
+          "type": "opportunity.log",
+          "risk": "none"
+        }
+      ]
+    }
+  ],
+  "health": {
+    "score": 95,
+    "label": "watch",
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "total": 1
+  }
+}

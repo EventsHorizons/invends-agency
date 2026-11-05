@@ -4,10 +4,90 @@ import type { BlogPost } from "./blogTypes";
 export const BLOG_POSTS: BlogPost[] = [
   ...BLOG_POSTS_FROM_SOCIAL,
   {
+    slug: "como-elegir-agencia-diseno-web",
+    title: "Cómo elegir una agencia de diseño web sin pagar dos veces",
+    excerpt:
+      "Antes de firmar: qué pedir en el brief, cómo leer una propuesta y señales de que podrías terminar pagando el mismo sitio dos veces.",
+    category: "Diseño web",
+    date: "4 Nov 2026",
+    image: "/images/blog/cinco-preguntas-antes-de-disenar-web.webp",
+    readTime: "9 min",
+    content: [
+      "Elegir agencia no es comparar moodboards. Es decidir quién va a sostener el mensaje, el código y el siguiente paso del negocio.",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "La mayoría de proyectos web caros no fallan por “falta de creatividad”. Fallan porque el alcance nunca se escribió, porque nadie definió qué decisión debe tomar el visitante, o porque diseño y desarrollo se contrataron como piezas sueltas que no se hablan.",
+      },
+      {
+        type: "p",
+        text: "Esta guía resume criterios que usamos en Invends —y que puedes exigir a cualquier estudio— antes de firmar. Sin rankings inventados ni promesas de primera página.",
+      },
+      { type: "h2", text: "1. Empieza por el problema, no por la plantilla" },
+      {
+        type: "p",
+        text: "Si la primera reunión es un tour de tipografías y no una conversación sobre a quién le hablas, qué objeciones repiten y qué contacto esperas, estás comprando decoración. Un brief mínimo evita pagar el mismo sitio dos veces.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Qué debe lograr el sitio en 6–12 meses",
+          "Quién decide y quién usa la web día a día",
+          "Qué páginas son críticas (inicio, servicio, contacto, landing)",
+          "Qué queda fuera de esta fase",
+        ],
+      },
+      { type: "h2", text: "2. Señales de que vas a pagar dos veces" },
+      {
+        type: "ol",
+        items: [
+          "El presupuesto es un paquete cerrado sin lista de entregables",
+          "No hay responsable de contenido ni de formularios/medición",
+          "El diseño se aprueba en PDF y el desarrollo “se ve después”",
+          "Prometen posiciones en Google sin auditoría ni acceso a Search Console",
+          "El contrato no contempla mantenimiento ni handoff",
+        ],
+      },
+      { type: "h2", text: "3. Qué pedir en la propuesta" },
+      {
+        type: "p",
+        text: "Alcance por fases, supuestos, exclusiones, criterios de aceptación y un recorrido de aprobación. Si solo recibes un moodboard y una fecha, no tienes propuesta: tienes un deseo.",
+      },
+      {
+        type: "p",
+        text: "En diseño web, exige arquitectura de información, comportamiento responsive y un sistema de componentes. En desarrollo, pregunta por rendimiento, accesibilidad básica y cómo se publican cambios. Si también necesitas campañas, pide continuidad entre mensaje, landing y medición —no “posts sueltos”.",
+      },
+      { type: "h2", text: "4. Cómo encaja Invends" },
+      {
+        type: "p",
+        text: "Trabajamos diseño web, desarrollo y marketing con un solo criterio: que la marca se entienda, se sostenga y se elija. No inventamos clientes ni métricas para cerrar. Si hay fit, respondemos con alcance; si no, lo decimos.",
+      },
+      {
+        type: "p",
+        text: "Puedes revisar el servicio de diseño web, el hub de soluciones o escribir a hola@invends.com con el objetivo del proyecto.",
+      },
+      { type: "h2", text: "5. Preguntas útiles antes de contratar" },
+      {
+        type: "ul",
+        items: [
+          "¿Quién escribe y aprueba los textos?",
+          "¿El formulario llega a un inbox real y se mide?",
+          "¿Qué pasa el mes después del lanzamiento?",
+          "¿Cómo se documenta el handoff (accesos, componentes, estilos)?",
+        ],
+      },
+      {
+        type: "quote",
+        text: "Si no puedes explicar en una frase qué debe lograr la web, todavía no estás listo para comparar agencias: estás listo para un brief.",
+      },
+    ],
+  },
+  {
     slug: "por-que-tu-sitio-no-convierte",
     title: "Por qué tu sitio no convierte (aunque se vea bien)",
     excerpt:
-      "La estética no basta. Revisamos fricciones de mensaje, jerarquía y llamado a la acción.",
+      "Si la web se ve bien pero no genera contactos, suele fallar el mensaje, la jerarquía o el llamado a la acción —no la “falta de efectos”.",
     category: "Diseño web",
     date: "12 Mar 2026",
     image: "/images/blog/por-que-tu-sitio-no-convierte.webp",
@@ -22,7 +102,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "brief-antes-que-pixeles",
     title: "Brief antes que píxeles: el orden que evita rehacer todo",
     excerpt:
-      "Abrir el diseño sin decisiones de negocio es la forma más cara de avanzar.",
+      "Abrir Figma sin decisiones de negocio suele salir caro. El brief define qué se diseña —y qué se deja fuera, con tranquilidad.",
     category: "Método",
     date: "28 Feb 2026",
     image: "/images/blog/brief-antes-que-pixeles.webp",
@@ -37,7 +117,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "contenido-que-vende-sin-gritar",
     title: "Contenido que vende sin gritar",
     excerpt:
-      "Cómo escribir para marcas de servicios cuando el tono corporativo no convence.",
+      "Cómo escribir textos de servicios que nombren la oferta, muestren criterio e indiquen el siguiente paso —sin frases vacías ni promesas infladas.",
     category: "Marketing digital",
     date: "10 Feb 2026",
     image: "/images/blog/contenido-que-vende-sin-gritar.webp",
@@ -52,7 +132,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "desarrollo-como-parte-del-diseno",
     title: "El desarrollo también es parte de la experiencia",
     excerpt:
-      "Rendimiento, estados y semántica no son detalles técnicos: el usuario los percibe.",
+      "Rendimiento, estados y semántica no son “detalles técnicos”: quien visita los siente como confianza o como fricción.",
     category: "Desarrollo web",
     date: "22 Ene 2026",
     image: "/images/blog/desarrollo-como-parte-del-diseno.webp",
@@ -67,7 +147,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "tres-oficios-una-direccion",
     title: "Diseño, desarrollo y marketing en un solo proyecto",
     excerpt:
-      "Tres servicios distintos. Un mismo brief. Así evitamos piezas sueltas que no se hablan entre sí.",
+      "Cuando diseño, desarrollo y marketing comparten un mismo brief, el logo, la web y la campaña dejan de pelearse entre sí.",
     category: "Agencia",
     date: "5 Ene 2026",
     image: "/images/blog/tres-oficios-una-direccion.webp",

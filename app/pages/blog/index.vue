@@ -14,8 +14,8 @@ usePageSeo({
       : "Blog | Diseño web, UX y estrategia digital — Invends",
   description: () =>
     isEn.value
-      ? "Articles on web design, development, UX and digital marketing: decisions that avoid redoing the work."
-      : "Artículos sobre diseño web, desarrollo, UX y marketing digital: decisiones que evitan rehacer el trabajo.",
+      ? "Ideas on web design, UX and digital strategy—written to help you decide with more calm and clarity."
+      : "Ideas sobre diseño web, UX y estrategia digital —escritas para ayudarte a decidir con más calma y claridad.",
   path: () => (isEn.value ? "/en/blog" : "/blog"),
   locale: () => locale.value,
 });
@@ -41,14 +41,14 @@ function setCategory(cat: string | null) {
       <div class="td-container">
         <p class="td-eyebrow">Blog</p>
         <h1>
-          {{ isEn ? "Judgment to decide better in" : "Criterio para decidir mejor en" }}
+          {{ isEn ? "Notes on" : "Notas sobre" }}
           <span class="td-accent">{{ isEn ? "digital" : "digital" }}</span>.
         </h1>
         <p class="lead td-muted">
           {{
             isEn
-              ? "Articles on design, development and marketing: decisions that avoid redoing the work."
-              : "Artículos sobre diseño, desarrollo y marketing: decisiones que evitan rehacer el trabajo."
+              ? "Design, development and marketing—written to help you decide."
+              : "Diseño, desarrollo y marketing —para decidir con más criterio."
           }}
         </p>
       </div>
@@ -143,12 +143,16 @@ function setCategory(cat: string | null) {
         </p>
 
         <aside class="blog-cta">
-          <h2>¿Quieres aplicar estas ideas a un proyecto?</h2>
+          <h2>{{ isEn ? "A project in mind?" : "¿Un proyecto en mente?" }}</h2>
           <p class="td-muted">
-            Te respondemos con alcance concreto —diseño, desarrollo o marketing.
+            {{
+              isEn
+                ? "We reply with clear scope—design, development or marketing."
+                : "Respondemos con alcance claro —diseño, desarrollo o marketing."
+            }}
           </p>
-          <NuxtLink class="td-btn" to="/contacto#contacto-form">
-            Ir a contacto
+          <NuxtLink class="td-btn" :to="`${localePath('/contacto')}#contacto-form`">
+            {{ isEn ? "Contact" : "Contacto" }}
           </NuxtLink>
         </aside>
       </div>

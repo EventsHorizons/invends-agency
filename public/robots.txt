@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
 
-# Legacy / thin utility routes
+# Internal / thin / legacy
+Disallow: /admin
+Disallow: /admin/
 Disallow: /glosario
 Disallow: /blogs-trespi
 Disallow: /work

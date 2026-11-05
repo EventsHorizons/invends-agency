@@ -1,0 +1,43 @@
+name: SEO Engine — Monthly
+
+on:
+  schedule:
+    # 1st of month 14:00 UTC
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+concurrency:
+  group: seo-monthly
+  cancel-in-progress: false
+
+jobs:
+  monthly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run monthly SEO engine
+        env:
+          SEO_SITE_URL: ${{ vars.SEO_SITE_URL }}
+          SEO_FALLBACK_SITE_URL: ${{ vars.SEO_FALLBACK_SITE_URL }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/seo-engine/run.mjs monthly
+        continue-on-error: true
+      - name: Upload monthly audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-monthly-${{ github.run_id }}
+          path: |
+            docs/seo/reports/monthly-*.json
+            docs/seo/reports/monthly-*.md
+            data/seo/latest-monthly.json
+            data/seo/state.json
+          if-no-files-found: warn

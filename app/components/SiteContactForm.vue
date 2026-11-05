@@ -120,6 +120,11 @@ async function onSubmit(e: Event) {
       },
     });
     status.value = "ok";
+    try {
+      useAnalytics().trackContactSubmit(activeLocale.value);
+    } catch {
+      /* analytics optional */
+    }
     form.reset();
     services.value = [];
     budget.value = "";

@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-11-04T16:32:10.245Z",
+  "proposed": [
+    {
+      "id": "elegir-agencia-diseno-web",
+      "title": "Cómo elegir una agencia de diseño web sin pagar dos veces",
+      "keyword": "cómo elegir agencia diseño web",
+      "intent": "comercial",
+      "service": "diseno-web",
+      "priority": 1,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\elegir-agencia-diseno-web.md",
+      "created": true
+    },
+    {
+      "id": "errores-ux-movil-empresas",
+      "title": "Errores de UX que hacen perder clientes en móvil",
+      "keyword": "errores UX web empresas",
+      "intent": "informativa",
+      "service": "diseno-web",
+      "priority": 2,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\errores-ux-movil-empresas.md",
+      "created": true
+    },
+    {
+      "id": "plantilla-vs-desarrollo",
+      "title": "Cuándo basta una plantilla y cuándo necesitas desarrollo a medida",
+      "keyword": "desarrollo web vs plantilla",
+      "intent": "comercial",
+      "service": "desarrollo-web",
+      "priority": 3,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\plantilla-vs-desarrollo.md",
+      "created": true
+    },
+    {
+      "id": "diseno-web-empresas-bogota",
+      "title": "Diseño web para empresas en Bogotá: qué exigir",
+      "keyword": "diseño web empresas Bogotá",
+      "intent": "local",
+      "service": "diseno-web",
+      "priority": 4,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\diseno-web-empresas-bogota.md",
+      "created": true
+    },
+    {
+      "id": "continuidad-anuncio-landing",
+      "title": "Por qué tu anuncio y tu landing deben decir lo mismo",
+      "keyword": "continuidad anuncio landing",
+      "intent": "informativa",
+      "service": "marketing-digital",
+      "priority": 5,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\continuidad-anuncio-landing.md",
+      "created": true
+    },
+    {
+      "id": "identidad-visual-aplicable",
+      "title": "Identidad visual que el equipo puede usar de verdad",
+      "keyword": "identidad visual aplicable",
+      "intent": "comercial",
+      "service": "branding",
+      "priority": 6,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\identidad-visual-aplicable.md",
+      "created": true
+    },
+    {
+      "id": "modernizar-legacy",
+      "title": "Cómo modernizar un sitio legacy sin detener el negocio",
+      "keyword": "modernizar web sin apagar",
+      "intent": "comercial",
+      "service": "migracion-legacy",
+      "priority": 7,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\modernizar-legacy.md",
+      "created": true
+    },
+    {
+      "id": "rendimiento-web-negocio",
+      "title": "Rendimiento web que el negocio sí nota",
+      "keyword": "rendimiento web negocio",
+      "intent": "informativa",
+      "service": "desarrollo-web",
+      "priority": 8,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\rendimiento-web-negocio.md",
+      "created": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: SEO Engine — Daily
+
+on:
+  schedule:
+    # 12:00 UTC ≈ 07:00 Colombia (COT)
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: seo-daily
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run daily SEO engine
+        env:
+          SEO_SITE_URL: ${{ vars.SEO_SITE_URL }}
+          SEO_FALLBACK_SITE_URL: ${{ vars.SEO_FALLBACK_SITE_URL }}
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+        run: node scripts/seo-engine/run.mjs daily
+        continue-on-error: true
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-daily-${{ github.run_id }}
+          path: |
+            docs/seo/reports/daily-*.json
+            docs/seo/reports/daily-*.md
+            data/seo/latest-daily.json
+            data/seo/state.json
+            data/seo/run-log.jsonl
+          if-no-files-found: warn

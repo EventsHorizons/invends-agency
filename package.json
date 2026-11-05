@@ -8,7 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "social:ig": "node scripts/render-instagram.mjs"
+    "social:ig": "node scripts/render-instagram.mjs",
+    "seo:daily": "node scripts/seo-engine/run.mjs daily",
+    "seo:weekly": "node scripts/seo-engine/run.mjs weekly",
+    "seo:monthly": "node scripts/seo-engine/run.mjs monthly",
+    "seo:all": "node scripts/seo-engine/run.mjs all"
   },
   "dependencies": {
     "gsap": "^3.15.0",

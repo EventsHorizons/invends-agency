@@ -1,0 +1,172 @@
+{
+  "id": "daily-2026-11-04T16-31-53-688Z",
+  "type": "daily",
+  "startedAt": "2026-11-04T16:31:53.683Z",
+  "finishedAt": "2026-11-04T16:32:02.644Z",
+  "base": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+  "resolved": {
+    "base": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+    "status": 200,
+    "source": "fallback"
+  },
+  "health": {
+    "score": 100,
+    "label": "healthy",
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "total": 0
+  },
+  "homeMeta": {
+    "ok": true,
+    "status": 200,
+    "robots": "index,follow",
+    "canonical": "https://invends.com",
+    "title": "Invends — Agencia de diseño web, desarrollo y marketing en Bogotá",
+    "noindex": false
+  },
+  "robots": {
+    "ok": true,
+    "status": 200,
+    "disallowAll": false,
+    "hasSitemap": true
+  },
+  "sitemap": {
+    "ok": true,
+    "status": 200,
+    "count": 70
+  },
+  "pageChecks": [
+    {
+      "path": "/",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+      "status": 200,
+      "ok": true,
+      "ms": 257,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios",
+      "status": 200,
+      "ok": true,
+      "ms": 147,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/diseno-web",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/diseno-web",
+      "status": 200,
+      "ok": true,
+      "ms": 908,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/desarrollo-web",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/desarrollo-web",
+      "status": 200,
+      "ok": true,
+      "ms": 144,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/ecommerce",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/ecommerce",
+      "status": 200,
+      "ok": true,
+      "ms": 158,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/branding",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/branding",
+      "status": 200,
+      "ok": true,
+      "ms": 135,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/marketing-digital",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/marketing-digital",
+      "status": 200,
+      "ok": true,
+      "ms": 142,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/seo",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/seo",
+      "status": 200,
+      "ok": true,
+      "ms": 113,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/sobre-nosotros",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/sobre-nosotros",
+      "status": 200,
+      "ok": true,
+      "ms": 121,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/portafolio",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/portafolio",
+      "status": 200,
+      "ok": true,
+      "ms": 151,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/blog",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/blog",
+      "status": 200,
+      "ok": true,
+      "ms": 143,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/contacto",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/contacto",
+      "status": 200,
+      "ok": true,
+      "ms": 138,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/robots.txt",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/robots.txt",
+      "status": 200,
+      "ok": true,
+      "ms": 112,
+      "location": null,
+      "bodySnippet": "User-agent: *\nAllow: /\n\n# Legacy / thin utility routes\nDisallow: /glosario\nDisallow: /blogs-trespi\nDisallow: /work\nDisallow: /services\nDisallow: /press\nDisallow: /team\nDisallow: /policy\nDisallow: /contact\n\nSitemap: https://invends.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/sitemap.xml",
+      "status": 200,
+      "ok": true,
+      "ms": 128,
+      "location": null,
+      "bodySnippet": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url>\n    <loc>https://invends.com/</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/sobre-nosotros</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/servicios</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/portafolio</loc>\n  </url>\n  <url>\n    <loc>https://invends.com/blog</loc>\n  </url"
+    }
+  ],
+  "brokenLinks": [],
+  "findings": [],
+  "actions": [],
+  "dataSource": "live-http",
+  "note": "Sin GSC/GA4 en este informe salvo que existan credenciales (ver weekly)."
+}

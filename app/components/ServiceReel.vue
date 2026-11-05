@@ -49,7 +49,7 @@ const resolvedIntroCta = computed(
 const resolvedCta = computed(
   () =>
     props.ctaLabel ??
-    (isEn.value ? "Request information" : "Solicitar información"),
+    (isEn.value ? "Ask about this" : "Consultar"),
 );
 const resolvedCtaTo = computed(
   () => props.ctaTo ?? localePath("/contacto"),

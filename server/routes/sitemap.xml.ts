@@ -1,9 +1,25 @@
-import { BLOG_POSTS } from "~/utils/blogData";
-import { PROJECTS, SERVICE_CATEGORIES } from "~/utils/siteData";
 import { DEFAULT_SITE_URL } from "~/utils/seo";
+import { listSitemapPaths } from "../utils/seoCatalog";
 
 function abs(site: string, path: string) {
   return `${site}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+function priorityFor(path: string): string {
+  if (path === "/" || path === "/en") return "1.0";
+  if (path.startsWith("/servicios/") || path.startsWith("/en/servicios/"))
+    return "0.9";
+  if (path === "/servicios" || path === "/en/servicios") return "0.85";
+  if (path.startsWith("/blog/")) return "0.7";
+  if (path === "/blog" || path === "/contacto" || path === "/en/contacto")
+    return "0.8";
+  return "0.6";
+}
+
+function changefreqFor(path: string): string {
+  if (path === "/" || path.startsWith("/servicios")) return "weekly";
+  if (path.startsWith("/blog")) return "weekly";
+  return "monthly";
 }
 
 export default defineEventHandler((event) => {
@@ -12,41 +28,8 @@ export default defineEventHandler((event) => {
     /\/$/,
     "",
   );
-
-  const staticEs = [
-    "/",
-    "/sobre-nosotros",
-    "/servicios",
-    "/portafolio",
-    "/blog",
-    "/contacto",
-    "/politicas-de-privacidad",
-    "/about-us/equipo",
-  ];
-  const staticEn = [
-    "/en",
-    "/en/sobre-nosotros",
-    "/en/servicios",
-    "/en/portafolio",
-    "/en/blog",
-    "/en/contacto",
-    "/en/politicas-de-privacidad",
-    "/en/about-us/equipo",
-  ];
-
-  const serviceEs = SERVICE_CATEGORIES.map((s) => `/servicios/${s.anchor}`);
-  const serviceEn = SERVICE_CATEGORIES.map((s) => `/en/servicios/${s.anchor}`);
-  const projects = PROJECTS.map((p) => `/portafolio/${p.slug}`);
-  const posts = BLOG_POSTS.map((p) => `/blog/${p.slug}`);
-
-  const urls = [
-    ...staticEs,
-    ...staticEn,
-    ...serviceEs,
-    ...serviceEn,
-    ...projects,
-    ...posts,
-  ];
+  const lastmod = new Date().toISOString().slice(0, 10);
+  const urls = listSitemapPaths();
 
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -54,6 +37,9 @@ ${urls
   .map(
     (path) => `  <url>
     <loc>${abs(site, path)}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreqFor(path)}</changefreq>
+    <priority>${priorityFor(path)}</priority>
   </url>`,
   )
   .join("\n")}

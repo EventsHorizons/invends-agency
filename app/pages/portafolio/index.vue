@@ -16,15 +16,14 @@ const copy = computed(() =>
     ? {
         title: "Work samples | Invends",
         description:
-          "Conceptual method samples from Invends: design, development and marketing aligned. Not published client case studies.",
-        eyebrow: "Work · Method samples",
-        h1Before: "Ideas that become",
-        h1Accent: "real experiences",
-        lead: "Conceptual method pieces: they show how we approach design, development and marketing. These are not published client case studies.",
-        bandTitle: "Method visible on screen.",
-        bandBody:
-          "Each sample is best read as a digital product: hierarchy, journey and real use.",
-        bandCta: "Talk about a project",
+          "Method samples from Invends. Conceptual pieces—not published client case studies.",
+        eyebrow: "Work",
+        h1Before: "Method",
+        h1Accent: "samples",
+        lead: "Conceptual pieces on hierarchy, journey and use. Not client case studies.",
+        bandTitle: "Your project?",
+        bandBody: "Tell us the idea. We reply with scope.",
+        bandCta: "Start a project",
         empty: "No samples in this category.",
         filters: [
           { id: "todos", label: "All" },
@@ -35,17 +34,16 @@ const copy = computed(() =>
         ] as const,
       }
     : {
-        title: "Proyectos y muestras de método | Invends",
+        title: "Proyectos | Invends",
         description:
-          "Muestras conceptuales de método de Invends: diseño, desarrollo y marketing alineados. No son casos de cliente publicados.",
-        eyebrow: "Proyectos · Muestras de enfoque",
-        h1Before: "Ideas que se convierten en",
-        h1Accent: "experiencias reales",
-        lead: "Piezas conceptuales de método: ilustran cómo abordamos diseño, desarrollo y marketing. No son casos de cliente publicados.",
-        bandTitle: "Método visible en pantalla.",
-        bandBody:
-          "Cada muestra se entiende mejor como producto digital: jerarquía, recorrido y uso real.",
-        bandCta: "Hablar de un proyecto",
+          "Muestras de método de Invends. Piezas conceptuales —no casos de cliente publicados.",
+        eyebrow: "Proyectos",
+        h1Before: "Muestras de",
+        h1Accent: "método",
+        lead: "Piezas conceptuales sobre jerarquía, recorrido y uso. No son casos de cliente.",
+        bandTitle: "¿Tu proyecto?",
+        bandBody: "Cuéntanos la idea. Respondemos con alcance.",
+        bandCta: "Empezar proyecto",
         empty: "No hay muestras en esta categoría.",
         filters: PROJECT_FILTERS,
       },
@@ -81,16 +79,6 @@ const filtered = computed(() =>
       </div>
     </header>
 
-    <section class="td-section band">
-      <div class="td-container">
-        <h2>{{ copy.bandTitle }}</h2>
-        <p class="td-muted">{{ copy.bandBody }}</p>
-        <NuxtLink class="td-btn" :to="localePath('/contacto')">
-          {{ copy.bandCta }}
-        </NuxtLink>
-      </div>
-    </section>
-
     <section class="td-section">
       <div class="td-container">
         <div
@@ -124,9 +112,10 @@ const filtered = computed(() =>
 
     <section class="td-section band">
       <div class="td-container">
-        <h2>{{ isEn ? "Got a project in mind?" : "¿Tienes un proyecto en mente?" }}</h2>
+        <h2>{{ copy.bandTitle }}</h2>
+        <p class="td-muted band-body">{{ copy.bandBody }}</p>
         <NuxtLink class="td-btn" :to="`${localePath('/contacto')}#contacto-form`">
-          {{ isEn ? "Talk to Invends" : "Hablar con Invends" }}
+          {{ copy.bandCta }}
         </NuxtLink>
       </div>
     </section>
@@ -179,7 +168,11 @@ h1 {
   font-size: 1.15rem;
 }
 .band h2 {
-  max-width: 18ch;
+  max-width: 22ch;
+}
+.band-body {
+  max-width: 36rem;
+  margin-top: 0.75rem;
 }
 .band .td-btn {
   margin-top: 1.25rem;

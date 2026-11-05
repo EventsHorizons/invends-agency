@@ -8,29 +8,29 @@ const showPhone = hasRealPhone();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Contact Invends | Bogotá / LATAM",
+        title: "Contact Invends",
         description:
-          "Tell us about your web design, development or digital marketing project. Email hola@invends.com — Invends replies with clear scope.",
-        eyebrow: "Contact · Bogotá / LATAM",
-        h1Before: "Let's talk about what your brand",
-        h1Accent: "needs",
-        sub: "Design, development or marketing: tell us the goal and we’ll reply with clear scope.",
-        formTitle: "Fill in the form and we’ll get back to you.",
+          "Contact Invends for web design, development or digital marketing. hola@invends.com",
+        eyebrow: "Contact",
+        h1Before: "Tell us",
+        h1Accent: "the need",
+        sub: "Idea, doubt or project. We reply with scope: what’s in and what waits.",
+        formTitle: "Your project",
         formDescription:
-          "Share the service, the engagement type and a valid contact. That lets us reply with real scope—without unnecessary back-and-forth.",
+          "Pick the closest service, leave a contact, add a few lines if you want.",
         phone: "Phone",
       }
     : {
-        title: "Contacto Invends | Bogotá / LATAM",
+        title: "Contacto Invends",
         description:
-          "Cuéntanos tu proyecto de diseño web, desarrollo o marketing digital. Email hola@invends.com — Invends responde con alcance claro.",
-        eyebrow: "Contacto · Bogotá / LATAM",
-        h1Before: "Hablemos de lo que tu marca",
-        h1Accent: "necesita",
-        sub: "Diseño, desarrollo o marketing: cuéntanos el objetivo y te respondemos con alcance claro.",
-        formTitle: "Completa el formulario y te contactamos.",
+          "Contacto Invends para diseño web, desarrollo o marketing digital. hola@invends.com",
+        eyebrow: "Contacto",
+        h1Before: "Cuéntanos",
+        h1Accent: "la necesidad",
+        sub: "Idea, duda o proyecto. Respondemos con alcance: qué entra y qué espera.",
+        formTitle: "Tu proyecto",
         formDescription:
-          "Indica el servicio, la modalidad y un contacto válido. Con eso podemos responder con alcance real —sin rondas de ida y vuelta innecesarias.",
+          "Elige el servicio más cercano, deja un contacto y, si quieres, unas líneas.",
         phone: "Teléfono",
       },
 );

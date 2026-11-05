@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-11-04T16:32:10.246Z",
+  "policy": "Solo oportunidades legítimas. Prohibido PBN, spam, reseñas falsas.",
+  "items": [
+    {
+      "type": "directory",
+      "name": "Clutch (agencia Colombia)",
+      "url": "https://clutch.co/",
+      "note": "Perfil solo con datos verificables; sin reseñas inventadas.",
+      "status": "manual"
+    },
+    {
+      "type": "directory",
+      "name": "Sortlist / similar B2B",
+      "url": "https://www.sortlist.com/",
+      "note": "Alta solo si Invends puede sostener el perfil con servicios reales.",
+      "status": "manual"
+    },
+    {
+      "type": "publisher",
+      "name": "Medios / blogs de negocio Colombia",
+      "note": "Pitch de artículo experto (UX, conversión, arquitectura) — no guest-post spam.",
+      "status": "research"
+    },
+    {
+      "type": "entity",
+      "name": "Perfiles sociales reales",
+      "note": "Sustituir URLs raíz en CONTACT_INFO por perfiles verificados → schema sameAs.",
+      "status": "blocked_missing_urls"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "id": "weekly-2026-11-04T16-32-07-629Z",
+  "type": "weekly",
+  "startedAt": "2026-11-04T16:32:07.628Z",
+  "finishedAt": "2026-11-04T16:32:10.249Z",
+  "base": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app",
+  "integrations": {
+    "pagespeed": false,
+    "gsc": false,
+    "ga4": false,
+    "bing": false,
+    "siteUrl": "https://invends.com"
+  },
+  "serviceChecks": [
+    {
+      "path": "/servicios/diseno-web",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/diseno-web",
+      "status": 200,
+      "ok": true,
+      "ms": 298,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/branding",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/branding",
+      "status": 200,
+      "ok": true,
+      "ms": 128,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/desarrollo-web",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/desarrollo-web",
+      "status": 200,
+      "ok": true,
+      "ms": 114,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/desarrollo-apps",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/desarrollo-apps",
+      "status": 200,
+      "ok": true,
+      "ms": 115,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/ecommerce",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/ecommerce",
+      "status": 200,
+      "ok": true,
+      "ms": 119,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/seo",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/seo",
+      "status": 200,
+      "ok": true,
+      "ms": 131,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/marketing-digital",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/marketing-digital",
+      "status": 200,
+      "ok": true,
+      "ms": 139,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/inteligencia-artificial",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/inteligencia-artificial",
+      "status": 200,
+      "ok": true,
+      "ms": 132,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/automatizacion",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/automatizacion",
+      "status": 200,
+      "ok": true,
+      "ms": 133,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/migracion-legacy",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/migracion-legacy",
+      "status": 200,
+      "ok": true,
+      "ms": 111,
+      "location": null,
+      "bodySnippet": ""
+    },
+    {
+      "path": "/servicios/mvp-rapido",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/mvp-rapido",
+      "status": 200,
+      "ok": true,
+      "ms": 115,
+      "location": null,
+      "bodySnippet": ""
+    }
+  ],
+  "psi": [
+    {
+      "available": false,
+      "status": 429,
+      "error": "PSI HTTP 429",
+      "strategy": "mobile",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app"
+    },
+    {
+      "available": false,
+      "status": 429,
+      "error": "PSI HTTP 429",
+      "strategy": "desktop",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app"
+    },
+    {
+      "available": false,
+      "status": 429,
+      "error": "PSI HTTP 429",
+      "strategy": "mobile",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/diseno-web"
+    },
+    {
+      "available": false,
+      "status": 429,
+      "error": "PSI HTTP 429",
+      "strategy": "desktop",
+      "url": "https://invends-ks882m8yg-andres-gomezs-projects-10dae035.vercel.app/servicios/diseno-web"
+    }
+  ],
+  "gsc": {
+    "available": false,
+    "reason": "missing_credentials",
+    "setup": "docs/seo/INTEGRATIONS_SETUP.md#google-search-console"
+  },
+  "ga4": {
+    "available": false,
+    "reason": "missing_credentials",
+    "setup": "docs/seo/INTEGRATIONS_SETUP.md#google-analytics-4"
+  },
+  "contentDrafts": [
+    {
+      "id": "elegir-agencia-diseno-web",
+      "title": "Cómo elegir una agencia de diseño web sin pagar dos veces",
+      "keyword": "cómo elegir agencia diseño web",
+      "intent": "comercial",
+      "service": "diseno-web",
+      "priority": 1,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\elegir-agencia-diseno-web.md",
+      "created": true
+    },
+    {
+      "id": "errores-ux-movil-empresas",
+      "title": "Errores de UX que hacen perder clientes en móvil",
+      "keyword": "errores UX web empresas",
+      "intent": "informativa",
+      "service": "diseno-web",
+      "priority": 2,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\errores-ux-movil-empresas.md",
+      "created": true
+    },
+    {
+      "id": "plantilla-vs-desarrollo",
+      "title": "Cuándo basta una plantilla y cuándo necesitas desarrollo a medida",
+      "keyword": "desarrollo web vs plantilla",
+      "intent": "comercial",
+      "service": "desarrollo-web",
+      "priority": 3,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\plantilla-vs-desarrollo.md",
+      "created": true
+    },
+    {
+      "id": "diseno-web-empresas-bogota",
+      "title": "Diseño web para empresas en Bogotá: qué exigir",
+      "keyword": "diseño web empresas Bogotá",
+      "intent": "local",
+      "service": "diseno-web",
+      "priority": 4,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\diseno-web-empresas-bogota.md",
+      "created": true
+    },
+    {
+      "id": "continuidad-anuncio-landing",
+      "title": "Por qué tu anuncio y tu landing deben decir lo mismo",
+      "keyword": "continuidad anuncio landing",
+      "intent": "informativa",
+      "service": "marketing-digital",
+      "priority": 5,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\continuidad-anuncio-landing.md",
+      "created": true
+    },
+    {
+      "id": "identidad-visual-aplicable",
+      "title": "Identidad visual que el equipo puede usar de verdad",
+      "keyword": "identidad visual aplicable",
+      "intent": "comercial",
+      "service": "branding",
+      "priority": 6,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\identidad-visual-aplicable.md",
+      "created": true
+    },
+    {
+      "id": "modernizar-legacy",
+      "title": "Cómo modernizar un sitio legacy sin detener el negocio",
+      "keyword": "modernizar web sin apagar",
+      "intent": "comercial",
+      "service": "migracion-legacy",
+      "priority": 7,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\modernizar-legacy.md",
+      "created": true
+    },
+    {
+      "id": "rendimiento-web-negocio",
+      "title": "Rendimiento web que el negocio sí nota",
+      "keyword": "rendimiento web negocio",
+      "intent": "informativa",
+      "service": "desarrollo-web",
+      "priority": 8,
+      "draftPath": "C:\\Users\\germa\\OneDrive\\Documents\\webs\\Invends\\content\\seo\\drafts\\rendimiento-web-negocio.md",
+      "created": true
+    }
+  ],
+  "linkOpportunities": [
+    {
+      "type": "directory",
+      "name": "Clutch (agencia Colombia)",
+      "url": "https://clutch.co/",
+      "note": "Perfil solo con datos verificables; sin reseñas inventadas.",
+      "status": "manual"
+    },
+    {
+      "type": "directory",
+      "name": "Sortlist / similar B2B",
+      "url": "https://www.sortlist.com/",
+      "note": "Alta solo si Invends puede sostener el perfil con servicios reales.",
+      "status": "manual"
+    },
+    {
+      "type": "publisher",
+      "name": "Medios / blogs de negocio Colombia",
+      "note": "Pitch de artículo experto (UX, conversión, arquitectura) — no guest-post spam.",
+      "status": "research"
+    },
+    {
+      "type": "entity",
+      "name": "Perfiles sociales reales",
+      "note": "Sustituir URLs raíz en CONTACT_INFO por perfiles verificados → schema sameAs.",
+      "status": "blocked_missing_urls"
+    }
+  ],
+  "findings": [
+    {
+      "code": "ctr.opportunity",
+      "message": "GSC no conectado — sin datos reales de impresiones/CTR esta semana",
+      "path": "/docs/seo/INTEGRATIONS_SETUP.md",
+      "severity": "medium",
+      "priority": 3,
+      "actions": [
+        {
+          "type": "opportunity.log",
+          "risk": "none"
+        }
+      ]
+    }
+  ],
+  "health": {
+    "score": 95,
+    "label": "watch",
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "total": 1
+  },
+  "dataHonesty": {
+    "rankingPositions": "unavailable",
+    "organicSessions": "unavailable",
+    "psi": "unavailable"
+  }
+}

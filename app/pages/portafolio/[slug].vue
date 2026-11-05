@@ -2,7 +2,7 @@
 import { getAdjacentProjects, getProject } from "~/utils/siteData";
 
 const route = useRoute();
-const { localePath } = useLocale();
+const { localePath, isEn } = useLocale();
 const slug = String(route.params.slug);
 const project = getProject(slug);
 if (!project) {
@@ -74,9 +74,9 @@ usePageSeo({
 
     <section class="td-section band">
       <div class="td-container">
-        <h2>¿Quieres aplicar este enfoque a tu marca?</h2>
+        <h2>{{ isEn ? "Your project?" : "¿Tu proyecto?" }}</h2>
         <NuxtLink class="td-btn" :to="`${localePath('/contacto')}#contacto-form`">
-          Solicitar conversación
+          {{ isEn ? "Start a project" : "Empezar proyecto" }}
         </NuxtLink>
       </div>
     </section>

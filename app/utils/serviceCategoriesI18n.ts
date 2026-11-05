@@ -10,30 +10,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "diseno-web",
     anchor: "diseno-web",
     title: "Web design",
-    headline: "Experiences that make choosing you easy.",
+    headline: "Web people get.",
     number: "01",
-    intro: "Sites that explain the business and work on a phone.",
+    intro:
+      "If your site doesn’t clearly explain what you do, or the message gets lost on mobile, we can help. We design so visitors know what you offer and how to reach you.",
     response:
-      "We shape hierarchy, rhythm and reading so the page explains the project without asking for effort.",
+      "We start from your business and who you speak to. Then we shape structure and interface—calmly, with judgment, without extra noise.",
     image: "/images/services/svc-diseno-web.webp",
     imageAlt: "Web layout and interface architecture as a device prototype",
     items: [
       {
         title: "Structure",
         description:
-          "Information architecture · Hierarchy and path · Responsive behavior",
+          "Page map · Message priority · Path to contact · Real responsive behavior",
       },
       {
         title: "Interface",
-        description: "Composition and type · States and focus · Reading rhythm",
+        description:
+          "Type and composition · Clear states · Visible CTAs · Frictionless reading",
       },
       {
         title: "System",
-        description: "Components · Visual tokens · Consistency across pages",
+        description:
+          "Reusable components · Brand tokens · Consistency across home, service and landing",
       },
       {
         title: "Deliverables",
-        description: "Sites and landing pages · Interface systems · Reading prototypes",
+        description:
+          "Site or landing ready for build · UI system · Navigable prototype aimed at conversion",
       },
     ],
   },
@@ -41,29 +45,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "branding",
     anchor: "branding",
     title: "Branding",
-    headline: "An identity recognized without explanations.",
+    headline: "Usable identity.",
     number: "02",
-    intro: "Name, tone and visual system for day-to-day brand use.",
+    intro:
+      "When the brand changes depending on who made the last file, it’s hard to feel recognized. We help you define voice, symbol and simple rules for everyday use—on web, proposals and social.",
     response:
-      "We define a visual and verbal language that holds on screen, paper and product.",
+      "We work with you so the identity feels yours and can be applied without reinventing it every week.",
     image: "/images/services/svc-branding.webp",
     imageAlt: "Stationery system and corporate identity in an editorial layout",
     items: [
       {
         title: "Position",
-        description: "Brand territory · Voice and judgment · What stays unsaid",
+        description:
+          "Territory and differentiation · Voice · What you promise (and what you don’t)",
       },
       {
         title: "Language",
-        description: "Symbol and type · Color and rhythm · Relationship between pieces",
+        description:
+          "Symbol and type · Color and rhythm · Relationship between graphic pieces",
       },
       {
         title: "System",
-        description: "Applicable rules · Art direction · Digital use",
+        description:
+          "Usable guidelines · Art direction · Application on web and campaigns",
       },
       {
         title: "Deliverables",
-        description: "Visual identity · Brand system · Application criteria",
+        description:
+          "Visual identity · Brand system · Usage criteria for your team",
       },
     ],
   },
@@ -71,29 +80,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "desarrollo-web",
     anchor: "desarrollo-web",
     title: "Web development",
-    headline: "A site that doesn’t just look good: it works for your business.",
+    headline: "A base that holds.",
     number: "03",
-    intro: "The site has to still stand the day people arrive.",
+    intro:
+      "Beyond “looking good”: we care that it loads well, forms get delivered, and you can change things without starting over. We build with that peace of mind.",
     response:
-      "We build an architecture that prioritizes speed, access and the ability to change without rewriting everything.",
+      "We turn design into a solid base, explain decisions in plain language, and leave the project ready to grow when you are.",
     image: "/images/services/svc-desarrollo-web.webp",
     imageAlt: "Responsive site concept: web layouts on a device",
     items: [
       {
         title: "Architecture",
-        description: "Frontend and structure · Content and data · Deploy",
+        description:
+          "Solid frontend · Editable content · Clear environments and deploy",
       },
       {
         title: "Performance",
-        description: "Weight and render · Accessibility · Measurable base",
+        description:
+          "Controlled weight · Efficient render · Basic measurable accessibility",
       },
       {
         title: "Integration",
-        description: "APIs · Forms · Existing services",
+        description:
+          "APIs · Forms · CRM, email and tools you already use",
       },
       {
         title: "Deliverables",
-        description: "Production sites · Evolving technical base · Integrations",
+        description:
+          "Production site · Technical docs · Base ready to iterate",
       },
     ],
   },
@@ -101,29 +115,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "desarrollo-apps",
     anchor: "desarrollo-apps",
     title: "Applications",
-    headline: "Products people open again.",
+    headline: "Usable product.",
     number: "04",
-    intro: "An application is a habit, not a screen.",
+    intro:
+      "If you have an idea for a tool, dashboard or internal flow, we help bring it down to something usable. We start with what’s essential—what people need to open again and again.",
     response:
-      "We define the critical paths and build them so someone can come back and open them again.",
+      "We define what’s in the first version and what can wait—so the project isn’t loaded with features you don’t need yet.",
     image: "/images/services/svc-aplicaciones.webp",
     imageAlt: "Mobile product screen with application interface",
     items: [
       {
         title: "Product",
-        description: "Scope · Critical flows · Delivery priority",
+        description:
+          "Phased scope · Critical flows · “Ready to use” criteria",
       },
       {
         title: "Experience",
-        description: "Interaction · Empty and error states · Continuity across sessions",
+        description:
+          "Clear interaction · Empty and error states · Continuity across sessions",
       },
       {
         title: "Technology",
-        description: "Data · Access · Integrations",
+        description:
+          "Data model · Roles and access · Required integrations",
       },
       {
         title: "Deliverables",
-        description: "Usable MVPs · Web apps · Dashboards and functional prototypes",
+        description:
+          "Usable app or dashboard · Functional prototype · Next-steps roadmap",
       },
     ],
   },
@@ -131,29 +150,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "ecommerce",
     anchor: "ecommerce",
     title: "E-commerce",
-    headline: "A purchase path that doesn’t break halfway.",
+    headline: "Frictionless purchase.",
     number: "05",
-    intro: "Buying is a journey. Every step can lose it.",
+    intro:
+      "We know every cart step can lose a sale. We help organize catalog, product pages and payment so the experience is clear—also for whoever runs the store.",
     response:
-      "We organize product page, catalog and checkout so the purchase keeps its thread to the end.",
+      "We review how you sell today and what gets in the way. Then we carefully design and connect the purchase journey.",
     image: "/images/services/svc-ecommerce.webp",
     imageAlt: "Online store purchase from a mobile app",
     items: [
       {
         title: "Catalog",
-        description: "Structure · Product page · Variants",
+        description:
+          "Product structure · Clear product pages · Variants and search",
       },
       {
         title: "Purchase",
-        description: "Cart · Payment · Confirmation",
+        description:
+          "Stable cart · Reliable payment · Confirmation and follow-up",
       },
       {
         title: "Operations",
-        description: "Inventory · Shipping · Journey reading",
+        description:
+          "Inventory · Shipping · Purchase-funnel reading",
       },
       {
         title: "Deliverables",
-        description: "Stores · Checkout · Payment and stock integrations",
+        description:
+          "Live store · Integrated checkout · Payment and stock connection",
       },
     ],
   },
@@ -161,29 +185,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "seo",
     anchor: "seo",
     title: "SEO",
-    headline: "Be there when someone is already searching.",
+    headline: "Visibility with method.",
     number: "06",
-    intro: "Be there when the search already has intent.",
+    intro:
+      "Ranking isn’t magic or “guaranteed #1” promises. It’s technical order, useful content and patience. We help you see what can improve—and where to start.",
     response:
-      "We align technique, structure and content with how people actually search.",
+      "We review your site against how your audience actually searches and propose concrete steps—without the smoke.",
     image: "/images/services/svc-seo.webp",
     imageAlt: "Analytics panel focused on visibility and search",
     items: [
       {
         title: "Technical",
-        description: "Indexing · Speed · Crawlable structure",
+        description:
+          "Indexing · Speed · Crawlable structure · Structured data when appropriate",
       },
       {
         title: "Content",
-        description: "Topic architecture · Intent pages · Clear answers",
+        description:
+          "Topic architecture · Search intent · Clear answer per page",
       },
       {
         title: "Reading",
-        description: "Rankings · Search–page match · What can be measured",
+        description:
+          "Search Console · Query–page match · Improvement priorities",
       },
       {
         title: "Deliverables",
-        description: "Technical audit · Content architecture · Indexing base",
+        description:
+          "Technical audit · Content map · Measurable implementation plan",
       },
     ],
   },
@@ -191,29 +220,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "marketing-digital",
     anchor: "marketing-digital",
     title: "Marketing",
-    headline: "Connect with the right people.",
+    headline: "Message with a destination.",
     number: "07",
-    intro: "Campaign, site and message have to say the same thing.",
+    intro:
+      "If you feel you post a lot and converse little, we can help align channel, message and page. The idea is that whoever arrives knows what to do next—without artificial pressure.",
     response:
-      "We define each channel’s role and connect it to a page ready to receive that attention.",
+      "We start by understanding who you want to speak to. Then we design a kind sequence: what to say, where, and how to see if it’s working.",
     image: "/images/services/svc-marketing.webp",
     imageAlt: "Creative studio: photo editing and campaign direction",
     items: [
       {
         title: "Strategy",
-        description: "Priority · Message · Sequence",
+        description:
+          "Priority audience · Promise · Contact sequence",
       },
       {
         title: "Channels",
-        description: "Organic · Paid · Email",
+        description:
+          "Organic · Paid · Email · Investment criteria by goal",
       },
       {
         title: "Reading",
-        description: "Shared analytics · Ad–page continuity · What data decides",
+        description:
+          "Shared analytics · Ad–page continuity · Decisions with data",
       },
       {
         title: "Deliverables",
-        description: "Campaign system · Landing pages · Shared measurement",
+        description:
+          "Campaign system · Aligned landing · Lead and contact measurement",
       },
     ],
   },
@@ -221,29 +255,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "inteligencia-artificial",
     anchor: "inteligencia-artificial",
     title: "Artificial intelligence",
-    headline: "Expand the work without losing judgment.",
+    headline: "AI with limits.",
     number: "08",
-    intro: "The machine expands the work. The decision stays human.",
+    intro:
+      "This isn’t about “adding AI because everyone does.” We look for a concrete part of your day where it truly helps, with clear limits and human review.",
     response:
-      "We pick a concrete case, connect it to the existing flow, and leave judgment with the team.",
+      "We pick a small flow, connect it carefully, and leave the final decision with your team.",
     image: "/images/services/svc-ia.webp",
     imageAlt: "Concept of AI systems applied to work",
     items: [
       {
         title: "Judgment",
-        description: "Use case · Limits · Human review",
+        description:
+          "Priority use case · Limits · Human review points",
       },
       {
         title: "System",
-        description: "Context · Data · Flow integration",
+        description:
+          "Context and data · Flow integration · Basic security",
       },
       {
         title: "Interface",
-        description: "How it’s asked · How it’s corrected · What gets logged",
+        description:
+          "How it’s asked · How it’s corrected · What gets logged",
       },
       {
         title: "Deliverables",
-        description: "Assisted flows · Integrations · Operational prototypes",
+        description:
+          "Assisted operational flow · Integration · Prototype with team handoff",
       },
     ],
   },
@@ -251,29 +290,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "automatizacion",
     anchor: "automatizacion",
     title: "Automation",
-    headline: "Less repetition. More time for what matters.",
+    headline: "Less repetition.",
     number: "09",
-    intro: "What repeats shouldn’t fill the day.",
+    intro:
+      "If your team loses hours on the same tasks every week, we can map the process and automate what makes sense—keeping exceptions visible.",
     response:
-      "We connect systems that already exist so the repeated task leaves the calendar, with visible exceptions.",
+      "First we understand how you work today. Then we connect tools calmly, so automation helps instead of complicating things.",
     image: "/images/services/svc-automatizacion.webp",
     imageAlt: "Digital process optimization and automated flows",
     items: [
       {
         title: "Map",
-        description: "What repeats · What must stay manual · Where it breaks",
+        description:
+          "What repeats · What must stay manual · Where it breaks today",
       },
       {
         title: "Connection",
-        description: "APIs · Webhooks · Current tools",
+        description:
+          "APIs · Webhooks · Current tools without replacing the whole stack",
       },
       {
         title: "Control",
-        description: "Logging · Alerts · Exceptions",
+        description:
+          "Logging · Alerts · Exceptions the team can handle",
       },
       {
         title: "Deliverables",
-        description: "Automated flows · Integrations · Alerts and logging",
+        description:
+          "Flows in production · Integrations · Operations docs",
       },
     ],
   },
@@ -281,29 +325,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "migracion-legacy",
     anchor: "migracion-legacy",
     title: "Migration & refactoring",
-    headline: "Modernize without shutting the business down.",
+    headline: "Modernize in phases.",
     number: "10",
-    intro: "Old code shouldn’t set the product’s pace.",
+    intro:
+      "An old system doesn’t have to hold your business forever. We help diagnose what to modernize and move in phases—without unnecessary drama.",
     response:
-      "We modernize the system that no longer lets the product change. Logic is rewritten in parts, without shutting the business down, until the interface can keep moving.",
+      "We’re clear about risks and priorities. We migrate in phases, at a pace your operations can sustain.",
     image: "/images/services/svc-migracion-art.webp",
     imageAlt: "Technical diagnosis of systems in a migration process",
     items: [
       {
         title: "Diagnosis",
-        description: "Monolith map · Debt and risks · What to keep",
+        description:
+          "System map · Risks · What to keep and what to replace",
       },
       {
         title: "Rewrite",
-        description: "Business logic · Clear contracts · Data in one place",
+        description:
+          "Business logic · Clear contracts · Ordered data",
       },
       {
         title: "Delivery",
-        description: "Modern interface · Phased migration · Business stays online",
+        description:
+          "Modern interface · Phased cutovers · Operational continuity",
       },
       {
         title: "Deliverables",
-        description: "Modernized code · Documented architecture · Cutover and deploy plan",
+        description:
+          "Modernized code · Documented architecture · Cutover and deploy plan",
       },
     ],
   },
@@ -311,29 +360,34 @@ export const SERVICE_CATEGORIES_EN: ServiceCategory[] = [
     id: "mvp-rapido",
     anchor: "mvp-rapido",
     title: "Ultra-fast MVP (MaaS)",
-    headline: "A first usable version, with agreed scope.",
+    headline: "First usable version.",
     number: "11",
-    intro: "A first usable version, with agreed scope and timeline.",
+    intro:
+      "If you need to try something soon—without building the whole product—we help define the minimum that proves value and publish it with honest scope.",
     response:
-      "We build the flow that proves the idea and ship it. Timeline comes from scope, not a fixed date.",
+      "We clarify the idea, agree on what’s in and out, and build a first version you can learn from in real use.",
     image: "/images/services/svc-mvp-art.webp",
     imageAlt: "Prototype planning with sticky notes on a work table",
     items: [
       {
         title: "Scope",
-        description: "Critical flow · What’s in this phase · What’s out",
+        description:
+          "Critical flow · What’s in this phase · What’s explicitly out",
       },
       {
         title: "Build",
-        description: "Usable interface · Written logic · Ordered data",
+        description:
+          "Usable interface · Essential logic · Data ready for the next cycle",
       },
       {
         title: "Launch",
-        description: "Production deploy · Access and roles · Base to iterate",
+        description:
+          "Production deploy · Access · Criteria for the next iteration",
       },
       {
         title: "Deliverables",
-        description: "MVP in production · Code and repo · Next-steps guide",
+        description:
+          "Published MVP · Repository · Next-steps guide",
       },
     ],
   },

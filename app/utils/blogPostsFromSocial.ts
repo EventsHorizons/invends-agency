@@ -7,7 +7,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "auditoria-digital-siete-puntos-lanzamiento",
     title: "Auditoría digital en siete puntos (y cómo empezar con Invends)",
-    excerpt: "Checklist de auditoría digital: presencia, valor, diseño, móvil, contacto, contenido y medición — más la oferta de lanzamiento Invends.",
+    excerpt: "Siete preguntas honestas para evaluar tu presencia digital —y convertir el diagnóstico en un plan de acción concreto.",
     category: "Método",
     date: "9 Nov 2026",
     image: "/images/blog/auditoria-digital-siete-puntos-lanzamiento.webp",
@@ -243,7 +243,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "publicar-diario-no-es-estrategia",
     title: "Por qué publicar todos los días no es una estrategia de contenidos",
-    excerpt: "Diferencia entre actividad editorial y estrategia: objetivo, audiencia, mensaje, canal y medición antes de llenar el calendario.",
+    excerpt: "Publicar cada día no garantiza resultados. Cómo distinguir una rutina de ruido de una estrategia de contenidos con sentido.",
     category: "Marketing digital",
     date: "8 Nov 2026",
     image: "/images/blog/publicar-diario-no-es-estrategia.webp",
@@ -451,7 +451,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "arquitectura-informacion-conversion-mitos",
     title: "Arquitectura de información y conversión: más allá de los mitos del diseño web",
-    excerpt: "Cómo la arquitectura de información ordena la conversión y por qué los mitos de diseño web suelen esconder problemas de estructura.",
+    excerpt: "Ordenar el sitio alrededor de la decisión de quien visita: mitos del diseño web que sabotean la conversión —y cómo corregirlos.",
     category: "Diseño web",
     date: "7 Nov 2026",
     image: "/images/blog/arquitectura-informacion-conversion-mitos.webp",
@@ -663,7 +663,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "trafico-frente-a-conversion-web",
     title: "Más visitas no son más clientes: tráfico frente a conversión",
-    excerpt: "Por qué el tráfico sin claridad, confianza y CTA no convierte — y cómo alinear anuncios con la página de destino.",
+    excerpt: "Más visitas no bastan. Cómo leer el recorrido digital cuando el reto es conversión, no solo alcance.",
     category: "Marketing digital",
     date: "6 Nov 2026",
     image: "/images/blog/trafico-frente-a-conversion-web.webp",
@@ -867,7 +867,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "cinco-preguntas-antes-de-disenar-web",
     title: "Cinco preguntas de negocio antes de diseñar (o rediseñar) tu web",
-    excerpt: "Planificación empresarial previa al diseño: audiencia, problema, diferenciación, acción e indicadores para no rehacer el trabajo.",
+    excerpt: "Cinco preguntas de negocio antes de rediseñar: objetivo, público, objeciones, acción esperada y qué queda fuera.",
     category: "Método",
     date: "5 Nov 2026",
     image: "/images/blog/cinco-preguntas-antes-de-disenar-web.webp",
@@ -1079,7 +1079,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "cinco-senales-ux-perder-clientes",
     title: "Cinco señales de UX que hacen perder clientes en una página web",
-    excerpt: "Carga lenta, diseño no móvil, oferta confusa, sin contacto claro y look desactualizado: cómo detectar fugas de clientes en tu web.",
+    excerpt: "Señales de UX que frenan el contacto en móvil y escritorio —y cómo detectarlas antes de invertir en más tráfico.",
     category: "Diseño web",
     date: "4 Nov 2026",
     image: "/images/blog/cinco-senales-ux-perder-clientes.webp",
@@ -1291,7 +1291,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "presencia-vs-estrategia-web-invends",
     title: "Presencia digital vs estrategia: cuándo tu web deja de ser un adorno",
-    excerpt: "Cómo distinguir una web de presencia de una web estratégica: claridad, acción y valor comercial para tu negocio.",
+    excerpt: "Cuándo tu web es solo un adorno digital y cuándo empieza a acompañar de verdad al negocio.",
     category: "Agencia",
     date: "3 Nov 2026",
     image: "/images/blog/presencia-vs-estrategia-web-invends.webp",
@@ -1564,7 +1564,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "auditoria-digital-empresas",
     title: "Auditoría digital para empresas: cómo identificar oportunidades de mejora en tu presencia online",
-    excerpt: "Checklist de auditoría digital: presencia, propuesta de valor, UX, móvil, conversión, contenido y medición. Cómo priorizar mejoras.",
+    excerpt: "Cómo revisar la presencia online de una empresa con criterios accionables —sin ahogarte en métricas de vanidad.",
     category: "Método",
     date: "2 Nov 2026",
     image: "/images/blog/auditoria-digital-empresas.webp",
@@ -1717,7 +1717,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "de-publicar-a-estrategia-contenidos",
     title: "Cómo pasar de publicar en redes sociales a construir una estrategia de contenidos",
-    excerpt: "Objetivos, audiencias, pilares editoriales, formatos y medición: cómo pasar de publicar por publicar a una estrategia de contenidos.",
+    excerpt: "Cómo pasar de publicar en redes a un sistema de contenidos que apoye servicios, SEO y conversación.",
     category: "Marketing digital",
     date: "1 Nov 2026",
     image: "/images/blog/de-publicar-a-estrategia-contenidos.webp",
@@ -1842,7 +1842,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "arquitectura-informacion-web",
     title: "Arquitectura de información: cómo organizar una página web para mejorar la experiencia de usuario",
-    excerpt: "Qué es la arquitectura de información y cómo organizar inicio, servicios, confianza y contacto para mejorar la UX de tu sitio.",
+    excerpt: "Cómo organizar páginas y menús para que quien visita encuentre lo que busca —sin que tus servicios se pisen entre sí.",
     category: "Diseño web",
     date: "31 Oct 2026",
     image: "/images/blog/arquitectura-informacion-web.webp",
@@ -1971,7 +1971,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "trafico-a-conversion-recorrido",
     title: "Del tráfico a la conversión: cómo construir un recorrido digital coherente",
-    excerpt: "Tráfico, interacción y conversión: cómo alinear anuncios, landing, CTA y medición para aprovechar las visitas que ya tienes.",
+    excerpt: "Del clic al contacto: cómo construir un recorrido coherente entre canal, mensaje y página.",
     category: "Marketing digital",
     date: "30 Oct 2026",
     image: "/images/blog/trafico-a-conversion-recorrido.webp",
@@ -2096,7 +2096,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "planificar-web-antes-del-desarrollo",
     title: "Cómo planificar una página web empresarial antes de comenzar su desarrollo",
-    excerpt: "Investigación, usuarios, propuesta de valor, objetivos, arquitectura e indicadores: cómo planificar una web empresarial antes de diseñar o programar.",
+    excerpt: "Qué conviene decidir antes de desarrollar una web empresarial: mapa, prioridades, integraciones y criterios de “listo”.",
     category: "Método",
     date: "29 Oct 2026",
     image: "/images/blog/planificar-web-antes-del-desarrollo.webp",
@@ -2216,7 +2216,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "errores-ux-rendimiento-web",
     title: "Los errores de experiencia de usuario que pueden afectar el rendimiento de una página web",
-    excerpt: "Propuesta de valor confusa, navegación débil y CTAs poco claros: cómo priorizar correcciones de UX en tu sitio empresarial.",
+    excerpt: "Errores de experiencia y rendimiento que hacen que una web “bonita” pierda clientes —y cómo priorizar qué corregir primero.",
     category: "Diseño web",
     date: "28 Oct 2026",
     image: "/images/blog/errores-ux-rendimiento-web.webp",
@@ -2342,7 +2342,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "que-debe-hacer-una-pagina-web",
     title: "¿Qué debe hacer realmente una página web para aportar valor a un negocio?",
-    excerpt: "Diferencia entre presencia y estrategia digital: cómo evaluar si tu web comunica valor, organiza servicios y facilita la acción comercial.",
+    excerpt: "Qué puede aportar realmente una página web al negocio: claridad, confianza y un siguiente paso evidente.",
     category: "Diseño web",
     date: "27 Oct 2026",
     image: "/images/blog/que-debe-hacer-una-pagina-web.webp",
@@ -2491,7 +2491,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "plazo-sale-del-alcance",
     title: "El plazo sale del alcance: cómo definir una fase (y un MVP)",
-    excerpt: "Cómo definir qué entra y qué queda fuera de una fase de proyecto o MVP. Criterio de alcance de Invends: el plazo sale del alcance.",
+    excerpt: "Cómo definir una fase (y un MVP) sin fechas mágicas: el plazo sale del alcance acordado, no al revés.",
     category: "Método",
     date: "26 Oct 2026",
     image: "/images/blog/plazo-sale-del-alcance.webp",
@@ -2640,7 +2640,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "modernizar-sin-apagar",
     title: "Modernizar sin apagar el negocio: migración por fases",
-    excerpt: "Cómo encarar una migración o refactorización sin detener el negocio: diagnóstico, reescritura por partes y plan de corte. Enfoque Invends.",
+    excerpt: "Migrar y modernizar por fases sin detener la operación: diagnóstico, cortes y continuidad.",
     category: "Desarrollo web",
     date: "25 Oct 2026",
     image: "/images/blog/modernizar-sin-apagar.webp",
@@ -2798,7 +2798,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "antes-de-automatizar-mapa",
     title: "Antes de automatizar: mapa, conexión y control",
-    excerpt: "Cómo decidir qué automatizar: mapa de tareas, conexión a sistemas existentes y control con excepciones. Criterio Invends (y rol humano en IA).",
+    excerpt: "Antes de conectar herramientas: mapa del proceso, qué conviene automatizar y qué debe seguir siendo manual.",
     category: "Automatización",
     date: "24 Oct 2026",
     image: "/images/blog/antes-de-automatizar-mapa.webp",
@@ -2954,7 +2954,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "desarrollo-como-experiencia",
     title: "Que se sostenga el día que llega gente: desarrollo como experiencia",
-    excerpt: "Por qué rendimiento, accesibilidad y base evolutiva son parte de la experiencia digital. Criterio de desarrollo web de Invends.",
+    excerpt: "El desarrollo como parte de la experiencia: velocidad, estados y una base que se sostenga cuando llega gente.",
     category: "Desarrollo web",
     date: "23 Oct 2026",
     image: "/images/blog/desarrollo-como-experiencia.webp",
@@ -3100,7 +3100,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "continuidad-anuncio-pagina",
     title: "Cuando el anuncio y la página no dicen lo mismo",
-    excerpt: "Por qué fallan las conversiones cuando campaña y landing no comparten mensaje. Continuidad anuncio–página–contacto según Invends.",
+    excerpt: "Cuando el anuncio promete una cosa y la landing otra: cómo alinear mensaje, prueba y formulario.",
     category: "Marketing digital",
     date: "22 Oct 2026",
     image: "/images/blog/continuidad-anuncio-pagina.webp",
@@ -3259,7 +3259,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "auditar-pantalla-objetivo",
     title: "Si no acerca al objetivo, sobra: cómo auditar una pantalla",
-    excerpt: "Criterio práctico de Invends para evaluar jerarquía, CTAs y secciones: si no acercan al objetivo del brief, sobran.",
+    excerpt: "Una regla simple para revisar cualquier pantalla: si no acerca al objetivo, sobra.",
     category: "Diseño web",
     date: "21 Oct 2026",
     image: "/images/blog/auditar-pantalla-objetivo.webp",
@@ -3460,7 +3460,7 @@ export const BLOG_POSTS_FROM_SOCIAL: BlogPost[] = [
   {
     slug: "brief-antes-que-pixeles-guia",
     title: "Brief antes que píxeles: qué decidir antes de diseñar",
-    excerpt: "Qué debe incluir un brief antes de diseñar o desarrollar: objetivo, audiencia, restricciones y siguiente paso. Guía práctica de Invends.",
+    excerpt: "Qué decisiones de brief conviene tomar antes de diseñar: problema, audiencia, acción esperada y qué queda fuera.",
     category: "Método",
     date: "20 Oct 2026",
     image: "/images/blog/brief-antes-que-pixeles-guia.webp",

@@ -54,29 +54,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "diseno-web",
     anchor: "diseno-web",
     title: "Diseño web",
-    headline: "Experiencias que hacen fácil elegirte.",
+    headline: "Web que se entiende.",
     number: "01",
-    intro: "Sitios que explican el negocio y se pueden usar en el teléfono.",
+    intro:
+      "Si sientes que tu sitio no explica bien lo que haces, o que en el móvil se pierde el mensaje, podemos ayudarte a ordenarlo. Diseñamos para que quien te visita sepa qué ofreces y cómo contactarte.",
     response:
-      "Ordenamos jerarquía, ritmo y lectura para que la página explique el proyecto sin pedir esfuerzo.",
+      "Partimos de tu negocio y de a quién le hablas. Después damos forma a la estructura y a la interfaz, con calma y criterio —sin efectos de más.",
     image: "/images/services/svc-diseno-web.webp",
     imageAlt: "Layout web y arquitectura de interfaz en prototipo sobre dispositivo",
     items: [
       {
         title: "Estructura",
-        description: "Arquitectura de información · Jerarquía y recorrido · Comportamiento responsive",
+        description:
+          "Mapa de páginas · Prioridad de mensajes · Recorrido hasta el contacto · Responsive real",
       },
       {
         title: "Interfaz",
-        description: "Composición y tipo · Estados y foco · Ritmo de lectura",
+        description:
+          "Tipografía y composición · Estados claros · CTAs visibles · Lectura sin fricción",
       },
       {
         title: "Sistema",
-        description: "Componentes · Tokens visuales · Consistencia entre páginas",
+        description:
+          "Componentes reutilizables · Tokens de marca · Consistencia entre home, servicio y landing",
       },
       {
         title: "Entregables",
-        description: "Sitios y landing pages · Sistemas de interfaz · Prototipos de lectura",
+        description:
+          "Sitio o landing listos para desarrollo · Sistema de UI · Prototipo navegable orientado a conversión",
       },
     ],
   },
@@ -84,29 +89,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "branding",
     anchor: "branding",
     title: "Branding",
-    headline: "Una identidad que se reconoce sin explicaciones.",
+    headline: "Identidad usable.",
     number: "02",
-    intro: "Nombre, tono y sistema visual para usar la marca en el día a día.",
+    intro:
+      "Cuando la marca cambia según quién diseñe el último archivo, cuesta reconocerse. Te ayudamos a definir voz, símbolo y reglas simples para el día a día —en web, propuestas y redes.",
     response:
-      "Definimos un lenguaje visual y verbal que se sostiene en pantalla, papel y producto.",
+      "Trabajamos contigo para que la identidad se sienta tuya y se pueda aplicar sin reinventarla cada semana.",
     image: "/images/services/svc-branding.webp",
     imageAlt: "Sistema de papelería e identidad corporativa en composición editorial",
     items: [
       {
         title: "Posición",
-        description: "Territorio de marca · Voz y criterio · Lo que no se dice",
+        description:
+          "Territorio y diferenciación · Tono de voz · Qué prometes (y qué no)",
       },
       {
         title: "Lenguaje",
-        description: "Símbolo y tipo · Color y ritmo · Relación entre piezas",
+        description:
+          "Símbolo y tipografía · Color y ritmo · Relación entre piezas gráficas",
       },
       {
         title: "Sistema",
-        description: "Reglas aplicables · Dirección de arte · Uso en digital",
+        description:
+          "Manual usable · Dirección de arte · Aplicación en web y campañas",
       },
       {
         title: "Entregables",
-        description: "Identidad visual · Sistema de marca · Criterios de aplicación",
+        description:
+          "Identidad visual · Sistema de marca · Criterios de uso para tu equipo",
       },
     ],
   },
@@ -114,29 +124,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "desarrollo-web",
     anchor: "desarrollo-web",
     title: "Desarrollo web",
-    headline: "Una web que no solo se ve bien: funciona para tu negocio.",
+    headline: "Base que se sostiene.",
     number: "03",
-    intro: "El sitio tiene que seguir en pie el día en que llega gente.",
+    intro:
+      "Más allá de “que se vea bien”: nos importa que cargue bien, que los formularios lleguen y que puedas cambiar cosas sin empezar de cero. Desarrollamos con esa tranquilidad en mente.",
     response:
-      "Construimos una arquitectura que prioriza velocidad, acceso y la posibilidad de cambiar sin reescribirlo todo.",
+      "Traducimos el diseño a una base sólida, te explicamos las decisiones en lenguaje claro y dejamos el proyecto listo para crecer cuando tú lo estés.",
     image: "/images/services/svc-desarrollo-web.webp",
     imageAlt: "Concepto de sitio responsive: layouts web en dispositivo",
     items: [
       {
         title: "Arquitectura",
-        description: "Frontend y estructura · Contenido y datos · Despliegue",
+        description:
+          "Frontend sólido · Contenido editable · Despliegue y entornos claros",
       },
       {
         title: "Rendimiento",
-        description: "Peso y render · Accesibilidad · Base medible",
+        description:
+          "Peso controlado · Render eficiente · Accesibilidad básica medible",
       },
       {
         title: "Integración",
-        description: "APIs · Formularios · Servicios existentes",
+        description:
+          "APIs · Formularios · CRM, correo y herramientas que ya usas",
       },
       {
         title: "Entregables",
-        description: "Sitios en producción · Base técnica evolutiva · Integraciones",
+        description:
+          "Sitio en producción · Documentación técnica · Base lista para iterar",
       },
     ],
   },
@@ -144,29 +159,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "desarrollo-apps",
     anchor: "desarrollo-apps",
     title: "Aplicaciones",
-    headline: "Productos que la gente vuelve a abrir.",
+    headline: "Producto usable.",
     number: "04",
-    intro: "Una aplicación es un hábito, no una pantalla.",
+    intro:
+      "Si tienes una idea de herramienta, panel o flujo interno, te ayudamos a bajarla a algo usable. Empezamos por lo esencial —lo que la gente necesita abrir una y otra vez.",
     response:
-      "Definimos los recorridos críticos y los construimos para que alguien pueda volver a abrirlos.",
+      "Definimos qué entra en la primera versión y qué puede esperar. Así no cargas el proyecto de funciones que aún no necesitas.",
     image: "/images/services/svc-aplicaciones.webp",
     imageAlt: "Pantalla de producto móvil con interfaz de aplicación",
     items: [
       {
         title: "Producto",
-        description: "Alcance · Flujos críticos · Prioridad de entrega",
+        description:
+          "Alcance por fases · Flujos críticos · Criterios de “listo para usar”",
       },
       {
         title: "Experiencia",
-        description: "Interacción · Estados vacíos y de error · Continuidad entre sesiones",
+        description:
+          "Interacción clara · Estados vacíos y de error · Continuidad entre sesiones",
       },
       {
         title: "Tecnología",
-        description: "Datos · Acceso · Integraciones",
+        description:
+          "Modelo de datos · Roles y acceso · Integraciones necesarias",
       },
       {
         title: "Entregables",
-        description: "Productos mínimos usables · Aplicaciones web · Paneles y prototipos funcionales",
+        description:
+          "Aplicación o panel usable · Prototipo funcional · Hoja de ruta de siguientes pasos",
       },
     ],
   },
@@ -174,29 +194,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "ecommerce",
     anchor: "ecommerce",
     title: "E-commerce",
-    headline: "Un recorrido de compra que no se rompe a mitad de camino.",
+    headline: "Compra sin fricción.",
     number: "05",
-    intro: "Comprar es un recorrido. Cada paso puede perderlo.",
+    intro:
+      "Sabemos que cada paso del carrito puede hacer perder una venta. Te ayudamos a ordenar catálogo, fichas y pago para que la experiencia sea clara —también para quien administra la tienda.",
     response:
-      "Ordenamos ficha, catálogo y checkout para que la compra conserve su hilo hasta el final.",
+      "Revisamos cómo vendes hoy y qué te frena. Después diseñamos y conectamos el recorrido de compra con cuidado.",
     image: "/images/services/svc-ecommerce.webp",
     imageAlt: "Compra en tienda online desde la app móvil",
     items: [
       {
         title: "Catálogo",
-        description: "Estructura · Ficha · Variantes",
+        description:
+          "Estructura de productos · Fichas claras · Variantes y búsqueda",
       },
       {
         title: "Compra",
-        description: "Carrito · Pago · Confirmación",
+        description:
+          "Carrito estable · Pago confiable · Confirmación y seguimiento",
       },
       {
         title: "Operación",
-        description: "Inventario · Envíos · Lectura del recorrido",
+        description:
+          "Inventario · Envíos · Lectura del embudo de compra",
       },
       {
         title: "Entregables",
-        description: "Tiendas · Checkout · Integraciones de pago y stock",
+        description:
+          "Tienda publicada · Checkout integrado · Conexión a pago y stock",
       },
     ],
   },
@@ -204,29 +229,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "seo",
     anchor: "seo",
     title: "SEO",
-    headline: "Estar cuando alguien ya está buscando.",
+    headline: "Visibilidad con método.",
     number: "06",
-    intro: "Estar cuando la búsqueda ya tiene una intención.",
+    intro:
+      "El posicionamiento no es magia ni promesas de “primera página”. Es orden técnico, contenido útil y paciencia. Te ayudamos a ver qué se puede mejorar y por dónde empezar.",
     response:
-      "Alineamos técnica, estructura y contenido con la forma real en que se busca.",
+      "Revisamos cómo está tu sitio frente a las búsquedas reales de tu público y te proponemos pasos concretos —sin humo.",
     image: "/images/services/svc-seo.webp",
     imageAlt: "Panel de analítica orientado a visibilidad y búsqueda",
     items: [
       {
         title: "Técnica",
-        description: "Indexación · Velocidad · Estructura rastreable",
+        description:
+          "Indexación · Velocidad · Estructura rastreable · Datos estructurados cuando apliquen",
       },
       {
         title: "Contenido",
-        description: "Arquitectura temática · Páginas con intención · Claridad de respuesta",
+        description:
+          "Arquitectura temática · Intención de búsqueda · Claridad de respuesta por página",
       },
       {
         title: "Lectura",
-        description: "Posiciones · Correspondencia búsqueda–página · Qué se puede medir",
+        description:
+          "Search Console · Correspondencia consulta–página · Prioridades de mejora",
       },
       {
         title: "Entregables",
-        description: "Auditoría técnica · Arquitectura de contenido · Base de indexación",
+        description:
+          "Auditoría técnica · Mapa de contenidos · Plan de implementación medible",
       },
     ],
   },
@@ -234,29 +264,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "marketing-digital",
     anchor: "marketing-digital",
     title: "Marketing",
-    headline: "Conecta con las personas correctas.",
+    headline: "Mensaje con destino.",
     number: "07",
-    intro: "Campaña, sitio y mensaje tienen que decir lo mismo.",
+    intro:
+      "Si sientes que publicas mucho y conversas poco, podemos ayudarte a alinear canal, mensaje y página. La idea es que quien llegue sepa qué hacer después —sin presión artificial.",
     response:
-      "Definimos el papel de cada canal y lo conectamos con una página capaz de recibir esa atención.",
+      "Empezamos por entender a quién quieres hablarle. Después diseñamos una secuencia amable: qué decir, dónde y cómo medir si está funcionando.",
     image: "/images/services/svc-marketing.webp",
     imageAlt: "Estudio creativo: edición fotográfica y dirección de campaña",
     items: [
       {
         title: "Estrategia",
-        description: "Prioridad · Mensaje · Secuencia",
+        description:
+          "Audiencia prioritaria · Promesa · Secuencia de contacto",
       },
       {
         title: "Canales",
-        description: "Orgánico · Pago · Correo",
+        description:
+          "Orgánico · Pago · Correo · Criterio de inversión por objetivo",
       },
       {
         title: "Lectura",
-        description: "Analítica compartida · Continuidad anuncio–página · Qué se decide con datos",
+        description:
+          "Analítica compartida · Continuidad anuncio–página · Decisiones con datos",
       },
       {
         title: "Entregables",
-        description: "Sistema de campaña · Páginas de llegada · Medición compartida",
+        description:
+          "Sistema de campaña · Landing alineada · Medición de leads y contactos",
       },
     ],
   },
@@ -264,29 +299,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "inteligencia-artificial",
     anchor: "inteligencia-artificial",
     title: "Inteligencia artificial",
-    headline: "Ampliar el trabajo sin perder el criterio.",
+    headline: "IA con límites.",
     number: "08",
-    intro: "La máquina amplía el trabajo. La decisión sigue siendo humana.",
+    intro:
+      "No se trata de “meter IA porque sí”. Buscamos un caso concreto de tu día a día donde realmente ayude, con límites claros y revisión humana.",
     response:
-      "Elegimos un caso concreto, lo conectamos al flujo existente y dejamos el criterio en el equipo.",
+      "Elegimos un flujo pequeño, lo conectamos con cuidado y dejamos la decisión final en tu equipo.",
     image: "/images/services/svc-ia.webp",
     imageAlt: "Concepto de sistemas de inteligencia artificial aplicados al trabajo",
     items: [
       {
         title: "Criterio",
-        description: "Caso de uso · Límites · Revisión humana",
+        description:
+          "Caso de uso prioritario · Límites · Puntos de revisión humana",
       },
       {
         title: "Sistema",
-        description: "Contexto · Datos · Integración al flujo",
+        description:
+          "Contexto y datos · Integración al flujo · Seguridad básica",
       },
       {
         title: "Interfaz",
-        description: "Cómo se pide · Cómo se corrige · Qué queda registrado",
+        description:
+          "Cómo se pide · Cómo se corrige · Qué queda registrado",
       },
       {
         title: "Entregables",
-        description: "Flujos asistidos · Integraciones · Prototipos operativos",
+        description:
+          "Flujo asistido operativo · Integración · Prototipo con handoff al equipo",
       },
     ],
   },
@@ -294,29 +334,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "automatizacion",
     anchor: "automatizacion",
     title: "Automatización",
-    headline: "Menos repetición. Más tiempo para lo que importa.",
+    headline: "Menos repetición.",
     number: "09",
-    intro: "Lo que se repite no debería ocupar el día.",
+    intro:
+      "Si tu equipo pierde horas en lo mismo cada semana, podemos mapear el proceso y automatizar lo que tenga sentido —dejando visibles las excepciones.",
     response:
-      "Conectamos los sistemas que ya existen para que la tarea repetida salga del calendario, con excepción visible.",
+      "Primero entendemos cómo trabajan hoy. Después conectamos herramientas con calma, para que la automatización ayude y no complique.",
     image: "/images/services/svc-automatizacion.webp",
     imageAlt: "Optimización digital de procesos y flujos automatizados",
     items: [
       {
         title: "Mapa",
-        description: "Qué se repite · Qué debe quedar manual · Dónde se rompe",
+        description:
+          "Qué se repite · Qué debe quedar manual · Dónde se rompe hoy",
       },
       {
         title: "Conexión",
-        description: "APIs · Webhooks · Herramientas actuales",
+        description:
+          "APIs · Webhooks · Herramientas actuales sin cambiar todo el stack",
       },
       {
         title: "Control",
-        description: "Registro · Avisos · Excepciones",
+        description:
+          "Registro · Alertas · Excepciones manejables por el equipo",
       },
       {
         title: "Entregables",
-        description: "Flujos automatizados · Integraciones · Alertas y registro",
+        description:
+          "Flujos en producción · Integraciones · Documentación de operación",
       },
     ],
   },
@@ -324,29 +369,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "migracion-legacy",
     anchor: "migracion-legacy",
     title: "Migración y refactorización",
-    headline: "Modernizar sin apagar el negocio.",
+    headline: "Modernizar por fases.",
     number: "10",
-    intro: "El código viejo no tiene que decidir el ritmo del producto.",
+    intro:
+      "Un sistema antiguo no tiene que frenar tu negocio para siempre. Diagnosticamos qué modernizar y avanzamos por fases, sin dramas innecesarios.",
     response:
-      "Modernizamos el sistema que ya no deja cambiar el producto. La lógica se reescribe por partes, sin apagar el negocio, hasta dejar una interfaz que se puede seguir.",
+      "Hablamos claro sobre riesgos y prioridades. Migración por fases, a un ritmo que tu operación pueda sostener.",
     image: "/images/services/svc-migracion-art.webp",
     imageAlt: "Diagnóstico técnico de sistemas en proceso de migración",
     items: [
       {
         title: "Diagnóstico",
-        description: "Mapa del monolito · Deuda y riesgos · Qué conservar",
+        description:
+          "Mapa del sistema · Riesgos · Qué conservar y qué reemplazar",
       },
       {
         title: "Reescritura",
-        description: "La lógica del negocio · Contratos claros · Datos en un solo lugar",
+        description:
+          "Lógica de negocio · Contratos claros · Datos ordenados",
       },
       {
         title: "Entrega",
-        description: "Interfaz moderna · Migración por fases · Sin parar el negocio",
+        description:
+          "Interfaz moderna · Cortes por fase · Continuidad operativa",
       },
       {
         title: "Entregables",
-        description: "Código modernizado · Arquitectura documentada · Plan de corte y despliegue",
+        description:
+          "Código modernizado · Arquitectura documentada · Plan de corte y despliegue",
       },
     ],
   },
@@ -354,29 +404,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "mvp-rapido",
     anchor: "mvp-rapido",
     title: "MVP ultra-rápido (MaaS)",
-    headline: "Una primera versión usable, con el alcance acordado.",
+    headline: "Primera versión usable.",
     number: "11",
-    intro: "Una primera versión usable, con el alcance y el plazo acordados.",
+    intro:
+      "Si necesitas probar algo pronto —sin construir el producto entero—, te ayudamos a definir el mínimo que demuestra valor y a publicarlo con honestidad sobre el alcance.",
     response:
-      "Construimos el flujo que demuestra la idea y lo dejamos publicado. El plazo sale del alcance, no de una fecha fija.",
+      "Aclaramos la idea, acordamos qué entra y qué no, y construimos esa primera versión para aprender de uso real.",
     image: "/images/services/svc-mvp-art.webp",
     imageAlt: "Planificación de prototipo con notas adhesivas en mesa de trabajo",
     items: [
       {
         title: "Alcance",
-        description: "Flujo crítico · Qué entra en esta fase · Qué queda fuera",
+        description:
+          "Flujo crítico · Qué entra en esta fase · Qué queda explícitamente fuera",
       },
       {
         title: "Construcción",
-        description: "Interfaz usable · Lógica escrita · Datos ordenados",
+        description:
+          "Interfaz usable · Lógica esencial · Datos listos para el siguiente ciclo",
       },
       {
         title: "Salida",
-        description: "Deploy a producción · Accesos y roles · Base para iterar",
+        description:
+          "Deploy a producción · Accesos · Criterios para la siguiente iteración",
       },
       {
         title: "Entregables",
-        description: "MVP en producción · Código y repositorio · Guía de siguientes pasos",
+        description:
+          "MVP publicado · Repositorio · Guía de siguientes pasos",
       },
     ],
   },
@@ -398,7 +453,7 @@ export const TESTIMONIALS = [
     role: "Método · Invends",
     avatar: "",
     quote:
-      "Abrimos con el objetivo comercial y el brief. Sin eso, diseñar o desarrollar es adivinar. Preferimos una conversación concreta antes que una propuesta genérica.",
+      "Abrimos con el objetivo comercial y el brief. Sin eso, diseñar o desarrollar es adivinar. Preferimos una conversación concreta —y un alcance que se pueda revisar— antes que una propuesta genérica.",
   },
   {
     id: 2,
@@ -568,52 +623,52 @@ export const ABOUT_VALUES = [
     number: "01",
     title: "Claridad",
     description:
-      "Explicamos qué hacemos y por qué. Preferimos precisión a frases vacías.",
+      "Preferimos decir las cosas como son. Si algo no entra en esta fase, lo hablamos a tiempo.",
   },
   {
     number: "02",
     title: "Oficio",
     description:
-      "Diseño, desarrollo y marketing se tratan con el mismo nivel de cuidado.",
+      "Cuidamos el diseño, el código y el mensaje con la misma atención: detrás de cada pantalla hay una persona.",
   },
   {
     number: "03",
     title: "Criterio",
     description:
-      "Cada decisión responde al objetivo del proyecto, no a la moda de la semana.",
+      "Cada decisión responde a lo que tu proyecto necesita —no a la moda de la semana.",
   },
   {
     number: "04",
     title: "Entrega útil",
     description:
-      "Lo que publicamos debe poder usarse, medirse y mejorarse con el tiempo.",
+      "Lo que publicamos debe poder usarse, entenderse y mejorarse con el tiempo.",
   },
 ];
 
 export const ABOUT_CAPABILITIES = [
   {
-    title: "Experiencias digitales que hacen fácil elegirte.",
+    title: "Diseño web para que te entiendan con claridad.",
     cta: "Ver diseño web",
   },
   {
-    title: "Sitios y landings que funcionan para el negocio.",
+    title: "Sitios y landings que acompañan al negocio.",
     cta: "Ver desarrollo",
   },
   {
-    title: "Mensaje y contenido para llegar a las personas correctas.",
+    title: "Mensaje y contenido para conectar con las personas correctas.",
     cta: "Ver marketing",
   },
   {
-    title: "Identidad, web y comunicación en un mismo brief.",
+    title: "Identidad, web y comunicación en una misma conversación.",
     cta: "Ver proyectos",
   },
   {
-    title: "Rendimiento, usabilidad y mantenimiento con criterio.",
+    title: "Rendimiento, usabilidad y mantenimiento con cuidado.",
     cta: "Ver servicios",
   },
   {
-    title: "Trabajamos desde Bogotá con clientes en LATAM.",
-    cta: "Contactar",
+    title: "Desde Bogotá, con equipos y proyectos en LATAM.",
+    cta: "Cuéntanos tu idea",
   },
 ];
 

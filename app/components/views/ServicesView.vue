@@ -7,34 +7,32 @@ const categories = computed(() => serviceCategoriesFor(locale.value));
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Services | Web design, development & marketing — Invends",
+        title: "Services | Invends",
         description:
-          "Eleven Invends service lines: web design, development, branding, marketing, SEO, automation and more. Hire one or combine them.",
+          "Invends services: web design, development, branding, e-commerce, SEO, marketing and more. One path or a few—scoped clearly.",
         eyebrow: "Services",
-        h1Before: "Design, technology and marketing with",
-        h1Accent: "clear direction",
-        lead: "Eleven service lines. Hire one or combine them: each one answers a concrete business problem.",
-        tabsLabel: "Service categories",
-        reelCta: "View service",
-        bandTitle: "Tell us what you need.",
-        bandBody:
-          "Company, artist or event. We reply with clear scope, without fluff.",
-        bandCta: "Let's talk about your project",
+        h1Before: "Eleven",
+        h1Accent: "crafts",
+        lead: "You don’t need all of them. Pick what fits this phase.",
+        tabsLabel: "Categories",
+        reelCta: "Details",
+        bandTitle: "Not sure yet?",
+        bandBody: "Tell us the situation. We’ll propose a scoped path.",
+        bandCta: "Start a project",
       }
     : {
-        title: "Servicios | Diseño web, desarrollo y marketing — Invends",
+        title: "Servicios | Invends",
         description:
-          "Once líneas de servicio Invends: diseño web, desarrollo, branding, marketing, SEO, automatización y más. Contrata una o combínalas.",
+          "Servicios Invends: diseño web, desarrollo, branding, e-commerce, SEO, marketing y más. Un camino o varios —con alcance claro.",
         eyebrow: "Servicios",
-        h1Before: "Diseño, tecnología y marketing con",
-        h1Accent: "dirección clara",
-        lead: "Once líneas de servicio. Contrata una o combínalas: cada una responde a un problema concreto del negocio.",
-        tabsLabel: "Categorías de servicios",
-        reelCta: "Ver servicio",
-        bandTitle: "Cuéntanos qué necesitas.",
-        bandBody:
-          "Empresa, artista o evento. Respondemos con alcance claro, sin rodeos.",
-        bandCta: "Hablemos de tu proyecto",
+        h1Before: "Once",
+        h1Accent: "oficios",
+        lead: "No hace falta contratarlos todos. Elige lo que cabe en esta fase.",
+        tabsLabel: "Categorías",
+        reelCta: "Detalle",
+        bandTitle: "¿Sin certeza aún?",
+        bandBody: "Cuéntanos la situación. Proponemos un camino con alcance.",
+        bandCta: "Empezar proyecto",
       },
 );
 
