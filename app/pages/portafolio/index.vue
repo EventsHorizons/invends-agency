@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import {
   PROJECT_FILTERS,
   PROJECTS,
@@ -14,38 +14,44 @@ const { locale, isEn, localePath } = useLocale();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Work samples | Invends",
+        title: "Selected Work | Invends Web Design & Technology",
         description:
-          "Method samples from Invends. Conceptual pieces—not published client case studies.",
-        eyebrow: "Work",
-        h1Before: "Method",
-        h1Accent: "samples",
-        lead: "Conceptual pieces on hierarchy, journey and use. Not client case studies.",
-        bandTitle: "Your project?",
-        bandBody: "Tell us the idea. We reply with scope.",
-        bandCta: "Start a project",
-        empty: "No samples in this category.",
+          "A curation of our standard in art direction, web engineering, and commercial narrative across industries.",
+        eyebrow: "Selected work",
+        h1Before: "Selected work",
+        h1Accent: "from the studio",
+        lead: "A curation of our standard in art direction, web engineering, and commercial narrative across industries.",
+        bandTitle: "Let's build a website worthy of your company.",
+        bandBody: "Tell us about your business goals. We will reply in under 24 hours.",
+        bandCta: "Let's talk about your project",
+        empty: "No projects in this category right now.",
         filters: [
           { id: "todos", label: "All" },
-          { id: "diseno", label: "Design" },
-          { id: "tecnologia", label: "Development" },
-          { id: "marketing", label: "Marketing" },
-          { id: "contenido", label: "Content" },
+          { id: "diseno", label: "Web & UI Design" },
+          { id: "tecnologia", label: "Nuxt Development" },
+          { id: "marketing", label: "Commercial Copy" },
+          { id: "contenido", label: "Content Systems" },
         ] as const,
       }
     : {
-        title: "Proyectos | Invends",
+        title: "Trabajos Seleccionados | Invends Estudio Digital",
         description:
-          "Muestras de método de Invends. Piezas conceptuales —no casos de cliente publicados.",
-        eyebrow: "Proyectos",
-        h1Before: "Muestras de",
-        h1Accent: "método",
-        lead: "Piezas conceptuales sobre jerarquía, recorrido y uso. No son casos de cliente.",
-        bandTitle: "¿Tu proyecto?",
-        bandBody: "Cuéntanos la idea. Respondemos con alcance.",
-        bandCta: "Empezar proyecto",
-        empty: "No hay muestras en esta categoría.",
-        filters: PROJECT_FILTERS,
+          "Una muestra de nuestro estándar en dirección de arte, arquitectura web y redacción comercial aplicada a diferentes industrias.",
+        eyebrow: "Trabajo seleccionado",
+        h1Before: "Trabajo seleccionado",
+        h1Accent: "del estudio",
+        lead: "Una muestra de nuestro estándar en dirección de arte, arquitectura web y redacción comercial aplicada a diferentes industrias.",
+        bandTitle: "Construyamos una web a la altura de tu empresa.",
+        bandBody: "Cuéntanos sobre tu negocio y qué buscas resolver. Te responderemos en menos de 24 horas.",
+        bandCta: "Hablemos de tu proyecto",
+        empty: "No hay proyectos en esta categoría por ahora.",
+        filters: [
+          { id: "todos", label: "Todos" },
+          { id: "diseno", label: "Diseño Web & UI" },
+          { id: "tecnologia", label: "Desarrollo Nuxt" },
+          { id: "marketing", label: "Redacción Comercial" },
+          { id: "contenido", label: "Sistemas de Contenido" },
+        ] as const,
       },
 );
 

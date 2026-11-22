@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { CONTACT_INFO } from "~/utils/contactInfo";
 import { hasRealPhone } from "~/utils/seo";
 
@@ -8,29 +8,29 @@ const showPhone = hasRealPhone();
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Contact Invends",
+        title: "Contact the Studio | Invends Web Design & Technology",
         description:
-          "Contact Invends for web design, development or digital marketing. hola@invends.com",
-        eyebrow: "Contact",
-        h1Before: "Tell us",
-        h1Accent: "the need",
-        sub: "Idea, doubt or project. We reply with scope: what’s in and what waits.",
-        formTitle: "Your project",
+          "Tell us about your company and what you need to solve. We reply in under 24 hours with an honest view on how to approach your site.",
+        eyebrow: "Direct contact",
+        h1Before: "Let's talk about your",
+        h1Accent: "next website",
+        sub: "Tell us about your company and what you need to solve. We reply in under 24 hours with an honest view on the best way forward.",
+        formTitle: "Tell us about your project",
         formDescription:
-          "Pick the closest service, leave a contact, add a few lines if you want.",
+          "Share your details and we will reach out to schedule an introductory call.",
         phone: "Phone",
       }
     : {
-        title: "Contacto Invends",
+        title: "Contacto | Hablemos sobre tu próximo sitio web — Invends",
         description:
-          "Contacto Invends para diseño web, desarrollo o marketing digital. hola@invends.com",
-        eyebrow: "Contacto",
-        h1Before: "Cuéntanos",
-        h1Accent: "la necesidad",
-        sub: "Idea, duda o proyecto. Respondemos con alcance: qué entra y qué espera.",
-        formTitle: "Tu proyecto",
+          "Cuéntanos sobre tu empresa y qué buscas resolver. Te responderemos en menos de 24 horas con una opinión honesta sobre la mejor forma de abordarlo.",
+        eyebrow: "Contacto directo",
+        h1Before: "Hablemos sobre tu",
+        h1Accent: "próximo sitio web",
+        sub: "Cuéntanos sobre tu empresa y qué buscas resolver. Te responderemos en menos de 24 horas con una opinión honesta sobre la mejor forma de abordarlo.",
+        formTitle: "Cuéntanos de tu proyecto",
         formDescription:
-          "Elige el servicio más cercano, deja un contacto y, si quieres, unas líneas.",
+          "Déjanos tus datos y te contactaremos para coordinar una primera llamada.",
         phone: "Teléfono",
       },
 );

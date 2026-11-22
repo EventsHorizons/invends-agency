@@ -45,36 +45,36 @@ type SeoSeed = {
 const SEO: Record<string, SeoSeed> = {
   "diseno-web": {
     keyword: "diseño web Bogotá",
-    secondary: ["diseño de páginas web", "diseño UX UI", "agencia diseño web"],
+    secondary: ["diseño de páginas web", "diseño UX UI", "estudio diseño web"],
     es: {
-      metaTitle: "Diseño web en Bogotá | Invends",
+      metaTitle: "Diseño Web y UI/UX en Bogotá | Invends",
       metaDescription:
-        "Diseño web y UX/UI en Bogotá / LATAM: páginas claras, pensadas para que quien te visite entienda qué haces y se sienta cómodo contactarte. Invends.",
-      h1: "Web que se entiende",
+        "Diseñamos interfaces web intuitivas y elegantes que explican tu negocio con claridad y guían a tus visitas hacia la conversión. Invends.",
+      h1: "Páginas web diseñadas para ser elegidas",
       lead:
-        "Diseñamos sitios y landings para que quien te visite entienda qué haces y se sienta cómodo dando el siguiente paso. Partimos de a quién le hablas y qué te gustaría lograr.",
+        "Estructuramos sitios web institucionales y páginas de aterrizaje donde la jerarquía visual y el contenido guían al visitante de forma natural hacia el contacto.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "A veces el sitio existe, pero cuesta entenderlo: la información se siente desordenada, el móvil improvisa o no queda claro qué hacer. Te ayudamos a ordenar estructura, interfaz y mensaje para que la página acompañe al negocio.",
+        "Muchos sitios web sufren de exceso de adornos, textos confusos y experiencias móviles deficientes que ahuyentan a los clientes. Nosotros ponemos orden: arquitectura lógica, lectura cómoda y navegación sin obstáculos.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Personas y equipos en Bogotá y LATAM que quieren una presencia web más clara, un rediseño con sentido o landings alineadas a una campaña.",
+        "Empresas y profesionales que buscan proyectar autoridad digital, renovar un sitio anticuado o lanzar landings de alta conversión para sus campañas.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Partimos de lo que quieres lograr y de a quién le hablas. Definimos estructura y recorrido, prototipamos con calma y dejamos un sistema coherente antes de pasar a desarrollo.",
+        "Partimos de tu cliente ideal y de tus metas comerciales. Diseñamos la arquitectura de información, prototipamos en Figma y validamos cada interacción antes del desarrollo.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "Diseño, desarrollo y marketing conversan desde el principio: la pantalla sostiene el mensaje y el siguiente paso, sin pelearse entre sí.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Criterio editorial y conversión de la mano: el diseño no es decoración, es la herramienta principal para construir confianza y facilitar la venta.",
+      considerTitle: "Qué conviene tener claro antes de arrancar",
       consider: [
-        "Qué debe lograr la web en los próximos 6–12 meses",
-        "A quién le hablas y qué objeciones repiten",
-        "Si hay marca lista o hay que definirla en paralelo",
-        "Qué páginas son críticas (inicio, servicio, contacto, landing)",
+        "Qué objetivo comercial prioritario debe cumplir tu sitio web",
+        "Quién es tu cliente ideal y qué preguntas u objeciones suele tener",
+        "Si ya cuentas con identidad de marca o debemos estructurarla",
+        "Qué secciones o funcionalidades son críticas para la primera fase",
       ],
       nextTitle: "Siguiente paso",
       next:
-        "Cuéntanos qué te gustaría lograr con tu sitio. Te respondemos con cercanía y un alcance claro de diseño —y desarrollo, si hace falta.",
+        "Cuéntanos sobre tu proyecto. Te responderemos en menos de 24 horas con un diagnóstico y una propuesta clara de alcance.",
       faqs: [
         {
           q: "¿Diseño web incluye UX/UI?",
@@ -131,70 +131,70 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "branding agencia Bogotá",
     secondary: ["identidad visual", "sistema de marca", "diseño de marca"],
     es: {
-      metaTitle: "Branding e identidad visual | Invends",
+      metaTitle: "Branding e Identidad Visual | Invends",
       metaDescription:
-        "Branding e identidad visual para digital: voz, símbolo y reglas simples para que tu equipo use la marca sin reinventarla cada semana. Invends · Bogotá / LATAM.",
-      h1: "Marca reconocible",
+        "Diseñamos identidades visuales memorables y sistemas de marca para entornos digitales. Logotipos, tipografía y guías de estilo para empresas en crecimiento.",
+      h1: "Identidad visual y sistemas de marca",
       lead:
-        "Definimos voz, símbolo y reglas simples para que tu marca se reconozca en web, propuestas y redes —y tu equipo pueda usarla sin empezar de cero cada semana.",
+        "Diseñamos marcas que proyectan solidez y coherencia en cada punto de contacto: desde la paleta tipográfica y el logotipo hasta el sistema de diseño para tus canales digitales.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Si la marca cambia según quién diseñe el último PDF, cuesta reconocerla. Te ayudamos a dejar un lenguaje usable —no solo un logo aislado.",
+        "Una imagen inconsistente o anticuada devalúa tus servicios y confunde a los clientes potenciales. Construimos un lenguaje visual reconocible que posiciona a tu empresa con autoridad.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Personas y negocios que lanzan marca, la renuevan o necesitan un sistema claro para web, redes y materiales.",
+        "Empresas en expansión, nuevos proyectos o marcas consolidadas que necesitan unificar su comunicación gráfica y proyectar una imagen profesional y moderna.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Conversamos sobre posición y tono, diseñamos símbolo y tipografía, y dejamos reglas de uso pensadas para el día a día digital.",
+        "Investigamos tu mercado y propuesta de valor, exploramos conceptos visuales y entregamos un sistema de diseño práctico y listo para aplicar en web, redes y presentaciones.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "La identidad se piensa junto al sitio y las campañas: menos piezas sueltas, más coherencia.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Diseño pensado para el mundo digital: no entregamos un PDF decorativo que nadie abre, sino activos editables y directrices claras para el uso cotidiano.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Qué debe transmitir la marca (y qué no)",
-        "Dónde se usa hoy: web, redes, propuesta, empaque",
-        "Si hay restricciones legales o de sector",
+        "Qué posicionamiento y valores debe transmitir la marca",
+        "Puntos de contacto prioritarios: web, presentaciones, producto o redes",
+        "Público objetivo y referentes visuales del sector",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos cómo se ve y se siente tu marca hoy. Te proponemos un alcance de identidad claro y usable.",
+      next: "Cuéntanos sobre tu empresa y la etapa actual de tu marca. Te planteamos una propuesta de diseño e identidad adaptada a tus objetivos.",
       faqs: [
         {
           q: "¿Entregan manual de marca?",
-          a: "Entregamos criterios y sistema de aplicación orientados al uso real (digital primero), no un PDF ornamental.",
+          a: "Entregamos un sistema de diseño y directrices de aplicación digital claras: paletas de color, combinaciones tipográficas, retículas y componentes gráficos listos para producción.",
         },
       ],
     },
     en: {
-      metaTitle: "Branding & visual identity | Invends",
+      metaTitle: "Branding & Visual Identity | Invends",
       metaDescription:
-        "Branding and visual identity for digital: voice, symbol and simple rules so your team can use the brand without reinventing it every week. Invends · Bogotá / LATAM.",
-      h1: "Recognizable brand",
+        "We design memorable visual identities and design systems for digital brands. Logos, typography, and cohesive brand guidelines. Invends.",
+      h1: "Visual identity and design systems",
       lead:
-        "We help you define voice, symbol and simple rules so your brand holds on web, proposals and social—and your team can use it without starting over every week.",
+        "We design brands that project confidence and clarity across every touchpoint: from typography and logo craft to comprehensive digital design systems.",
       problemTitle: "What problem it solves",
       problem:
-        "If the brand changes with every PDF, it’s hard to recognize. We help you leave a usable language—not just a standalone logo.",
+        "An inconsistent or dated look devalues your products and confuses prospects. We build a cohesive visual system that establishes instant market authority.",
       audienceTitle: "Who it is for",
       audience:
-        "People and businesses launching a brand, renewing it, or needing a clear system for web, social and materials.",
+        "Growing companies, startups, and established businesses looking to elevate their brand presence and communicate with modern aesthetic precision.",
       methodTitle: "How we work",
       method:
-        "We talk through position and tone, design symbol and type, and leave usage rules made for everyday digital use.",
+        "We analyze your market positioning, craft distinct visual concepts, and deliver a practical design system ready for deployment across web, decks, and social media.",
       differenceTitle: "What makes this approach different",
       difference:
-        "Identity is designed alongside the site and campaigns: fewer loose assets, more coherence.",
-      considerTitle: "What to clarify before hiring",
+        "Digital-first brand architecture: instead of an ornamental PDF that gathers dust, we deliver practical Figma components and production assets.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "What the brand must convey (and what it must not)",
-        "Where it is used today: web, social, proposals, packaging",
-        "Legal or sector constraints",
+        "Core brand values and positioning goals",
+        "Primary brand touchpoints (website, proposals, packaging, UI)",
+        "Target audience and market differentiators",
       ],
       nextTitle: "Next step",
-      next: "Tell us how your brand looks and feels today. We’ll propose clear, usable identity scope.",
+      next: "Tell us about your brand vision and current materials. We will structure a straightforward visual identity proposal.",
       faqs: [
         {
           q: "Do you deliver a brand manual?",
-          a: "We deliver application criteria and a system oriented to real use (digital first), not an ornamental PDF.",
+          a: "We deliver actionable design guidelines and component libraries focused on real-world digital application.",
         },
       ],
     },
@@ -203,70 +203,70 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "desarrollo web profesional",
     secondary: ["agencia desarrollo web", "sitios web corporativos", "desarrollo web Bogotá"],
     es: {
-      metaTitle: "Desarrollo web profesional | Invends",
+      metaTitle: "Desarrollo Web Profesional y Nuxt | Invends",
       metaDescription:
-        "Desarrollo web con calma técnica: sitios rápidos, mantenibles e integrados. Formularios, rendimiento y una base que puedas seguir mejorando. Invends · Bogotá / LATAM.",
-      h1: "Sitio que se sostiene",
+        "Desarrollamos sitios web ultrarrápidos, seguros y escalables construidos sobre Nuxt y Vue. Código limpio, rendimiento impecable y autonomía para tu equipo.",
+      h1: "Desarrollo web de alto rendimiento",
       lead:
-        "Implementamos el sitio para que se sienta confiable el día que llega gente: velocidad, formularios e integraciones —con una base que no haya que rehacer al primer cambio.",
+        "Construimos plataformas web modernas, veloces y fáciles de gestionar. Sin plantillas pesadas ni dependencias frágiles: ingeniería frontend diseñada para impulsar tu negocio.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Un diseño bonito sin buena implementación se siente frágil: lento, difícil en móvil o imposible de mantener. Priorizamos arquitectura, peso y un despliegue claro.",
+        "Las plataformas lentas, con errores de visualización o basadas en plugins sobrecargados pierden clientes y penalizan en Google. Desarrollamos con código limpio para garantizar velocidad y estabilidad continua.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Equipos que necesitan un sitio, landing o producto web con cuidado técnico —sin depender de una plantilla que no encaja.",
+        "Empresas que necesitan renovar su sitio corporativo, lanzar portales interactivos o contar con una presencia digital sólida que cargue de inmediato.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Definimos arquitectura y contenido, cuidamos el rendimiento básico, integramos lo necesario y publicamos con un camino claro para seguir mejorando.",
+        "Diseñamos una arquitectura modular, programamos componentes optimizados en Nuxt/Vue, integramos tus herramientas de gestión y desplegamos con altos estándares de seguridad y SEO técnico.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "El desarrollo conversa con el diseño y el mensaje desde el inicio: menos distancia entre la maqueta y el sitio en vivo.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Ingeniería moderna y diseño de interfaces trabajando juntos: el resultado final es idéntico a lo aprobado en diseño y carga en fracciones de segundo.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Stack o restricciones del cliente (CMS, hosting, APIs)",
-        "Contenidos listos o en producción paralela",
-        "Integraciones críticas (CRM, analítica, pagos)",
+        "Requisitos técnicos o herramientas de gestión actuales",
+        "Contenido y estructura de páginas prioritarias",
+        "Integraciones necesarias (CRM, analítica, formularios o pasarelas)",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos cómo imaginas el sitio y qué restricciones tienes. Te respondemos con un alcance de implementación claro.",
+      next: "Cuéntanos sobre tu sitio actual o el nuevo proyecto. Analizamos tu requerimiento y te presentamos una propuesta de desarrollo clara y detallada.",
       faqs: [
         {
-          q: "¿Desarrollan y diseñan juntos?",
-          a: "Sí. En Invends diseño y desarrollo comparten el alcance para evitar entregas desconectadas.",
+          q: "¿Podrá mi equipo actualizar los contenidos?",
+          a: "Totalmente. Entregamos el sitio conectado a paneles de administración intuitivos para que tu equipo publique artículos, fotos y textos sin tocar una línea de código.",
         },
       ],
     },
     en: {
-      metaTitle: "Professional web development | Invends",
+      metaTitle: "Professional Web Development | Invends",
       metaDescription:
-        "Web development with technical care: fast, maintainable, integrated sites. Forms, performance and a base you can keep improving. Invends · Bogotá / LATAM.",
-      h1: "A site that holds",
+        "High-performance, secure, and accessible websites built with modern frameworks. Nuxt, Vue, and clean engineering for scaling businesses.",
+      h1: "High-performance web development",
       lead:
-        "We implement the site so it feels reliable the day people arrive: speed, forms and integrations—with a base you don’t rewrite on the first change.",
+        "We build fast, secure, and maintainable web platforms. Free of bloated templates and fragile plugins: clean frontend engineering built to scale.",
       problemTitle: "What problem it solves",
       problem:
-        "A nice design without solid implementation feels fragile: slow, awkward on mobile or hard to maintain. We prioritize architecture, weight and a clear deploy path.",
+        "Slow, fragile websites damage brand credibility and hurt conversion rates. We engineer clean web experiences that load instantly and perform reliably under traffic.",
       audienceTitle: "Who it is for",
       audience:
-        "Teams that need a site, landing or web product with technical care—without relying on a template that doesn’t fit.",
+        "Businesses needing to overhaul outdated corporate websites or build custom web platforms with world-class frontend execution.",
       methodTitle: "How we work",
       method:
-        "We define architecture and content, care for basic performance, integrate what’s needed and publish with a clear path to keep improving.",
+        "We build modular components, optimize core web vitals, integrate your operational tools, and deploy to modern global infrastructure.",
       differenceTitle: "What makes this approach different",
       difference:
-        "Development talks with design and messaging from day one: less distance between mockup and live site.",
-      considerTitle: "What to clarify before hiring",
+        "Direct collaboration between engineering and design: zero disconnect between Figma mockups and production reality.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Client stack or constraints (CMS, hosting, APIs)",
-        "Content ready or produced in parallel",
-        "Critical integrations (CRM, analytics, payments)",
+        "Existing tech stack or CMS preferences",
+        "Key pages, features, and content readiness",
+        "Third-party integrations (CRM, payment gateways, analytics)",
       ],
       nextTitle: "Next step",
-      next: "Tell us how you picture the site and what constraints you have. We’ll reply with clear implementation scope.",
+      next: "Share your project goals and technical requirements. We will prepare a detailed engineering plan.",
       faqs: [
         {
-          q: "Do you design and develop together?",
-          a: "Yes. At Invends design and development share scope so deliveries do not drift apart.",
+          q: "Can our internal team update content?",
+          a: "Yes. We configure user-friendly CMS solutions so your marketing team can publish and edit content effortlessly.",
         },
       ],
     },
@@ -275,61 +275,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "desarrollo de aplicaciones",
     secondary: ["producto digital", "aplicaciones web", "MVP"],
     es: {
-      metaTitle: "Desarrollo de aplicaciones y producto digital | Invends",
+      metaTitle: "Aplicaciones Web y Producto Digital | Invends",
       metaDescription:
-        "Aplicaciones y producto digital: el flujo que importa primero, paneles y MVPs usables, con alcance por fases. Invends · Bogotá / LATAM.",
-      h1: "Apps para el uso real",
+        "Desarrollo de aplicaciones web y portales interactivos a medida. Interfaces fluidas, lógica de negocio robusta y experiencia de usuario intuitiva.",
+      h1: "Aplicaciones web y portales a medida",
       lead:
-        "Construimos aplicaciones web y paneles pensando en cómo se usan de verdad. Priorizamos el flujo que demuestra valor; el resto queda fuera de fase a propósito —y lo hablamos contigo.",
+        "Diseñamos y programamos aplicaciones web, portales de clientes y paneles de gestión enfocados en simplificar procesos complejos y ofrecer una experiencia de usuario ágil.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Muchos productos se quedan en pantallas sueltas sin un recorrido completo. Te ayudamos a construir el flujo que demuestra valor y se puede mejorar después.",
+        "Procesos manuales desorganizados o plataformas complejas que frustran a usuarios y clientes. Diseñamos herramientas interactivas que hacen el trabajo diario eficiente y agradable.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Personas y equipos que validan un producto, necesitan un panel o una app web —con un alcance realista.",
+        "Empresas y startups que necesitan digitalizar operaciones, crear plataformas de suscripción o construir portales de autogestión para sus clientes.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Empezamos por el flujo crítico, los estados vacíos o de error y la continuidad entre sesiones; después, tecnología e integraciones.",
+        "Mapeamos los flujos de usuario críticos, diseñamos prototipos interactivos y desarrollamos la solución con arquitecturas escalables y pruebas exhaustivas.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "El alcance sale del uso real, no de una lista interminable de funciones.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Diseño centrado en la usabilidad real: cada botón, formulario y vista está optimizado para ahorrar clics y evitar confusiones.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Quién usa el producto y con qué frecuencia",
-        "Qué debe funcionar en la primera versión",
-        "Qué queda explícitamente fuera",
+        "Roles de usuario y permisos necesarios",
+        "Flujos de trabajo esenciales para la primera versión",
+        "Sistemas internos o bases de datos a integrar",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos qué debe poder hacer alguien en la primera versión. Te proponemos un alcance usable y honesto.",
+      next: "Conversemos sobre la herramienta o aplicación que necesitas construir. Evaluamos la arquitectura ideal y te presentamos un plan de entrega ordenado.",
       faqs: [],
     },
     en: {
-      metaTitle: "App & digital product development | Invends",
+      metaTitle: "Web Applications & Digital Products | Invends",
       metaDescription:
-        "Apps and digital products: the flow that matters first, dashboards and usable MVPs, with phased scope. Invends · Bogotá / LATAM.",
-      h1: "Apps for real use",
+        "Custom web applications and user portals. Intuitive interfaces, robust business logic, and seamless user experiences for modern companies.",
+      h1: "Custom web applications & portals",
       lead:
-        "We build web apps and dashboards around how people actually use them. We prioritize the flow that proves value; everything else stays out of phase on purpose—and we talk it through with you.",
+        "We design and build bespoke web applications, customer portals, and internal tools focused on simplifying complex workflows with effortless usability.",
       problemTitle: "What problem it solves",
       problem:
-        "Many products stall as loose screens without a complete journey. We help you build the flow that proves value and can improve later.",
+        "Clunky software and manual workarounds slow down operations. We create purpose-built digital tools that save time and empower users.",
       audienceTitle: "Who it is for",
       audience:
-        "People and teams validating a product, needing a dashboard or a web app—with realistic scope.",
+        "Companies looking to streamline customer-facing operations or build subscription software with intuitive UX.",
       methodTitle: "How we work",
       method:
-        "We start with the critical flow, empty/error states and session continuity; then technology and integrations.",
+        "We map essential user workflows, prototype interfaces, and engineer scalable architectures with automated test coverage.",
       differenceTitle: "What makes this approach different",
       difference:
-        "Scope comes from real use, not an endless feature wishlist.",
-      considerTitle: "What to clarify before hiring",
+        "Obsessive focus on real-world usability: every interaction is designed to eliminate friction and confusion.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Who uses the product and how often",
-        "What must work in the first version",
-        "What is explicitly out of scope",
+        "User roles and permission models",
+        "Primary workflow requirements for launch",
+        "Legacy databases or external APIs to connect",
       ],
       nextTitle: "Next step",
-      next: "Tell us what someone should be able to do in the first version. We’ll propose honest, usable scope.",
+      next: "Tell us about the tool or product you want to build. We will outline the optimal technical roadmap.",
       faqs: [],
     },
   },
@@ -337,61 +337,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "ecommerce desarrollo web",
     secondary: ["tienda online", "checkout", "catálogo web"],
     es: {
-      metaTitle: "E-commerce y tiendas online | Invends",
+      metaTitle: "Comercio Electrónico y Tiendas Online | Invends",
       metaDescription:
-        "Tiendas online pensadas para acompañar la compra: catálogo, checkout y operación alineados. Invends · Bogotá / LATAM.",
-      h1: "Compra de punta a punta",
+        "Desarrollo de tiendas online de alto rendimiento. Experiencia de compra sin fricción, pasarelas de pago locales e internacionales y control total de inventario.",
+      h1: "Comercio electrónico y tiendas online",
       lead:
-        "Diseñamos y construimos el recorrido de compra completo —ficha, carrito, pago y confirmación— con inventario y pagos integrados para que puedas operar de verdad.",
+        "Diseñamos y programamos tiendas virtuales con un recorrido de compra ágil y seguro: catálogo claro, proceso de pago rápido y sincronización fluida con tu logística.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Las tiendas pierden compras cuando la ficha confunde, el carrito se siente difícil o el pago no encaja con cómo operas de verdad.",
+        "Carritos abandonados, fichas de producto confusas y plataformas que colapsan en días de alta demanda. Diseñamos experiencias de compra sin obstáculos para maximizar tus ventas.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Marcas y comercios que venden online o quieren mejorar cómo se vive la compra hoy.",
+        "Marcas, importadores y negocios minoristas que buscan abrir un nuevo canal digital o migrar de plataformas rígidas a una tienda a medida.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Mapeamos el recorrido juntos, diseñamos ficha y checkout, e integramos pago e inventario según cómo operas.",
+        "Estructuramos la arquitectura del catálogo, diseñamos fichas orientadas a la decisión de compra, integramos pasarelas de pago seguras y probamos cada paso del checkout.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "Tratamos la compra como un recorrido completo, no como un tema visual aislado.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Foco en la velocidad y la confianza: una tienda que carga rápido en el móvil y transmite seguridad genera significativamente más compras recurrentes.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Pasarela de pago y logística",
-        "Variantes y stock",
-        "Si hay catálogo listo o hay que estructurarlo",
+        "Pasarelas de pago requeridas (Wompi, PayU, Stripe, etc.)",
+        "Volumen inicial de catálogo y variantes de producto",
+        "Políticas de envío e integraciones con operadores logísticos",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos cómo vendes hoy. Te respondemos con un alcance claro de tienda y checkout.",
+      next: "Cuéntanos sobre tus productos y cómo vendes actualmente. Te presentamos una propuesta de tienda virtual optimizada para tu operación.",
       faqs: [],
     },
     en: {
-      metaTitle: "E-commerce & online stores | Invends",
+      metaTitle: "E-commerce & Online Stores | Invends",
       metaDescription:
-        "Online stores built to support the purchase: catalog, checkout and operations aligned. Invends · Bogotá / LATAM.",
-      h1: "Clear purchase journey",
+        "High-converting e-commerce web development. Streamlined checkout, reliable payment gateways, and scalable inventory management. Invends.",
+      h1: "E-commerce and online storefronts",
       lead:
-        "We design and build the full purchase journey—product page, cart, payment and confirmation—with inventory and payments integrated so you can really operate.",
+        "We design and build online stores with frictionless checkout journeys: clean product displays, fast payments, and seamless operations.",
       problemTitle: "What problem it solves",
       problem:
-        "Stores lose purchases when the product page confuses, the cart feels hard or payment doesn’t match how you actually operate.",
+        "High cart abandonment rates and clumsy checkout flows hurt revenue. We build fast, intuitive stores engineered to maximize purchase completion.",
       audienceTitle: "Who it is for",
       audience:
-        "Brands and merchants selling online or wanting to improve how purchase feels today.",
+        "Brands and merchants wanting to scale direct-to-consumer sales or transition away from bloated generic store templates.",
       methodTitle: "How we work",
       method:
-        "We map the journey together, design product page and checkout, and integrate payment and inventory to fit how you operate.",
+        "We optimize catalog navigation, design persuasive product pages, integrate secure payment gateways, and rigorously test mobile checkout flows.",
       differenceTitle: "What makes this approach different",
       difference:
-        "We treat purchase as a full journey, not an isolated visual theme.",
-      considerTitle: "What to clarify before hiring",
+        "Speed and mobile conversion prioritized: our e-commerce platforms load instantly, eliminating friction at every step.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Payment gateway and logistics",
-        "Variants and stock",
-        "Whether the catalog is ready or needs structure",
+        "Target payment gateways (Stripe, PayPal, local providers)",
+        "Product catalog volume and variant complexity",
+        "Shipping rules and logistics integrations",
       ],
       nextTitle: "Next step",
-      next: "Tell us how you sell today. We’ll reply with clear store and checkout scope.",
+      next: "Tell us about your product range and commercial model. We will structure a tailored e-commerce proposal.",
       faqs: [],
     },
   },
@@ -399,70 +399,70 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "SEO agencia Bogotá",
     secondary: ["posicionamiento orgánico", "SEO técnico", "arquitectura de contenido"],
     es: {
-      metaTitle: "SEO técnico y de contenidos | Invends",
+      metaTitle: "Posicionamiento Orgánico y SEO Técnico | Invends",
       metaDescription:
-        "SEO técnico y de contenidos para aparecer cuando alguien ya está buscando lo que ofreces. Sin promesas de ranking inventadas. Invends · Bogotá / LATAM.",
-      h1: "Visible al buscarte",
+        "Estrategia de posicionamiento web en Google. Optimización técnica, arquitectura de contenido y velocidad de carga para atraer clientes con intención real.",
+      h1: "Posicionamiento orgánico y SEO técnico",
       lead:
-        "Trabajamos indexación, arquitectura y contenido útil alineados a búsquedas reales. Medimos con Search Console cuando está disponible —y no prometemos “primera página garantizada”.",
+        "Estructuramos tu sitio web para que aparezca frente a clientes potenciales que ya están buscando activamente tus soluciones en Google.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Sitios difíciles de encontrar, páginas que se pisan entre sí o contenido que no responde a lo que la gente busca. Ordenamos la base técnica y el mapa temático contigo.",
+        "Tener una web que nadie encuentra es una inversión desperdiciada. Corregimos errores de indexación, mejoramos la velocidad y organizamos el contenido para ganar visibilidad sostenible.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Negocios con sitio propio que quieren visibilidad orgánica sostenible —sin trucos de corto plazo.",
+        "Empresas de servicios, consultoras y negocios B2B que quieren captar clientes de forma constante sin depender exclusivamente de pauta publicitaria.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Auditoría técnica, arquitectura de contenido por intención y una base de medición. El alcance se acuerda con lo que el sitio realmente puede sostener.",
+        "Auditamos el estado técnico de tu web, investigamos las intenciones de búsqueda de tu sector, estructuramos el contenido y optimizamos los factores de rastreo e indexación.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "El SEO conversa con diseño y desarrollo: las páginas se construyen para ser encontradas y entendidas.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "SEO integrado desde el código: no usamos parches superficiales, sino una arquitectura web limpia que los motores de búsqueda entienden y premian de forma natural.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Acceso a Search Console / analítica (si existen)",
-        "Servicios o temas prioritarios a posicionar",
-        "Capacidad de producir o editar contenido",
+        "Servicios o líneas de negocio prioritarias para posicionar",
+        "Ámbito geográfico de tu mercado (local, nacional o regional)",
+        "Acceso a Google Search Console y analítica web actual",
       ],
       nextTitle: "Siguiente paso",
-      next: "Comparte la URL y qué te gustaría lograr. Te proponemos un alcance de auditoría o arquitectura, con honestidad.",
+      next: "Indícanos la dirección de tu web y tus metas comerciales. Te compartimos un diagnóstico técnico preliminar y una ruta clara de optimización.",
       faqs: [
         {
-          q: "¿Garantizan posiciones en Google?",
-          a: "No. Trabajamos técnica, estructura y contenido; el ranking depende de competencia, calidad y tiempo. No vendemos promesas de puesto.",
+          q: "¿Garantizan la primera posición en Google?",
+          a: "Ningún profesional serio puede garantizar el puesto número uno debido a los constantes cambios de algoritmos y competencia. Lo que garantizamos es una arquitectura técnica impecable y contenidos de alta relevancia que maximizan tu visibilidad real.",
         },
       ],
     },
     en: {
-      metaTitle: "Technical & content SEO | Invends",
+      metaTitle: "Technical SEO & Organic Growth | Invends",
       metaDescription:
-        "Technical and content SEO to show up when someone is already looking for what you offer. No invented ranking promises. Invends · Bogotá / LATAM.",
-      h1: "Visible when searched",
+        "Technical SEO and content architecture designed to attract high-intent organic traffic from Google. Fast loading and clean semantic code.",
+      h1: "Technical SEO and organic growth",
       lead:
-        "We work on indexing, architecture and useful content aligned to real searches. We measure with Search Console when available—and we don’t promise “guaranteed #1.”",
+        "We structure your website to rank reliably in front of high-intent searchers looking for exactly what your business provides.",
       problemTitle: "What problem it solves",
       problem:
-        "Hard-to-find sites, pages stepping on each other or content that misses what people search for. We order the technical base and topical map with you.",
+        "A website invisible to search engines is a missed opportunity. We resolve crawl errors, optimize load performance, and structure semantic content to drive sustainable inbound leads.",
       audienceTitle: "Who it is for",
       audience:
-        "Businesses with their own site that want sustainable organic visibility—without short-term tricks.",
+        "B2B service firms, software platforms, and regional businesses looking to build a sustainable pipeline of qualified inbound inquiries.",
       methodTitle: "How we work",
       method:
-        "Technical audit, intent-based content architecture and a measurement base. Scope matches what the site can honestly sustain.",
+        "We conduct technical audits, research buyer search intent, craft topical content hierarchies, and implement schema markup for maximum indexation.",
       differenceTitle: "What makes this approach different",
       difference:
-        "SEO talks with design and development: pages are built to be found and understood.",
-      considerTitle: "What to clarify before hiring",
+        "Engineered into the source code: rather than treating SEO as an afterthought, every page is built with semantic HTML and top Core Web Vitals scores.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Access to Search Console / analytics (if any)",
-        "Priority services or topics to rank for",
-        "Capacity to produce or edit content",
+        "Priority service lines and target search terms",
+        "Target geography (local, regional, or international)",
+        "Access to Google Search Console and existing analytics",
       ],
       nextTitle: "Next step",
-      next: "Share the URL and what you’d like to achieve. We’ll propose audit or architecture scope—honestly.",
+      next: "Share your current website URL and growth priorities. We will provide an honest technical review and an actionable roadmap.",
       faqs: [
         {
-          q: "Do you guarantee Google rankings?",
-          a: "No. We work on technical quality, structure and content; rankings depend on competition, quality and time. We do not sell position promises.",
+          q: "Do you guarantee #1 rankings on Google?",
+          a: "No credible firm guarantees specific positions due to algorithmic variability. We guarantee clean code, perfect crawlability, and authoritative content structure that delivers measurable visibility growth.",
         },
       ],
     },
@@ -471,61 +471,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "agencia marketing digital Bogotá",
     secondary: ["marketing digital", "campañas y landing", "estrategia digital"],
     es: {
-      metaTitle: "Marketing digital | Invends",
+      metaTitle: "Estrategia Digital y Páginas de Aterrizaje | Invends",
       metaDescription:
-        "Marketing digital donde el anuncio y la página dicen lo mismo: mensaje, canal y destino alineados, con medición de contactos. Invends · Bogotá / LATAM.",
-      h1: "Anuncio y página alineados",
+        "Conectamos tus campañas de anuncios con páginas de aterrizaje diseñadas para convertir visitas en prospectos calificados y llamadas de venta.",
+      h1: "Estrategia digital y páginas de aterrizaje",
       lead:
-        "Definimos el papel de cada canal y lo conectamos a una página capaz de recibir esa atención. Preferimos conversaciones útiles a publicar por publicar.",
+        "Alineamos tu mensaje publicitario con páginas de llegada precisas. Menos clics desperdiciados y más prospectos interesados en conversar con tu equipo comercial.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Campañas que llevan a una home genérica, o sitios que no sostienen lo que promete el anuncio. Unificamos prioridad, mensaje y destino contigo.",
+        "Pagar pauta para enviar tráfico a una página de inicio desordenada es quemar presupuesto. Diseñamos puntos de contacto enfocados en una sola acción comercial clara.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Marcas que invierten en tráfico (orgánico o pago) y quieren coherencia entre la campaña y lo que pasa en la web.",
+        "Empresas que invierten en Google Ads, Meta o LinkedIn y necesitan maximizar el retorno de su presupuesto con páginas de alta conversión.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Prioridad de mensaje, secuencia de canales y páginas de llegada —con medición compartida.",
+        "Analizamos los argumentos de venta más persuasivos, redactamos el mensaje con precisión, construimos landings ultrarrápidas y medimos conversiones reales.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "El marketing no se separa del diseño del destino: el clic tiene continuidad, no un salto al vacío.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Coherencia total entre anuncio y página: el visitante encuentra exactamente la solución que se le prometió, sin distracciones ni fricción.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Objetivo de la campaña (lead, venta, agenda)",
-        "Canales activos hoy",
-        "Capacidad de seguimiento post-contacto",
+        "Objetivo concreto de la campaña (registro, llamada comercial o compra)",
+        "Canales publicitarios previstos",
+        "Capacidad de tu equipo para responder a los contactos recibidos",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos qué te gustaría lograr con la campaña. Te respondemos con alcance de mensaje y destino.",
+      next: "Conversemos sobre tus campañas actuales o próximas. Evaluamos cómo optimizar la experiencia para multiplicar tus conversiones.",
       faqs: [],
     },
     en: {
-      metaTitle: "Digital marketing | Invends",
+      metaTitle: "Digital Strategy & Landing Pages | Invends",
       metaDescription:
-        "Digital marketing where the ad and the page say the same thing: message, channel and destination aligned, with contact measurement. Invends · Bogotá / LATAM.",
-      h1: "Ad and page aligned",
+        "High-conversion landing pages and paid traffic alignment. Turn clicks into qualified sales conversations and measurable pipeline growth.",
+      h1: "Digital strategy & landing pages",
       lead:
-        "We define each channel’s role and connect it to a page ready to receive that attention. We prefer useful conversations over posting for posting’s sake.",
+        "We align your ad messaging with focused landing pages designed to turn curious visitors into qualified business inquiries.",
       problemTitle: "What problem it solves",
       problem:
-        "Campaigns that dump traffic on a generic home, or sites that can’t hold what the ad promises. We unify priority, message and destination with you.",
+        "Driving paid traffic to a generic homepage burns budget. We engineer high-converting landing pages built around a single, compelling commercial action.",
       audienceTitle: "Who it is for",
       audience:
-        "Brands investing in traffic (organic or paid) that want coherence between the campaign and what happens on the site.",
+        "Companies investing in digital advertising that want to maximize return on ad spend through superior conversion rates.",
       methodTitle: "How we work",
       method:
-        "Message priority, channel sequence and landing pages—with shared measurement.",
+        "We craft persuasive commercial copy, design clean interactive layouts, configure conversion tracking, and test key touchpoints.",
       differenceTitle: "What makes this approach different",
       difference:
-        "Marketing isn’t separated from destination design: the click has continuity, not a leap into the void.",
-      considerTitle: "What to clarify before hiring",
+        "Zero disconnect between the ad promise and the page delivery: prospects find instant answers to their questions and clear next steps.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Campaign goal (lead, sale, booking)",
-        "Channels active today",
-        "Capacity to follow up after contact",
+        "Campaign conversion target (inbound lead, call booking, demo)",
+        "Active or planned advertising channels",
+        "Internal follow-up capacity for new inquiries",
       ],
       nextTitle: "Next step",
-      next: "Tell us what you’d like the campaign to achieve. We’ll reply with message and destination scope.",
+      next: "Tell us about your campaign goals. We will help you structure landing pages that convert traffic into conversations.",
       faqs: [],
     },
   },
@@ -533,61 +533,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "automatización IA empresa",
     secondary: ["IA aplicada", "flujos asistidos", "integración IA"],
     es: {
-      metaTitle: "Inteligencia artificial aplicada | Invends",
+      metaTitle: "Automatización e Inteligencia Artificial Aplicada | Invends",
       metaDescription:
-        "IA aplicada a un caso concreto de tu operación: asistir tareas con límites claros y revisión humana. Invends · Bogotá / LATAM.",
-      h1: "IA con criterio",
+        "Integramos modelos de inteligencia artificial y automatizaciones en tus operaciones cotidianas para agilizar tareas repetitivas con supervisión humana.",
+      h1: "Automatización e inteligencia artificial aplicada",
       lead:
-        "Elegimos un flujo real contigo, lo conectamos a tus herramientas y dejamos la decisión final en el equipo. Ampliar el trabajo, no sustituir el criterio.",
+        "Implementamos soluciones prácticas de inteligencia artificial para acelerar procesos internos, clasificar información y asistir a tu equipo en tareas de alto volumen.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Proyectos de IA genéricos que no encajan en el día a día. Empezamos por un uso acotado, con control humano.",
+        "Tiempo valioso de tu equipo dedicado a copiar información, redactar respuestas rutinarias o procesar documentos a mano. Aplicamos IA donde genera eficiencia inmediata.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Equipos que quieren asistir tareas repetitivas o de análisis —con límites claros y honestos.",
+        "Equipos comerciales, operativos y de soporte que manejan grandes volúmenes de consultas, cotizaciones o datos y buscan elevar su productividad.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Definimos el caso, los datos o el contexto, cómo se pide y corrige, y un registro de lo generado.",
+        "Identificamos el proceso con mayor potencial de ahorro, configuramos el modelo adecuado, establecemos filtros de calidad y entrenamos a tu equipo en su supervisión.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "La máquina amplía; el criterio sigue siendo tuyo —y auditable.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "IA con criterio práctico: no implementamos modas tecnológicas vacías, sino flujos de trabajo útiles que ahorran horas de trabajo cada semana.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Qué tarea se quiere asistir",
-        "Qué datos se pueden usar",
-        "Quién revisa la salida",
+        "Qué tarea repetitiva consume más tiempo en tu operación",
+        "Herramientas y formatos de datos actuales",
+        "Quién revisará y validará los resultados del sistema",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos qué tarea te gustaría asistir. Evaluamos juntos si conviene un flujo asistido.",
+      next: "Cuéntanos qué proceso de tu empresa te gustaría agilizar. Analizamos la viabilidad técnica y te proponemos un piloto concreto.",
       faqs: [],
     },
     en: {
-      metaTitle: "Applied artificial intelligence | Invends",
+      metaTitle: "Applied AI & Workflow Automation | Invends",
       metaDescription:
-        "Applied AI for a concrete case in your operations: assist tasks with clear limits and human review. Invends · Bogotá / LATAM.",
-      h1: "AI with judgment",
+        "Practical artificial intelligence integrations for modern businesses. Automate routine workflows, extract insights, and enhance team velocity.",
+      h1: "Applied AI and workflow automation",
       lead:
-        "We pick a real flow with you, connect it to your tools, and leave final decisions with the team. Expand the work—don’t replace judgment.",
+        "We implement practical AI solutions to streamline business operations, summarize complex data, and empower your team to work faster.",
       problemTitle: "What problem it solves",
       problem:
-        "Generic AI projects that don’t fit day-to-day work. We start with a bounded use case and human control.",
+        "Valuable team hours wasted on repetitive data entry, manual document processing, and routine communications. We automate high-friction workflows.",
       audienceTitle: "Who it is for",
       audience:
-        "Teams that want to assist repetitive or analysis tasks—with clear, honest limits.",
+        "Operations, sales, and support teams handling repetitive tasks who need reliable automation with human oversight.",
       methodTitle: "How we work",
       method:
-        "We define the case, data or context, how requests and corrections work, and a record of outputs.",
+        "We pinpoint high-impact bottlenecks, integrate proven LLMs into your existing software ecosystem, and establish quality control safeguards.",
       differenceTitle: "What makes this approach different",
       difference:
-        "The machine expands; judgment stays yours—and auditable.",
-      considerTitle: "What to clarify before hiring",
+        "Grounded in commercial utility: we skip generative gimmicks to deliver reliable, auditable automations that yield tangible time savings.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Which task should be assisted",
-        "Which data can be used",
-        "Who reviews the output",
+        "Repetitive tasks absorbing the most team hours",
+        "Data privacy requirements and internal software stacks",
+        "Review protocols for automated outputs",
       ],
       nextTitle: "Next step",
-      next: "Tell us which task you’d like to assist. We’ll assess together whether an assisted flow makes sense.",
+      next: "Describe the operational bottleneck you would like to solve. We will assess technical feasibility and propose a focused pilot.",
       faqs: [],
     },
   },
@@ -595,61 +595,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "automatización de procesos empresariales",
     secondary: ["automatización digital", "integraciones", "flujos de trabajo"],
     es: {
-      metaTitle: "Automatización de procesos digitales | Invends",
+      metaTitle: "Automatización de Procesos y Flujos de Trabajo | Invends",
       metaDescription:
-        "Automatización de procesos digitales: primero entendemos qué se repite; después conectamos con control. Invends · Bogotá / LATAM.",
-      h1: "Menos repetición",
+        "Conectamos tus sistemas y herramientas para sincronizar información en tiempo real, eliminar errores manuales y acelerar la atención a clientes.",
+      h1: "Automatización de flujos y procesos de negocio",
       lead:
-        "Primero mapeamos juntos qué se repite y qué debe quedar manual. Después conectamos APIs y tus herramientas actuales, con alertas y excepciones visibles.",
+        "Conectamos tus aplicaciones comerciales, CRM y bases de datos para que los datos fluyan de forma automática y tu equipo se concentre en lo importante.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Horas perdidas copiando datos entre herramientas. Te ayudamos a ver qué conviene automatizar —y qué debe seguir siendo manual.",
+        "Datos duplicados en hojas de cálculo, demoras en el envío de cotizaciones y pérdida de prospectos por falta de seguimiento ágil. Conectamos tus herramientas para que trabajen en sincronía.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Equipos operativos y comerciales con procesos que se repiten entre apps, hojas y correos.",
+        "Empresas en crecimiento cuya operación depende de múltiples plataformas desconectadas y necesitan ordenar sus flujos de trabajo.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Mapa del proceso, conexión por API o webhook, y control con registro y alertas.",
+        "Mapeamos cada paso del proceso, diseñamos las automatizaciones mediante webhooks y APIs, configuramos alertas de control y realizamos pruebas de extremo a extremo.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "No automatizamos el caos: primero ordenamos el flujo y las excepciones contigo.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Arquitectura confiable: diseñamos flujos con registro de errores y notificaciones transparentes para que nunca pierdas el control de tu operación.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Herramientas actuales",
-        "Frecuencia del proceso",
-        "Quién atiende excepciones",
+        "Plataformas activas (HubSpot, Notion, Slack, ERPs, correo)",
+        "Frecuencia y volumen diario del proceso a automatizar",
+        "Responsable interno de validar la información",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos qué proceso se te repite. Evaluamos juntos si conviene automatizarlo.",
+      next: "Indícanos qué plataformas usas y qué proceso quieres conectar. Te presentamos una propuesta de integración técnica directa.",
       faqs: [],
     },
     en: {
-      metaTitle: "Digital process automation | Invends",
+      metaTitle: "Business Process Automation & Integrations | Invends",
       metaDescription:
-        "Digital process automation: first we understand what repeats; then we connect with control. Invends · Bogotá / LATAM.",
-      h1: "Less repetition",
+        "Connect your software ecosystem with robust API integrations. Eliminate manual errors, sync real-time data, and accelerate operational speed.",
+      h1: "Business process automation & integrations",
       lead:
-        "First we map together what repeats and what must stay manual. Then we connect APIs and your current tools, with visible alerts and exceptions.",
+        "We connect your software tools, CRM, and databases to synchronize data automatically and eliminate manual operational bottlenecks.",
       problemTitle: "What problem it solves",
       problem:
-        "Hours lost copying data between tools. We help you see what to automate—and what should stay manual.",
+        "Time lost copying data across disconnected spreadsheets and platforms. We build seamless integrations that keep your systems synchronized.",
       audienceTitle: "Who it is for",
       audience:
-        "Ops and commercial teams with processes that keep repeating across apps, sheets and email.",
+        "Growing companies managing multi-tool operations that need clean, automated workflows without manual re-entry.",
       methodTitle: "How we work",
       method:
-        "Process map, API or webhook connection, and control with logging and alerts.",
+        "We map process touchpoints, engineer API/webhook pipelines, implement error logging, and test edge cases thoroughly.",
       differenceTitle: "What makes this approach different",
       difference:
-        "We don’t automate chaos: we order the flow and exceptions with you first.",
-      considerTitle: "What to clarify before hiring",
+        "Reliability and transparency: our workflows include built-in monitoring and fallback alerts so your team remains in complete control.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Current tools",
-        "Process frequency",
-        "Who handles exceptions",
+        "Active platforms to connect (CRM, ERP, payment, email)",
+        "Daily volume and triggering conditions",
+        "Internal owner responsible for workflow validation",
       ],
       nextTitle: "Next step",
-      next: "Tell us which process keeps repeating. We’ll assess together whether automation fits.",
+      next: "Tell us which tools you want to integrate. We will prepare an actionable architecture roadmap.",
       faqs: [],
     },
   },
@@ -657,61 +657,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "migración web legacy",
     secondary: ["refactorización", "modernización de sistemas", "migración sin downtime"],
     es: {
-      metaTitle: "Migración y refactorización de sistemas | Invends",
+      metaTitle: "Modernización y Migración Tecnológica | Invends",
       metaDescription:
-        "Migración y refactorización de sistemas legacy por fases —sin apagar lo que ya funciona. Invends · Bogotá / LATAM.",
-      h1: "Modernizar por fases",
+        "Actualizamos sistemas y páginas web obsoletas hacia tecnologías modernas y seguras, sin interrumpir tu operación comercial ni perder posicionamiento SEO.",
+      h1: "Modernización y migración tecnológica",
       lead:
-        "Diagnosticamos la deuda técnica y modernizamos por cortes medidos: reescribimos lo crítico, conservamos lo útil y dejamos una base que tu equipo pueda seguir.",
+        "Renovamos plataformas antiguas hacia arquitecturas modernas y rápidas. Cero caídas de servicio, preservación de datos y continuidad comercial garantizada.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Deuda técnica que frena el producto. Diagnosticamos riesgos y migrarmos por fases —sin drama innecesario.",
+        "Sistemas antiguos difíciles de mantener, vulnerables a fallas de seguridad y lentos para adaptarse a nuevos requerimientos del negocio. Modernizamos tu base técnica con orden.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Equipos con sistemas antiguos o monolitos que necesitan evolucionar sin un corte brusco.",
+        "Empresas con plataformas existentes que han alcanzado su límite técnico y necesitan actualizarse sin arriesgar su operación diaria.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Mapa del sistema, reescritura de lo crítico y un plan de corte y despliegue conversado contigo.",
+        "Auditamos el sistema actual, planificamos la migración por fases controladas, reescribimos el código crítico y realizamos el despliegue con respaldo total.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "Priorizamos que el negocio siga funcionando frente a reescrituras heroicas de una sola vez.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Cero tiempo de inactividad y protección de tu SEO: migramos manteniendo tus enlaces, tu historial y la confianza de tus usuarios.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Acceso al código y a staging",
-        "Qué no puede fallar en producción",
-        "Ventanas de despliegue",
+        "Acceso al código fuente, bases de datos y servidores actuales",
+        "Procesos críticos que no pueden detenerse",
+        "Plazos y ventanas de mantenimiento programadas",
       ],
       nextTitle: "Siguiente paso",
-      next: "Comparte el contexto técnico. Te proponemos un diagnóstico acotado y honesto.",
+      next: "Conversemos sobre el estado técnico de tu plataforma actual. Analizamos los riesgos y te presentamos un plan de modernización seguro.",
       faqs: [],
     },
     en: {
-      metaTitle: "Legacy migration & refactoring | Invends",
+      metaTitle: "Legacy Modernization & Web Migration | Invends",
       metaDescription:
-        "Legacy migration and refactoring in phases—without shutting down what already works. Invends · Bogotá / LATAM.",
-      h1: "Modernize in phases",
+        "Seamless migration of legacy websites and software to modern, secure frameworks with zero downtime and preserved SEO authority.",
+      h1: "Legacy modernization & web migration",
       lead:
-        "We diagnose technical debt and modernize with measured cutovers: rewrite what’s critical, keep what helps, and leave a base your team can continue.",
+        "We upgrade outdated web systems into modern, high-speed architectures with zero downtime and complete data integrity.",
       problemTitle: "What problem it solves",
       problem:
-        "Technical debt that stalls the product. We diagnose risks and migrate in phases—without unnecessary drama.",
+        "Fragile legacy systems that are slow, insecure, and expensive to maintain. We modernize your digital infrastructure step by step.",
       audienceTitle: "Who it is for",
       audience:
-        "Teams with old systems or monoliths that need to evolve without a hard cutover.",
+        "Established organizations whose existing digital platforms have hit performance limits and need a secure evolutionary path.",
       methodTitle: "How we work",
       method:
-        "System map, rewrite of what’s critical, and a cutover/deploy plan we talk through with you.",
+        "We audit dependencies, plan phased incremental cutovers, modernize codebases, and test migrations in isolated staging environments.",
       differenceTitle: "What makes this approach different",
       difference:
-        "We prioritize keeping the business running over one-shot heroic rewrites.",
-      considerTitle: "What to clarify before hiring",
+        "Business continuity first: we safeguard existing SEO rankings, customer data, and operational uptime during every transition.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Access to code and staging",
-        "What must not fail in production",
-        "Deploy windows",
+        "Access to current source repositories and server hosting",
+        "Mission-critical workflows that must not be disrupted",
+        "Preferred deployment and cutover windows",
       ],
       nextTitle: "Next step",
-      next: "Share the technical context. We’ll propose a bounded, honest diagnosis.",
+      next: "Share your current platform challenges. We will prepare an incremental modernization strategy.",
       faqs: [],
     },
   },
@@ -719,61 +719,61 @@ const SEO: Record<string, SeoSeed> = {
     keyword: "MVP desarrollo rápido",
     secondary: ["MVP usable", "prototipo en producción", "MaaS"],
     es: {
-      metaTitle: "MVP ultra-rápido (MaaS) | Invends",
+      metaTitle: "Desarrollo Ágil de MVPs y Nuevos Productos | Invends",
       metaDescription:
-        "MVP ultra-rápido (MaaS): una primera versión usable en producción, con alcance y límites claros desde el inicio. Invends · Bogotá / LATAM.",
-      h1: "MVP con límites",
+        "Construimos productos mínimos viables funcionales en semanas. Valida tu modelo de negocio con usuarios reales y tecnología lista para escalar.",
+      h1: "Desarrollo ágil de MVPs y nuevos productos",
       lead:
-        "Construimos el flujo mínimo que demuestra la idea, lo publicamos y dejamos base para iterar. El plazo sale del alcance que acordamos juntos —no de una fecha mágica.",
+        "Convertimos tu idea en un producto digital funcional listo para probar con clientes reales en semanas, no en meses. Alcance enfocado en validar valor comercial.",
       problemTitle: "Qué problema resuelve",
       problem:
-        "Ideas atrapadas en presentaciones. Te ayudamos a publicar un flujo crítico para aprender con uso real.",
+        "Pasar meses desarrollando funcionalidades que el mercado quizás no necesita. Te ayudamos a lanzar la versión esencial que genera aprendizaje y tracción inmediata.",
       audienceTitle: "A quién está dirigido",
       audience:
-        "Fundadores y equipos que necesitan validar con algo publicado —no solo un prototipo visual.",
+        "Emprendedores, startups y empresas innovadoras que necesitan validar una nueva línea de producto digital con rapidez y rigor.",
       methodTitle: "Cómo trabajamos",
       method:
-        "Alcance del flujo crítico, construcción usable y publicación con base para seguir iterando.",
+        "Priorizamos el flujo principal que demuestra la propuesta de valor, programamos con componentes reutilizables y publicamos en infraestructura lista para recibir usuarios.",
       differenceTitle: "Qué diferencia este enfoque",
       difference:
-        "El plazo se deriva del alcance explícito: qué entra y qué queda fuera —hablado contigo.",
-      considerTitle: "Qué conviene tener claro antes de contratar",
+        "Calidad técnica desde el día uno: un MVP no es un prototipo desechable, sino una base sólida sobre la cual seguir construyendo.",
+      considerTitle: "Puntos clave al iniciar",
       consider: [
-        "Hipótesis a validar",
-        "Usuario objetivo",
-        "Qué es negociable en el alcance",
+        "Hipótesis principal que quieres validar con el mercado",
+        "Perfil del primer grupo de usuarios o clientes de prueba",
+        "Funcionalidad única imprescindible para el lanzamiento",
       ],
       nextTitle: "Siguiente paso",
-      next: "Cuéntanos la hipótesis. Definimos juntos un MVP con límites claros.",
+      next: "Cuéntanos sobre tu idea o proyecto. Te ayudamos a definir el alcance más eficiente para salir al mercado rápidamente.",
       faqs: [],
     },
     en: {
-      metaTitle: "Ultra-fast MVP (MaaS) | Invends",
+      metaTitle: "Agile MVP Development & Fast Product Launches | Invends",
       metaDescription:
-        "Ultra-fast MVP (MaaS): a first usable version in production, with clear scope and limits from day one. Invends · Bogotá / LATAM.",
-      h1: "MVP with clear limits",
+        "Ship functional minimum viable products in weeks. Validate your market hypothesis with real users and production-ready code.",
+      h1: "Agile MVP development & fast launches",
       lead:
-        "We build the minimum flow that proves the idea, ship it, and leave a base to iterate. Timeline comes from the scope we agree together—not a magic date.",
+        "We turn your vision into a production-ready digital product in weeks. Focused scope engineered to validate real market demand quickly.",
       problemTitle: "What problem it solves",
       problem:
-        "Ideas stuck in decks. We help you publish a critical flow to learn from real use.",
+        "Spending months building speculative features before knowing if customers will buy. We help you launch the critical core experience to validate demand fast.",
       audienceTitle: "Who it is for",
       audience:
-        "Founders and teams that need to validate with something published—not just a visual prototype.",
+        "Founders, innovation teams, and companies launching new digital initiatives that require rapid market validation.",
       methodTitle: "How we work",
       method:
-        "Critical-flow scope, usable build and publish with a base to keep iterating.",
+        "We isolate the core value flow, build with modern modular frameworks, and launch with reliable monitoring and analytics.",
       differenceTitle: "What makes this approach different",
       difference:
-        "Timeline is derived from explicit scope: what’s in and what’s out—talked through with you.",
-      considerTitle: "What to clarify before hiring",
+        "Built to scale, not throw away: clean architecture that lets you iterate and expand without having to rewrite from scratch.",
+      considerTitle: "Key factors to clarify",
       consider: [
-        "Hypothesis to validate",
-        "Target user",
-        "What is negotiable in scope",
+        "Core value hypothesis to validate with initial users",
+        "Target early-adopter user segment",
+        "The single non-negotiable feature for version one",
       ],
       nextTitle: "Next step",
-      next: "Tell us the hypothesis. We’ll define an MVP with clear limits together.",
+      next: "Tell us about your product concept. We will help define the leanest path to production.",
       faqs: [],
     },
   },
@@ -799,18 +799,18 @@ export function servicePageCopy(
   const shared =
     locale === "en"
       ? {
-          includesTitle: "What the service includes",
-          relatedTitle: "Related services",
+          includesTitle: "Deliverables & Scope",
+          relatedTitle: "Related Capabilities",
           breadcrumbServices: "Services",
-          faqTitle: "Questions",
-          cta: "Tell us about this need",
+          faqTitle: "Frequently Asked Questions",
+          cta: "Discuss this service with us",
         }
       : {
-          includesTitle: "Qué incluye el servicio",
-          relatedTitle: "Servicios relacionados",
+          includesTitle: "Entregables concretos",
+          relatedTitle: "Capacidades relacionadas",
           breadcrumbServices: "Servicios",
-          faqTitle: "Preguntas",
-          cta: "Cuéntanos sobre esta necesidad",
+          faqTitle: "Preguntas frecuentes",
+          cta: "Hablemos de este servicio",
         };
   return { ...base, ...shared };
 }

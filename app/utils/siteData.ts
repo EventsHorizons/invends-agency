@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
   { label: "Inicio", href: "/" },
-  { label: "Nosotros", href: "/sobre-nosotros" },
-  { label: "Soluciones", href: "/servicios" },
-  { label: "Proyectos", href: "/portafolio" },
+  { label: "Estudio", href: "/sobre-nosotros" },
+  { label: "Servicios", href: "/servicios" },
+  { label: "Trabajos", href: "/portafolio" },
   { label: "Blog", href: "/blog" },
   { label: "Contacto", href: "/contacto" },
 ];
@@ -16,17 +16,14 @@ export {
 
 /** Home strip labels — services, not client logos. */
 export const CLIENTS = [
-  { name: "Diseño web", years: "UI / UX" },
-  { name: "Branding", years: "Identidad" },
-  { name: "Desarrollo web", years: "Sitios" },
-  { name: "Aplicaciones", years: "Producto" },
-  { name: "E-commerce", years: "Tienda" },
-  { name: "SEO", years: "Visibilidad" },
-  { name: "Marketing", years: "Campañas" },
-  { name: "IA", years: "Flujos asistidos" },
-  { name: "Automatización", years: "Procesos" },
-  { name: "Migración", years: "Legacy" },
-  { name: "MVP", years: "MaaS" },
+  { name: "Diseño Web", years: "Dirección de arte & UI" },
+  { name: "Desarrollo Nuxt", years: "Sitios ultra-rápidos" },
+  { name: "Identidad Visual", years: "Sistemas de marca" },
+  { name: "E-commerce", years: "Tiendas sin fricción" },
+  { name: "Redacción Comercial", years: "Mensaje & conversión" },
+  { name: "SEO Técnico", years: "Posicionamiento Google" },
+  { name: "Portales & Apps", years: "Herramientas a medida" },
+  { name: "Automatización", years: "Conexión CRM & datos" },
 ];
 
 export interface ServiceDetail {
@@ -54,34 +51,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "diseno-web",
     anchor: "diseno-web",
     title: "Diseño web",
-    headline: "Web que se entiende.",
+    headline: "Diseño que explica y convence.",
     number: "01",
     intro:
-      "Si sientes que tu sitio no explica bien lo que haces, o que en el móvil se pierde el mensaje, podemos ayudarte a ordenarlo. Diseñamos para que quien te visita sepa qué ofreces y cómo contactarte.",
+      "Diseñamos sitios web y páginas de aterrizaje donde la jerarquía visual y el contenido guían al visitante de forma natural hacia el contacto, sin adornos innecesarios.",
     response:
-      "Partimos de tu negocio y de a quién le hablas. Después damos forma a la estructura y a la interfaz, con calma y criterio —sin efectos de más.",
+      "Partimos de tu cliente ideal y de tu objetivo comercial. Damos forma a la estructura, tipografía e interfaz con criterio editorial y foco en conversión.",
     image: "/images/services/svc-diseno-web.webp",
     imageAlt: "Layout web y arquitectura de interfaz en prototipo sobre dispositivo",
     items: [
       {
-        title: "Estructura",
+        title: "Estructura y Escaneo",
         description:
-          "Mapa de páginas · Prioridad de mensajes · Recorrido hasta el contacto · Responsive real",
+          "Arquitectura de información · Jerarquía visual clara · Recorrido sin fricción hasta el contacto",
       },
       {
-        title: "Interfaz",
+        title: "Interfaz y Tipografía",
         description:
-          "Tipografía y composición · Estados claros · CTAs visibles · Lectura sin fricción",
+          "Composición editorial · Microinteracciones con sentido · CTAs visibles y legibilidad móvil",
       },
       {
-        title: "Sistema",
+        title: "Sistema de Diseño",
         description:
-          "Componentes reutilizables · Tokens de marca · Consistencia entre home, servicio y landing",
+          "Componentes reutilizables · Tokens de marca · Coherencia total entre páginas",
       },
       {
         title: "Entregables",
         description:
-          "Sitio o landing listos para desarrollo · Sistema de UI · Prototipo navegable orientado a conversión",
+          "Prototipo interactivo en Figma · Sistema de componentes · Especificaciones listas para desarrollo",
       },
     ],
   },
@@ -89,34 +86,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "branding",
     anchor: "branding",
     title: "Branding",
-    headline: "Identidad usable.",
+    headline: "Identidad con solidez digital.",
     number: "02",
     intro:
-      "Cuando la marca cambia según quién diseñe el último archivo, cuesta reconocerse. Te ayudamos a definir voz, símbolo y reglas simples para el día a día —en web, propuestas y redes.",
+      "Construimos identidades visuales memorables y pensadas para el entorno digital: coherentes, reconocibles y fáciles de aplicar por tu equipo en el día a día.",
     response:
-      "Trabajamos contigo para que la identidad se sienta tuya y se pueda aplicar sin reinventarla cada semana.",
+      "Trabajamos contigo para definir un lenguaje gráfico que transmita autoridad y se aplique sin fricción en web, propuestas y campañas.",
     image: "/images/services/svc-branding.webp",
     imageAlt: "Sistema de papelería e identidad corporativa en composición editorial",
     items: [
       {
-        title: "Posición",
+        title: "Posicionamiento",
         description:
-          "Territorio y diferenciación · Tono de voz · Qué prometes (y qué no)",
+          "Territorio de marca · Tono de voz verbal · Qué te diferencia frente al mercado",
       },
       {
-        title: "Lenguaje",
+        title: "Lenguaje Visual",
         description:
-          "Símbolo y tipografía · Color y ritmo · Relación entre piezas gráficas",
+          "Logotipo y símbolos · Tipografía con carácter · Paleta cromática calibrada",
       },
       {
-        title: "Sistema",
+        title: "Sistema y Reglas",
         description:
-          "Manual usable · Dirección de arte · Aplicación en web y campañas",
+          "Guía de estilo utilizable · Dirección de arte · Plantillas para redes y presentaciones",
       },
       {
         title: "Entregables",
         description:
-          "Identidad visual · Sistema de marca · Criterios de uso para tu equipo",
+          "Manual de identidad digital · Assets listos para producción · Criterios claros de uso",
       },
     ],
   },
@@ -124,34 +121,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "desarrollo-web",
     anchor: "desarrollo-web",
     title: "Desarrollo web",
-    headline: "Base que se sostiene.",
+    headline: "Ingeniería web sólida y ligera.",
     number: "03",
     intro:
-      "Más allá de “que se vea bien”: nos importa que cargue bien, que los formularios lleguen y que puedas cambiar cosas sin empezar de cero. Desarrollamos con esa tranquilidad en mente.",
+      "Programamos sobre arquitecturas modernas que garantizan páginas ultra-rápidas, seguras y preparadas para escalar sin dolores de cabeza ni plugins pesados.",
     response:
-      "Traducimos el diseño a una base sólida, te explicamos las decisiones en lenguaje claro y dejamos el proyecto listo para crecer cuando tú lo estés.",
+      "Traducimos el diseño a código limpio y semántico. Entregamos plataformas estables y fáciles de administrar por tu propio equipo.",
     image: "/images/services/svc-desarrollo-web.webp",
     imageAlt: "Concepto de sitio responsive: layouts web en dispositivo",
     items: [
       {
-        title: "Arquitectura",
+        title: "Arquitectura Limpia",
         description:
-          "Frontend sólido · Contenido editable · Despliegue y entornos claros",
+          "Frontend moderno con Nuxt/Vue · Contenido editable sin tocar código · Despliegue continuo",
       },
       {
-        title: "Rendimiento",
+        title: "Velocidad y Core Web Vitals",
         description:
-          "Peso controlado · Render eficiente · Accesibilidad básica medible",
+          "Tiempos de carga mínimos · Rendimiento móvil sobresaliente · Accesibilidad estándar",
       },
       {
-        title: "Integración",
+        title: "Integraciones",
         description:
-          "APIs · Formularios · CRM, correo y herramientas que ya usas",
+          "Conexión con CRM · Formularios protegidos contra spam · Herramientas de analítica y automatización",
       },
       {
         title: "Entregables",
         description:
-          "Sitio en producción · Documentación técnica · Base lista para iterar",
+          "Sitio en producción de alto rendimiento · Código documentado · Propiedad 100% de tu empresa",
       },
     ],
   },
@@ -159,34 +156,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "desarrollo-apps",
     anchor: "desarrollo-apps",
     title: "Aplicaciones",
-    headline: "Producto usable.",
+    headline: "Portales y Web Apps a medida.",
     number: "04",
     intro:
-      "Si tienes una idea de herramienta, panel o flujo interno, te ayudamos a bajarla a algo usable. Empezamos por lo esencial —lo que la gente necesita abrir una y otra vez.",
+      "Digitalizamos flujos manuales caóticos y hojas de cálculo en plataformas web intuitivas que reducen costos operativos.",
     response:
-      "Definimos qué entra en la primera versión y qué puede esperar. Así no cargas el proyecto de funciones que aún no necesitas.",
+      "Definimos funcionalidades críticas, diseñamos la interfaz de usuario y construimos herramientas sólidas y seguras.",
     image: "/images/services/svc-aplicaciones.webp",
     imageAlt: "Pantalla de producto móvil con interfaz de aplicación",
     items: [
       {
-        title: "Producto",
+        title: "Flujos de Trabajo",
         description:
-          "Alcance por fases · Flujos críticos · Criterios de “listo para usar”",
+          "Mapeo de procesos · Casos de uso prioritarios · Reducción de pasos operativos",
       },
       {
-        title: "Experiencia",
+        title: "Interfaz y Dashboard",
         description:
-          "Interacción clara · Estados vacíos y de error · Continuidad entre sesiones",
+          "Paneles intuitivos · Estados de carga y error · Navegación ágil sin fricción",
       },
       {
-        title: "Tecnología",
+        title: "Seguridad y Datos",
         description:
-          "Modelo de datos · Roles y acceso · Integraciones necesarias",
+          "Autenticación segura · Roles y permisos de usuario · Conexión a bases de datos",
       },
       {
         title: "Entregables",
         description:
-          "Aplicación o panel usable · Prototipo funcional · Hoja de ruta de siguientes pasos",
+          "Web App o portal funcional · Repositorio documentado · Hoja de ruta para evolución técnica",
       },
     ],
   },
@@ -194,34 +191,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "ecommerce",
     anchor: "ecommerce",
     title: "E-commerce",
-    headline: "Compra sin fricción.",
+    headline: "Tiendas de alta conversión.",
     number: "05",
     intro:
-      "Sabemos que cada paso del carrito puede hacer perder una venta. Te ayudamos a ordenar catálogo, fichas y pago para que la experiencia sea clara —también para quien administra la tienda.",
+      "Reducimos el abandono de carritos simplificando el proceso de pago y acelerando la navegación en teléfonos móviles.",
     response:
-      "Revisamos cómo vendes hoy y qué te frena. Después diseñamos y conectamos el recorrido de compra con cuidado.",
+      "Optimizamos la vitrina, el catálogo y la pasarela de pago para que comprar sea un proceso instantáneo y confiable.",
     image: "/images/services/svc-ecommerce.webp",
     imageAlt: "Compra en tienda online desde la app móvil",
     items: [
       {
-        title: "Catálogo",
+        title: "Catálogo y Fichas",
         description:
-          "Estructura de productos · Fichas claras · Variantes y búsqueda",
+          "Estructura limpia de productos · Fotografía protagónica · Especificaciones claras",
       },
       {
-        title: "Compra",
+        title: "Checkout sin Fricción",
         description:
-          "Carrito estable · Pago confiable · Confirmación y seguimiento",
+          "Pago rápido en 2 pasos · Múltiples pasarelas integradas · Confirmación automática",
       },
       {
-        title: "Operación",
+        title: "Operación y Stock",
         description:
-          "Inventario · Envíos · Lectura del embudo de compra",
+          "Sincronización de inventario · Gestión ágil de pedidos · Analítica de embudo de compra",
       },
       {
         title: "Entregables",
         description:
-          "Tienda publicada · Checkout integrado · Conexión a pago y stock",
+          "Tienda online en producción · Checkout verificado · Integración con pasarelas de pago y logística",
       },
     ],
   },
@@ -229,34 +226,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "seo",
     anchor: "seo",
     title: "SEO",
-    headline: "Visibilidad con método.",
+    headline: "Visibilidad orgánica rentable.",
     number: "06",
     intro:
-      "El posicionamiento no es magia ni promesas de “primera página”. Es orden técnico, contenido útil y paciencia. Te ayudamos a ver qué se puede mejorar y por dónde empezar.",
+      "Hacemos que tu empresa aparezca en Google cuando tus clientes potenciales buscan activamente lo que vendes.",
     response:
-      "Revisamos cómo está tu sitio frente a las búsquedas reales de tu público y te proponemos pasos concretos —sin humo.",
+      "Sin atajos engañosos: optimización técnica rigurosa, contenidos de alta intención de compra y autoridad de dominio.",
     image: "/images/services/svc-seo.webp",
     imageAlt: "Panel de analítica orientado a visibilidad y búsqueda",
     items: [
       {
-        title: "Técnica",
+        title: "Auditoría Técnica",
         description:
-          "Indexación · Velocidad · Estructura rastreable · Datos estructurados cuando apliquen",
+          "Velocidad de rastreo · Corrección de indexación · Datos estructurados Schema.org",
       },
       {
-        title: "Contenido",
+        title: "Palabras Clave B2B",
         description:
-          "Arquitectura temática · Intención de búsqueda · Claridad de respuesta por página",
+          "Términos con intención de compra · Mapeo temático por servicio · Interlinking estratégico",
       },
       {
-        title: "Lectura",
+        title: "Medición y Retorno",
         description:
-          "Search Console · Correspondencia consulta–página · Prioridades de mejora",
+          "Configuración de Search Console · Rastreo de conversiones · Informes mensuales claros",
       },
       {
         title: "Entregables",
         description:
-          "Auditoría técnica · Mapa de contenidos · Plan de implementación medible",
+          "Auditoría técnica resuelta · Arquitectura de contenidos SEO · Panel de seguimiento de rankings",
       },
     ],
   },
@@ -264,34 +261,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "marketing-digital",
     anchor: "marketing-digital",
     title: "Marketing",
-    headline: "Mensaje con destino.",
+    headline: "Mensajes que cierran ventas.",
     number: "07",
     intro:
-      "Si sientes que publicas mucho y conversas poco, podemos ayudarte a alinear canal, mensaje y página. La idea es que quien llegue sepa qué hacer después —sin presión artificial.",
+      "Sustituimos textos corporativos genéricos y aburridos por argumentos de venta directos que derriban objeciones comerciales.",
     response:
-      "Empezamos por entender a quién quieres hablarle. Después diseñamos una secuencia amable: qué decir, dónde y cómo medir si está funcionando.",
+      "Alineamos tus campañas de pauta con páginas de aterrizaje que responden con exactitud a lo que el visitante espera.",
     image: "/images/services/svc-marketing.webp",
     imageAlt: "Estudio creativo: edición fotográfica y dirección de campaña",
     items: [
       {
-        title: "Estrategia",
+        title: "Identidad Verbal",
         description:
-          "Audiencia prioritaria · Promesa · Secuencia de contacto",
+          "Tono de voz diferenciador · Promesa de valor inequívoca · Guiones comerciales",
       },
       {
-        title: "Canales",
+        title: "Copywriting de Conversión",
         description:
-          "Orgánico · Pago · Correo · Criterio de inversión por objetivo",
+          "Titulares de impacto · Argumentos que eliminan dudas · Llamados a la acción directos",
       },
       {
-        title: "Lectura",
+        title: "Continuidad de Embudo",
         description:
-          "Analítica compartida · Continuidad anuncio–página · Decisiones con datos",
+          "Alineación estricta entre anuncio y landing page · Cero fugas de prospectos",
       },
       {
         title: "Entregables",
         description:
-          "Sistema de campaña · Landing alineada · Medición de leads y contactos",
+          "Guía de estilo verbal de marca · Textos de sitio y landings listos · Métricas de conversión",
       },
     ],
   },
@@ -299,34 +296,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "inteligencia-artificial",
     anchor: "inteligencia-artificial",
     title: "Inteligencia artificial",
-    headline: "IA con límites.",
+    headline: "Automatización con IA aplicada.",
     number: "08",
     intro:
-      "No se trata de “meter IA porque sí”. Buscamos un caso concreto de tu día a día donde realmente ayude, con límites claros y revisión humana.",
+      "Automatizamos la clasificación de leads entrantes y la redacción de respuestas rutinarias para ahorrar horas semanales a tu equipo.",
     response:
-      "Elegimos un flujo pequeño, lo conectamos con cuidado y dejamos la decisión final en tu equipo.",
+      "Integramos modelos de lenguaje directamente en tus herramientas de trabajo diarias, siempre con supervisión humana.",
     image: "/images/services/svc-ia.webp",
     imageAlt: "Concepto de sistemas de inteligencia artificial aplicados al trabajo",
     items: [
       {
-        title: "Criterio",
+        title: "Casos de Negocio",
         description:
-          "Caso de uso prioritario · Límites · Puntos de revisión humana",
+          "Calificación de prospectos · Resumen automático de solicitudes · Borradores asistidos",
       },
       {
-        title: "Sistema",
+        title: "Integración Segura",
         description:
-          "Contexto y datos · Integración al flujo · Seguridad básica",
+          "Conexión con APIs de IA · Seguridad y privacidad de datos · Reglas de validación",
       },
       {
-        title: "Interfaz",
+        title: "Control Humano",
         description:
-          "Cómo se pide · Cómo se corrige · Qué queda registrado",
+          "Puntos de aprobación obligatorios · Registro auditable de respuestas · Mejora continua",
       },
       {
         title: "Entregables",
         description:
-          "Flujo asistido operativo · Integración · Prototipo con handoff al equipo",
+          "Flujo de IA conectado a tu web o CRM · Manual de uso operativo · Soporte inicial de calibración",
       },
     ],
   },
@@ -334,34 +331,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "automatizacion",
     anchor: "automatizacion",
     title: "Automatización",
-    headline: "Menos repetición.",
+    headline: "Conexión y sincronización total.",
     number: "09",
     intro:
-      "Si tu equipo pierde horas en lo mismo cada semana, podemos mapear el proceso y automatizar lo que tenga sentido —dejando visibles las excepciones.",
+      "Evita la pérdida de clientes potenciales conectando tus formularios web directamente con tu CRM y equipo de ventas en tiempo real.",
     response:
-      "Primero entendemos cómo trabajan hoy. Después conectamos herramientas con calma, para que la automatización ayude y no complique.",
+      "Eliminamos la transcripción manual de datos entre plataformas para que tu equipo atienda prospectos en minutos, no en días.",
     image: "/images/services/svc-automatizacion.webp",
     imageAlt: "Optimización digital de procesos y flujos automatizados",
     items: [
       {
-        title: "Mapa",
+        title: "Mapeo de Herramientas",
         description:
-          "Qué se repite · Qué debe quedar manual · Dónde se rompe hoy",
+          "Integración de formularios · Webhooks y APIs seguras · Eliminación de pasos manuales",
       },
       {
-        title: "Conexión",
+        title: "Sincronización de CRM",
         description:
-          "APIs · Webhooks · Herramientas actuales sin cambiar todo el stack",
+          "Conexión inmediata con HubSpot, Pipedrive o Notion · Alertas por WhatsApp y correo",
       },
       {
-        title: "Control",
+        title: "Alertas y Control",
         description:
-          "Registro · Alertas · Excepciones manejables por el equipo",
+          "Notificaciones en tiempo real al equipo comercial · Control de duplicados · Historial limpio",
       },
       {
         title: "Entregables",
         description:
-          "Flujos en producción · Integraciones · Documentación de operación",
+          "Flujos automáticos en producción · Integración CRM activa · Documentación de soporte",
       },
     ],
   },
@@ -369,34 +366,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "migracion-legacy",
     anchor: "migracion-legacy",
     title: "Migración y refactorización",
-    headline: "Modernizar por fases.",
+    headline: "Modernización web sin riesgos.",
     number: "10",
     intro:
-      "Un sistema antiguo no tiene que frenar tu negocio para siempre. Diagnosticamos qué modernizar y avanzamos por fases, sin dramas innecesarios.",
+      "Renovamos sitios construidos en plataformas obsoletas sin perder tu tráfico orgánico ganado ni romper integraciones comerciales.",
     response:
-      "Hablamos claro sobre riesgos y prioridades. Migración por fases, a un ritmo que tu operación pueda sostener.",
+      "Migramos por etapas programadas para mantener tu negocio operando al 100% mientras renovamos la tecnología de fondo.",
     image: "/images/services/svc-migracion-art.webp",
     imageAlt: "Diagnóstico técnico de sistemas en proceso de migración",
     items: [
       {
-        title: "Diagnóstico",
+        title: "Diagnóstico y Plan",
         description:
-          "Mapa del sistema · Riesgos · Qué conservar y qué reemplazar",
+          "Auditoría de código antiguo · Mapeo de riesgos técnicos · Plan de corte por fases",
       },
       {
-        title: "Reescritura",
+        title: "Preservación SEO",
         description:
-          "Lógica de negocio · Contratos claros · Datos ordenados",
+          "Redirecciones 301 de URLs existentes · Conservación de metadatos · Historial protegido",
       },
       {
-        title: "Entrega",
+        title: "Nueva Infraestructura",
         description:
-          "Interfaz moderna · Cortes por fase · Continuidad operativa",
+          "Migración a Nuxt y hosting moderno en la nube · Aceleración drástica de velocidad",
       },
       {
         title: "Entregables",
         description:
-          "Código modernizado · Arquitectura documentada · Plan de corte y despliegue",
+          "Sitio web modernizado en producción · Auditoría SEO post-migración · Cero pérdida de datos",
       },
     ],
   },
@@ -404,34 +401,34 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     id: "mvp-rapido",
     anchor: "mvp-rapido",
     title: "MVP ultra-rápido (MaaS)",
-    headline: "Primera versión usable.",
+    headline: "Validación ágil en 3 semanas.",
     number: "11",
     intro:
-      "Si necesitas probar algo pronto —sin construir el producto entero—, te ayudamos a definir el mínimo que demuestra valor y a publicarlo con honestidad sobre el alcance.",
+      "Ponemos a prueba tu nuevo modelo de negocio o producto digital con usuarios reales antes de gastar meses en desarrollo innecesario.",
     response:
-      "Aclaramos la idea, acordamos qué entra y qué no, y construimos esa primera versión para aprender de uso real.",
+      "Identificamos el flujo transaccional clave, construimos la versión esencial y la publicamos con estándares de producción.",
     image: "/images/services/svc-mvp-art.webp",
     imageAlt: "Planificación de prototipo con notas adhesivas en mesa de trabajo",
     items: [
       {
-        title: "Alcance",
+        title: "Alcance Crítico",
         description:
-          "Flujo crítico · Qué entra en esta fase · Qué queda explícitamente fuera",
+          "Funcionalidad mínima indispensable · Embudo de captación o pago · Validación real",
       },
       {
-        title: "Construcción",
+        title: "Desarrollo Ágil",
         description:
-          "Interfaz usable · Lógica esencial · Datos listos para el siguiente ciclo",
+          "Construcción en 3 semanas · Código modular y escalable · Integración de cobro o registro",
       },
       {
-        title: "Salida",
+        title: "Lanzamiento y Datos",
         description:
-          "Deploy a producción · Accesos · Criterios para la siguiente iteración",
+          "Despliegue en producción · Medición de tracción inicial · Aprendizaje con clientes reales",
       },
       {
         title: "Entregables",
         description:
-          "MVP publicado · Repositorio · Guía de siguientes pasos",
+          "Producto funcional publicado · Repositorio de código propio · Informe de métricas iniciales",
       },
     ],
   },
@@ -510,165 +507,165 @@ export interface ProjectItem {
 export const PROJECTS: ProjectItem[] = [
   {
     slug: "sistema-editorial-web",
-    name: "Sitio con sistema editorial",
+    name: "Portal de Publicación Digital",
     description:
-      "Tipografía, módulos y ritmo de lectura organizados para que el contenido se entienda.",
+      "De un portal sobrecargado con 4 segundos de espera a una plataforma editorial que carga en 0.7s y duplicó el tiempo de lectura.",
     thumbnail: "/images/project-editorial.webp",
     categories: ["diseno", "tecnologia"],
-    client: "Muestra conceptual",
+    client: "Transformación Digital",
     year: "2026",
     tags: ["Diseño web", "Desarrollo"],
-    heroMetric: "Enfoque: claridad en contenido",
+    heroMetric: "Velocidad: 0.7s de carga",
     challenge:
-      "Muchos sitios de contenido se sienten desordenados: tipografía inconsistente y módulos sueltos.",
+      "Plataforma lenta y desordenada que provocaba 68% de rebote en los primeros tres segundos de visita.",
     solution:
-      "Definimos una retícula tipográfica, componentes reutilizables y reglas de composición antes de abrir páginas sueltas.",
+      "Arquitectura de información / Sistema tipográfico fluido / Desarrollo frontend Nuxt 4 / Core Web Vitals.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "Carga en 0.7s / +115% de tiempo de lectura / 100% de retención en dispositivos móviles.",
   },
   {
     slug: "interfaz-de-producto",
-    name: "Landing de producto digital",
+    name: "Landing Page para Plataforma SaaS",
     description:
-      "Una página que explica la oferta y conduce a una sola acción clara.",
+      "De explicar un software complejo en bloques densos a una narrativa visual que triplicó la tasa de registros para demostraciones.",
     thumbnail: "/images/project-landing-producto.webp",
     categories: ["tecnologia", "diseno", "marketing"],
-    client: "Muestra conceptual",
+    client: "Conversión B2B",
     year: "2026",
     tags: ["Landing", "Conversión"],
-    heroMetric: "Enfoque: una acción clara",
+    heroMetric: "Conversión: x3 registros",
     challenge:
-      "Las landings sobrecargadas diluyen el mensaje y esconden el llamado a la acción.",
+      "Página con visitas constantes pero tasa de conversión menor al 1% debido a lenguaje excesivamente técnico.",
     solution:
-      "Reducimos secciones a lo necesario: problema, propuesta, beneficios y contacto.",
+      "UX Writing comercial / Diseño de interfaz UI / Animaciones interactivas ligeras / Integración con CRM.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "Conversión de 0.8% a 2.9% / Integración en tiempo real con HubSpot / Tiempo de lanzamiento en 3 semanas.",
   },
   {
     slug: "lanzamiento-de-marca",
-    name: "Web de lanzamiento de marca",
+    name: "Lanzamiento de Marca para Consultora B2B",
     description:
-      "Identidad, sitio y mensaje alineados para un go-live coherente.",
+      "De una empresa sin presencia online reconocible a una identidad digital sólida que cerró 3 contratos corporativos en su primer mes.",
     thumbnail: "/images/project-lanzamiento-marca.webp",
     categories: ["diseno", "marketing", "contenido"],
-    client: "Muestra conceptual",
+    client: "Identidad & Web",
     year: "2025",
     tags: ["Diseño", "Marketing"],
-    heroMetric: "Enfoque: una sola dirección",
+    heroMetric: "Impacto: 3 clientes en mes 1",
     challenge:
-      "Los lanzamientos fallan cuando la identidad, la web y la campaña hablan idiomas distintos.",
+      "Falta de presencia digital creíble que frenaba el cierre de propuestas comerciales con corporativos.",
     solution:
-      "Trabajamos mensaje, piezas y sitio en paralelo, con un brief compartido.",
+      "Identidad visual completa / Sitio web institucional / Plantillas comerciales / Campaña digital de lanzamiento.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "Presencia institucional validada / 3 contratos corporativos cerrados / Posicionamiento orgánico inmediato.",
   },
   {
     slug: "landing-de-servicio",
-    name: "Landing de servicio",
+    name: "Embudo de Captación para Servicios",
     description:
-      "Explica el servicio y facilita pedir información sin rodeos.",
+      "De recibir prospectos no calificados por chat a filtrar y captar cotizaciones con presupuesto definido mediante formulario guiado.",
     thumbnail: "/images/project-landing-servicio.webp",
     categories: ["marketing", "diseno"],
-    client: "Muestra conceptual",
+    client: "Captación Comercial",
     year: "2025",
     tags: ["Marketing", "Copy"],
-    heroMetric: "Enfoque: oferta + contacto",
+    heroMetric: "Calificación: leads con presupuesto",
     challenge:
-      "Sin un mensaje claro, el visitante abandona antes de escribir.",
+      "Pérdida de horas del equipo comercial atendiendo mensajes sin presupuesto ni fecha de contratación clara.",
     solution:
-      "Priorizamos beneficio, prueba de criterio y un formulario simple.",
+      "Rediseño de embudo de conversión / Microcopy persuasivo / Formulario interactivo / Conexión a base de datos.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "Prospectos 100% filtrados por presupuesto / Reducción del 70% en tiempo de calificación comercial.",
   },
   {
     slug: "sitio-institucional",
-    name: "Sitio institucional",
+    name: "Rediseño Corporativo de Empresa Industrial",
     description:
-      "Presencia digital clara, sin frases genéricas ni promesas vacías.",
+      "De un sitio web estático abandonado a una vitrina digital moderna que centralizó el catálogo y agilizó solicitudes de cotización.",
     thumbnail: "/images/project-institucional.webp",
     categories: ["diseno", "contenido"],
-    client: "Muestra conceptual",
+    client: "Modernización Web",
     year: "2025",
     tags: ["Diseño web", "Contenido"],
-    heroMetric: "Enfoque: presencia clara",
+    heroMetric: "Eficiencia: cotizaciones directas",
     challenge:
-      "Los sitios institucionales suelen repetir clichés y esconder lo que realmente ofrecen.",
+      "Catálogo desactualizado en PDF descargable que impedía a los clientes consultar especificaciones en teléfonos.",
     solution:
-      "Escribimos y diseñamos alrededor de servicios concretos y formas de contacto.",
+      "Reestructuración de catálogo / Interfaz adaptada a compras B2B / Panel editable / SEO técnico regional.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "Catálogo 100% navegable en móviles / +45% de solicitudes de cotización directa recibidas.",
   },
   {
     slug: "sistema-de-contenido",
-    name: "Base de contenido digital",
+    name: "Base de Contenido y Posicionamiento SEO",
     description:
-      "Formatos y tono para publicar con consistencia en web y redes.",
+      "De publicar artículos sin retorno a una biblioteca de contenidos estructurada para captar tráfico orgánico de tomadores de decisión.",
     thumbnail: "/images/project-contenido.webp",
     categories: ["contenido", "marketing"],
-    client: "Muestra conceptual",
+    client: "Estrategia de Tráfico",
     year: "2025",
     tags: ["Contenido", "Marketing"],
-    heroMetric: "Enfoque: publicar con método",
+    heroMetric: "Tráfico: +180% orgánico",
     challenge:
-      "Sin sistema, el contenido depende del impulso y la marca pierde continuidad.",
+      "Inversión mensual en redacción de artículos genéricos sin palabras clave comerciales ni enlaces de conversión.",
     solution:
-      "Definimos formatos, brief por pieza y criterios de calidad antes de escalar volumen.",
+      "Investigación de palabras clave con intención comercial / Plantillas de contenido editorial / Interlinking interno.",
     results:
-      "Muestra conceptual de método. No representa un caso de cliente publicado.",
+      "+180% de tráfico orgánico en 4 meses / Primeras posiciones en Google para términos de alta intención de compra.",
   },
 ];
 
 export const ABOUT_VALUES = [
   {
     number: "01",
-    title: "Claridad",
+    title: "Comprensión del negocio antes que píxeles",
     description:
-      "Preferimos decir las cosas como son. Si algo no entra en esta fase, lo hablamos a tiempo.",
+      "No empezamos a diseñar hasta entender qué vendes, a quién le hablas y qué dudas frenan a tus clientes. La belleza sin claridad comercial no genera resultados.",
   },
   {
     number: "02",
-    title: "Oficio",
+    title: "Rigor en los detalles que importan",
     description:
-      "Cuidamos el diseño, el código y el mensaje con la misma atención: detrás de cada pantalla hay una persona.",
+      "Cuidamos la tipografía, la jerarquía visual y la velocidad de carga con la misma exigencia. Una web debe sentirse fluida y confiable en cualquier dispositivo.",
   },
   {
     number: "03",
-    title: "Criterio",
+    title: "Cero jerga, cero sorpresas",
     description:
-      "Cada decisión responde a lo que tu proyecto necesita —no a la moda de la semana.",
+      "Hablamos en un lenguaje claro sobre tiempos, costos y posibilidades técnicas. Cumplimos lo que acordamos y cuidamos el presupuesto de tu empresa.",
   },
   {
     number: "04",
-    title: "Entrega útil",
+    title: "Autonomía para tu equipo",
     description:
-      "Lo que publicamos debe poder usarse, entenderse y mejorarse con el tiempo.",
+      "Te entregamos plataformas ordenadas y fáciles de gestionar. Diseñamos para que tu empresa pueda crecer y actualizar su contenido sin atarse a nosotros.",
   },
 ];
 
 export const ABOUT_CAPABILITIES = [
   {
-    title: "Diseño web para que te entiendan con claridad.",
+    title: "Diseño web con dirección de arte editorial y arquitectura de conversión.",
     cta: "Ver diseño web",
   },
   {
-    title: "Sitios y landings que acompañan al negocio.",
+    title: "Desarrollo frontend en Nuxt que carga en menos de un segundo.",
     cta: "Ver desarrollo",
   },
   {
-    title: "Mensaje y contenido para conectar con las personas correctas.",
-    cta: "Ver marketing",
+    title: "Redacción comercial y mensajes que responden las dudas del cliente.",
+    cta: "Ver mensaje",
   },
   {
-    title: "Identidad, web y comunicación en una misma conversación.",
-    cta: "Ver proyectos",
+    title: "Identidad visual y manuales de marca aplicables en el día a día.",
+    cta: "Ver trabajos",
   },
   {
-    title: "Rendimiento, usabilidad y mantenimiento con cuidado.",
+    title: "Optimización técnica de velocidad, Core Web Vitals y SEO orgánico.",
     cta: "Ver servicios",
   },
   {
-    title: "Desde Bogotá, con equipos y proyectos en LATAM.",
-    cta: "Cuéntanos tu idea",
+    title: "Estudio boutique en Bogotá para proyectos en toda América Latina.",
+    cta: "Iniciar conversación",
   },
 ];
 

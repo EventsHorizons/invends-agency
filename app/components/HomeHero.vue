@@ -296,9 +296,9 @@ onBeforeUnmount(() => {
   letter-spacing: var(--tracking-display);
   font-weight: 800;
   transform-style: preserve-3d;
-  max-width: 11ch;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  max-width: 16ch;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 .title-line {
   display: block;

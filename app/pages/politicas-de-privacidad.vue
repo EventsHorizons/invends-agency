@@ -12,12 +12,12 @@ const copy = computed(() =>
         description:
           "How Invends processes personal data collected through contact forms and commercial inquiries.",
         h1: "Personal Data Processing Policy",
-        p1: "Invends processes personal data in accordance with applicable Colombian law and the principles of legality, purpose, freedom, accuracy, transparency, restricted access and circulation, security and confidentiality.",
-        p2: "Data collected through contact forms or commercial inquiries is used to answer questions, manage work relationships and improve our services. It is not sold to third parties.",
+        p1: "At Invends, we respect your privacy and protect your personal information in accordance with Colombian Statutory Law 1581 of 2012 (Habeas Data).",
+        p2: "When you write to us through our contact form or direct email, we only use your data to answer your inquiry, coordinate meetings, and deliver requested proposals. Under no circumstances do we sell, transfer, or share your data with third parties.",
         p3Before:
-          "Data subjects may exercise rights of access, update, rectification and deletion by writing to ",
-        p3After: ".",
-        note: "This is a short informative version. When a full legal document for the studio exists, it will be published at this same URL.",
+          "You may exercise your rights to access, update, rectify, or permanently delete your information at any time by writing to ",
+        p3After: " with the subject 'Habeas Data'.",
+        note: "Transparent, honest, and user-first data governance.",
         cta: "Back to contact",
       }
     : {
@@ -25,12 +25,12 @@ const copy = computed(() =>
         description:
           "Cómo Invends trata los datos personales recolectados mediante formularios de contacto y solicitudes comerciales.",
         h1: "Política de Tratamiento de Datos Personales",
-        p1: "Invends trata datos personales de acuerdo con la normativa aplicable en Colombia y con los principios de legalidad, finalidad, libertad, veracidad, transparencia, acceso y circulación restringida, seguridad y confidencialidad.",
-        p2: "Los datos recolectados a través de formularios de contacto o solicitudes comerciales se utilizan para responder consultas, gestionar relaciones de trabajo y mejorar nuestros servicios. No se venden a terceros.",
+        p1: "En Invends respetamos tu privacidad y cuidamos tu información personal conforme a la Ley Estatutaria 1581 de 2012 de Colombia (Habeas Data).",
+        p2: "Cuando nos escribes a través de nuestro formulario o correo electrónico, utilizamos tus datos únicamente para atender tu consulta, coordinar reuniones de trabajo y enviarte propuestas comerciales solicitadas por ti. Bajo ninguna circunstancia vendemos, cedemos ni compartimos tus datos con terceros.",
         p3Before:
-          "El titular puede ejercer derechos de acceso, actualización, rectificación y eliminación escribiendo a ",
-        p3After: ".",
-        note: "Esta es una versión informativa resumida. Cuando exista un documento legal íntegro del estudio, se publicará en esta misma ruta.",
+          "En cualquier momento puedes solicitar la consulta, actualización o eliminación definitiva de tu información escribiendo a ",
+        p3After: " con el asunto 'Habeas Data'.",
+        note: "Compromiso de transparencia, seguridad y respeto por tu privacidad.",
         cta: "Volver a contacto",
       },
 );

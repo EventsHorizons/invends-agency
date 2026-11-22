@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { TEAM, TEAM_FILTERS } from "~/utils/siteData";
 
 definePageMeta({
@@ -8,11 +8,11 @@ definePageMeta({
 const { locale, isEn } = useLocale();
 
 usePageSeo({
-  title: () => (isEn.value ? "Team | Invends" : "Equipo | Invends"),
+  title: () => (isEn.value ? "Team & Disciplines | Invends" : "Equipo y Disciplinas | Invends"),
   description: () =>
     isEn.value
-      ? "Roles and areas Invends uses to organize design, development and marketing on every project."
-      : "Roles y áreas con las que Invends organiza diseño, desarrollo y marketing en cada proyecto.",
+      ? "Multidisciplinary specialists in design, web engineering, and narrative. No bloated agency layers."
+      : "Un equipo multidisciplinar organizado por oficios concretos. Comunicación directa con quienes diseñan y programan.",
   path: () =>
     isEn.value ? "/en/about-us/equipo" : "/about-us/equipo",
   locale: () => locale.value,
@@ -29,12 +29,11 @@ const filtered = computed(() =>
     <header class="td-page-hero">
       <AgencyGradient class="hero-fx" :animate="true" :show-pause="false" />
       <div class="td-container">
-        <p class="td-eyebrow">Equipo</p>
-        <h1>Roles del estudio</h1>
+        <p class="td-eyebrow">Disciplinas</p>
+        <h1>Estructura y disciplinas</h1>
         <p class="lead td-muted">
-          Filtra por área para ver cómo repartimos el trabajo en diseño,
-          desarrollo, marketing y producción. Publicamos roles verificables,
-          no perfiles inventados.
+          Un equipo multidisciplinar organizado por oficios concretos. Sin intermediarios
+          innecesarios: hablas directamente con las personas que diseñan, programan y afinan tu proyecto.
         </p>
       </div>
     </header>
@@ -68,9 +67,9 @@ const filtered = computed(() =>
 
     <section class="td-section band">
       <div class="td-container">
-        <h2>¿Quieres colaborar con el estudio?</h2>
+        <h2>¿Tienes un proyecto que requiere este nivel de atención?</h2>
         <NuxtLink class="td-btn" to="/contacto#contacto-form">
-          Escríbenos
+          Contactar al equipo
         </NuxtLink>
       </div>
     </section>

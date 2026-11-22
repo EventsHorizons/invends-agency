@@ -7,32 +7,32 @@ const categories = computed(() => serviceCategoriesFor(locale.value));
 const copy = computed(() =>
   isEn.value
     ? {
-        title: "Services | Invends",
+        title: "Services | Web Design & Development Capabilities — Invends",
         description:
-          "Invends services: web design, development, branding, e-commerce, SEO, marketing and more. One path or a few—scoped clearly.",
-        eyebrow: "Services",
-        h1Before: "Eleven",
-        h1Accent: "crafts",
-        lead: "You don’t need all of them. Pick what fits this phase.",
+          "UI/UX design, custom frontend development, branding, e-commerce, and technical SEO with fixed scope and business focus. Invends.",
+        eyebrow: "Services & Capabilities",
+        h1Before: "Disciplines focused on",
+        h1Accent: "real impact",
+        lead: "You don't need to rebuild everything at once. We tackle focused upgrades or complete digital ecosystems.",
         tabsLabel: "Categories",
-        reelCta: "Details",
-        bandTitle: "Not sure yet?",
-        bandBody: "Tell us the situation. We’ll propose a scoped path.",
-        bandCta: "Start a project",
+        reelCta: "Explore craft",
+        bandTitle: "Wondering where to begin?",
+        bandBody: "Tell us about your business goals. We will analyze your current site and suggest the most effective roadmap.",
+        bandCta: "Request free diagnosis",
       }
     : {
-        title: "Servicios | Invends",
+        title: "Capacidades y Servicios | Invends",
         description:
-          "Servicios Invends: diseño web, desarrollo, branding, e-commerce, SEO, marketing y más. Un camino o varios —con alcance claro.",
-        eyebrow: "Servicios",
-        h1Before: "Once",
-        h1Accent: "oficios",
-        lead: "No hace falta contratarlos todos. Elige lo que cabe en esta fase.",
-        tabsLabel: "Categorías",
-        reelCta: "Detalle",
-        bandTitle: "¿Sin certeza aún?",
-        bandBody: "Cuéntanos la situación. Proponemos un camino con alcance.",
-        bandCta: "Empezar proyecto",
+          "Diseño de interfaces, ingeniería web moderna y redacción comercial para marcas que buscan diferenciarse por calidad técnica y criterio estético.",
+        eyebrow: "Capacidades del estudio",
+        h1Before: "Tecnología y diseño orientados a",
+        h1Accent: "negocio",
+        lead: "Construimos sitios web de alto rendimiento, identidades visuales claras y contenido con propósito para empresas que quieren liderar su sector.",
+        tabsLabel: "Disciplinas",
+        reelCta: "Conocer entregables",
+        bandTitle: "Hablemos de tu próximo sitio web.",
+        bandBody: "Revisamos tu plataforma actual o tu nueva idea y te planteamos una propuesta directa, sin rodeos técnicos ni presupuestos inflados.",
+        bandCta: "Conversar con el estudio",
       },
 );
 

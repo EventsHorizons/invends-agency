@@ -63,6 +63,15 @@ function toggleService(value: string) {
   if (status.value !== "idle") status.value = "idle";
 }
 
+function selectBudget(value: string) {
+  budget.value = value;
+  if (errors.value.budget) {
+    const { budget: _, ...rest } = errors.value;
+    errors.value = rest;
+  }
+  if (status.value !== "idle") status.value = "idle";
+}
+
 function validate(form: HTMLFormElement): Errors {
   const data = new FormData(form);
   const next: Errors = {};
@@ -159,38 +168,65 @@ async function onSubmit(e: Event) {
           </label>
         </div>
 
-        <fieldset class="fieldset">
-          <legend class="form-section-title">{{ t.servicesLabel }}</legend>
-          <div class="tag-group" role="group" :aria-label="t.servicesAria">
-            <label v-for="service in servicesList" :key="service" class="tag">
-              <input
-                type="checkbox"
-                :checked="services.includes(service)"
-                @change="toggleService(service)"
-              />
-              <span>{{ service }}</span>
-            </label>
+        <!-- Section: Servicios requeridos -->
+        <fieldset class="form-fieldset">
+          <legend class="form-section-header">
+            <span class="form-section-title">
+              {{ t.servicesLabel }} <span class="req" aria-hidden="true">*</span>
+            </span>
+            <span class="form-section-hint">{{ t.servicesHint }}</span>
+          </legend>
+          <div class="service-grid" role="group" :aria-label="t.servicesAria">
+            <button
+              v-for="service in servicesList"
+              :key="service"
+              type="button"
+              class="service-card"
+              :class="{ 'is-selected': services.includes(service) }"
+              :aria-pressed="services.includes(service)"
+              @click="toggleService(service)"
+            >
+              <span class="card-label">{{ service }}</span>
+              <span class="card-indicator" aria-hidden="true">
+                <svg v-if="services.includes(service)" class="check-icon" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8.5L6.5 11.5L12.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span v-else class="plus-icon">+</span>
+              </span>
+            </button>
           </div>
           <p v-if="errors.services" class="err" role="alert">{{ errors.services }}</p>
         </fieldset>
 
-        <fieldset class="fieldset">
-          <legend class="form-section-title">{{ t.budgetLabel }}</legend>
-          <div class="tag-group" role="radiogroup" :aria-label="t.budgetAria">
-            <label v-for="option in budgetList" :key="option" class="tag">
-              <input
-                type="radio"
-                name="budget"
-                :checked="budget === option"
-                @change="budget = option"
-              />
-              <span>{{ option }}</span>
-            </label>
+        <!-- Section: Etapa del proyecto -->
+        <fieldset class="form-fieldset">
+          <legend class="form-section-header">
+            <span class="form-section-title">
+              {{ t.budgetLabel }} <span class="req" aria-hidden="true">*</span>
+            </span>
+            <span class="form-section-hint">{{ t.budgetHint }}</span>
+          </legend>
+          <div class="stage-grid" role="radiogroup" :aria-label="t.budgetAria">
+            <button
+              v-for="option in budgetList"
+              :key="option"
+              type="button"
+              class="stage-card"
+              :class="{ 'is-selected': budget === option }"
+              :aria-checked="budget === option"
+              role="radio"
+              @click="selectBudget(option)"
+            >
+              <span class="radio-dot" aria-hidden="true">
+                <span v-if="budget === option" class="radio-dot-inner" />
+              </span>
+              <span class="card-label">{{ option }}</span>
+            </button>
           </div>
           <p v-if="errors.budget" class="err" role="alert">{{ errors.budget }}</p>
         </fieldset>
 
-        <div class="form-row">
+        <div class="form-row contact-data-start">
           <label>
             {{ t.firstName }}
             <input
@@ -318,9 +354,9 @@ async function onSubmit(e: Event) {
 }
 .contact-form {
   min-width: 0;
-  padding: clamp(1.25rem, 3vw, 1.75rem);
+  padding: clamp(1.25rem, 3vw, 2rem);
   border: 1px solid var(--line);
-  border-radius: 0.75rem;
+  border-radius: 0.85rem;
   background: var(--color-surface);
 }
 .hp {
@@ -331,63 +367,205 @@ async function onSubmit(e: Event) {
   height: 1px;
   overflow: hidden;
 }
-.fieldset {
+
+/* Fieldsets and Headers */
+.form-fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-.form-section-title {
-  margin: 0 0 0.75rem;
-  padding: 0;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+.form-fieldset + .form-fieldset {
+  margin-top: 1.6rem;
 }
-.fieldset + .fieldset {
-  margin-top: 1.35rem;
+.contact-data-start {
+  margin-top: 1.85rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
 }
-.tag-group {
+.form-section-header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0;
+  border: 0;
+  width: 100%;
 }
-.tag {
-  display: inline-flex;
-  cursor: pointer;
+@media (min-width: 600px) {
+  .form-section-header {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
-.tag input {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.tag span {
+.form-section-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--color-fg);
   display: inline-flex;
   align-items: center;
-  min-height: 2.5rem;
-  padding: 0.45rem 0.8rem;
+}
+.form-section-hint {
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.req {
+  color: var(--color-brand);
+  margin-left: 0.25rem;
+  font-weight: 700;
+}
+
+/* Service Grid: 2 columns, perfectly aligned */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+@media (min-width: 580px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+}
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 0.95rem;
+  min-height: 2.9rem;
+  text-align: left;
+  background: color-mix(in srgb, var(--color-surface) 65%, transparent);
   border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.78rem;
+  border-radius: 0.5rem;
+  color: var(--color-fg);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
   transition:
-    border-color 0.4s var(--ease),
-    background-color 0.4s var(--ease);
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease),
+    transform 0.2s var(--ease),
+    box-shadow 0.2s var(--ease);
 }
-.tag:hover span {
-  border-color: color-mix(in srgb, var(--color-brand) 32%, var(--line));
+.service-card:hover {
+  border-color: color-mix(in srgb, var(--color-brand) 40%, var(--line));
+  background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+  transform: translateY(-1px);
 }
-.tag input:focus-visible + span {
-  outline: 2px solid color-mix(in srgb, var(--color-brand) 55%, transparent);
-  outline-offset: 2px;
-}
-.tag input:checked + span {
+.service-card.is-selected {
   border-color: var(--color-brand);
-  background: color-mix(in srgb, var(--color-brand) 18%, transparent);
+  background: color-mix(in srgb, var(--color-brand) 12%, var(--color-surface));
+  color: var(--color-fg);
+  box-shadow: 0 0 0 1px var(--color-brand);
 }
+.card-label {
+  line-height: 1.3;
+}
+.card-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.service-card:hover .card-indicator {
+  border-color: var(--color-brand);
+}
+.service-card.is-selected .card-indicator {
+  border-color: var(--color-brand);
+  background: var(--color-brand);
+  color: #fff;
+}
+.check-icon {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.plus-icon {
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--muted);
+}
+
+/* Stage Grid: 2 columns / 2x2 */
+.stage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+@media (min-width: 580px) {
+  .stage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+}
+.stage-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.95rem;
+  min-height: 2.9rem;
+  text-align: left;
+  background: color-mix(in srgb, var(--color-surface) 65%, transparent);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  color: var(--color-fg);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease),
+    background-color 0.2s var(--ease),
+    transform 0.2s var(--ease),
+    box-shadow 0.2s var(--ease);
+}
+.stage-card:hover {
+  border-color: color-mix(in srgb, var(--color-brand) 40%, var(--line));
+  background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+  transform: translateY(-1px);
+}
+.stage-card.is-selected {
+  border-color: var(--color-brand);
+  background: color-mix(in srgb, var(--color-brand) 12%, var(--color-surface));
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+.radio-dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--line);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+.stage-card:hover .radio-dot {
+  border-color: var(--color-brand);
+}
+.stage-card.is-selected .radio-dot {
+  border-color: var(--color-brand);
+}
+.radio-dot-inner {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-brand);
+}
+
+/* Contact standard inputs */
 .form-row {
   display: grid;
   gap: 1rem;
+}
+.form-row + .form-row {
   margin-top: 1.1rem;
 }
 @media (min-width: 640px) {
@@ -399,9 +577,11 @@ label {
   display: grid;
   gap: 0.35rem;
   font-size: 0.85rem;
+  font-weight: 500;
 }
 .hint {
   font-size: 0.75rem;
+  font-weight: 400;
 }
 input,
 textarea {
@@ -410,31 +590,34 @@ textarea {
   border: 1px solid var(--line);
   background: var(--color-input-bg);
   color: var(--color-input-fg);
-  padding: 0.75rem 0.85rem;
+  padding: 0.8rem 0.95rem;
   font: inherit;
-  /* 16px prevents iOS focus zoom */
   font-size: 1rem;
   line-height: 1.4;
-  border-radius: 0.35rem;
+  border-radius: 0.45rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid color-mix(in srgb, var(--color-brand) 55%, transparent);
-  outline-offset: 1px;
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-brand) 20%, transparent);
 }
 input[aria-invalid="true"],
 textarea[aria-invalid="true"] {
   border-color: var(--color-error);
 }
 .full {
-  margin-top: 1.1rem;
+  margin-top: 1.25rem;
 }
 .consent {
   display: flex;
   gap: 0.75rem;
   align-items: flex-start;
-  margin: 1.25rem 0 0.35rem;
-  font-size: 0.85rem;
+  margin: 1.35rem 0 0.35rem;
+  font-size: 0.84rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 .consent input {
   width: auto;
@@ -444,7 +627,7 @@ textarea[aria-invalid="true"] {
 .err {
   color: var(--color-error);
   font-size: 0.8rem;
-  margin: 0.35rem 0 0;
+  margin: 0.4rem 0 0;
 }
 .err.summary {
   margin-top: 0.85rem;
@@ -454,9 +637,11 @@ textarea[aria-invalid="true"] {
   color: var(--color-ok);
 }
 .td-btn {
-  margin-top: 0.85rem;
-  min-height: 2.75rem;
+  margin-top: 1rem;
+  min-height: 2.85rem;
   width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 .td-btn:disabled {
   opacity: 0.65;
@@ -465,6 +650,7 @@ textarea[aria-invalid="true"] {
 @media (min-width: 640px) {
   .td-btn {
     width: auto;
+    min-width: 12rem;
   }
 }
 @media (max-width: 899px) {
