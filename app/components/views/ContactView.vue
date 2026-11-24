@@ -19,6 +19,8 @@ const copy = computed(() =>
         formDescription:
           "Share your details and we will reach out to schedule an introductory call.",
         phone: "Phone",
+        whatsapp: "WhatsApp",
+        whatsappAction: "Chat on WhatsApp",
       }
     : {
         title: "Contacto | Hablemos sobre tu próximo sitio web — Invends",
@@ -32,6 +34,8 @@ const copy = computed(() =>
         formDescription:
           "Déjanos tus datos y te contactaremos para coordinar una primera llamada.",
         phone: "Teléfono",
+        whatsapp: "WhatsApp",
+        whatsappAction: "Hablar por WhatsApp",
       },
 );
 
@@ -79,6 +83,15 @@ usePageSeo({
           <a class="under" :href="`mailto:${CONTACT_INFO.email}`">{{
             CONTACT_INFO.email
           }}</a>
+          <p class="medium" style="margin-top: 1rem">{{ copy.whatsapp }}</p>
+          <a
+            class="under"
+            :href="isEn ? CONTACT_INFO.whatsappUrlEn : CONTACT_INFO.whatsappUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ copy.whatsappAction }} ({{ CONTACT_INFO.whatsapp }})
+          </a>
           <template v-if="showPhone">
             <p class="medium" style="margin-top: 1rem">{{ copy.phone }}</p>
             <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>

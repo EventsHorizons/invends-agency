@@ -38,6 +38,16 @@ function toTop() {
             <a :href="`tel:${CONTACT_INFO.phoneTel}`">{{ CONTACT_INFO.phone }}</a>
           </p>
         </template>
+        <p style="margin-top: 0.75rem">WhatsApp</p>
+        <p>
+          <a
+            :href="locale === 'en' ? CONTACT_INFO.whatsappUrlEn : CONTACT_INFO.whatsappUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ CONTACT_INFO.whatsapp }}
+          </a>
+        </p>
       </div>
       <div>
         <h3>{{ copy.footerFollow }}</h3>

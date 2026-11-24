@@ -57,6 +57,7 @@ onBeforeUnmount(() => {
     <AppHeader />
     <slot />
     <AppFooter />
+    <WhatsAppButton />
     <AppCookies />
   </div>
 </template>
