@@ -299,6 +299,7 @@ onBeforeUnmount(() => {
   max-width: 16ch;
   overflow-wrap: normal;
   word-break: normal;
+  text-shadow: none;
 }
 .title-line {
   display: block;
@@ -308,7 +309,8 @@ onBeforeUnmount(() => {
   overflow: hidden;
   vertical-align: top;
   margin-right: 0.22em;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
 }
 .word-clip:last-child {
   margin-right: 0;
