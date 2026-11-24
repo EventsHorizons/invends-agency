@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import "~/assets/css/layout.css";
 import "~/assets/css/invends-layout.css";
 import {
@@ -58,6 +58,5 @@ onBeforeUnmount(() => {
     <slot />
     <AppFooter />
     <WhatsAppButton />
-    <AppCookies />
   </div>
 </template>
