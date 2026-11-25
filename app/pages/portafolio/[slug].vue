@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { getAdjacentProjects, getProject } from "~/utils/siteData";
 import {
   absoluteUrl,
