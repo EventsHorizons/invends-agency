@@ -3,6 +3,7 @@ import { CONTACT_INFO } from "~/utils/contactInfo";
 import { hasRealPhone } from "~/utils/seo";
 
 const { locale, isEn } = useLocale();
+const { trackWhatsAppClick } = useAnalytics();
 const showPhone = hasRealPhone();
 
 const copy = computed(() =>
@@ -89,6 +90,7 @@ usePageSeo({
             :href="isEn ? CONTACT_INFO.whatsappUrlEn : CONTACT_INFO.whatsappUrl"
             target="_blank"
             rel="noopener noreferrer"
+            @click="trackWhatsAppClick('contact_page')"
           >
             {{ copy.whatsappAction }} ({{ CONTACT_INFO.whatsapp }})
           </a>

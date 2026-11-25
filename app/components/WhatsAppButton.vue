@@ -2,6 +2,7 @@
 import { CONTACT_INFO } from "~/utils/contactInfo";
 
 const { locale } = useLocale();
+const { trackWhatsAppClick } = useAnalytics();
 
 const label = computed(() =>
   locale.value === "en" ? "Chat on WhatsApp" : "Hablar por WhatsApp",
@@ -22,6 +23,7 @@ const whatsappUrl = computed(() =>
     class="whatsapp-floating-btn"
     :aria-label="label"
     :title="label"
+    @click="trackWhatsAppClick('floating')"
   >
     <span class="whatsapp-icon-wrap" aria-hidden="true">
       <svg

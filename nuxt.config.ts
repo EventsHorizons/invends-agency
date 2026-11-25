@@ -48,6 +48,8 @@ export default defineNuxtConfig({
     "/en/portafolio": { prerender: true },
     "/blog": { prerender: true },
     "/en/blog": { prerender: true },
+    "/diagnostico": { prerender: true },
+    "/en/diagnostico": { prerender: true },
     "/fonts/**": {
       headers: {
         "Cache-Control": "public, max-age=31536000, immutable",

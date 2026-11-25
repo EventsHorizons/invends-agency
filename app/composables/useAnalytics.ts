@@ -31,5 +31,42 @@ export function useAnalytics() {
     trackEvent("contact_mailto_click", { method: "email" });
   }
 
-  return { trackEvent, trackContactSubmit, trackMailto };
+  function trackWhatsAppClick(placement: string = "floating") {
+    trackEvent("whatsapp_click", {
+      method: "whatsapp",
+      placement,
+    });
+    trackEvent("generate_lead", {
+      method: "whatsapp",
+      placement,
+    });
+  }
+
+  function trackLeadMagnet(score: number, emailProvided: boolean) {
+    trackEvent("lead_magnet_diagnostic", {
+      score,
+      email_provided: emailProvided,
+    });
+    if (emailProvided) {
+      trackEvent("generate_lead", {
+        method: "diagnostic_checklist",
+        score,
+      });
+    }
+  }
+
+  function trackResourceDownload(resourceName: string) {
+    trackEvent("download_resource", {
+      resource_name: resourceName,
+    });
+  }
+
+  return {
+    trackEvent,
+    trackContactSubmit,
+    trackMailto,
+    trackWhatsAppClick,
+    trackLeadMagnet,
+    trackResourceDownload,
+  };
 }

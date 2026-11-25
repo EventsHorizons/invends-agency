@@ -1,5 +1,11 @@
 ﻿<script setup lang="ts">
 import { getAdjacentProjects, getProject } from "~/utils/siteData";
+import {
+  absoluteUrl,
+  breadcrumbJsonLd,
+  creativeWorkJsonLd,
+  useSiteUrl,
+} from "~/utils/seo";
 
 const route = useRoute();
 const { localePath, isEn } = useLocale();
@@ -19,6 +25,43 @@ usePageSeo({
   image: project.thumbnail,
   locale: "es",
   noAlternates: true,
+});
+
+const siteUrl = useSiteUrl();
+useHead(() => {
+  const pPath = `/portafolio/${project.slug}`;
+  return {
+    script: [
+      {
+        key: `ld-creativework-${project.slug}`,
+        type: "application/ld+json",
+        children: JSON.stringify(
+          creativeWorkJsonLd(
+            {
+              name: project.name,
+              description: project.challenge || project.name,
+              url: pPath,
+              image: project.thumbnail,
+              client: project.client,
+              dateCreated: project.year ? String(project.year) : undefined,
+            },
+            siteUrl,
+          ),
+        ),
+      },
+      {
+        key: `ld-breadcrumb-${project.slug}`,
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbJsonLd([
+            { name: "Inicio", url: absoluteUrl("/", siteUrl) },
+            { name: "Portafolio", url: absoluteUrl("/portafolio", siteUrl) },
+            { name: project.name, url: absoluteUrl(pPath, siteUrl) },
+          ]),
+        ),
+      },
+    ],
+  };
 });
 </script>
 

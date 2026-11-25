@@ -1,10 +1,11 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { BRAND_NAME } from "~/utils/brand";
 import { CONTACT_INFO } from "~/utils/contactInfo";
 import { NAV, UI } from "~/utils/messages";
 import { hasRealPhone } from "~/utils/seo";
 
 const { locale, localePath } = useLocale();
+const { trackWhatsAppClick } = useAnalytics();
 const copy = computed(() => UI[locale.value]);
 const links = computed(() => NAV[locale.value]);
 const brandName = BRAND_NAME;
@@ -44,6 +45,7 @@ function toTop() {
             :href="locale === 'en' ? CONTACT_INFO.whatsappUrlEn : CONTACT_INFO.whatsappUrl"
             target="_blank"
             rel="noopener noreferrer"
+            @click="trackWhatsAppClick('footer')"
           >
             {{ CONTACT_INFO.whatsapp }}
           </a>

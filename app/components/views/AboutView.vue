@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { absoluteUrl, breadcrumbJsonLd, useSiteUrl } from "~/utils/seo";
+
 const { locale, isEn, localePath } = useLocale();
 
 const copy = computed(() =>
@@ -156,6 +158,31 @@ usePageSeo({
   description: () => copy.value.description,
   path: () => (isEn.value ? "/en/sobre-nosotros" : "/sobre-nosotros"),
   locale: () => locale.value,
+});
+
+const siteUrl = useSiteUrl();
+useHead(() => {
+  const pPath = isEn.value ? "/en/sobre-nosotros" : "/sobre-nosotros";
+  return {
+    script: [
+      {
+        key: "ld-breadcrumb-about",
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbJsonLd([
+            {
+              name: isEn.value ? "Home" : "Inicio",
+              url: absoluteUrl(isEn.value ? "/en" : "/", siteUrl),
+            },
+            {
+              name: isEn.value ? "About" : "Sobre Nosotros",
+              url: absoluteUrl(pPath, siteUrl),
+            },
+          ]),
+        ),
+      },
+    ],
+  };
 });
 </script>
 

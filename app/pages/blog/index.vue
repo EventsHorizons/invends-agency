@@ -142,6 +142,23 @@ function setCategory(cat: string | null) {
           No hay artículos en esta categoría por ahora.
         </p>
 
+        <div class="diagnostic-banner">
+          <div class="diag-banner-content">
+            <span class="diag-tag">{{ isEn ? "Free Interactive Tool" : "Herramienta Gratuita" }}</span>
+            <h3>{{ isEn ? "Evaluate your website's digital health" : "¿Tu sitio web actual construye reputación o pierde ventas?" }}</h3>
+            <p class="td-muted">
+              {{
+                isEn
+                  ? "Test speed, B2B clarity, mobile experience, and SEO with our 7-point interactive assessment."
+                  : "Mide velocidad, claridad comercial, experiencia móvil y SEO técnico en menos de 3 minutos con nuestro test interactivo."
+              }}
+            </p>
+          </div>
+          <NuxtLink class="td-btn diag-btn" :to="localePath('/diagnostico')">
+            {{ isEn ? "Take the Test" : "Hacer Test de Salud Digital" }}
+          </NuxtLink>
+        </div>
+
         <aside class="blog-cta">
           <h2>{{ isEn ? "A project in mind?" : "¿Un proyecto en mente?" }}</h2>
           <p class="td-muted">
@@ -306,6 +323,45 @@ h1 {
 }
 .empty {
   margin-top: 1rem;
+}
+.diagnostic-banner {
+  margin-top: 4rem;
+  padding: 2.25rem;
+  border-radius: 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+@media (min-width: 800px) {
+  .diagnostic-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.diag-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-lavender);
+  margin-bottom: 0.4rem;
+}
+.diag-banner-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+}
+.diag-banner-content p {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 0.95rem;
+}
+.diag-btn {
+  white-space: nowrap;
 }
 .blog-cta {
   margin-top: 3.5rem;

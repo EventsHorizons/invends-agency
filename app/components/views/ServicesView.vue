@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { serviceCategoriesFor } from "~/utils/serviceCategoriesI18n";
+import { absoluteUrl, breadcrumbJsonLd, useSiteUrl } from "~/utils/seo";
 
 const { locale, isEn, localePath } = useLocale();
 const categories = computed(() => serviceCategoriesFor(locale.value));
@@ -41,6 +42,31 @@ usePageSeo({
   description: () => copy.value.description,
   path: () => (isEn.value ? "/en/servicios" : "/servicios"),
   locale: () => locale.value,
+});
+
+const siteUrl = useSiteUrl();
+useHead(() => {
+  const pPath = isEn.value ? "/en/servicios" : "/servicios";
+  return {
+    script: [
+      {
+        key: "ld-breadcrumb-services",
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbJsonLd([
+            {
+              name: isEn.value ? "Home" : "Inicio",
+              url: absoluteUrl(isEn.value ? "/en" : "/", siteUrl),
+            },
+            {
+              name: isEn.value ? "Services" : "Servicios",
+              url: absoluteUrl(pPath, siteUrl),
+            },
+          ]),
+        ),
+      },
+    ],
+  };
 });
 </script>
 

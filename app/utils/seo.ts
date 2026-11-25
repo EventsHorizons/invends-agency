@@ -40,6 +40,7 @@ export function alternatePaths(path: string): { es: string; en: string } | null 
     "/servicios": "/en/servicios",
     "/portafolio": "/en/portafolio",
     "/blog": "/en/blog",
+    "/diagnostico": "/en/diagnostico",
     "/contacto": "/en/contacto",
     "/politicas-de-privacidad": "/en/politicas-de-privacidad",
   };
@@ -128,4 +129,70 @@ export function websiteJsonLd(siteUrl: string) {
     inLanguage: ["es", "en"],
     publisher: { "@type": "Organization", name: BRAND_NAME, url: siteUrl },
   };
+}
+
+export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
+export function creativeWorkJsonLd(
+  item: {
+    name: string;
+    description: string;
+    url: string;
+    image?: string;
+    client?: string;
+    dateCreated?: string;
+  },
+  siteUrl: string,
+) {
+  const data: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: item.name,
+    headline: item.name,
+    description: item.description,
+    url: absoluteUrl(item.url, siteUrl),
+    creator: {
+      "@type": "Organization",
+      name: BRAND_NAME,
+      url: siteUrl,
+    },
+  };
+  if (item.image) data.image = absoluteUrl(item.image, siteUrl);
+  if (item.client) data.sponsor = { "@type": "Organization", name: item.client };
+  if (item.dateCreated) data.dateCreated = item.dateCreated;
+  return data;
+}
+
+export function serviceJsonLd(
+  item: {
+    name: string;
+    description: string;
+    url: string;
+    image?: string;
+    areaServed?: string[];
+  },
+  siteUrl: string,
+) {
+  const data: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: item.name,
+    description: item.description,
+    url: absoluteUrl(item.url, siteUrl),
+    provider: organizationJsonLd(siteUrl),
+    areaServed: item.areaServed || ["Bogotá", "Colombia", "LATAM"],
+  };
+  if (item.image) data.image = absoluteUrl(item.image, siteUrl);
+  return data;
 }

@@ -4,6 +4,7 @@ import {
   PROJECTS,
   type ProjectCategory,
 } from "~/utils/siteData";
+import { absoluteUrl, breadcrumbJsonLd, useSiteUrl } from "~/utils/seo";
 
 definePageMeta({
   alias: ["/en/portafolio"],
@@ -60,6 +61,31 @@ usePageSeo({
   description: () => copy.value.description,
   path: () => (isEn.value ? "/en/portafolio" : "/portafolio"),
   locale: () => locale.value,
+});
+
+const siteUrl = useSiteUrl();
+useHead(() => {
+  const pPath = isEn.value ? "/en/portafolio" : "/portafolio";
+  return {
+    script: [
+      {
+        key: "ld-breadcrumb-portafolio",
+        type: "application/ld+json",
+        children: JSON.stringify(
+          breadcrumbJsonLd([
+            {
+              name: isEn.value ? "Home" : "Inicio",
+              url: absoluteUrl(isEn.value ? "/en" : "/", siteUrl),
+            },
+            {
+              name: isEn.value ? "Portfolio" : "Portafolio",
+              url: absoluteUrl(pPath, siteUrl),
+            },
+          ]),
+        ),
+      },
+    ],
+  };
 });
 
 const active = ref<ProjectCategory>("todos");
